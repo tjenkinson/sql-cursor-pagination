@@ -1,0 +1,74 @@
+{
+  "name": "sql-cursor-pagination",
+  "description": "Library to help with cursor based pagination, from an SQL database.",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.mjs",
+  "bin": {
+    "generate-secret": "bin/generate-secret.js"
+  },
+  "files": [
+    "dist",
+    "bin"
+  ],
+  "keywords": [
+    "cursor-pagination",
+    "cursor",
+    "sql",
+    "pagination",
+    "graphql",
+    "graphql-cursor-connections"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && rollup --config rollup.config.mjs",
+    "watch": "rollup --config rollup.config.mjs --watch",
+    "lint": "eslint --ext .ts --max-warnings 0 --cache src",
+    "prettier": "prettier --write .",
+    "prettier:check": "prettier --check .",
+    "test": "vitest run",
+    "test:dev": "vitest dev",
+    "test:coverage": "vitest run --coverage",
+    "test:types": "tsc -p tsconfig.test.json --noEmit",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tjenkinson/sql-cursor-pagination.git"
+  },
+  "author": "Tom Jenkinson <tom@tjenkinson.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tjenkinson/sql-cursor-pagination/issues"
+  },
+  "homepage": "https://github.com/tjenkinson/sql-cursor-pagination#readme",
+  "dependencies": {
+    "p-map": "^7.0.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "25.0.7",
+    "@rollup/plugin-node-resolve": "15.2.3",
+    "@rollup/plugin-typescript": "11.1.5",
+    "@types/node": "20.10.6",
+    "@typescript-eslint/eslint-plugin": "6.16.0",
+    "@typescript-eslint/parser": "6.16.0",
+    "@vitest/coverage-v8": "1.1.1",
+    "eslint": "8.56.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-import": "2.29.1",
+    "espree": "9.6.1",
+    "husky": "8.0.3",
+    "knex": "3.1.0",
+    "lint-staged": "15.2.0",
+    "micromatch": "4.0.5",
+    "prettier": "3.1.1",
+    "rollup": "4.9.2",
+    "sqlite3": "5.1.6",
+    "tslib": "2.6.2",
+    "typescript": "5.3.3",
+    "vitest": "1.1.0"
+  }
+}

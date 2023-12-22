@@ -1,0 +1,25 @@
+{
+  "extends": ["config:base"],
+  "labels": ["dependencies", "skip-change-log"],
+  "prHourlyLimit": 0,
+  "prConcurrentLimit": 0,
+  "prCreation": "immediate",
+  "minimumReleaseAge": "7 days",
+  "internalChecksFilter": "strict",
+  "vulnerabilityAlerts": true,
+  "rangeStrategy": "bump",
+  "packageRules": [
+    {
+      "matchDepTypes": ["engines"],
+      "enabled": false
+    },
+    {
+      "matchDepTypes": ["dependencies"],
+      "rangeStrategy": "update-lockfile"
+    },
+    {
+      "matchDepTypes": ["devDependencies"],
+      "rangeStrategy": "pin"
+    }
+  ]
+}

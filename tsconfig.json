@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ES2021",
+    "lib": ["dom", "ES2021"],
+    "types": ["node"],
+    "rootDir": "src",
+    "strict": true,
+    "declaration": true,
+    "declarationDir": ".",
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
+    "strictNullChecks": true,
+    "esModuleInterop": true,
+    "downlevelIteration": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.test.ts"]
+}

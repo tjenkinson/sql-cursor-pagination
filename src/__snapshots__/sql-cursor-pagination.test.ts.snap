@@ -1,0 +1,4328 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 1`] = `Infinity`;
+
+exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 2`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 3`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 4`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 5`] = `
+{
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 6`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 7`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 8`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 9`] = `
+{
+  "bindings": {},
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 10`] = `2`;
+
+exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 11`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 12`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 13`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 14`] = `
+{
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 15`] = `
+{
+  "bindings": [
+    "Cooper",
+    "Cooper",
+    "Molina",
+    "Cooper",
+    "Molina",
+    "4",
+  ],
+  "sql": "(((\`first_name\`>?) OR (\`first_name\`=? AND \`last_name\`<?) OR (\`first_name\`=? AND \`last_name\`=? AND \`id\`>?)))",
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 16`] = `
+{
+  "bindings": [
+    "Cooper",
+    "Cooper",
+    "Molina",
+    "Cooper",
+    "Molina",
+    "4",
+  ],
+  "sql": "(((\`first_name\`>X) OR (\`first_name\`=X AND \`last_name\`<X) OR (\`first_name\`=X AND \`last_name\`=X AND \`id\`>X)))",
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 17`] = `
+{
+  "bindings": [
+    "Cooper",
+    "Cooper",
+    "Molina",
+    "Cooper",
+    "Molina",
+    "4",
+  ],
+  "sql": "(((\`first_name\`>:0) OR (\`first_name\`=:1 AND \`last_name\`<:2) OR (\`first_name\`=:3 AND \`last_name\`=:4 AND \`id\`>:5)))",
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 18`] = `
+{
+  "bindings": {
+    ":0": "Cooper",
+    ":1": "Molina",
+    ":2": "4",
+  },
+  "sql": "(((\`first_name\`>:0) OR (\`first_name\`=:0 AND \`last_name\`<:1) OR (\`first_name\`=:0 AND \`last_name\`=:1 AND \`id\`>:2)))",
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 19`] = `
+{
+  "edges": [
+    {
+      "cursor": "J37o3_oaPLyLsQB3RvZ6vH8ufoMit4kCwwo6n4RXp4o.sTsONeFB-6qIIK-1jCt7xcecDh7C1aMG8TceOsfXYAwRtsz8vtPBtBqemP6P-33B1Vf2W91pu1Kp31k05liFhPqkUlx7mUIJ35LebB2-HwyfbXWEgEQY91jSf8gCesc4G8xni0Y-70WgSLJM_iOZL2xTLMQg_BT9wt8Sb9gq7GYDStEAGpRvQaTLt80ti0Vb1a3ZVc865V-htWQh1pHbHQ",
+      "node": {
+        "admin": 0,
+        "created_at": 1679712324,
+        "email": "ut.nisi@yahoo.org",
+        "email_alias": "ut.nisi@yahoo.org",
+        "first_name": "Jermaine",
+        "id": 2,
+        "last_name": "O'connor",
+      },
+    },
+  ],
+  "pageInfo": {
+    "hasNextPage": true,
+    "hasPreviousPage": false,
+  },
+  Symbol(edgesWithRawCursor): [
+    {
+      "cursor": "J37o3_oaPLyLsQB3RvZ6vH8ufoMit4kCwwo6n4RXp4o.sTsONeFB-6qIIK-1jCt7xcecDh7C1aMG8TceOsfXYAwRtsz8vtPBtBqemP6P-33B1Vf2W91pu1Kp31k05liFhPqkUlx7mUIJ35LebB2-HwyfbXWEgEQY91jSf8gCesc4G8xni0Y-70WgSLJM_iOZL2xTLMQg_BT9wt8Sb9gq7GYDStEAGpRvQaTLt80ti0Vb1a3ZVc865V-htWQh1pHbHQ",
+      "node": {
+        "admin": 0,
+        "created_at": 1679712324,
+        "email": "ut.nisi@yahoo.org",
+        "email_alias": "ut.nisi@yahoo.org",
+        "first_name": "Jermaine",
+        "id": 2,
+        "last_name": "O'connor",
+      },
+      "rawCursor": {
+        "fields": [
+          {
+            "field": "first_name",
+            "value": "Jermaine",
+          },
+          {
+            "field": "last_name",
+            "value": "O'connor",
+          },
+          {
+            "field": "id",
+            "value": 2,
+          },
+        ],
+        "queryName": "TestQuery",
+      },
+    },
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 1`] = `Infinity`;
+
+exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 2`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 3`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 4`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 5`] = `
+{
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 6`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 7`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 8`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 9`] = `
+{
+  "bindings": {},
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 10`] = `2`;
+
+exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 11`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 12`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 13`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 14`] = `
+{
+  "bindings": {},
+  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 15`] = `
+{
+  "bindings": [
+    "Jermaine",
+    "Jermaine",
+    "O'connor",
+    "Jermaine",
+    "O'connor",
+    "2",
+  ],
+  "sql": "(((\`first_name\`<?) OR (\`first_name\`=? AND \`last_name\`>?) OR (\`first_name\`=? AND \`last_name\`=? AND \`id\`<?)))",
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 16`] = `
+{
+  "bindings": [
+    "Jermaine",
+    "Jermaine",
+    "O'connor",
+    "Jermaine",
+    "O'connor",
+    "2",
+  ],
+  "sql": "(((\`first_name\`<X) OR (\`first_name\`=X AND \`last_name\`>X) OR (\`first_name\`=X AND \`last_name\`=X AND \`id\`<X)))",
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 17`] = `
+{
+  "bindings": [
+    "Jermaine",
+    "Jermaine",
+    "O'connor",
+    "Jermaine",
+    "O'connor",
+    "2",
+  ],
+  "sql": "(((\`first_name\`<:0) OR (\`first_name\`=:1 AND \`last_name\`>:2) OR (\`first_name\`=:3 AND \`last_name\`=:4 AND \`id\`<:5)))",
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 18`] = `
+{
+  "bindings": {
+    ":0": "Jermaine",
+    ":1": "O'connor",
+    ":2": "2",
+  },
+  "sql": "(((\`first_name\`<:0) OR (\`first_name\`=:0 AND \`last_name\`>:1) OR (\`first_name\`=:0 AND \`last_name\`=:1 AND \`id\`<:2)))",
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 19`] = `
+{
+  "edges": [
+    {
+      "cursor": "SuWlzjWxdtSVDzgPp_mVdQH7S4pbbIpNqmJJFWwXOws.9732ntsWW_36ePfEiU1_85i4VHGpnlt60LcekRaV6hZiIfLaDEJyTxv4_mT0gVYjC05he25PbktssRXIQMdfnwfl2PkS47CW75s-XwbfYuhuaZJZfUpZLW5O7xVWf5R2YD7FEdd53lDlXJDbEE5TvRvM8TNkhCSh8LTnJEFNqADHkbWz-H7pDPOaOBsLE3n_EUYcf498pgjPJCRN",
+      "node": {
+        "admin": 0,
+        "created_at": 1604543417,
+        "email": "purus.accumsan@icloud.com",
+        "email_alias": "purus.accumsan@icloud.com",
+        "first_name": "Cooper",
+        "id": 4,
+        "last_name": "Molina",
+      },
+    },
+  ],
+  "pageInfo": {
+    "hasNextPage": false,
+    "hasPreviousPage": true,
+  },
+  Symbol(edgesWithRawCursor): [
+    {
+      "cursor": "SuWlzjWxdtSVDzgPp_mVdQH7S4pbbIpNqmJJFWwXOws.9732ntsWW_36ePfEiU1_85i4VHGpnlt60LcekRaV6hZiIfLaDEJyTxv4_mT0gVYjC05he25PbktssRXIQMdfnwfl2PkS47CW75s-XwbfYuhuaZJZfUpZLW5O7xVWf5R2YD7FEdd53lDlXJDbEE5TvRvM8TNkhCSh8LTnJEFNqADHkbWz-H7pDPOaOBsLE3n_EUYcf498pgjPJCRN",
+      "node": {
+        "admin": 0,
+        "created_at": 1604543417,
+        "email": "purus.accumsan@icloud.com",
+        "email_alias": "purus.accumsan@icloud.com",
+        "first_name": "Cooper",
+        "id": 4,
+        "last_name": "Molina",
+      },
+      "rawCursor": {
+        "fields": [
+          {
+            "field": "first_name",
+            "value": "Cooper",
+          },
+          {
+            "field": "last_name",
+            "value": "Molina",
+          },
+          {
+            "field": "id",
+            "value": 4,
+          },
+        ],
+        "queryName": "TestQuery",
+      },
+    },
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > allows the \`cursorSecret\` to be omitted 1`] = `Infinity`;
+
+exports[`SqlCursorPagination > allows the \`cursorSecret\` to be omitted 2`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > allows the \`cursorSecret\` to be omitted 3`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > allows the \`cursorSecret\` to be omitted 4`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > allows the \`cursorSecret\` to be omitted 5`] = `
+{
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > allows the \`cursorSecret\` to be omitted 6`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > allows the \`cursorSecret\` to be omitted 7`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > allows the \`cursorSecret\` to be omitted 8`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > allows the \`cursorSecret\` to be omitted 9`] = `
+{
+  "bindings": {},
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`afterCursor\` is for wrong query 1`] = `Infinity`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`afterCursor\` is for wrong query 2`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`afterCursor\` is for wrong query 3`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`afterCursor\` is for wrong query 4`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`afterCursor\` is for wrong query 5`] = `
+{
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`afterCursor\` is for wrong query 6`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`afterCursor\` is for wrong query 7`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`afterCursor\` is for wrong query 8`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`afterCursor\` is for wrong query 9`] = `
+{
+  "bindings": {},
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`afterCursor\` was for a different sort config 1`] = `Infinity`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`afterCursor\` was for a different sort config 2`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`afterCursor\` was for a different sort config 3`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`afterCursor\` was for a different sort config 4`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`afterCursor\` was for a different sort config 5`] = `
+{
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`afterCursor\` was for a different sort config 6`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`afterCursor\` was for a different sort config 7`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`afterCursor\` was for a different sort config 8`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`afterCursor\` was for a different sort config 9`] = `
+{
+  "bindings": {},
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`beforeCursor\` is for wrong query 1`] = `Infinity`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`beforeCursor\` is for wrong query 2`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`beforeCursor\` is for wrong query 3`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`beforeCursor\` is for wrong query 4`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`beforeCursor\` is for wrong query 5`] = `
+{
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`beforeCursor\` is for wrong query 6`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`beforeCursor\` is for wrong query 7`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`beforeCursor\` is for wrong query 8`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`beforeCursor\` is for wrong query 9`] = `
+{
+  "bindings": {},
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`beforeCursor\` was for a different sort config 1`] = `Infinity`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`beforeCursor\` was for a different sort config 2`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`beforeCursor\` was for a different sort config 3`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`beforeCursor\` was for a different sort config 4`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`beforeCursor\` was for a different sort config 5`] = `
+{
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`beforeCursor\` was for a different sort config 6`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`beforeCursor\` was for a different sort config 7`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`beforeCursor\` was for a different sort config 8`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`beforeCursor\` was for a different sort config 9`] = `
+{
+  "bindings": {},
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if a duplicate cursor is created 1`] = `Infinity`;
+
+exports[`SqlCursorPagination > errors > throws an error if a duplicate cursor is created 2`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if a duplicate cursor is created 3`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if a duplicate cursor is created 4`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if a duplicate cursor is created 5`] = `
+{
+  "bindings": {},
+  "sql": "\`first_name\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if a duplicate cursor is created 6`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if a duplicate cursor is created 7`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if a duplicate cursor is created 8`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if a duplicate cursor is created 9`] = `
+{
+  "bindings": {},
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if raw cursor passed directly 1`] = `Infinity`;
+
+exports[`SqlCursorPagination > errors > throws an error if raw cursor passed directly 2`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if raw cursor passed directly 3`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if raw cursor passed directly 4`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if raw cursor passed directly 5`] = `
+{
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if raw cursor passed directly 6`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if raw cursor passed directly 7`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if raw cursor passed directly 8`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if raw cursor passed directly 9`] = `
+{
+  "bindings": {},
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 1`] = `Infinity`;
+
+exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 2`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 3`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 4`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 5`] = `
+{
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 6`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 7`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 8`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 9`] = `
+{
+  "bindings": {},
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 10`] = `3`;
+
+exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 11`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+}
+`;
+
+exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 12`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+}
+`;
+
+exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 13`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+}
+`;
+
+exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 14`] = `
+{
+  "bindings": {},
+  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+}
+`;
+
+exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 15`] = `
+{
+  "bindings": [
+    "Cooper",
+    "Cooper",
+    "Molina",
+    "Cooper",
+    "Molina",
+    "4",
+  ],
+  "sql": "(((\`first_name\`<?) OR (\`first_name\`=? AND \`last_name\`>?) OR (\`first_name\`=? AND \`last_name\`=? AND \`id\`<?)))",
+}
+`;
+
+exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 16`] = `
+{
+  "bindings": [
+    "Cooper",
+    "Cooper",
+    "Molina",
+    "Cooper",
+    "Molina",
+    "4",
+  ],
+  "sql": "(((\`first_name\`<X) OR (\`first_name\`=X AND \`last_name\`>X) OR (\`first_name\`=X AND \`last_name\`=X AND \`id\`<X)))",
+}
+`;
+
+exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 17`] = `
+{
+  "bindings": [
+    "Cooper",
+    "Cooper",
+    "Molina",
+    "Cooper",
+    "Molina",
+    "4",
+  ],
+  "sql": "(((\`first_name\`<:0) OR (\`first_name\`=:1 AND \`last_name\`>:2) OR (\`first_name\`=:3 AND \`last_name\`=:4 AND \`id\`<:5)))",
+}
+`;
+
+exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 18`] = `
+{
+  "bindings": {
+    ":0": "Cooper",
+    ":1": "Molina",
+    ":2": "4",
+  },
+  "sql": "(((\`first_name\`<:0) OR (\`first_name\`=:0 AND \`last_name\`>:1) OR (\`first_name\`=:0 AND \`last_name\`=:1 AND \`id\`<:2)))",
+}
+`;
+
+exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 19`] = `
+{
+  "edges": [
+    {
+      "cursor": "mZ9UC-zRVUUh-cHMzDFaDfN7Si364wwn2IkfCx61gQY.6iN8jsmKGNNf57EbOYHwMbKXWfvirHoQY1oUQOoVrIjYhPrNRGZBo0swhHKvgoasOfQUQCKFxcCZhizmGoNKEw72Tj6tJHlZk_CPOREdsR_7XdMf3DZfSWSieDtk6bEWyhkeDuVPl0D8PryB-U0c-WcNxlAFokHol_DD2UQacjA003gW1JevGtewQ3wMoWDlxmgc3bau7PCvoEI",
+      "node": {
+        "admin": 1,
+        "created_at": 1631332719,
+        "email": "diam.vel@outlook.edu",
+        "email_alias": "diam.vel@outlook.edu",
+        "first_name": "Anika",
+        "id": 5,
+        "last_name": "Molina",
+      },
+    },
+    {
+      "cursor": "i-LdTZZAxan9T1wX75VRqqUxReT3-5CyiF6oh0tEekY.VxGPw46ar3DEXXDlxQeSAAXC98aYXQCPtczK-nM-Snld80n5x2GGge9NScwpix_pyDgzq5AM22nAnYUAmUxZYAc58Zlv8jkjVj26bi31QdMjz9-UAaCQjihZXpabelIxS8EaVypjonbwuVIsPP2uSw3e5IFF2t7DseRwyQ_Ylq-_ajCQRoFwz4y4_e6q3Q973gHhacu6vdkrOTY",
+      "node": {
+        "admin": 0,
+        "created_at": 1662538189,
+        "email": "rhoncus.donec@aol.edu",
+        "email_alias": "rhoncus.donec@aol.edu",
+        "first_name": "Anika",
+        "id": 1,
+        "last_name": "Duncan",
+      },
+    },
+  ],
+  "pageInfo": {
+    "hasNextPage": false,
+    "hasPreviousPage": false,
+  },
+  Symbol(edgesWithRawCursor): [
+    {
+      "cursor": "mZ9UC-zRVUUh-cHMzDFaDfN7Si364wwn2IkfCx61gQY.6iN8jsmKGNNf57EbOYHwMbKXWfvirHoQY1oUQOoVrIjYhPrNRGZBo0swhHKvgoasOfQUQCKFxcCZhizmGoNKEw72Tj6tJHlZk_CPOREdsR_7XdMf3DZfSWSieDtk6bEWyhkeDuVPl0D8PryB-U0c-WcNxlAFokHol_DD2UQacjA003gW1JevGtewQ3wMoWDlxmgc3bau7PCvoEI",
+      "node": {
+        "admin": 1,
+        "created_at": 1631332719,
+        "email": "diam.vel@outlook.edu",
+        "email_alias": "diam.vel@outlook.edu",
+        "first_name": "Anika",
+        "id": 5,
+        "last_name": "Molina",
+      },
+      "rawCursor": {
+        "fields": [
+          {
+            "field": "first_name",
+            "value": "Anika",
+          },
+          {
+            "field": "last_name",
+            "value": "Molina",
+          },
+          {
+            "field": "id",
+            "value": 5,
+          },
+        ],
+        "queryName": "TestQuery",
+      },
+    },
+    {
+      "cursor": "i-LdTZZAxan9T1wX75VRqqUxReT3-5CyiF6oh0tEekY.VxGPw46ar3DEXXDlxQeSAAXC98aYXQCPtczK-nM-Snld80n5x2GGge9NScwpix_pyDgzq5AM22nAnYUAmUxZYAc58Zlv8jkjVj26bi31QdMjz9-UAaCQjihZXpabelIxS8EaVypjonbwuVIsPP2uSw3e5IFF2t7DseRwyQ_Ylq-_ajCQRoFwz4y4_e6q3Q973gHhacu6vdkrOTY",
+      "node": {
+        "admin": 0,
+        "created_at": 1662538189,
+        "email": "rhoncus.donec@aol.edu",
+        "email_alias": "rhoncus.donec@aol.edu",
+        "first_name": "Anika",
+        "id": 1,
+        "last_name": "Duncan",
+      },
+      "rawCursor": {
+        "fields": [
+          {
+            "field": "first_name",
+            "value": "Anika",
+          },
+          {
+            "field": "last_name",
+            "value": "Duncan",
+          },
+          {
+            "field": "id",
+            "value": 1,
+          },
+        ],
+        "queryName": "TestQuery",
+      },
+    },
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 1`] = `Infinity`;
+
+exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 2`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 3`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 4`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 5`] = `
+{
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 6`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 7`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 8`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 9`] = `
+{
+  "bindings": {},
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 10`] = `3`;
+
+exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 11`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 12`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 13`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 14`] = `
+{
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 15`] = `
+{
+  "bindings": [
+    "Cooper",
+    "Cooper",
+    "Molina",
+    "Cooper",
+    "Molina",
+    "4",
+  ],
+  "sql": "(((\`first_name\`>?) OR (\`first_name\`=? AND \`last_name\`<?) OR (\`first_name\`=? AND \`last_name\`=? AND \`id\`>?)))",
+}
+`;
+
+exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 16`] = `
+{
+  "bindings": [
+    "Cooper",
+    "Cooper",
+    "Molina",
+    "Cooper",
+    "Molina",
+    "4",
+  ],
+  "sql": "(((\`first_name\`>X) OR (\`first_name\`=X AND \`last_name\`<X) OR (\`first_name\`=X AND \`last_name\`=X AND \`id\`>X)))",
+}
+`;
+
+exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 17`] = `
+{
+  "bindings": [
+    "Cooper",
+    "Cooper",
+    "Molina",
+    "Cooper",
+    "Molina",
+    "4",
+  ],
+  "sql": "(((\`first_name\`>:0) OR (\`first_name\`=:1 AND \`last_name\`<:2) OR (\`first_name\`=:3 AND \`last_name\`=:4 AND \`id\`>:5)))",
+}
+`;
+
+exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 18`] = `
+{
+  "bindings": {
+    ":0": "Cooper",
+    ":1": "Molina",
+    ":2": "4",
+  },
+  "sql": "(((\`first_name\`>:0) OR (\`first_name\`=:0 AND \`last_name\`<:1) OR (\`first_name\`=:0 AND \`last_name\`=:1 AND \`id\`>:2)))",
+}
+`;
+
+exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 19`] = `
+{
+  "edges": [
+    {
+      "cursor": "J37o3_oaPLyLsQB3RvZ6vH8ufoMit4kCwwo6n4RXp4o.sTsONeFB-6qIIK-1jCt7xcecDh7C1aMG8TceOsfXYAwRtsz8vtPBtBqemP6P-33B1Vf2W91pu1Kp31k05liFhPqkUlx7mUIJ35LebB2-HwyfbXWEgEQY91jSf8gCesc4G8xni0Y-70WgSLJM_iOZL2xTLMQg_BT9wt8Sb9gq7GYDStEAGpRvQaTLt80ti0Vb1a3ZVc865V-htWQh1pHbHQ",
+      "node": {
+        "admin": 0,
+        "created_at": 1679712324,
+        "email": "ut.nisi@yahoo.org",
+        "email_alias": "ut.nisi@yahoo.org",
+        "first_name": "Jermaine",
+        "id": 2,
+        "last_name": "O'connor",
+      },
+    },
+    {
+      "cursor": "gumKG7SDrooLXO_GjBeq9Ir_9P4A7AxYyYOrBJxk4-Y.Tr2FOX4hvWO6gznjYcT4sVzNX6OZl1JeWTfVwF3T9JFWW1Xx4dxX7CC6TwRU_wvccieO8hQLj3nfogSnZl9aGGBE4yM6LuE4E_imTfEhVohDNvv5YJQXAhYPAq1pWzkBWoutqQMaxa7eBWHZX-UDToEixb_9HlXmphd-8F196hlB6naDZidzF7eje5AVqwUTPtqxVlZ8vTV9n8FS",
+      "node": {
+        "admin": 1,
+        "created_at": 1647959350,
+        "email": "eu@hotmail.ca",
+        "email_alias": "eu@hotmail.ca",
+        "first_name": "Joseph",
+        "id": 3,
+        "last_name": "Rhodes",
+      },
+    },
+  ],
+  "pageInfo": {
+    "hasNextPage": false,
+    "hasPreviousPage": false,
+  },
+  Symbol(edgesWithRawCursor): [
+    {
+      "cursor": "J37o3_oaPLyLsQB3RvZ6vH8ufoMit4kCwwo6n4RXp4o.sTsONeFB-6qIIK-1jCt7xcecDh7C1aMG8TceOsfXYAwRtsz8vtPBtBqemP6P-33B1Vf2W91pu1Kp31k05liFhPqkUlx7mUIJ35LebB2-HwyfbXWEgEQY91jSf8gCesc4G8xni0Y-70WgSLJM_iOZL2xTLMQg_BT9wt8Sb9gq7GYDStEAGpRvQaTLt80ti0Vb1a3ZVc865V-htWQh1pHbHQ",
+      "node": {
+        "admin": 0,
+        "created_at": 1679712324,
+        "email": "ut.nisi@yahoo.org",
+        "email_alias": "ut.nisi@yahoo.org",
+        "first_name": "Jermaine",
+        "id": 2,
+        "last_name": "O'connor",
+      },
+      "rawCursor": {
+        "fields": [
+          {
+            "field": "first_name",
+            "value": "Jermaine",
+          },
+          {
+            "field": "last_name",
+            "value": "O'connor",
+          },
+          {
+            "field": "id",
+            "value": 2,
+          },
+        ],
+        "queryName": "TestQuery",
+      },
+    },
+    {
+      "cursor": "gumKG7SDrooLXO_GjBeq9Ir_9P4A7AxYyYOrBJxk4-Y.Tr2FOX4hvWO6gznjYcT4sVzNX6OZl1JeWTfVwF3T9JFWW1Xx4dxX7CC6TwRU_wvccieO8hQLj3nfogSnZl9aGGBE4yM6LuE4E_imTfEhVohDNvv5YJQXAhYPAq1pWzkBWoutqQMaxa7eBWHZX-UDToEixb_9HlXmphd-8F196hlB6naDZidzF7eje5AVqwUTPtqxVlZ8vTV9n8FS",
+      "node": {
+        "admin": 1,
+        "created_at": 1647959350,
+        "email": "eu@hotmail.ca",
+        "email_alias": "eu@hotmail.ca",
+        "first_name": "Joseph",
+        "id": 3,
+        "last_name": "Rhodes",
+      },
+      "rawCursor": {
+        "fields": [
+          {
+            "field": "first_name",
+            "value": "Joseph",
+          },
+          {
+            "field": "last_name",
+            "value": "Rhodes",
+          },
+          {
+            "field": "id",
+            "value": 3,
+          },
+        ],
+        "queryName": "TestQuery",
+      },
+    },
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 1`] = `Infinity`;
+
+exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 2`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 3`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 4`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 5`] = `
+{
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 6`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 7`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 8`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 9`] = `
+{
+  "bindings": {},
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 10`] = `4`;
+
+exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 11`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 12`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 13`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 14`] = `
+{
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 15`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 16`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 17`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 18`] = `
+{
+  "bindings": {},
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 19`] = `
+{
+  "edges": [
+    {
+      "cursor": "i-LdTZZAxan9T1wX75VRqqUxReT3-5CyiF6oh0tEekY.VxGPw46ar3DEXXDlxQeSAAXC98aYXQCPtczK-nM-Snld80n5x2GGge9NScwpix_pyDgzq5AM22nAnYUAmUxZYAc58Zlv8jkjVj26bi31QdMjz9-UAaCQjihZXpabelIxS8EaVypjonbwuVIsPP2uSw3e5IFF2t7DseRwyQ_Ylq-_ajCQRoFwz4y4_e6q3Q973gHhacu6vdkrOTY",
+      "node": {
+        "admin": 0,
+        "created_at": 1662538189,
+        "email": "rhoncus.donec@aol.edu",
+        "email_alias": "rhoncus.donec@aol.edu",
+        "first_name": "Anika",
+        "id": 1,
+        "last_name": "Duncan",
+      },
+    },
+    {
+      "cursor": "SuWlzjWxdtSVDzgPp_mVdQH7S4pbbIpNqmJJFWwXOws.9732ntsWW_36ePfEiU1_85i4VHGpnlt60LcekRaV6hZiIfLaDEJyTxv4_mT0gVYjC05he25PbktssRXIQMdfnwfl2PkS47CW75s-XwbfYuhuaZJZfUpZLW5O7xVWf5R2YD7FEdd53lDlXJDbEE5TvRvM8TNkhCSh8LTnJEFNqADHkbWz-H7pDPOaOBsLE3n_EUYcf498pgjPJCRN",
+      "node": {
+        "admin": 0,
+        "created_at": 1604543417,
+        "email": "purus.accumsan@icloud.com",
+        "email_alias": "purus.accumsan@icloud.com",
+        "first_name": "Cooper",
+        "id": 4,
+        "last_name": "Molina",
+      },
+    },
+  ],
+  "pageInfo": {
+    "hasNextPage": true,
+    "hasPreviousPage": true,
+  },
+  Symbol(edgesWithRawCursor): [
+    {
+      "cursor": "i-LdTZZAxan9T1wX75VRqqUxReT3-5CyiF6oh0tEekY.VxGPw46ar3DEXXDlxQeSAAXC98aYXQCPtczK-nM-Snld80n5x2GGge9NScwpix_pyDgzq5AM22nAnYUAmUxZYAc58Zlv8jkjVj26bi31QdMjz9-UAaCQjihZXpabelIxS8EaVypjonbwuVIsPP2uSw3e5IFF2t7DseRwyQ_Ylq-_ajCQRoFwz4y4_e6q3Q973gHhacu6vdkrOTY",
+      "node": {
+        "admin": 0,
+        "created_at": 1662538189,
+        "email": "rhoncus.donec@aol.edu",
+        "email_alias": "rhoncus.donec@aol.edu",
+        "first_name": "Anika",
+        "id": 1,
+        "last_name": "Duncan",
+      },
+      "rawCursor": {
+        "fields": [
+          {
+            "field": "first_name",
+            "value": "Anika",
+          },
+          {
+            "field": "last_name",
+            "value": "Duncan",
+          },
+          {
+            "field": "id",
+            "value": 1,
+          },
+        ],
+        "queryName": "TestQuery",
+      },
+    },
+    {
+      "cursor": "SuWlzjWxdtSVDzgPp_mVdQH7S4pbbIpNqmJJFWwXOws.9732ntsWW_36ePfEiU1_85i4VHGpnlt60LcekRaV6hZiIfLaDEJyTxv4_mT0gVYjC05he25PbktssRXIQMdfnwfl2PkS47CW75s-XwbfYuhuaZJZfUpZLW5O7xVWf5R2YD7FEdd53lDlXJDbEE5TvRvM8TNkhCSh8LTnJEFNqADHkbWz-H7pDPOaOBsLE3n_EUYcf498pgjPJCRN",
+      "node": {
+        "admin": 0,
+        "created_at": 1604543417,
+        "email": "purus.accumsan@icloud.com",
+        "email_alias": "purus.accumsan@icloud.com",
+        "first_name": "Cooper",
+        "id": 4,
+        "last_name": "Molina",
+      },
+      "rawCursor": {
+        "fields": [
+          {
+            "field": "first_name",
+            "value": "Cooper",
+          },
+          {
+            "field": "last_name",
+            "value": "Molina",
+          },
+          {
+            "field": "id",
+            "value": 4,
+          },
+        ],
+        "queryName": "TestQuery",
+      },
+    },
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 1`] = `Infinity`;
+
+exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 2`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 3`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 4`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 5`] = `
+{
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 6`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 7`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 8`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 9`] = `
+{
+  "bindings": {},
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 10`] = `6`;
+
+exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 11`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 12`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 13`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 14`] = `
+{
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 15`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 16`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 17`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 18`] = `
+{
+  "bindings": {},
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 19`] = `
+{
+  "edges": [
+    {
+      "cursor": "J37o3_oaPLyLsQB3RvZ6vH8ufoMit4kCwwo6n4RXp4o.sTsONeFB-6qIIK-1jCt7xcecDh7C1aMG8TceOsfXYAwRtsz8vtPBtBqemP6P-33B1Vf2W91pu1Kp31k05liFhPqkUlx7mUIJ35LebB2-HwyfbXWEgEQY91jSf8gCesc4G8xni0Y-70WgSLJM_iOZL2xTLMQg_BT9wt8Sb9gq7GYDStEAGpRvQaTLt80ti0Vb1a3ZVc865V-htWQh1pHbHQ",
+      "node": {
+        "admin": 0,
+        "created_at": 1679712324,
+        "email": "ut.nisi@yahoo.org",
+        "email_alias": "ut.nisi@yahoo.org",
+        "first_name": "Jermaine",
+        "id": 2,
+        "last_name": "O'connor",
+      },
+    },
+    {
+      "cursor": "gumKG7SDrooLXO_GjBeq9Ir_9P4A7AxYyYOrBJxk4-Y.Tr2FOX4hvWO6gznjYcT4sVzNX6OZl1JeWTfVwF3T9JFWW1Xx4dxX7CC6TwRU_wvccieO8hQLj3nfogSnZl9aGGBE4yM6LuE4E_imTfEhVohDNvv5YJQXAhYPAq1pWzkBWoutqQMaxa7eBWHZX-UDToEixb_9HlXmphd-8F196hlB6naDZidzF7eje5AVqwUTPtqxVlZ8vTV9n8FS",
+      "node": {
+        "admin": 1,
+        "created_at": 1647959350,
+        "email": "eu@hotmail.ca",
+        "email_alias": "eu@hotmail.ca",
+        "first_name": "Joseph",
+        "id": 3,
+        "last_name": "Rhodes",
+      },
+    },
+  ],
+  "pageInfo": {
+    "hasNextPage": false,
+    "hasPreviousPage": true,
+  },
+  Symbol(edgesWithRawCursor): [
+    {
+      "cursor": "J37o3_oaPLyLsQB3RvZ6vH8ufoMit4kCwwo6n4RXp4o.sTsONeFB-6qIIK-1jCt7xcecDh7C1aMG8TceOsfXYAwRtsz8vtPBtBqemP6P-33B1Vf2W91pu1Kp31k05liFhPqkUlx7mUIJ35LebB2-HwyfbXWEgEQY91jSf8gCesc4G8xni0Y-70WgSLJM_iOZL2xTLMQg_BT9wt8Sb9gq7GYDStEAGpRvQaTLt80ti0Vb1a3ZVc865V-htWQh1pHbHQ",
+      "node": {
+        "admin": 0,
+        "created_at": 1679712324,
+        "email": "ut.nisi@yahoo.org",
+        "email_alias": "ut.nisi@yahoo.org",
+        "first_name": "Jermaine",
+        "id": 2,
+        "last_name": "O'connor",
+      },
+      "rawCursor": {
+        "fields": [
+          {
+            "field": "first_name",
+            "value": "Jermaine",
+          },
+          {
+            "field": "last_name",
+            "value": "O'connor",
+          },
+          {
+            "field": "id",
+            "value": 2,
+          },
+        ],
+        "queryName": "TestQuery",
+      },
+    },
+    {
+      "cursor": "gumKG7SDrooLXO_GjBeq9Ir_9P4A7AxYyYOrBJxk4-Y.Tr2FOX4hvWO6gznjYcT4sVzNX6OZl1JeWTfVwF3T9JFWW1Xx4dxX7CC6TwRU_wvccieO8hQLj3nfogSnZl9aGGBE4yM6LuE4E_imTfEhVohDNvv5YJQXAhYPAq1pWzkBWoutqQMaxa7eBWHZX-UDToEixb_9HlXmphd-8F196hlB6naDZidzF7eje5AVqwUTPtqxVlZ8vTV9n8FS",
+      "node": {
+        "admin": 1,
+        "created_at": 1647959350,
+        "email": "eu@hotmail.ca",
+        "email_alias": "eu@hotmail.ca",
+        "first_name": "Joseph",
+        "id": 3,
+        "last_name": "Rhodes",
+      },
+      "rawCursor": {
+        "fields": [
+          {
+            "field": "first_name",
+            "value": "Joseph",
+          },
+          {
+            "field": "last_name",
+            "value": "Rhodes",
+          },
+          {
+            "field": "id",
+            "value": 3,
+          },
+        ],
+        "queryName": "TestQuery",
+      },
+    },
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the first 3 items 1`] = `4`;
+
+exports[`SqlCursorPagination > selects the first 3 items 2`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the first 3 items 3`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the first 3 items 4`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the first 3 items 5`] = `
+{
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the first 3 items 6`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the first 3 items 7`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the first 3 items 8`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the first 3 items 9`] = `
+{
+  "bindings": {},
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the first 3 items 10`] = `
+{
+  "edges": [
+    {
+      "cursor": "mZ9UC-zRVUUh-cHMzDFaDfN7Si364wwn2IkfCx61gQY.6iN8jsmKGNNf57EbOYHwMbKXWfvirHoQY1oUQOoVrIjYhPrNRGZBo0swhHKvgoasOfQUQCKFxcCZhizmGoNKEw72Tj6tJHlZk_CPOREdsR_7XdMf3DZfSWSieDtk6bEWyhkeDuVPl0D8PryB-U0c-WcNxlAFokHol_DD2UQacjA003gW1JevGtewQ3wMoWDlxmgc3bau7PCvoEI",
+      "node": {
+        "admin": 1,
+        "created_at": 1631332719,
+        "email": "diam.vel@outlook.edu",
+        "email_alias": "diam.vel@outlook.edu",
+        "first_name": "Anika",
+        "id": 5,
+        "last_name": "Molina",
+      },
+    },
+    {
+      "cursor": "i-LdTZZAxan9T1wX75VRqqUxReT3-5CyiF6oh0tEekY.VxGPw46ar3DEXXDlxQeSAAXC98aYXQCPtczK-nM-Snld80n5x2GGge9NScwpix_pyDgzq5AM22nAnYUAmUxZYAc58Zlv8jkjVj26bi31QdMjz9-UAaCQjihZXpabelIxS8EaVypjonbwuVIsPP2uSw3e5IFF2t7DseRwyQ_Ylq-_ajCQRoFwz4y4_e6q3Q973gHhacu6vdkrOTY",
+      "node": {
+        "admin": 0,
+        "created_at": 1662538189,
+        "email": "rhoncus.donec@aol.edu",
+        "email_alias": "rhoncus.donec@aol.edu",
+        "first_name": "Anika",
+        "id": 1,
+        "last_name": "Duncan",
+      },
+    },
+    {
+      "cursor": "SuWlzjWxdtSVDzgPp_mVdQH7S4pbbIpNqmJJFWwXOws.9732ntsWW_36ePfEiU1_85i4VHGpnlt60LcekRaV6hZiIfLaDEJyTxv4_mT0gVYjC05he25PbktssRXIQMdfnwfl2PkS47CW75s-XwbfYuhuaZJZfUpZLW5O7xVWf5R2YD7FEdd53lDlXJDbEE5TvRvM8TNkhCSh8LTnJEFNqADHkbWz-H7pDPOaOBsLE3n_EUYcf498pgjPJCRN",
+      "node": {
+        "admin": 0,
+        "created_at": 1604543417,
+        "email": "purus.accumsan@icloud.com",
+        "email_alias": "purus.accumsan@icloud.com",
+        "first_name": "Cooper",
+        "id": 4,
+        "last_name": "Molina",
+      },
+    },
+  ],
+  "pageInfo": {
+    "hasNextPage": true,
+    "hasPreviousPage": false,
+  },
+  Symbol(edgesWithRawCursor): [
+    {
+      "cursor": "mZ9UC-zRVUUh-cHMzDFaDfN7Si364wwn2IkfCx61gQY.6iN8jsmKGNNf57EbOYHwMbKXWfvirHoQY1oUQOoVrIjYhPrNRGZBo0swhHKvgoasOfQUQCKFxcCZhizmGoNKEw72Tj6tJHlZk_CPOREdsR_7XdMf3DZfSWSieDtk6bEWyhkeDuVPl0D8PryB-U0c-WcNxlAFokHol_DD2UQacjA003gW1JevGtewQ3wMoWDlxmgc3bau7PCvoEI",
+      "node": {
+        "admin": 1,
+        "created_at": 1631332719,
+        "email": "diam.vel@outlook.edu",
+        "email_alias": "diam.vel@outlook.edu",
+        "first_name": "Anika",
+        "id": 5,
+        "last_name": "Molina",
+      },
+      "rawCursor": {
+        "fields": [
+          {
+            "field": "first_name",
+            "value": "Anika",
+          },
+          {
+            "field": "last_name",
+            "value": "Molina",
+          },
+          {
+            "field": "id",
+            "value": 5,
+          },
+        ],
+        "queryName": "TestQuery",
+      },
+    },
+    {
+      "cursor": "i-LdTZZAxan9T1wX75VRqqUxReT3-5CyiF6oh0tEekY.VxGPw46ar3DEXXDlxQeSAAXC98aYXQCPtczK-nM-Snld80n5x2GGge9NScwpix_pyDgzq5AM22nAnYUAmUxZYAc58Zlv8jkjVj26bi31QdMjz9-UAaCQjihZXpabelIxS8EaVypjonbwuVIsPP2uSw3e5IFF2t7DseRwyQ_Ylq-_ajCQRoFwz4y4_e6q3Q973gHhacu6vdkrOTY",
+      "node": {
+        "admin": 0,
+        "created_at": 1662538189,
+        "email": "rhoncus.donec@aol.edu",
+        "email_alias": "rhoncus.donec@aol.edu",
+        "first_name": "Anika",
+        "id": 1,
+        "last_name": "Duncan",
+      },
+      "rawCursor": {
+        "fields": [
+          {
+            "field": "first_name",
+            "value": "Anika",
+          },
+          {
+            "field": "last_name",
+            "value": "Duncan",
+          },
+          {
+            "field": "id",
+            "value": 1,
+          },
+        ],
+        "queryName": "TestQuery",
+      },
+    },
+    {
+      "cursor": "SuWlzjWxdtSVDzgPp_mVdQH7S4pbbIpNqmJJFWwXOws.9732ntsWW_36ePfEiU1_85i4VHGpnlt60LcekRaV6hZiIfLaDEJyTxv4_mT0gVYjC05he25PbktssRXIQMdfnwfl2PkS47CW75s-XwbfYuhuaZJZfUpZLW5O7xVWf5R2YD7FEdd53lDlXJDbEE5TvRvM8TNkhCSh8LTnJEFNqADHkbWz-H7pDPOaOBsLE3n_EUYcf498pgjPJCRN",
+      "node": {
+        "admin": 0,
+        "created_at": 1604543417,
+        "email": "purus.accumsan@icloud.com",
+        "email_alias": "purus.accumsan@icloud.com",
+        "first_name": "Cooper",
+        "id": 4,
+        "last_name": "Molina",
+      },
+      "rawCursor": {
+        "fields": [
+          {
+            "field": "first_name",
+            "value": "Cooper",
+          },
+          {
+            "field": "last_name",
+            "value": "Molina",
+          },
+          {
+            "field": "id",
+            "value": 4,
+          },
+        ],
+        "queryName": "TestQuery",
+      },
+    },
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the first infinity (all) items 1`] = `Infinity`;
+
+exports[`SqlCursorPagination > selects the first infinity (all) items 2`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the first infinity (all) items 3`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the first infinity (all) items 4`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the first infinity (all) items 5`] = `
+{
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the first infinity (all) items 6`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the first infinity (all) items 7`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the first infinity (all) items 8`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the first infinity (all) items 9`] = `
+{
+  "bindings": {},
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the first infinity (all) items 10`] = `
+{
+  "edges": [
+    {
+      "cursor": "mZ9UC-zRVUUh-cHMzDFaDfN7Si364wwn2IkfCx61gQY.6iN8jsmKGNNf57EbOYHwMbKXWfvirHoQY1oUQOoVrIjYhPrNRGZBo0swhHKvgoasOfQUQCKFxcCZhizmGoNKEw72Tj6tJHlZk_CPOREdsR_7XdMf3DZfSWSieDtk6bEWyhkeDuVPl0D8PryB-U0c-WcNxlAFokHol_DD2UQacjA003gW1JevGtewQ3wMoWDlxmgc3bau7PCvoEI",
+      "node": {
+        "admin": 1,
+        "created_at": 1631332719,
+        "email": "diam.vel@outlook.edu",
+        "email_alias": "diam.vel@outlook.edu",
+        "first_name": "Anika",
+        "id": 5,
+        "last_name": "Molina",
+      },
+    },
+    {
+      "cursor": "i-LdTZZAxan9T1wX75VRqqUxReT3-5CyiF6oh0tEekY.VxGPw46ar3DEXXDlxQeSAAXC98aYXQCPtczK-nM-Snld80n5x2GGge9NScwpix_pyDgzq5AM22nAnYUAmUxZYAc58Zlv8jkjVj26bi31QdMjz9-UAaCQjihZXpabelIxS8EaVypjonbwuVIsPP2uSw3e5IFF2t7DseRwyQ_Ylq-_ajCQRoFwz4y4_e6q3Q973gHhacu6vdkrOTY",
+      "node": {
+        "admin": 0,
+        "created_at": 1662538189,
+        "email": "rhoncus.donec@aol.edu",
+        "email_alias": "rhoncus.donec@aol.edu",
+        "first_name": "Anika",
+        "id": 1,
+        "last_name": "Duncan",
+      },
+    },
+    {
+      "cursor": "SuWlzjWxdtSVDzgPp_mVdQH7S4pbbIpNqmJJFWwXOws.9732ntsWW_36ePfEiU1_85i4VHGpnlt60LcekRaV6hZiIfLaDEJyTxv4_mT0gVYjC05he25PbktssRXIQMdfnwfl2PkS47CW75s-XwbfYuhuaZJZfUpZLW5O7xVWf5R2YD7FEdd53lDlXJDbEE5TvRvM8TNkhCSh8LTnJEFNqADHkbWz-H7pDPOaOBsLE3n_EUYcf498pgjPJCRN",
+      "node": {
+        "admin": 0,
+        "created_at": 1604543417,
+        "email": "purus.accumsan@icloud.com",
+        "email_alias": "purus.accumsan@icloud.com",
+        "first_name": "Cooper",
+        "id": 4,
+        "last_name": "Molina",
+      },
+    },
+    {
+      "cursor": "J37o3_oaPLyLsQB3RvZ6vH8ufoMit4kCwwo6n4RXp4o.sTsONeFB-6qIIK-1jCt7xcecDh7C1aMG8TceOsfXYAwRtsz8vtPBtBqemP6P-33B1Vf2W91pu1Kp31k05liFhPqkUlx7mUIJ35LebB2-HwyfbXWEgEQY91jSf8gCesc4G8xni0Y-70WgSLJM_iOZL2xTLMQg_BT9wt8Sb9gq7GYDStEAGpRvQaTLt80ti0Vb1a3ZVc865V-htWQh1pHbHQ",
+      "node": {
+        "admin": 0,
+        "created_at": 1679712324,
+        "email": "ut.nisi@yahoo.org",
+        "email_alias": "ut.nisi@yahoo.org",
+        "first_name": "Jermaine",
+        "id": 2,
+        "last_name": "O'connor",
+      },
+    },
+    {
+      "cursor": "gumKG7SDrooLXO_GjBeq9Ir_9P4A7AxYyYOrBJxk4-Y.Tr2FOX4hvWO6gznjYcT4sVzNX6OZl1JeWTfVwF3T9JFWW1Xx4dxX7CC6TwRU_wvccieO8hQLj3nfogSnZl9aGGBE4yM6LuE4E_imTfEhVohDNvv5YJQXAhYPAq1pWzkBWoutqQMaxa7eBWHZX-UDToEixb_9HlXmphd-8F196hlB6naDZidzF7eje5AVqwUTPtqxVlZ8vTV9n8FS",
+      "node": {
+        "admin": 1,
+        "created_at": 1647959350,
+        "email": "eu@hotmail.ca",
+        "email_alias": "eu@hotmail.ca",
+        "first_name": "Joseph",
+        "id": 3,
+        "last_name": "Rhodes",
+      },
+    },
+  ],
+  "pageInfo": {
+    "hasNextPage": false,
+    "hasPreviousPage": false,
+  },
+  Symbol(edgesWithRawCursor): [
+    {
+      "cursor": "mZ9UC-zRVUUh-cHMzDFaDfN7Si364wwn2IkfCx61gQY.6iN8jsmKGNNf57EbOYHwMbKXWfvirHoQY1oUQOoVrIjYhPrNRGZBo0swhHKvgoasOfQUQCKFxcCZhizmGoNKEw72Tj6tJHlZk_CPOREdsR_7XdMf3DZfSWSieDtk6bEWyhkeDuVPl0D8PryB-U0c-WcNxlAFokHol_DD2UQacjA003gW1JevGtewQ3wMoWDlxmgc3bau7PCvoEI",
+      "node": {
+        "admin": 1,
+        "created_at": 1631332719,
+        "email": "diam.vel@outlook.edu",
+        "email_alias": "diam.vel@outlook.edu",
+        "first_name": "Anika",
+        "id": 5,
+        "last_name": "Molina",
+      },
+      "rawCursor": {
+        "fields": [
+          {
+            "field": "first_name",
+            "value": "Anika",
+          },
+          {
+            "field": "last_name",
+            "value": "Molina",
+          },
+          {
+            "field": "id",
+            "value": 5,
+          },
+        ],
+        "queryName": "TestQuery",
+      },
+    },
+    {
+      "cursor": "i-LdTZZAxan9T1wX75VRqqUxReT3-5CyiF6oh0tEekY.VxGPw46ar3DEXXDlxQeSAAXC98aYXQCPtczK-nM-Snld80n5x2GGge9NScwpix_pyDgzq5AM22nAnYUAmUxZYAc58Zlv8jkjVj26bi31QdMjz9-UAaCQjihZXpabelIxS8EaVypjonbwuVIsPP2uSw3e5IFF2t7DseRwyQ_Ylq-_ajCQRoFwz4y4_e6q3Q973gHhacu6vdkrOTY",
+      "node": {
+        "admin": 0,
+        "created_at": 1662538189,
+        "email": "rhoncus.donec@aol.edu",
+        "email_alias": "rhoncus.donec@aol.edu",
+        "first_name": "Anika",
+        "id": 1,
+        "last_name": "Duncan",
+      },
+      "rawCursor": {
+        "fields": [
+          {
+            "field": "first_name",
+            "value": "Anika",
+          },
+          {
+            "field": "last_name",
+            "value": "Duncan",
+          },
+          {
+            "field": "id",
+            "value": 1,
+          },
+        ],
+        "queryName": "TestQuery",
+      },
+    },
+    {
+      "cursor": "SuWlzjWxdtSVDzgPp_mVdQH7S4pbbIpNqmJJFWwXOws.9732ntsWW_36ePfEiU1_85i4VHGpnlt60LcekRaV6hZiIfLaDEJyTxv4_mT0gVYjC05he25PbktssRXIQMdfnwfl2PkS47CW75s-XwbfYuhuaZJZfUpZLW5O7xVWf5R2YD7FEdd53lDlXJDbEE5TvRvM8TNkhCSh8LTnJEFNqADHkbWz-H7pDPOaOBsLE3n_EUYcf498pgjPJCRN",
+      "node": {
+        "admin": 0,
+        "created_at": 1604543417,
+        "email": "purus.accumsan@icloud.com",
+        "email_alias": "purus.accumsan@icloud.com",
+        "first_name": "Cooper",
+        "id": 4,
+        "last_name": "Molina",
+      },
+      "rawCursor": {
+        "fields": [
+          {
+            "field": "first_name",
+            "value": "Cooper",
+          },
+          {
+            "field": "last_name",
+            "value": "Molina",
+          },
+          {
+            "field": "id",
+            "value": 4,
+          },
+        ],
+        "queryName": "TestQuery",
+      },
+    },
+    {
+      "cursor": "J37o3_oaPLyLsQB3RvZ6vH8ufoMit4kCwwo6n4RXp4o.sTsONeFB-6qIIK-1jCt7xcecDh7C1aMG8TceOsfXYAwRtsz8vtPBtBqemP6P-33B1Vf2W91pu1Kp31k05liFhPqkUlx7mUIJ35LebB2-HwyfbXWEgEQY91jSf8gCesc4G8xni0Y-70WgSLJM_iOZL2xTLMQg_BT9wt8Sb9gq7GYDStEAGpRvQaTLt80ti0Vb1a3ZVc865V-htWQh1pHbHQ",
+      "node": {
+        "admin": 0,
+        "created_at": 1679712324,
+        "email": "ut.nisi@yahoo.org",
+        "email_alias": "ut.nisi@yahoo.org",
+        "first_name": "Jermaine",
+        "id": 2,
+        "last_name": "O'connor",
+      },
+      "rawCursor": {
+        "fields": [
+          {
+            "field": "first_name",
+            "value": "Jermaine",
+          },
+          {
+            "field": "last_name",
+            "value": "O'connor",
+          },
+          {
+            "field": "id",
+            "value": 2,
+          },
+        ],
+        "queryName": "TestQuery",
+      },
+    },
+    {
+      "cursor": "gumKG7SDrooLXO_GjBeq9Ir_9P4A7AxYyYOrBJxk4-Y.Tr2FOX4hvWO6gznjYcT4sVzNX6OZl1JeWTfVwF3T9JFWW1Xx4dxX7CC6TwRU_wvccieO8hQLj3nfogSnZl9aGGBE4yM6LuE4E_imTfEhVohDNvv5YJQXAhYPAq1pWzkBWoutqQMaxa7eBWHZX-UDToEixb_9HlXmphd-8F196hlB6naDZidzF7eje5AVqwUTPtqxVlZ8vTV9n8FS",
+      "node": {
+        "admin": 1,
+        "created_at": 1647959350,
+        "email": "eu@hotmail.ca",
+        "email_alias": "eu@hotmail.ca",
+        "first_name": "Joseph",
+        "id": 3,
+        "last_name": "Rhodes",
+      },
+      "rawCursor": {
+        "fields": [
+          {
+            "field": "first_name",
+            "value": "Joseph",
+          },
+          {
+            "field": "last_name",
+            "value": "Rhodes",
+          },
+          {
+            "field": "id",
+            "value": 3,
+          },
+        ],
+        "queryName": "TestQuery",
+      },
+    },
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the last 3 items 1`] = `4`;
+
+exports[`SqlCursorPagination > selects the last 3 items 2`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the last 3 items 3`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the last 3 items 4`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the last 3 items 5`] = `
+{
+  "bindings": {},
+  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the last 3 items 6`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the last 3 items 7`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the last 3 items 8`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the last 3 items 9`] = `
+{
+  "bindings": {},
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the last 3 items 10`] = `
+{
+  "edges": [
+    {
+      "cursor": "SuWlzjWxdtSVDzgPp_mVdQH7S4pbbIpNqmJJFWwXOws.9732ntsWW_36ePfEiU1_85i4VHGpnlt60LcekRaV6hZiIfLaDEJyTxv4_mT0gVYjC05he25PbktssRXIQMdfnwfl2PkS47CW75s-XwbfYuhuaZJZfUpZLW5O7xVWf5R2YD7FEdd53lDlXJDbEE5TvRvM8TNkhCSh8LTnJEFNqADHkbWz-H7pDPOaOBsLE3n_EUYcf498pgjPJCRN",
+      "node": {
+        "admin": 0,
+        "created_at": 1604543417,
+        "email": "purus.accumsan@icloud.com",
+        "email_alias": "purus.accumsan@icloud.com",
+        "first_name": "Cooper",
+        "id": 4,
+        "last_name": "Molina",
+      },
+    },
+    {
+      "cursor": "J37o3_oaPLyLsQB3RvZ6vH8ufoMit4kCwwo6n4RXp4o.sTsONeFB-6qIIK-1jCt7xcecDh7C1aMG8TceOsfXYAwRtsz8vtPBtBqemP6P-33B1Vf2W91pu1Kp31k05liFhPqkUlx7mUIJ35LebB2-HwyfbXWEgEQY91jSf8gCesc4G8xni0Y-70WgSLJM_iOZL2xTLMQg_BT9wt8Sb9gq7GYDStEAGpRvQaTLt80ti0Vb1a3ZVc865V-htWQh1pHbHQ",
+      "node": {
+        "admin": 0,
+        "created_at": 1679712324,
+        "email": "ut.nisi@yahoo.org",
+        "email_alias": "ut.nisi@yahoo.org",
+        "first_name": "Jermaine",
+        "id": 2,
+        "last_name": "O'connor",
+      },
+    },
+    {
+      "cursor": "gumKG7SDrooLXO_GjBeq9Ir_9P4A7AxYyYOrBJxk4-Y.Tr2FOX4hvWO6gznjYcT4sVzNX6OZl1JeWTfVwF3T9JFWW1Xx4dxX7CC6TwRU_wvccieO8hQLj3nfogSnZl9aGGBE4yM6LuE4E_imTfEhVohDNvv5YJQXAhYPAq1pWzkBWoutqQMaxa7eBWHZX-UDToEixb_9HlXmphd-8F196hlB6naDZidzF7eje5AVqwUTPtqxVlZ8vTV9n8FS",
+      "node": {
+        "admin": 1,
+        "created_at": 1647959350,
+        "email": "eu@hotmail.ca",
+        "email_alias": "eu@hotmail.ca",
+        "first_name": "Joseph",
+        "id": 3,
+        "last_name": "Rhodes",
+      },
+    },
+  ],
+  "pageInfo": {
+    "hasNextPage": false,
+    "hasPreviousPage": true,
+  },
+  Symbol(edgesWithRawCursor): [
+    {
+      "cursor": "SuWlzjWxdtSVDzgPp_mVdQH7S4pbbIpNqmJJFWwXOws.9732ntsWW_36ePfEiU1_85i4VHGpnlt60LcekRaV6hZiIfLaDEJyTxv4_mT0gVYjC05he25PbktssRXIQMdfnwfl2PkS47CW75s-XwbfYuhuaZJZfUpZLW5O7xVWf5R2YD7FEdd53lDlXJDbEE5TvRvM8TNkhCSh8LTnJEFNqADHkbWz-H7pDPOaOBsLE3n_EUYcf498pgjPJCRN",
+      "node": {
+        "admin": 0,
+        "created_at": 1604543417,
+        "email": "purus.accumsan@icloud.com",
+        "email_alias": "purus.accumsan@icloud.com",
+        "first_name": "Cooper",
+        "id": 4,
+        "last_name": "Molina",
+      },
+      "rawCursor": {
+        "fields": [
+          {
+            "field": "first_name",
+            "value": "Cooper",
+          },
+          {
+            "field": "last_name",
+            "value": "Molina",
+          },
+          {
+            "field": "id",
+            "value": 4,
+          },
+        ],
+        "queryName": "TestQuery",
+      },
+    },
+    {
+      "cursor": "J37o3_oaPLyLsQB3RvZ6vH8ufoMit4kCwwo6n4RXp4o.sTsONeFB-6qIIK-1jCt7xcecDh7C1aMG8TceOsfXYAwRtsz8vtPBtBqemP6P-33B1Vf2W91pu1Kp31k05liFhPqkUlx7mUIJ35LebB2-HwyfbXWEgEQY91jSf8gCesc4G8xni0Y-70WgSLJM_iOZL2xTLMQg_BT9wt8Sb9gq7GYDStEAGpRvQaTLt80ti0Vb1a3ZVc865V-htWQh1pHbHQ",
+      "node": {
+        "admin": 0,
+        "created_at": 1679712324,
+        "email": "ut.nisi@yahoo.org",
+        "email_alias": "ut.nisi@yahoo.org",
+        "first_name": "Jermaine",
+        "id": 2,
+        "last_name": "O'connor",
+      },
+      "rawCursor": {
+        "fields": [
+          {
+            "field": "first_name",
+            "value": "Jermaine",
+          },
+          {
+            "field": "last_name",
+            "value": "O'connor",
+          },
+          {
+            "field": "id",
+            "value": 2,
+          },
+        ],
+        "queryName": "TestQuery",
+      },
+    },
+    {
+      "cursor": "gumKG7SDrooLXO_GjBeq9Ir_9P4A7AxYyYOrBJxk4-Y.Tr2FOX4hvWO6gznjYcT4sVzNX6OZl1JeWTfVwF3T9JFWW1Xx4dxX7CC6TwRU_wvccieO8hQLj3nfogSnZl9aGGBE4yM6LuE4E_imTfEhVohDNvv5YJQXAhYPAq1pWzkBWoutqQMaxa7eBWHZX-UDToEixb_9HlXmphd-8F196hlB6naDZidzF7eje5AVqwUTPtqxVlZ8vTV9n8FS",
+      "node": {
+        "admin": 1,
+        "created_at": 1647959350,
+        "email": "eu@hotmail.ca",
+        "email_alias": "eu@hotmail.ca",
+        "first_name": "Joseph",
+        "id": 3,
+        "last_name": "Rhodes",
+      },
+      "rawCursor": {
+        "fields": [
+          {
+            "field": "first_name",
+            "value": "Joseph",
+          },
+          {
+            "field": "last_name",
+            "value": "Rhodes",
+          },
+          {
+            "field": "id",
+            "value": 3,
+          },
+        ],
+        "queryName": "TestQuery",
+      },
+    },
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the last infinity (all) items 1`] = `Infinity`;
+
+exports[`SqlCursorPagination > selects the last infinity (all) items 2`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the last infinity (all) items 3`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the last infinity (all) items 4`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the last infinity (all) items 5`] = `
+{
+  "bindings": {},
+  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the last infinity (all) items 6`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the last infinity (all) items 7`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the last infinity (all) items 8`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the last infinity (all) items 9`] = `
+{
+  "bindings": {},
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the last infinity (all) items 10`] = `
+{
+  "edges": [
+    {
+      "cursor": "mZ9UC-zRVUUh-cHMzDFaDfN7Si364wwn2IkfCx61gQY.6iN8jsmKGNNf57EbOYHwMbKXWfvirHoQY1oUQOoVrIjYhPrNRGZBo0swhHKvgoasOfQUQCKFxcCZhizmGoNKEw72Tj6tJHlZk_CPOREdsR_7XdMf3DZfSWSieDtk6bEWyhkeDuVPl0D8PryB-U0c-WcNxlAFokHol_DD2UQacjA003gW1JevGtewQ3wMoWDlxmgc3bau7PCvoEI",
+      "node": {
+        "admin": 1,
+        "created_at": 1631332719,
+        "email": "diam.vel@outlook.edu",
+        "email_alias": "diam.vel@outlook.edu",
+        "first_name": "Anika",
+        "id": 5,
+        "last_name": "Molina",
+      },
+    },
+    {
+      "cursor": "i-LdTZZAxan9T1wX75VRqqUxReT3-5CyiF6oh0tEekY.VxGPw46ar3DEXXDlxQeSAAXC98aYXQCPtczK-nM-Snld80n5x2GGge9NScwpix_pyDgzq5AM22nAnYUAmUxZYAc58Zlv8jkjVj26bi31QdMjz9-UAaCQjihZXpabelIxS8EaVypjonbwuVIsPP2uSw3e5IFF2t7DseRwyQ_Ylq-_ajCQRoFwz4y4_e6q3Q973gHhacu6vdkrOTY",
+      "node": {
+        "admin": 0,
+        "created_at": 1662538189,
+        "email": "rhoncus.donec@aol.edu",
+        "email_alias": "rhoncus.donec@aol.edu",
+        "first_name": "Anika",
+        "id": 1,
+        "last_name": "Duncan",
+      },
+    },
+    {
+      "cursor": "SuWlzjWxdtSVDzgPp_mVdQH7S4pbbIpNqmJJFWwXOws.9732ntsWW_36ePfEiU1_85i4VHGpnlt60LcekRaV6hZiIfLaDEJyTxv4_mT0gVYjC05he25PbktssRXIQMdfnwfl2PkS47CW75s-XwbfYuhuaZJZfUpZLW5O7xVWf5R2YD7FEdd53lDlXJDbEE5TvRvM8TNkhCSh8LTnJEFNqADHkbWz-H7pDPOaOBsLE3n_EUYcf498pgjPJCRN",
+      "node": {
+        "admin": 0,
+        "created_at": 1604543417,
+        "email": "purus.accumsan@icloud.com",
+        "email_alias": "purus.accumsan@icloud.com",
+        "first_name": "Cooper",
+        "id": 4,
+        "last_name": "Molina",
+      },
+    },
+    {
+      "cursor": "J37o3_oaPLyLsQB3RvZ6vH8ufoMit4kCwwo6n4RXp4o.sTsONeFB-6qIIK-1jCt7xcecDh7C1aMG8TceOsfXYAwRtsz8vtPBtBqemP6P-33B1Vf2W91pu1Kp31k05liFhPqkUlx7mUIJ35LebB2-HwyfbXWEgEQY91jSf8gCesc4G8xni0Y-70WgSLJM_iOZL2xTLMQg_BT9wt8Sb9gq7GYDStEAGpRvQaTLt80ti0Vb1a3ZVc865V-htWQh1pHbHQ",
+      "node": {
+        "admin": 0,
+        "created_at": 1679712324,
+        "email": "ut.nisi@yahoo.org",
+        "email_alias": "ut.nisi@yahoo.org",
+        "first_name": "Jermaine",
+        "id": 2,
+        "last_name": "O'connor",
+      },
+    },
+    {
+      "cursor": "gumKG7SDrooLXO_GjBeq9Ir_9P4A7AxYyYOrBJxk4-Y.Tr2FOX4hvWO6gznjYcT4sVzNX6OZl1JeWTfVwF3T9JFWW1Xx4dxX7CC6TwRU_wvccieO8hQLj3nfogSnZl9aGGBE4yM6LuE4E_imTfEhVohDNvv5YJQXAhYPAq1pWzkBWoutqQMaxa7eBWHZX-UDToEixb_9HlXmphd-8F196hlB6naDZidzF7eje5AVqwUTPtqxVlZ8vTV9n8FS",
+      "node": {
+        "admin": 1,
+        "created_at": 1647959350,
+        "email": "eu@hotmail.ca",
+        "email_alias": "eu@hotmail.ca",
+        "first_name": "Joseph",
+        "id": 3,
+        "last_name": "Rhodes",
+      },
+    },
+  ],
+  "pageInfo": {
+    "hasNextPage": false,
+    "hasPreviousPage": false,
+  },
+  Symbol(edgesWithRawCursor): [
+    {
+      "cursor": "mZ9UC-zRVUUh-cHMzDFaDfN7Si364wwn2IkfCx61gQY.6iN8jsmKGNNf57EbOYHwMbKXWfvirHoQY1oUQOoVrIjYhPrNRGZBo0swhHKvgoasOfQUQCKFxcCZhizmGoNKEw72Tj6tJHlZk_CPOREdsR_7XdMf3DZfSWSieDtk6bEWyhkeDuVPl0D8PryB-U0c-WcNxlAFokHol_DD2UQacjA003gW1JevGtewQ3wMoWDlxmgc3bau7PCvoEI",
+      "node": {
+        "admin": 1,
+        "created_at": 1631332719,
+        "email": "diam.vel@outlook.edu",
+        "email_alias": "diam.vel@outlook.edu",
+        "first_name": "Anika",
+        "id": 5,
+        "last_name": "Molina",
+      },
+      "rawCursor": {
+        "fields": [
+          {
+            "field": "first_name",
+            "value": "Anika",
+          },
+          {
+            "field": "last_name",
+            "value": "Molina",
+          },
+          {
+            "field": "id",
+            "value": 5,
+          },
+        ],
+        "queryName": "TestQuery",
+      },
+    },
+    {
+      "cursor": "i-LdTZZAxan9T1wX75VRqqUxReT3-5CyiF6oh0tEekY.VxGPw46ar3DEXXDlxQeSAAXC98aYXQCPtczK-nM-Snld80n5x2GGge9NScwpix_pyDgzq5AM22nAnYUAmUxZYAc58Zlv8jkjVj26bi31QdMjz9-UAaCQjihZXpabelIxS8EaVypjonbwuVIsPP2uSw3e5IFF2t7DseRwyQ_Ylq-_ajCQRoFwz4y4_e6q3Q973gHhacu6vdkrOTY",
+      "node": {
+        "admin": 0,
+        "created_at": 1662538189,
+        "email": "rhoncus.donec@aol.edu",
+        "email_alias": "rhoncus.donec@aol.edu",
+        "first_name": "Anika",
+        "id": 1,
+        "last_name": "Duncan",
+      },
+      "rawCursor": {
+        "fields": [
+          {
+            "field": "first_name",
+            "value": "Anika",
+          },
+          {
+            "field": "last_name",
+            "value": "Duncan",
+          },
+          {
+            "field": "id",
+            "value": 1,
+          },
+        ],
+        "queryName": "TestQuery",
+      },
+    },
+    {
+      "cursor": "SuWlzjWxdtSVDzgPp_mVdQH7S4pbbIpNqmJJFWwXOws.9732ntsWW_36ePfEiU1_85i4VHGpnlt60LcekRaV6hZiIfLaDEJyTxv4_mT0gVYjC05he25PbktssRXIQMdfnwfl2PkS47CW75s-XwbfYuhuaZJZfUpZLW5O7xVWf5R2YD7FEdd53lDlXJDbEE5TvRvM8TNkhCSh8LTnJEFNqADHkbWz-H7pDPOaOBsLE3n_EUYcf498pgjPJCRN",
+      "node": {
+        "admin": 0,
+        "created_at": 1604543417,
+        "email": "purus.accumsan@icloud.com",
+        "email_alias": "purus.accumsan@icloud.com",
+        "first_name": "Cooper",
+        "id": 4,
+        "last_name": "Molina",
+      },
+      "rawCursor": {
+        "fields": [
+          {
+            "field": "first_name",
+            "value": "Cooper",
+          },
+          {
+            "field": "last_name",
+            "value": "Molina",
+          },
+          {
+            "field": "id",
+            "value": 4,
+          },
+        ],
+        "queryName": "TestQuery",
+      },
+    },
+    {
+      "cursor": "J37o3_oaPLyLsQB3RvZ6vH8ufoMit4kCwwo6n4RXp4o.sTsONeFB-6qIIK-1jCt7xcecDh7C1aMG8TceOsfXYAwRtsz8vtPBtBqemP6P-33B1Vf2W91pu1Kp31k05liFhPqkUlx7mUIJ35LebB2-HwyfbXWEgEQY91jSf8gCesc4G8xni0Y-70WgSLJM_iOZL2xTLMQg_BT9wt8Sb9gq7GYDStEAGpRvQaTLt80ti0Vb1a3ZVc865V-htWQh1pHbHQ",
+      "node": {
+        "admin": 0,
+        "created_at": 1679712324,
+        "email": "ut.nisi@yahoo.org",
+        "email_alias": "ut.nisi@yahoo.org",
+        "first_name": "Jermaine",
+        "id": 2,
+        "last_name": "O'connor",
+      },
+      "rawCursor": {
+        "fields": [
+          {
+            "field": "first_name",
+            "value": "Jermaine",
+          },
+          {
+            "field": "last_name",
+            "value": "O'connor",
+          },
+          {
+            "field": "id",
+            "value": 2,
+          },
+        ],
+        "queryName": "TestQuery",
+      },
+    },
+    {
+      "cursor": "gumKG7SDrooLXO_GjBeq9Ir_9P4A7AxYyYOrBJxk4-Y.Tr2FOX4hvWO6gznjYcT4sVzNX6OZl1JeWTfVwF3T9JFWW1Xx4dxX7CC6TwRU_wvccieO8hQLj3nfogSnZl9aGGBE4yM6LuE4E_imTfEhVohDNvv5YJQXAhYPAq1pWzkBWoutqQMaxa7eBWHZX-UDToEixb_9HlXmphd-8F196hlB6naDZidzF7eje5AVqwUTPtqxVlZ8vTV9n8FS",
+      "node": {
+        "admin": 1,
+        "created_at": 1647959350,
+        "email": "eu@hotmail.ca",
+        "email_alias": "eu@hotmail.ca",
+        "first_name": "Joseph",
+        "id": 3,
+        "last_name": "Rhodes",
+      },
+      "rawCursor": {
+        "fields": [
+          {
+            "field": "first_name",
+            "value": "Joseph",
+          },
+          {
+            "field": "last_name",
+            "value": "Rhodes",
+          },
+          {
+            "field": "id",
+            "value": 3,
+          },
+        ],
+        "queryName": "TestQuery",
+      },
+    },
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 1`] = `Infinity`;
+
+exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 2`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 3`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 4`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 5`] = `
+{
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 6`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 7`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 8`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 9`] = `
+{
+  "bindings": {},
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 10`] = `Infinity`;
+
+exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 11`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 12`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 13`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 14`] = `
+{
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 15`] = `
+{
+  "bindings": [
+    "Anika",
+    "Anika",
+    "Molina",
+    "Anika",
+    "Molina",
+    "5",
+    "Jermaine",
+    "Jermaine",
+    "O'connor",
+    "Jermaine",
+    "O'connor",
+    "2",
+  ],
+  "sql": "(((\`first_name\`>?) OR (\`first_name\`=? AND \`last_name\`<?) OR (\`first_name\`=? AND \`last_name\`=? AND \`id\`>?)) AND ((\`first_name\`<?) OR (\`first_name\`=? AND \`last_name\`>?) OR (\`first_name\`=? AND \`last_name\`=? AND \`id\`<?)))",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 16`] = `
+{
+  "bindings": [
+    "Anika",
+    "Anika",
+    "Molina",
+    "Anika",
+    "Molina",
+    "5",
+    "Jermaine",
+    "Jermaine",
+    "O'connor",
+    "Jermaine",
+    "O'connor",
+    "2",
+  ],
+  "sql": "(((\`first_name\`>X) OR (\`first_name\`=X AND \`last_name\`<X) OR (\`first_name\`=X AND \`last_name\`=X AND \`id\`>X)) AND ((\`first_name\`<X) OR (\`first_name\`=X AND \`last_name\`>X) OR (\`first_name\`=X AND \`last_name\`=X AND \`id\`<X)))",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 17`] = `
+{
+  "bindings": [
+    "Anika",
+    "Anika",
+    "Molina",
+    "Anika",
+    "Molina",
+    "5",
+    "Jermaine",
+    "Jermaine",
+    "O'connor",
+    "Jermaine",
+    "O'connor",
+    "2",
+  ],
+  "sql": "(((\`first_name\`>:0) OR (\`first_name\`=:1 AND \`last_name\`<:2) OR (\`first_name\`=:3 AND \`last_name\`=:4 AND \`id\`>:5)) AND ((\`first_name\`<:6) OR (\`first_name\`=:7 AND \`last_name\`>:8) OR (\`first_name\`=:9 AND \`last_name\`=:10 AND \`id\`<:11)))",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 18`] = `
+{
+  "bindings": {
+    ":0": "Anika",
+    ":1": "Molina",
+    ":2": "5",
+    ":3": "Jermaine",
+    ":4": "O'connor",
+    ":5": "2",
+  },
+  "sql": "(((\`first_name\`>:0) OR (\`first_name\`=:0 AND \`last_name\`<:1) OR (\`first_name\`=:0 AND \`last_name\`=:1 AND \`id\`>:2)) AND ((\`first_name\`<:3) OR (\`first_name\`=:3 AND \`last_name\`>:4) OR (\`first_name\`=:3 AND \`last_name\`=:4 AND \`id\`<:5)))",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 19`] = `
+{
+  "edges": [
+    {
+      "cursor": "i-LdTZZAxan9T1wX75VRqqUxReT3-5CyiF6oh0tEekY.VxGPw46ar3DEXXDlxQeSAAXC98aYXQCPtczK-nM-Snld80n5x2GGge9NScwpix_pyDgzq5AM22nAnYUAmUxZYAc58Zlv8jkjVj26bi31QdMjz9-UAaCQjihZXpabelIxS8EaVypjonbwuVIsPP2uSw3e5IFF2t7DseRwyQ_Ylq-_ajCQRoFwz4y4_e6q3Q973gHhacu6vdkrOTY",
+      "node": {
+        "admin": 0,
+        "created_at": 1662538189,
+        "email": "rhoncus.donec@aol.edu",
+        "email_alias": "rhoncus.donec@aol.edu",
+        "first_name": "Anika",
+        "id": 1,
+        "last_name": "Duncan",
+      },
+    },
+    {
+      "cursor": "SuWlzjWxdtSVDzgPp_mVdQH7S4pbbIpNqmJJFWwXOws.9732ntsWW_36ePfEiU1_85i4VHGpnlt60LcekRaV6hZiIfLaDEJyTxv4_mT0gVYjC05he25PbktssRXIQMdfnwfl2PkS47CW75s-XwbfYuhuaZJZfUpZLW5O7xVWf5R2YD7FEdd53lDlXJDbEE5TvRvM8TNkhCSh8LTnJEFNqADHkbWz-H7pDPOaOBsLE3n_EUYcf498pgjPJCRN",
+      "node": {
+        "admin": 0,
+        "created_at": 1604543417,
+        "email": "purus.accumsan@icloud.com",
+        "email_alias": "purus.accumsan@icloud.com",
+        "first_name": "Cooper",
+        "id": 4,
+        "last_name": "Molina",
+      },
+    },
+  ],
+  "pageInfo": {
+    "hasNextPage": false,
+    "hasPreviousPage": false,
+  },
+  Symbol(edgesWithRawCursor): [
+    {
+      "cursor": "i-LdTZZAxan9T1wX75VRqqUxReT3-5CyiF6oh0tEekY.VxGPw46ar3DEXXDlxQeSAAXC98aYXQCPtczK-nM-Snld80n5x2GGge9NScwpix_pyDgzq5AM22nAnYUAmUxZYAc58Zlv8jkjVj26bi31QdMjz9-UAaCQjihZXpabelIxS8EaVypjonbwuVIsPP2uSw3e5IFF2t7DseRwyQ_Ylq-_ajCQRoFwz4y4_e6q3Q973gHhacu6vdkrOTY",
+      "node": {
+        "admin": 0,
+        "created_at": 1662538189,
+        "email": "rhoncus.donec@aol.edu",
+        "email_alias": "rhoncus.donec@aol.edu",
+        "first_name": "Anika",
+        "id": 1,
+        "last_name": "Duncan",
+      },
+      "rawCursor": {
+        "fields": [
+          {
+            "field": "first_name",
+            "value": "Anika",
+          },
+          {
+            "field": "last_name",
+            "value": "Duncan",
+          },
+          {
+            "field": "id",
+            "value": 1,
+          },
+        ],
+        "queryName": "TestQuery",
+      },
+    },
+    {
+      "cursor": "SuWlzjWxdtSVDzgPp_mVdQH7S4pbbIpNqmJJFWwXOws.9732ntsWW_36ePfEiU1_85i4VHGpnlt60LcekRaV6hZiIfLaDEJyTxv4_mT0gVYjC05he25PbktssRXIQMdfnwfl2PkS47CW75s-XwbfYuhuaZJZfUpZLW5O7xVWf5R2YD7FEdd53lDlXJDbEE5TvRvM8TNkhCSh8LTnJEFNqADHkbWz-H7pDPOaOBsLE3n_EUYcf498pgjPJCRN",
+      "node": {
+        "admin": 0,
+        "created_at": 1604543417,
+        "email": "purus.accumsan@icloud.com",
+        "email_alias": "purus.accumsan@icloud.com",
+        "first_name": "Cooper",
+        "id": 4,
+        "last_name": "Molina",
+      },
+      "rawCursor": {
+        "fields": [
+          {
+            "field": "first_name",
+            "value": "Cooper",
+          },
+          {
+            "field": "last_name",
+            "value": "Molina",
+          },
+          {
+            "field": "id",
+            "value": 4,
+          },
+        ],
+        "queryName": "TestQuery",
+      },
+    },
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 1`] = `Infinity`;
+
+exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 2`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 3`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 4`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 5`] = `
+{
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 6`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 7`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 8`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 9`] = `
+{
+  "bindings": {},
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 10`] = `Infinity`;
+
+exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 11`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 12`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 13`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 14`] = `
+{
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 15`] = `
+{
+  "bindings": [
+    "Anika",
+    "Anika",
+    "Molina",
+    "Anika",
+    "Molina",
+    "5",
+    "Cooper",
+    "Cooper",
+    "Molina",
+    "Cooper",
+    "Molina",
+    "4",
+  ],
+  "sql": "(((\`first_name\`>?) OR (\`first_name\`=? AND \`last_name\`<?) OR (\`first_name\`=? AND \`last_name\`=? AND \`id\`>?)) AND ((\`first_name\`<?) OR (\`first_name\`=? AND \`last_name\`>?) OR (\`first_name\`=? AND \`last_name\`=? AND \`id\`<?)))",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 16`] = `
+{
+  "bindings": [
+    "Anika",
+    "Anika",
+    "Molina",
+    "Anika",
+    "Molina",
+    "5",
+    "Cooper",
+    "Cooper",
+    "Molina",
+    "Cooper",
+    "Molina",
+    "4",
+  ],
+  "sql": "(((\`first_name\`>X) OR (\`first_name\`=X AND \`last_name\`<X) OR (\`first_name\`=X AND \`last_name\`=X AND \`id\`>X)) AND ((\`first_name\`<X) OR (\`first_name\`=X AND \`last_name\`>X) OR (\`first_name\`=X AND \`last_name\`=X AND \`id\`<X)))",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 17`] = `
+{
+  "bindings": [
+    "Anika",
+    "Anika",
+    "Molina",
+    "Anika",
+    "Molina",
+    "5",
+    "Cooper",
+    "Cooper",
+    "Molina",
+    "Cooper",
+    "Molina",
+    "4",
+  ],
+  "sql": "(((\`first_name\`>:0) OR (\`first_name\`=:1 AND \`last_name\`<:2) OR (\`first_name\`=:3 AND \`last_name\`=:4 AND \`id\`>:5)) AND ((\`first_name\`<:6) OR (\`first_name\`=:7 AND \`last_name\`>:8) OR (\`first_name\`=:9 AND \`last_name\`=:10 AND \`id\`<:11)))",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 18`] = `
+{
+  "bindings": {
+    ":0": "Anika",
+    ":1": "Molina",
+    ":2": "5",
+    ":3": "Cooper",
+    ":4": "4",
+  },
+  "sql": "(((\`first_name\`>:0) OR (\`first_name\`=:0 AND \`last_name\`<:1) OR (\`first_name\`=:0 AND \`last_name\`=:1 AND \`id\`>:2)) AND ((\`first_name\`<:3) OR (\`first_name\`=:3 AND \`last_name\`>:1) OR (\`first_name\`=:3 AND \`last_name\`=:1 AND \`id\`<:4)))",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 19`] = `
+{
+  "edges": [
+    {
+      "cursor": "i-LdTZZAxan9T1wX75VRqqUxReT3-5CyiF6oh0tEekY.VxGPw46ar3DEXXDlxQeSAAXC98aYXQCPtczK-nM-Snld80n5x2GGge9NScwpix_pyDgzq5AM22nAnYUAmUxZYAc58Zlv8jkjVj26bi31QdMjz9-UAaCQjihZXpabelIxS8EaVypjonbwuVIsPP2uSw3e5IFF2t7DseRwyQ_Ylq-_ajCQRoFwz4y4_e6q3Q973gHhacu6vdkrOTY",
+      "node": {
+        "admin": 0,
+        "created_at": 1662538189,
+        "email": "rhoncus.donec@aol.edu",
+        "email_alias": "rhoncus.donec@aol.edu",
+        "first_name": "Anika",
+        "id": 1,
+        "last_name": "Duncan",
+      },
+    },
+  ],
+  "pageInfo": {
+    "hasNextPage": false,
+    "hasPreviousPage": false,
+  },
+  Symbol(edgesWithRawCursor): [
+    {
+      "cursor": "i-LdTZZAxan9T1wX75VRqqUxReT3-5CyiF6oh0tEekY.VxGPw46ar3DEXXDlxQeSAAXC98aYXQCPtczK-nM-Snld80n5x2GGge9NScwpix_pyDgzq5AM22nAnYUAmUxZYAc58Zlv8jkjVj26bi31QdMjz9-UAaCQjihZXpabelIxS8EaVypjonbwuVIsPP2uSw3e5IFF2t7DseRwyQ_Ylq-_ajCQRoFwz4y4_e6q3Q973gHhacu6vdkrOTY",
+      "node": {
+        "admin": 0,
+        "created_at": 1662538189,
+        "email": "rhoncus.donec@aol.edu",
+        "email_alias": "rhoncus.donec@aol.edu",
+        "first_name": "Anika",
+        "id": 1,
+        "last_name": "Duncan",
+      },
+      "rawCursor": {
+        "fields": [
+          {
+            "field": "first_name",
+            "value": "Anika",
+          },
+          {
+            "field": "last_name",
+            "value": "Duncan",
+          },
+          {
+            "field": "id",
+            "value": 1,
+          },
+        ],
+        "queryName": "TestQuery",
+      },
+    },
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 1`] = `Infinity`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 2`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 3`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 4`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 5`] = `
+{
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 6`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 7`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 8`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 9`] = `
+{
+  "bindings": {},
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 10`] = `2`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 11`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 12`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 13`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 14`] = `
+{
+  "bindings": {},
+  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 15`] = `
+{
+  "bindings": [
+    "Cooper",
+    "Cooper",
+    "Molina",
+    "Cooper",
+    "Molina",
+    "4",
+  ],
+  "sql": "(((\`first_name\`<?) OR (\`first_name\`=? AND \`last_name\`>?) OR (\`first_name\`=? AND \`last_name\`=? AND \`id\`<?)))",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 16`] = `
+{
+  "bindings": [
+    "Cooper",
+    "Cooper",
+    "Molina",
+    "Cooper",
+    "Molina",
+    "4",
+  ],
+  "sql": "(((\`first_name\`<X) OR (\`first_name\`=X AND \`last_name\`>X) OR (\`first_name\`=X AND \`last_name\`=X AND \`id\`<X)))",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 17`] = `
+{
+  "bindings": [
+    "Cooper",
+    "Cooper",
+    "Molina",
+    "Cooper",
+    "Molina",
+    "4",
+  ],
+  "sql": "(((\`first_name\`<:0) OR (\`first_name\`=:1 AND \`last_name\`>:2) OR (\`first_name\`=:3 AND \`last_name\`=:4 AND \`id\`<:5)))",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 18`] = `
+{
+  "bindings": {
+    ":0": "Cooper",
+    ":1": "Molina",
+    ":2": "4",
+  },
+  "sql": "(((\`first_name\`<:0) OR (\`first_name\`=:0 AND \`last_name\`>:1) OR (\`first_name\`=:0 AND \`last_name\`=:1 AND \`id\`<:2)))",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 19`] = `
+{
+  "edges": [
+    {
+      "cursor": "i-LdTZZAxan9T1wX75VRqqUxReT3-5CyiF6oh0tEekY.VxGPw46ar3DEXXDlxQeSAAXC98aYXQCPtczK-nM-Snld80n5x2GGge9NScwpix_pyDgzq5AM22nAnYUAmUxZYAc58Zlv8jkjVj26bi31QdMjz9-UAaCQjihZXpabelIxS8EaVypjonbwuVIsPP2uSw3e5IFF2t7DseRwyQ_Ylq-_ajCQRoFwz4y4_e6q3Q973gHhacu6vdkrOTY",
+      "node": {
+        "admin": 0,
+        "created_at": 1662538189,
+        "email": "rhoncus.donec@aol.edu",
+        "email_alias": "rhoncus.donec@aol.edu",
+        "first_name": "Anika",
+        "id": 1,
+        "last_name": "Duncan",
+      },
+    },
+  ],
+  "pageInfo": {
+    "hasNextPage": false,
+    "hasPreviousPage": true,
+  },
+  Symbol(edgesWithRawCursor): [
+    {
+      "cursor": "i-LdTZZAxan9T1wX75VRqqUxReT3-5CyiF6oh0tEekY.VxGPw46ar3DEXXDlxQeSAAXC98aYXQCPtczK-nM-Snld80n5x2GGge9NScwpix_pyDgzq5AM22nAnYUAmUxZYAc58Zlv8jkjVj26bi31QdMjz9-UAaCQjihZXpabelIxS8EaVypjonbwuVIsPP2uSw3e5IFF2t7DseRwyQ_Ylq-_ajCQRoFwz4y4_e6q3Q973gHhacu6vdkrOTY",
+      "node": {
+        "admin": 0,
+        "created_at": 1662538189,
+        "email": "rhoncus.donec@aol.edu",
+        "email_alias": "rhoncus.donec@aol.edu",
+        "first_name": "Anika",
+        "id": 1,
+        "last_name": "Duncan",
+      },
+      "rawCursor": {
+        "fields": [
+          {
+            "field": "first_name",
+            "value": "Anika",
+          },
+          {
+            "field": "last_name",
+            "value": "Duncan",
+          },
+          {
+            "field": "id",
+            "value": 1,
+          },
+        ],
+        "queryName": "TestQuery",
+      },
+    },
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 20`] = `Infinity`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 21`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 22`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 23`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 24`] = `
+{
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 25`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 26`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 27`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 28`] = `
+{
+  "bindings": {},
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 29`] = `2`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 30`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 31`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 32`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 33`] = `
+{
+  "bindings": {},
+  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 34`] = `
+{
+  "bindings": [
+    "Cooper",
+    "Cooper",
+    "Molina",
+    "Cooper",
+    "Molina",
+    "4",
+  ],
+  "sql": "(((\`first_name\`<?) OR (\`first_name\`=? AND \`last_name\`>?) OR (\`first_name\`=? AND \`last_name\`=? AND \`id\`<?)))",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 35`] = `
+{
+  "bindings": [
+    "Cooper",
+    "Cooper",
+    "Molina",
+    "Cooper",
+    "Molina",
+    "4",
+  ],
+  "sql": "(((\`first_name\`<X) OR (\`first_name\`=X AND \`last_name\`>X) OR (\`first_name\`=X AND \`last_name\`=X AND \`id\`<X)))",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 36`] = `
+{
+  "bindings": [
+    "Cooper",
+    "Cooper",
+    "Molina",
+    "Cooper",
+    "Molina",
+    "4",
+  ],
+  "sql": "(((\`first_name\`<:0) OR (\`first_name\`=:1 AND \`last_name\`>:2) OR (\`first_name\`=:3 AND \`last_name\`=:4 AND \`id\`<:5)))",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 37`] = `
+{
+  "bindings": {
+    ":0": "Cooper",
+    ":1": "Molina",
+    ":2": "4",
+  },
+  "sql": "(((\`first_name\`<:0) OR (\`first_name\`=:0 AND \`last_name\`>:1) OR (\`first_name\`=:0 AND \`last_name\`=:1 AND \`id\`<:2)))",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 38`] = `
+{
+  "edges": [
+    {
+      "cursor": "i-LdTZZAxan9T1wX75VRqqUxReT3-5CyiF6oh0tEekY.VxGPw46ar3DEXXDlxQeSAAXC98aYXQCPtczK-nM-Snld80n5x2GGge9NScwpix_pyDgzq5AM22nAnYUAmUxZYAc58Zlv8jkjVj26bi31QdMjz9-UAaCQjihZXpabelIxS8EaVypjonbwuVIsPP2uSw3e5IFF2t7DseRwyQ_Ylq-_ajCQRoFwz4y4_e6q3Q973gHhacu6vdkrOTY",
+      "node": {
+        "admin": 0,
+        "created_at": 1662538189,
+        "email": "rhoncus.donec@aol.edu",
+        "email_alias": "rhoncus.donec@aol.edu",
+        "first_name": "Anika",
+        "id": 1,
+        "last_name": "Duncan",
+      },
+    },
+  ],
+  "pageInfo": {
+    "hasNextPage": false,
+    "hasPreviousPage": true,
+  },
+  Symbol(edgesWithRawCursor): [
+    {
+      "cursor": "i-LdTZZAxan9T1wX75VRqqUxReT3-5CyiF6oh0tEekY.VxGPw46ar3DEXXDlxQeSAAXC98aYXQCPtczK-nM-Snld80n5x2GGge9NScwpix_pyDgzq5AM22nAnYUAmUxZYAc58Zlv8jkjVj26bi31QdMjz9-UAaCQjihZXpabelIxS8EaVypjonbwuVIsPP2uSw3e5IFF2t7DseRwyQ_Ylq-_ajCQRoFwz4y4_e6q3Q973gHhacu6vdkrOTY",
+      "node": {
+        "admin": 0,
+        "created_at": 1662538189,
+        "email": "rhoncus.donec@aol.edu",
+        "email_alias": "rhoncus.donec@aol.edu",
+        "first_name": "Anika",
+        "id": 1,
+        "last_name": "Duncan",
+      },
+      "rawCursor": {
+        "fields": [
+          {
+            "field": "first_name",
+            "value": "Anika",
+          },
+          {
+            "field": "last_name",
+            "value": "Duncan",
+          },
+          {
+            "field": "id",
+            "value": 1,
+          },
+        ],
+        "queryName": "TestQuery",
+      },
+    },
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 1`] = `Infinity`;
+
+exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 2`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 3`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 4`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 5`] = `
+{
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 6`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 7`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 8`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 9`] = `
+{
+  "bindings": {},
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 10`] = `2`;
+
+exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 11`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 12`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 13`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 14`] = `
+{
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 15`] = `
+{
+  "bindings": [
+    "Anika",
+    "Anika",
+    "Molina",
+    "Anika",
+    "Molina",
+    "5",
+    "Jermaine",
+    "Jermaine",
+    "O'connor",
+    "Jermaine",
+    "O'connor",
+    "2",
+  ],
+  "sql": "(((\`first_name\`>?) OR (\`first_name\`=? AND \`last_name\`<?) OR (\`first_name\`=? AND \`last_name\`=? AND \`id\`>?)) AND ((\`first_name\`<?) OR (\`first_name\`=? AND \`last_name\`>?) OR (\`first_name\`=? AND \`last_name\`=? AND \`id\`<?)))",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 16`] = `
+{
+  "bindings": [
+    "Anika",
+    "Anika",
+    "Molina",
+    "Anika",
+    "Molina",
+    "5",
+    "Jermaine",
+    "Jermaine",
+    "O'connor",
+    "Jermaine",
+    "O'connor",
+    "2",
+  ],
+  "sql": "(((\`first_name\`>X) OR (\`first_name\`=X AND \`last_name\`<X) OR (\`first_name\`=X AND \`last_name\`=X AND \`id\`>X)) AND ((\`first_name\`<X) OR (\`first_name\`=X AND \`last_name\`>X) OR (\`first_name\`=X AND \`last_name\`=X AND \`id\`<X)))",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 17`] = `
+{
+  "bindings": [
+    "Anika",
+    "Anika",
+    "Molina",
+    "Anika",
+    "Molina",
+    "5",
+    "Jermaine",
+    "Jermaine",
+    "O'connor",
+    "Jermaine",
+    "O'connor",
+    "2",
+  ],
+  "sql": "(((\`first_name\`>:0) OR (\`first_name\`=:1 AND \`last_name\`<:2) OR (\`first_name\`=:3 AND \`last_name\`=:4 AND \`id\`>:5)) AND ((\`first_name\`<:6) OR (\`first_name\`=:7 AND \`last_name\`>:8) OR (\`first_name\`=:9 AND \`last_name\`=:10 AND \`id\`<:11)))",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 18`] = `
+{
+  "bindings": {
+    ":0": "Anika",
+    ":1": "Molina",
+    ":2": "5",
+    ":3": "Jermaine",
+    ":4": "O'connor",
+    ":5": "2",
+  },
+  "sql": "(((\`first_name\`>:0) OR (\`first_name\`=:0 AND \`last_name\`<:1) OR (\`first_name\`=:0 AND \`last_name\`=:1 AND \`id\`>:2)) AND ((\`first_name\`<:3) OR (\`first_name\`=:3 AND \`last_name\`>:4) OR (\`first_name\`=:3 AND \`last_name\`=:4 AND \`id\`<:5)))",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 19`] = `
+{
+  "edges": [
+    {
+      "cursor": "i-LdTZZAxan9T1wX75VRqqUxReT3-5CyiF6oh0tEekY.VxGPw46ar3DEXXDlxQeSAAXC98aYXQCPtczK-nM-Snld80n5x2GGge9NScwpix_pyDgzq5AM22nAnYUAmUxZYAc58Zlv8jkjVj26bi31QdMjz9-UAaCQjihZXpabelIxS8EaVypjonbwuVIsPP2uSw3e5IFF2t7DseRwyQ_Ylq-_ajCQRoFwz4y4_e6q3Q973gHhacu6vdkrOTY",
+      "node": {
+        "admin": 0,
+        "created_at": 1662538189,
+        "email": "rhoncus.donec@aol.edu",
+        "email_alias": "rhoncus.donec@aol.edu",
+        "first_name": "Anika",
+        "id": 1,
+        "last_name": "Duncan",
+      },
+    },
+  ],
+  "pageInfo": {
+    "hasNextPage": true,
+    "hasPreviousPage": false,
+  },
+  Symbol(edgesWithRawCursor): [
+    {
+      "cursor": "i-LdTZZAxan9T1wX75VRqqUxReT3-5CyiF6oh0tEekY.VxGPw46ar3DEXXDlxQeSAAXC98aYXQCPtczK-nM-Snld80n5x2GGge9NScwpix_pyDgzq5AM22nAnYUAmUxZYAc58Zlv8jkjVj26bi31QdMjz9-UAaCQjihZXpabelIxS8EaVypjonbwuVIsPP2uSw3e5IFF2t7DseRwyQ_Ylq-_ajCQRoFwz4y4_e6q3Q973gHhacu6vdkrOTY",
+      "node": {
+        "admin": 0,
+        "created_at": 1662538189,
+        "email": "rhoncus.donec@aol.edu",
+        "email_alias": "rhoncus.donec@aol.edu",
+        "first_name": "Anika",
+        "id": 1,
+        "last_name": "Duncan",
+      },
+      "rawCursor": {
+        "fields": [
+          {
+            "field": "first_name",
+            "value": "Anika",
+          },
+          {
+            "field": "last_name",
+            "value": "Duncan",
+          },
+          {
+            "field": "id",
+            "value": 1,
+          },
+        ],
+        "queryName": "TestQuery",
+      },
+    },
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting one after the second row 1`] = `Infinity`;
+
+exports[`SqlCursorPagination > selects the third row when selecting one after the second row 2`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting one after the second row 3`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting one after the second row 4`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting one after the second row 5`] = `
+{
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting one after the second row 6`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting one after the second row 7`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting one after the second row 8`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting one after the second row 9`] = `
+{
+  "bindings": {},
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting one after the second row 10`] = `2`;
+
+exports[`SqlCursorPagination > selects the third row when selecting one after the second row 11`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting one after the second row 12`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting one after the second row 13`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting one after the second row 14`] = `
+{
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting one after the second row 15`] = `
+{
+  "bindings": [
+    "Anika",
+    "Anika",
+    "Duncan",
+    "Anika",
+    "Duncan",
+    "1",
+  ],
+  "sql": "(((\`first_name\`>?) OR (\`first_name\`=? AND \`last_name\`<?) OR (\`first_name\`=? AND \`last_name\`=? AND \`id\`>?)))",
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting one after the second row 16`] = `
+{
+  "bindings": [
+    "Anika",
+    "Anika",
+    "Duncan",
+    "Anika",
+    "Duncan",
+    "1",
+  ],
+  "sql": "(((\`first_name\`>X) OR (\`first_name\`=X AND \`last_name\`<X) OR (\`first_name\`=X AND \`last_name\`=X AND \`id\`>X)))",
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting one after the second row 17`] = `
+{
+  "bindings": [
+    "Anika",
+    "Anika",
+    "Duncan",
+    "Anika",
+    "Duncan",
+    "1",
+  ],
+  "sql": "(((\`first_name\`>:0) OR (\`first_name\`=:1 AND \`last_name\`<:2) OR (\`first_name\`=:3 AND \`last_name\`=:4 AND \`id\`>:5)))",
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting one after the second row 18`] = `
+{
+  "bindings": {
+    ":0": "Anika",
+    ":1": "Duncan",
+    ":2": "1",
+  },
+  "sql": "(((\`first_name\`>:0) OR (\`first_name\`=:0 AND \`last_name\`<:1) OR (\`first_name\`=:0 AND \`last_name\`=:1 AND \`id\`>:2)))",
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting one after the second row 19`] = `
+{
+  "edges": [
+    {
+      "cursor": "SuWlzjWxdtSVDzgPp_mVdQH7S4pbbIpNqmJJFWwXOws.9732ntsWW_36ePfEiU1_85i4VHGpnlt60LcekRaV6hZiIfLaDEJyTxv4_mT0gVYjC05he25PbktssRXIQMdfnwfl2PkS47CW75s-XwbfYuhuaZJZfUpZLW5O7xVWf5R2YD7FEdd53lDlXJDbEE5TvRvM8TNkhCSh8LTnJEFNqADHkbWz-H7pDPOaOBsLE3n_EUYcf498pgjPJCRN",
+      "node": {
+        "admin": 0,
+        "created_at": 1604543417,
+        "email": "purus.accumsan@icloud.com",
+        "email_alias": "purus.accumsan@icloud.com",
+        "first_name": "Cooper",
+        "id": 4,
+        "last_name": "Molina",
+      },
+    },
+  ],
+  "pageInfo": {
+    "hasNextPage": true,
+    "hasPreviousPage": false,
+  },
+  Symbol(edgesWithRawCursor): [
+    {
+      "cursor": "SuWlzjWxdtSVDzgPp_mVdQH7S4pbbIpNqmJJFWwXOws.9732ntsWW_36ePfEiU1_85i4VHGpnlt60LcekRaV6hZiIfLaDEJyTxv4_mT0gVYjC05he25PbktssRXIQMdfnwfl2PkS47CW75s-XwbfYuhuaZJZfUpZLW5O7xVWf5R2YD7FEdd53lDlXJDbEE5TvRvM8TNkhCSh8LTnJEFNqADHkbWz-H7pDPOaOBsLE3n_EUYcf498pgjPJCRN",
+      "node": {
+        "admin": 0,
+        "created_at": 1604543417,
+        "email": "purus.accumsan@icloud.com",
+        "email_alias": "purus.accumsan@icloud.com",
+        "first_name": "Cooper",
+        "id": 4,
+        "last_name": "Molina",
+      },
+      "rawCursor": {
+        "fields": [
+          {
+            "field": "first_name",
+            "value": "Cooper",
+          },
+          {
+            "field": "last_name",
+            "value": "Molina",
+          },
+          {
+            "field": "id",
+            "value": 4,
+          },
+        ],
+        "queryName": "TestQuery",
+      },
+    },
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 1`] = `Infinity`;
+
+exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 2`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 3`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 4`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 5`] = `
+{
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 6`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 7`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 8`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 9`] = `
+{
+  "bindings": {},
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 10`] = `2`;
+
+exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 11`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 12`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 13`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 14`] = `
+{
+  "bindings": {},
+  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 15`] = `
+{
+  "bindings": [
+    "Anika",
+    "Anika",
+    "Molina",
+    "Anika",
+    "Molina",
+    "5",
+    "Jermaine",
+    "Jermaine",
+    "O'connor",
+    "Jermaine",
+    "O'connor",
+    "2",
+  ],
+  "sql": "(((\`first_name\`>?) OR (\`first_name\`=? AND \`last_name\`<?) OR (\`first_name\`=? AND \`last_name\`=? AND \`id\`>?)) AND ((\`first_name\`<?) OR (\`first_name\`=? AND \`last_name\`>?) OR (\`first_name\`=? AND \`last_name\`=? AND \`id\`<?)))",
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 16`] = `
+{
+  "bindings": [
+    "Anika",
+    "Anika",
+    "Molina",
+    "Anika",
+    "Molina",
+    "5",
+    "Jermaine",
+    "Jermaine",
+    "O'connor",
+    "Jermaine",
+    "O'connor",
+    "2",
+  ],
+  "sql": "(((\`first_name\`>X) OR (\`first_name\`=X AND \`last_name\`<X) OR (\`first_name\`=X AND \`last_name\`=X AND \`id\`>X)) AND ((\`first_name\`<X) OR (\`first_name\`=X AND \`last_name\`>X) OR (\`first_name\`=X AND \`last_name\`=X AND \`id\`<X)))",
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 17`] = `
+{
+  "bindings": [
+    "Anika",
+    "Anika",
+    "Molina",
+    "Anika",
+    "Molina",
+    "5",
+    "Jermaine",
+    "Jermaine",
+    "O'connor",
+    "Jermaine",
+    "O'connor",
+    "2",
+  ],
+  "sql": "(((\`first_name\`>:0) OR (\`first_name\`=:1 AND \`last_name\`<:2) OR (\`first_name\`=:3 AND \`last_name\`=:4 AND \`id\`>:5)) AND ((\`first_name\`<:6) OR (\`first_name\`=:7 AND \`last_name\`>:8) OR (\`first_name\`=:9 AND \`last_name\`=:10 AND \`id\`<:11)))",
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 18`] = `
+{
+  "bindings": {
+    ":0": "Anika",
+    ":1": "Molina",
+    ":2": "5",
+    ":3": "Jermaine",
+    ":4": "O'connor",
+    ":5": "2",
+  },
+  "sql": "(((\`first_name\`>:0) OR (\`first_name\`=:0 AND \`last_name\`<:1) OR (\`first_name\`=:0 AND \`last_name\`=:1 AND \`id\`>:2)) AND ((\`first_name\`<:3) OR (\`first_name\`=:3 AND \`last_name\`>:4) OR (\`first_name\`=:3 AND \`last_name\`=:4 AND \`id\`<:5)))",
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 19`] = `
+{
+  "edges": [
+    {
+      "cursor": "SuWlzjWxdtSVDzgPp_mVdQH7S4pbbIpNqmJJFWwXOws.9732ntsWW_36ePfEiU1_85i4VHGpnlt60LcekRaV6hZiIfLaDEJyTxv4_mT0gVYjC05he25PbktssRXIQMdfnwfl2PkS47CW75s-XwbfYuhuaZJZfUpZLW5O7xVWf5R2YD7FEdd53lDlXJDbEE5TvRvM8TNkhCSh8LTnJEFNqADHkbWz-H7pDPOaOBsLE3n_EUYcf498pgjPJCRN",
+      "node": {
+        "admin": 0,
+        "created_at": 1604543417,
+        "email": "purus.accumsan@icloud.com",
+        "email_alias": "purus.accumsan@icloud.com",
+        "first_name": "Cooper",
+        "id": 4,
+        "last_name": "Molina",
+      },
+    },
+  ],
+  "pageInfo": {
+    "hasNextPage": false,
+    "hasPreviousPage": true,
+  },
+  Symbol(edgesWithRawCursor): [
+    {
+      "cursor": "SuWlzjWxdtSVDzgPp_mVdQH7S4pbbIpNqmJJFWwXOws.9732ntsWW_36ePfEiU1_85i4VHGpnlt60LcekRaV6hZiIfLaDEJyTxv4_mT0gVYjC05he25PbktssRXIQMdfnwfl2PkS47CW75s-XwbfYuhuaZJZfUpZLW5O7xVWf5R2YD7FEdd53lDlXJDbEE5TvRvM8TNkhCSh8LTnJEFNqADHkbWz-H7pDPOaOBsLE3n_EUYcf498pgjPJCRN",
+      "node": {
+        "admin": 0,
+        "created_at": 1604543417,
+        "email": "purus.accumsan@icloud.com",
+        "email_alias": "purus.accumsan@icloud.com",
+        "first_name": "Cooper",
+        "id": 4,
+        "last_name": "Molina",
+      },
+      "rawCursor": {
+        "fields": [
+          {
+            "field": "first_name",
+            "value": "Cooper",
+          },
+          {
+            "field": "last_name",
+            "value": "Molina",
+          },
+          {
+            "field": "id",
+            "value": 4,
+          },
+        ],
+        "queryName": "TestQuery",
+      },
+    },
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > supports field aliases 1`] = `2`;
+
+exports[`SqlCursorPagination > supports field aliases 2`] = `
+{
+  "bindings": [],
+  "sql": "\`email\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > supports field aliases 3`] = `
+{
+  "bindings": [],
+  "sql": "\`email\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > supports field aliases 4`] = `
+{
+  "bindings": [],
+  "sql": "\`email\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > supports field aliases 5`] = `
+{
+  "bindings": {},
+  "sql": "\`email\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > supports field aliases 6`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > supports field aliases 7`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > supports field aliases 8`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > supports field aliases 9`] = `
+{
+  "bindings": {},
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > supports field aliases 10`] = `
+{
+  "edges": [
+    {
+      "cursor": "3RpNpcSiXTy_ScEwnnlpe3LTX690UrnAQZSWWE4HNgU.6MjHvd-dag1VTHqfp8rnrG2TxyLXbO-8VV0qrJBggWWeLuvpjQIGcyAQPSKLvcoYo-f3b6S3MYUA14jyns1YS01gj-QkC7UN5pfZM0AuMS8PILwOpGPdXF_15-J9Vl3UnvkE-qyGIxUY_t0",
+      "node": {
+        "admin": 1,
+        "created_at": 1631332719,
+        "email": "diam.vel@outlook.edu",
+        "email_alias": "diam.vel@outlook.edu",
+        "first_name": "Anika",
+        "id": 5,
+        "last_name": "Molina",
+      },
+    },
+  ],
+  "pageInfo": {
+    "hasNextPage": true,
+    "hasPreviousPage": false,
+  },
+  Symbol(edgesWithRawCursor): [
+    {
+      "cursor": "3RpNpcSiXTy_ScEwnnlpe3LTX690UrnAQZSWWE4HNgU.6MjHvd-dag1VTHqfp8rnrG2TxyLXbO-8VV0qrJBggWWeLuvpjQIGcyAQPSKLvcoYo-f3b6S3MYUA14jyns1YS01gj-QkC7UN5pfZM0AuMS8PILwOpGPdXF_15-J9Vl3UnvkE-qyGIxUY_t0",
+      "node": {
+        "admin": 1,
+        "created_at": 1631332719,
+        "email": "diam.vel@outlook.edu",
+        "email_alias": "diam.vel@outlook.edu",
+        "first_name": "Anika",
+        "id": 5,
+        "last_name": "Molina",
+      },
+      "rawCursor": {
+        "fields": [
+          {
+            "field": "email_alias",
+            "value": "diam.vel@outlook.edu",
+          },
+        ],
+        "queryName": "TestQuery",
+      },
+    },
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > supports fully qualified column names 1`] = `2`;
+
+exports[`SqlCursorPagination > supports fully qualified column names 2`] = `
+{
+  "bindings": [],
+  "sql": "\`users\`.\`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > supports fully qualified column names 3`] = `
+{
+  "bindings": [],
+  "sql": "\`users\`.\`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > supports fully qualified column names 4`] = `
+{
+  "bindings": [],
+  "sql": "\`users\`.\`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > supports fully qualified column names 5`] = `
+{
+  "bindings": {},
+  "sql": "\`users\`.\`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > supports fully qualified column names 6`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > supports fully qualified column names 7`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > supports fully qualified column names 8`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > supports fully qualified column names 9`] = `
+{
+  "bindings": {},
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > supports fully qualified column names 10`] = `
+{
+  "edges": [
+    {
+      "cursor": "hatzxLvlLXifwatlUUpK8OmsW3CKKugbGj3vwQhezS8.ocXV_p9QrX-5JPUfuPasCEE97suVQauJ8Mf6dq00x45zGnkRb5eNY3LlJ2dLtXlqNQpp3dIsiV7KqDJm2WQn8z3gynqLD-zR8qSoETk",
+      "node": {
+        "admin": 0,
+        "created_at": 1662538189,
+        "email": "rhoncus.donec@aol.edu",
+        "email_alias": "rhoncus.donec@aol.edu",
+        "first_name": "Anika",
+        "id": 1,
+        "last_name": "Duncan",
+      },
+    },
+  ],
+  "pageInfo": {
+    "hasNextPage": true,
+    "hasPreviousPage": false,
+  },
+  Symbol(edgesWithRawCursor): [
+    {
+      "cursor": "hatzxLvlLXifwatlUUpK8OmsW3CKKugbGj3vwQhezS8.ocXV_p9QrX-5JPUfuPasCEE97suVQauJ8Mf6dq00x45zGnkRb5eNY3LlJ2dLtXlqNQpp3dIsiV7KqDJm2WQn8z3gynqLD-zR8qSoETk",
+      "node": {
+        "admin": 0,
+        "created_at": 1662538189,
+        "email": "rhoncus.donec@aol.edu",
+        "email_alias": "rhoncus.donec@aol.edu",
+        "first_name": "Anika",
+        "id": 1,
+        "last_name": "Duncan",
+      },
+      "rawCursor": {
+        "fields": [
+          {
+            "field": "id",
+            "value": 1,
+          },
+        ],
+        "queryName": "TestQuery",
+      },
+    },
+  ],
+}
+`;
