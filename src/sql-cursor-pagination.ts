@@ -40,8 +40,8 @@ export type { FieldWithOrder } from './zod-models/field-with-order';
 export const edgesWithRawCursorSymbol = Symbol('edgesWithRawCursor');
 
 export type QueryContent = {
-  orderByFragment: FragmentBuilder;
-  whereFragment: FragmentBuilder;
+  orderByFragmentBuilder: FragmentBuilder;
+  whereFragmentBuilder: FragmentBuilder;
   limit: number;
 };
 
@@ -374,10 +374,10 @@ export async function withPagination<
         limitRequested = true;
         return limit;
       },
-      orderByFragment: orderByQuery.getFragmentBuilder(
+      orderByFragmentBuilder: orderByQuery.getFragmentBuilder(
         () => (orderByRequested = true),
       ),
-      whereFragment: whereQuery.getFragmentBuilder(
+      whereFragmentBuilder: whereQuery.getFragmentBuilder(
         () => (whereRequested = true),
       ),
     }),
@@ -391,13 +391,13 @@ export async function withPagination<
 
   if (!orderByRequested as boolean) {
     throw new ErrUnexpected(
-      'You need to request the `ORDER BY` fragment from `orderByFragment` and add it to the query',
+      'You need to request the `ORDER BY` fragment from `orderByFragmentBuilder` and add it to the query',
     );
   }
 
   if (!whereRequested as boolean) {
     throw new ErrUnexpected(
-      'You need to request the `WHERE` fragment from `whereFragment` and add it to the query',
+      'You need to request the `WHERE` fragment from `whereFragmentBuilder` and add it to the query',
     );
   }
 

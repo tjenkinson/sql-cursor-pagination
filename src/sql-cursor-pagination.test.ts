@@ -107,16 +107,18 @@ describe('SqlCursorPagination', () => {
       ).toMatchSnapshot();
     };
 
-    snapshotFragment(input.orderByFragment);
-    snapshotFragment(input.whereFragment);
+    snapshotFragment(input.orderByFragmentBuilder);
+    snapshotFragment(input.whereFragmentBuilder);
   }
 
   function buildRunQuery() {
     return async (input: QueryContent): Promise<Row[]> => {
       snapshotQueryContent(input);
 
-      const whereFragment = input.whereFragment.withArrayBindings();
-      const orderByFragment = input.orderByFragment.withArrayBindings();
+      const whereFragmentBuilder =
+        input.whereFragmentBuilder.withArrayBindings();
+      const orderByFragmentBuilder =
+        input.orderByFragmentBuilder.withArrayBindings();
       const limit = input.limit;
 
       let query = db('users')
@@ -129,8 +131,11 @@ describe('SqlCursorPagination', () => {
           'email',
           'email as email_alias',
         )
-        .whereRaw(whereFragment.sql, whereFragment.bindings)
-        .orderByRaw(orderByFragment.sql, orderByFragment.bindings);
+        .whereRaw(whereFragmentBuilder.sql, whereFragmentBuilder.bindings)
+        .orderByRaw(
+          orderByFragmentBuilder.sql,
+          orderByFragmentBuilder.bindings,
+        );
 
       if (limit !== Infinity) {
         query = query.limit(limit);
@@ -875,10 +880,14 @@ describe('SqlCursorPagination', () => {
             },
             setup: {
               // @ts-expect-error missing row props
-              runQuery: async ({ limit, whereFragment, orderByFragment }) => {
+              runQuery: async ({
+                limit,
+                whereFragmentBuilder,
+                orderByFragmentBuilder,
+              }) => {
                 void limit;
-                whereFragment.withArrayBindings();
-                orderByFragment.withArrayBindings();
+                whereFragmentBuilder.withArrayBindings();
+                orderByFragmentBuilder.withArrayBindings();
                 await Promise.resolve();
                 return [{}];
               },
@@ -895,10 +904,14 @@ describe('SqlCursorPagination', () => {
               first: 1,
             },
             setup: {
-              runQuery: async ({ limit, whereFragment, orderByFragment }) => {
+              runQuery: async ({
+                limit,
+                whereFragmentBuilder,
+                orderByFragmentBuilder,
+              }) => {
                 void limit;
-                whereFragment.withArrayBindings();
-                orderByFragment.withArrayBindings();
+                whereFragmentBuilder.withArrayBindings();
+                orderByFragmentBuilder.withArrayBindings();
                 await Promise.resolve();
                 // eslint-disable-next-line @typescript-eslint/no-unsafe-return, @typescript-eslint/no-explicit-any
                 return [{}, {}, {}] as any;
@@ -918,9 +931,12 @@ describe('SqlCursorPagination', () => {
               first: 1,
             },
             setup: {
-              runQuery: async ({ whereFragment, orderByFragment }) => {
-                whereFragment.withArrayBindings();
-                orderByFragment.withArrayBindings();
+              runQuery: async ({
+                whereFragmentBuilder,
+                orderByFragmentBuilder,
+              }) => {
+                whereFragmentBuilder.withArrayBindings();
+                orderByFragmentBuilder.withArrayBindings();
                 await Promise.resolve();
                 return [];
               },
@@ -939,16 +955,16 @@ describe('SqlCursorPagination', () => {
               first: 1,
             },
             setup: {
-              runQuery: async ({ limit, orderByFragment }) => {
+              runQuery: async ({ limit, orderByFragmentBuilder }) => {
                 void limit;
-                orderByFragment.withArrayBindings();
+                orderByFragmentBuilder.withArrayBindings();
                 await Promise.resolve();
                 return [];
               },
             },
           }),
       ).rejects.toThrowError(
-        'You need to request the `WHERE` fragment from `whereFragment` and add it to the query',
+        'You need to request the `WHERE` fragment from `whereFragmentBuilder` and add it to the query',
       );
     });
 
@@ -960,16 +976,16 @@ describe('SqlCursorPagination', () => {
               first: 1,
             },
             setup: {
-              runQuery: async ({ limit, whereFragment }) => {
+              runQuery: async ({ limit, whereFragmentBuilder }) => {
                 void limit;
-                whereFragment.withArrayBindings();
+                whereFragmentBuilder.withArrayBindings();
                 await Promise.resolve();
                 return [];
               },
             },
           }),
       ).rejects.toThrowError(
-        'You need to request the `ORDER BY` fragment from `orderByFragment` and add it to the query',
+        'You need to request the `ORDER BY` fragment from `orderByFragmentBuilder` and add it to the query',
       );
     });
   });

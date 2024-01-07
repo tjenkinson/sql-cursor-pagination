@@ -5,7 +5,7 @@ Are you running a service, using an SQL database, and want to support cursor sty
 ## How it works
 
 1. When a request comes in you call the library with a `query` object containing how many items to fetch (`first`/`last`), where to fetch from (`beforeCursor`/`afterCursor`) and the sort config (`sortFields`), along with a `setup` object.
-2. The `runQuery` function you provided in `setup` is invoked, and provided with a `limit`, `whereFragment` and `orderByFragment`. You integrate these into your query, run it, and then return the results.
+2. The `runQuery` function you provided in `setup` is invoked, and provided with a `limit`, `whereFragmentBuilder` and `orderByFragmentBuilder`. You integrate these into your query, run it, and then return the results.
 3. The library takes the results, and for each one it generates a unique `cursor`, which it then returns alongside each row. It also returns `hasNextPage`/`hasPreviousPage` properties.
 
 ## What is cursor pagination?
@@ -62,7 +62,7 @@ async function fetchUsers(userInput: {
   beforeCursor?: string;
   afterCursor?: string;
 }) {
-  const query = knex('users').where('admin', userInput.admins);
+  const query = db('users').where('admin', userInput.admins);
 
   const { edges, pageInfo } = await withPagination({
     query: {
@@ -80,15 +80,19 @@ async function fetchUsers(userInput: {
       // generate one with `npx -p sql-cursor-pagination generate-secret`
       cursorSecret: buildCursorSecret('somethingSecret'),
       queryName: 'users',
-      runQuery: async ({ limit, whereFragment, orderByFragment }) => {
-        const whereFragment = whereFragment.withArrayBindings();
-        const orderByFragment = orderByFragment.withArrayBindings();
+      runQuery: async ({
+        limit,
+        whereFragmentBuilder,
+        orderByFragmentBuilder,
+      }) => {
+        const whereFragment = whereFragmentBuilder.withArrayBindings();
+        const orderByFragment = orderByFragmentBuilder.withArrayBindings();
 
         const rows = await query
           .limit(limit)
-          .whereRaw(whereFragment.sql, whereFragment.bindings)
-          .orderByRaw(orderByFragment.sql, orderByFragment.bindings)
-          .select('id', 'first_name', 'last_name', 'admin');
+          .whereRaw(whereFragment.sql, where.bindings)
+          .orderByRaw(orderByFragment.sql, orderBy.bindings)
+          .select();
 
         return rows;
       },
@@ -153,7 +157,7 @@ E.g.
 
 ## Query Fragments
 
-The `whereFragment`/`orderByFragment` objects provide the following functions:
+The `whereFragmentBuilder`/`orderByFragmentBuilder` objects provide the following functions:
 
 - `withArrayBindings`: This returns `bindings` as an array. The first argument takes a string placeholder (default: `?`), or a function that receives the index and returns a string.
 - `withObjectBindings`: This returns a `bindings` object. You need to provide a function that receives the index and returns a string.
