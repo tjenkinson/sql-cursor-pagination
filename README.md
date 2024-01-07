@@ -15,7 +15,7 @@ Cursor pagination was made popular by GraphQL, and this library conforms to the 
 
 - First you specify the sort config. This contains a list of field names with their orders. It must contain a unique key.
 - Then you request how many items you would like to fetch with `first`.
-- Each item you get back also contains an opaque string cursor. The cursor is an encrypted string that contains the sort config along with the value of each field in the sort config.
+- Each item you get back also contains an opaque string cursor. The cursor is an encrypted string that contains the names of the fields in the sort config, alongside their values.
 - To fetch the next set of items you make a new request with `first` and `afterCursor` being the cursor of the last item you received.
 
 If you want to fetch items in reverse order you can use `last` and `beforeCursor` instead.
