@@ -18,8 +18,8 @@ module.exports = async (allStagedFiles) => {
 
   return [
     eslintFiles.length &&
-      `eslint --max-warnings 0 ${eslintFiles.map(addQuotes).join(' ')}`,
+      `eslint --cache --max-warnings 0 ${eslintFiles.map(addQuotes).join(' ')}`,
     prettierFiles.length &&
-      `prettier --write ${prettierFiles.map(addQuotes).join(' ')}`,
+      `prettier --cache --write ${prettierFiles.map(addQuotes).join(' ')}`,
   ].filter(Boolean);
 };
