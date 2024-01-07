@@ -1,4 +1,4 @@
-import { crypto } from './crypto';
+import { getCrypto } from './crypto';
 import { MaybePromise } from './maybe-promise';
 import { CursorSecretSource } from './zod-models/cursor-secret-source';
 
@@ -14,6 +14,7 @@ export type CursorSecret = {
 };
 
 async function secretKeyToAesGcmKey(key: ArrayBuffer): Promise<CryptoKey> {
+  const crypto = await getCrypto();
   return crypto.subtle.importKey('raw', key, { name: 'AES-GCM' }, false, [
     'encrypt',
     'decrypt',
@@ -21,6 +22,7 @@ async function secretKeyToAesGcmKey(key: ArrayBuffer): Promise<CryptoKey> {
 }
 
 async function secretKeyToHmacKey(key: ArrayBuffer): Promise<CryptoKey> {
+  const crypto = await getCrypto();
   return crypto.subtle.importKey(
     'raw',
     key,
@@ -33,6 +35,7 @@ async function secretKeyToHmacKey(key: ArrayBuffer): Promise<CryptoKey> {
 export async function buildCursorSecret(
   _secretSource: CursorSecretSource,
 ): Promise<CursorSecret> {
+  const crypto = await getCrypto();
   const secretSource = CursorSecretSource.parse(_secretSource);
   const key = await crypto.subtle.digest(
     { name: 'SHA-256' },

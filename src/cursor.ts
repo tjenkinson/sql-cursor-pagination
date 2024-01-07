@@ -1,4 +1,4 @@
-import { crypto } from './crypto';
+import { getCrypto } from './crypto';
 import { CursorSecret, extractKeys } from './cursor-secret';
 import { ErrUnexpected } from './errors';
 import { parseFieldName } from './field-name';
@@ -58,6 +58,7 @@ export async function encryptCursor({
   cursorRaw: Cursor;
   secret: MaybePromise<CursorSecret>;
 }): Promise<string> {
+  const crypto = await getCrypto();
   const { aesGcmKey, hmacKey } = await extractKeys(secret);
   const cursor = new TextEncoder().encode(JSON.stringify(cursorRaw));
   const iv = await crypto.subtle.sign('HMAC', hmacKey, cursor);
@@ -76,6 +77,7 @@ export async function decryptCursor({
   encodedCursor: string;
   secret: MaybePromise<CursorSecret>;
 }): Promise<Cursor | null> {
+  const crypto = await getCrypto();
   const parts = ivCipherTextRegex.exec(encodedCursor);
   if (!parts) return null;
 

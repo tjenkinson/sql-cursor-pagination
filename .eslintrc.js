@@ -13,6 +13,13 @@ module.exports = {
   rules: {
     'no-console': ['error'],
     'no-shadow': ['error', { builtinGlobals: true }],
+    'no-restricted-globals': [
+      'error',
+      {
+        name: 'crypto',
+        message: 'Import from crypto.ts',
+      },
+    ],
     'import/order': [
       'error',
       {
