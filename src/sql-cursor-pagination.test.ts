@@ -623,7 +623,11 @@ describe('SqlCursorPagination', () => {
             query: {
               beforeCursor: all.edges[0].cursor,
               last: 1,
-              sortFields: [{ field: 'email', order: Asc }],
+              sortFields: [
+                { field: 'email', order: Asc },
+                { field: 'last_name', order: Asc },
+                { field: 'id', order: Asc },
+              ],
             },
           }),
       ).rejects.toThrowError(ErrBeforeCursorWrongSortConfig);
