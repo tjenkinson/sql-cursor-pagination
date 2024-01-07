@@ -145,7 +145,7 @@ exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 19`] = `
 {
   "edges": [
     {
-      "cursor": "J37o3_oaPLyLsQB3RvZ6vH8ufoMit4kCwwo6n4RXp4o.sTsONeFB-6qIIK-1jCt7xcecDh7C1aMG8TceOsfXYAwRtsz8vtPBtBqemP6P-33B1Vf2W91pu1Kp31k05liFhPqkUlx7mUIJ35LebB2-HwyfbXWEgEQY91jSf8gCesc4G8xni0Y-70WgSLJM_iOZL2xTLMQg_BT9wt8Sb9gq7GYDStEAGpRvQaTLt80ti0Vb1a3ZVc865V-htWQh1pHbHQ",
+      "cursor": "l1X624m67Z5aYShVOLrThEcP7c-ezmCc4C48Dvxtt98.x7zYjxX9VEWDA1KAnJii8zyw5DP_OdIRnSkXATGhwTy6Wf0SSkjdjq6pTl9qxhp87EI-85pUJW9Thz_A6F_8BzlgccgDV-hXWjEj3CsGl96tSaA-X0_qNWBu425Mt6t5j3wNSdk8sSArBQ",
       "node": {
         "admin": 0,
         "created_at": 1679712324,
@@ -163,7 +163,7 @@ exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 19`] = `
   },
   Symbol(edgesWithRawCursor): [
     {
-      "cursor": "J37o3_oaPLyLsQB3RvZ6vH8ufoMit4kCwwo6n4RXp4o.sTsONeFB-6qIIK-1jCt7xcecDh7C1aMG8TceOsfXYAwRtsz8vtPBtBqemP6P-33B1Vf2W91pu1Kp31k05liFhPqkUlx7mUIJ35LebB2-HwyfbXWEgEQY91jSf8gCesc4G8xni0Y-70WgSLJM_iOZL2xTLMQg_BT9wt8Sb9gq7GYDStEAGpRvQaTLt80ti0Vb1a3ZVc865V-htWQh1pHbHQ",
+      "cursor": "l1X624m67Z5aYShVOLrThEcP7c-ezmCc4C48Dvxtt98.x7zYjxX9VEWDA1KAnJii8zyw5DP_OdIRnSkXATGhwTy6Wf0SSkjdjq6pTl9qxhp87EI-85pUJW9Thz_A6F_8BzlgccgDV-hXWjEj3CsGl96tSaA-X0_qNWBu425Mt6t5j3wNSdk8sSArBQ",
       "node": {
         "admin": 0,
         "created_at": 1679712324,
@@ -174,20 +174,11 @@ exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 19`] = `
         "last_name": "O'connor",
       },
       "rawCursor": {
-        "fields": [
-          {
-            "field": "first_name",
-            "value": "Jermaine",
-          },
-          {
-            "field": "last_name",
-            "value": "O'connor",
-          },
-          {
-            "field": "id",
-            "value": 2,
-          },
-        ],
+        "fields": {
+          "first_name": "Jermaine",
+          "id": 2,
+          "last_name": "O'connor",
+        },
         "queryName": "TestQuery",
       },
     },
@@ -340,7 +331,7 @@ exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 19`] = `
 {
   "edges": [
     {
-      "cursor": "SuWlzjWxdtSVDzgPp_mVdQH7S4pbbIpNqmJJFWwXOws.9732ntsWW_36ePfEiU1_85i4VHGpnlt60LcekRaV6hZiIfLaDEJyTxv4_mT0gVYjC05he25PbktssRXIQMdfnwfl2PkS47CW75s-XwbfYuhuaZJZfUpZLW5O7xVWf5R2YD7FEdd53lDlXJDbEE5TvRvM8TNkhCSh8LTnJEFNqADHkbWz-H7pDPOaOBsLE3n_EUYcf498pgjPJCRN",
+      "cursor": "BF4zwhmn3i_aUO8fMntuvbJbVfFA77xjg4HWAbCqZ8s.TcLZaSN-rn8Zij9ZZWUQgs3n6YG4t0yuwODBikGsWGnL3td0c3YCwQt99Dml_IfofoAbMsPQTVoiu1gWjQ3cm4xA5Pm019RFK3kSzgV3TUHM7EjIkmTbnmjYlTsGT-xYHt8V5QmM",
       "node": {
         "admin": 0,
         "created_at": 1604543417,
@@ -358,7 +349,7 @@ exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 19`] = `
   },
   Symbol(edgesWithRawCursor): [
     {
-      "cursor": "SuWlzjWxdtSVDzgPp_mVdQH7S4pbbIpNqmJJFWwXOws.9732ntsWW_36ePfEiU1_85i4VHGpnlt60LcekRaV6hZiIfLaDEJyTxv4_mT0gVYjC05he25PbktssRXIQMdfnwfl2PkS47CW75s-XwbfYuhuaZJZfUpZLW5O7xVWf5R2YD7FEdd53lDlXJDbEE5TvRvM8TNkhCSh8LTnJEFNqADHkbWz-H7pDPOaOBsLE3n_EUYcf498pgjPJCRN",
+      "cursor": "BF4zwhmn3i_aUO8fMntuvbJbVfFA77xjg4HWAbCqZ8s.TcLZaSN-rn8Zij9ZZWUQgs3n6YG4t0yuwODBikGsWGnL3td0c3YCwQt99Dml_IfofoAbMsPQTVoiu1gWjQ3cm4xA5Pm019RFK3kSzgV3TUHM7EjIkmTbnmjYlTsGT-xYHt8V5QmM",
       "node": {
         "admin": 0,
         "created_at": 1604543417,
@@ -369,20 +360,11 @@ exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 19`] = `
         "last_name": "Molina",
       },
       "rawCursor": {
-        "fields": [
-          {
-            "field": "first_name",
-            "value": "Cooper",
-          },
-          {
-            "field": "last_name",
-            "value": "Molina",
-          },
-          {
-            "field": "id",
-            "value": 4,
-          },
-        ],
+        "fields": {
+          "first_name": "Cooper",
+          "id": 4,
+          "last_name": "Molina",
+        },
         "queryName": "TestQuery",
       },
     },
@@ -941,7 +923,7 @@ exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the 
 {
   "edges": [
     {
-      "cursor": "mZ9UC-zRVUUh-cHMzDFaDfN7Si364wwn2IkfCx61gQY.6iN8jsmKGNNf57EbOYHwMbKXWfvirHoQY1oUQOoVrIjYhPrNRGZBo0swhHKvgoasOfQUQCKFxcCZhizmGoNKEw72Tj6tJHlZk_CPOREdsR_7XdMf3DZfSWSieDtk6bEWyhkeDuVPl0D8PryB-U0c-WcNxlAFokHol_DD2UQacjA003gW1JevGtewQ3wMoWDlxmgc3bau7PCvoEI",
+      "cursor": "gmWf5PUciGkaS3yuWvnYlCXra1kqrlsaGbbNJfxaF7I.IR52jEVV-zw_W7sRw5HtYQfTQhWbA4dLQw_stenfwgBDIAMZvc78sR5MEvBaLasXRLLv-Z0hxSu0HzZIczNC0zm-ltJ7NRLnQD09498KNFpdBeQBGnEJuskupvdR5TyG0l4Mjbg",
       "node": {
         "admin": 1,
         "created_at": 1631332719,
@@ -953,7 +935,7 @@ exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the 
       },
     },
     {
-      "cursor": "i-LdTZZAxan9T1wX75VRqqUxReT3-5CyiF6oh0tEekY.VxGPw46ar3DEXXDlxQeSAAXC98aYXQCPtczK-nM-Snld80n5x2GGge9NScwpix_pyDgzq5AM22nAnYUAmUxZYAc58Zlv8jkjVj26bi31QdMjz9-UAaCQjihZXpabelIxS8EaVypjonbwuVIsPP2uSw3e5IFF2t7DseRwyQ_Ylq-_ajCQRoFwz4y4_e6q3Q973gHhacu6vdkrOTY",
+      "cursor": "Vl8ajMnWgEXNNlI9TZNEzkzZT5fPgD7qdP_dIQBcjlM.nGHtSUghlMl64TM8BjfzsV4r2v-SL_TlQyYbwTz0nSbnzpetCeSw81VKEzJhkakKw3yRUHxi6ijfpwZEvyprnzBJzZ1gh070hs4CqayTv-g_KwpwjHGWUxUBkKA5S40-_oaeVS8",
       "node": {
         "admin": 0,
         "created_at": 1662538189,
@@ -971,7 +953,7 @@ exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the 
   },
   Symbol(edgesWithRawCursor): [
     {
-      "cursor": "mZ9UC-zRVUUh-cHMzDFaDfN7Si364wwn2IkfCx61gQY.6iN8jsmKGNNf57EbOYHwMbKXWfvirHoQY1oUQOoVrIjYhPrNRGZBo0swhHKvgoasOfQUQCKFxcCZhizmGoNKEw72Tj6tJHlZk_CPOREdsR_7XdMf3DZfSWSieDtk6bEWyhkeDuVPl0D8PryB-U0c-WcNxlAFokHol_DD2UQacjA003gW1JevGtewQ3wMoWDlxmgc3bau7PCvoEI",
+      "cursor": "gmWf5PUciGkaS3yuWvnYlCXra1kqrlsaGbbNJfxaF7I.IR52jEVV-zw_W7sRw5HtYQfTQhWbA4dLQw_stenfwgBDIAMZvc78sR5MEvBaLasXRLLv-Z0hxSu0HzZIczNC0zm-ltJ7NRLnQD09498KNFpdBeQBGnEJuskupvdR5TyG0l4Mjbg",
       "node": {
         "admin": 1,
         "created_at": 1631332719,
@@ -982,25 +964,16 @@ exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the 
         "last_name": "Molina",
       },
       "rawCursor": {
-        "fields": [
-          {
-            "field": "first_name",
-            "value": "Anika",
-          },
-          {
-            "field": "last_name",
-            "value": "Molina",
-          },
-          {
-            "field": "id",
-            "value": 5,
-          },
-        ],
+        "fields": {
+          "first_name": "Anika",
+          "id": 5,
+          "last_name": "Molina",
+        },
         "queryName": "TestQuery",
       },
     },
     {
-      "cursor": "i-LdTZZAxan9T1wX75VRqqUxReT3-5CyiF6oh0tEekY.VxGPw46ar3DEXXDlxQeSAAXC98aYXQCPtczK-nM-Snld80n5x2GGge9NScwpix_pyDgzq5AM22nAnYUAmUxZYAc58Zlv8jkjVj26bi31QdMjz9-UAaCQjihZXpabelIxS8EaVypjonbwuVIsPP2uSw3e5IFF2t7DseRwyQ_Ylq-_ajCQRoFwz4y4_e6q3Q973gHhacu6vdkrOTY",
+      "cursor": "Vl8ajMnWgEXNNlI9TZNEzkzZT5fPgD7qdP_dIQBcjlM.nGHtSUghlMl64TM8BjfzsV4r2v-SL_TlQyYbwTz0nSbnzpetCeSw81VKEzJhkakKw3yRUHxi6ijfpwZEvyprnzBJzZ1gh070hs4CqayTv-g_KwpwjHGWUxUBkKA5S40-_oaeVS8",
       "node": {
         "admin": 0,
         "created_at": 1662538189,
@@ -1011,20 +984,11 @@ exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the 
         "last_name": "Duncan",
       },
       "rawCursor": {
-        "fields": [
-          {
-            "field": "first_name",
-            "value": "Anika",
-          },
-          {
-            "field": "last_name",
-            "value": "Duncan",
-          },
-          {
-            "field": "id",
-            "value": 1,
-          },
-        ],
+        "fields": {
+          "first_name": "Anika",
+          "id": 1,
+          "last_name": "Duncan",
+        },
         "queryName": "TestQuery",
       },
     },
@@ -1177,7 +1141,7 @@ exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the th
 {
   "edges": [
     {
-      "cursor": "J37o3_oaPLyLsQB3RvZ6vH8ufoMit4kCwwo6n4RXp4o.sTsONeFB-6qIIK-1jCt7xcecDh7C1aMG8TceOsfXYAwRtsz8vtPBtBqemP6P-33B1Vf2W91pu1Kp31k05liFhPqkUlx7mUIJ35LebB2-HwyfbXWEgEQY91jSf8gCesc4G8xni0Y-70WgSLJM_iOZL2xTLMQg_BT9wt8Sb9gq7GYDStEAGpRvQaTLt80ti0Vb1a3ZVc865V-htWQh1pHbHQ",
+      "cursor": "l1X624m67Z5aYShVOLrThEcP7c-ezmCc4C48Dvxtt98.x7zYjxX9VEWDA1KAnJii8zyw5DP_OdIRnSkXATGhwTy6Wf0SSkjdjq6pTl9qxhp87EI-85pUJW9Thz_A6F_8BzlgccgDV-hXWjEj3CsGl96tSaA-X0_qNWBu425Mt6t5j3wNSdk8sSArBQ",
       "node": {
         "admin": 0,
         "created_at": 1679712324,
@@ -1189,7 +1153,7 @@ exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the th
       },
     },
     {
-      "cursor": "gumKG7SDrooLXO_GjBeq9Ir_9P4A7AxYyYOrBJxk4-Y.Tr2FOX4hvWO6gznjYcT4sVzNX6OZl1JeWTfVwF3T9JFWW1Xx4dxX7CC6TwRU_wvccieO8hQLj3nfogSnZl9aGGBE4yM6LuE4E_imTfEhVohDNvv5YJQXAhYPAq1pWzkBWoutqQMaxa7eBWHZX-UDToEixb_9HlXmphd-8F196hlB6naDZidzF7eje5AVqwUTPtqxVlZ8vTV9n8FS",
+      "cursor": "hxq6aLoYC69MhcHj_7nAHEAOYBgQgK-lilrZZK8PlUQ.UMAa_PpPVW-1oDBX3oeT2v8hWra5lGac55zuXzuQPAXXrGcc4PnbIIZJWTcqzXAOOCzqPER9aVjPNQGXtFgCBw1vyZNIcFTVMsMnQyCuvr71p4VYGlQF7qgFIwtCUU7xF1tQA8zK",
       "node": {
         "admin": 1,
         "created_at": 1647959350,
@@ -1207,7 +1171,7 @@ exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the th
   },
   Symbol(edgesWithRawCursor): [
     {
-      "cursor": "J37o3_oaPLyLsQB3RvZ6vH8ufoMit4kCwwo6n4RXp4o.sTsONeFB-6qIIK-1jCt7xcecDh7C1aMG8TceOsfXYAwRtsz8vtPBtBqemP6P-33B1Vf2W91pu1Kp31k05liFhPqkUlx7mUIJ35LebB2-HwyfbXWEgEQY91jSf8gCesc4G8xni0Y-70WgSLJM_iOZL2xTLMQg_BT9wt8Sb9gq7GYDStEAGpRvQaTLt80ti0Vb1a3ZVc865V-htWQh1pHbHQ",
+      "cursor": "l1X624m67Z5aYShVOLrThEcP7c-ezmCc4C48Dvxtt98.x7zYjxX9VEWDA1KAnJii8zyw5DP_OdIRnSkXATGhwTy6Wf0SSkjdjq6pTl9qxhp87EI-85pUJW9Thz_A6F_8BzlgccgDV-hXWjEj3CsGl96tSaA-X0_qNWBu425Mt6t5j3wNSdk8sSArBQ",
       "node": {
         "admin": 0,
         "created_at": 1679712324,
@@ -1218,25 +1182,16 @@ exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the th
         "last_name": "O'connor",
       },
       "rawCursor": {
-        "fields": [
-          {
-            "field": "first_name",
-            "value": "Jermaine",
-          },
-          {
-            "field": "last_name",
-            "value": "O'connor",
-          },
-          {
-            "field": "id",
-            "value": 2,
-          },
-        ],
+        "fields": {
+          "first_name": "Jermaine",
+          "id": 2,
+          "last_name": "O'connor",
+        },
         "queryName": "TestQuery",
       },
     },
     {
-      "cursor": "gumKG7SDrooLXO_GjBeq9Ir_9P4A7AxYyYOrBJxk4-Y.Tr2FOX4hvWO6gznjYcT4sVzNX6OZl1JeWTfVwF3T9JFWW1Xx4dxX7CC6TwRU_wvccieO8hQLj3nfogSnZl9aGGBE4yM6LuE4E_imTfEhVohDNvv5YJQXAhYPAq1pWzkBWoutqQMaxa7eBWHZX-UDToEixb_9HlXmphd-8F196hlB6naDZidzF7eje5AVqwUTPtqxVlZ8vTV9n8FS",
+      "cursor": "hxq6aLoYC69MhcHj_7nAHEAOYBgQgK-lilrZZK8PlUQ.UMAa_PpPVW-1oDBX3oeT2v8hWra5lGac55zuXzuQPAXXrGcc4PnbIIZJWTcqzXAOOCzqPER9aVjPNQGXtFgCBw1vyZNIcFTVMsMnQyCuvr71p4VYGlQF7qgFIwtCUU7xF1tQA8zK",
       "node": {
         "admin": 1,
         "created_at": 1647959350,
@@ -1247,20 +1202,11 @@ exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the th
         "last_name": "Rhodes",
       },
       "rawCursor": {
-        "fields": [
-          {
-            "field": "first_name",
-            "value": "Joseph",
-          },
-          {
-            "field": "last_name",
-            "value": "Rhodes",
-          },
-          {
-            "field": "id",
-            "value": 3,
-          },
-        ],
+        "fields": {
+          "first_name": "Joseph",
+          "id": 3,
+          "last_name": "Rhodes",
+        },
         "queryName": "TestQuery",
       },
     },
@@ -1388,7 +1334,7 @@ exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of fi
 {
   "edges": [
     {
-      "cursor": "i-LdTZZAxan9T1wX75VRqqUxReT3-5CyiF6oh0tEekY.VxGPw46ar3DEXXDlxQeSAAXC98aYXQCPtczK-nM-Snld80n5x2GGge9NScwpix_pyDgzq5AM22nAnYUAmUxZYAc58Zlv8jkjVj26bi31QdMjz9-UAaCQjihZXpabelIxS8EaVypjonbwuVIsPP2uSw3e5IFF2t7DseRwyQ_Ylq-_ajCQRoFwz4y4_e6q3Q973gHhacu6vdkrOTY",
+      "cursor": "Vl8ajMnWgEXNNlI9TZNEzkzZT5fPgD7qdP_dIQBcjlM.nGHtSUghlMl64TM8BjfzsV4r2v-SL_TlQyYbwTz0nSbnzpetCeSw81VKEzJhkakKw3yRUHxi6ijfpwZEvyprnzBJzZ1gh070hs4CqayTv-g_KwpwjHGWUxUBkKA5S40-_oaeVS8",
       "node": {
         "admin": 0,
         "created_at": 1662538189,
@@ -1400,7 +1346,7 @@ exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of fi
       },
     },
     {
-      "cursor": "SuWlzjWxdtSVDzgPp_mVdQH7S4pbbIpNqmJJFWwXOws.9732ntsWW_36ePfEiU1_85i4VHGpnlt60LcekRaV6hZiIfLaDEJyTxv4_mT0gVYjC05he25PbktssRXIQMdfnwfl2PkS47CW75s-XwbfYuhuaZJZfUpZLW5O7xVWf5R2YD7FEdd53lDlXJDbEE5TvRvM8TNkhCSh8LTnJEFNqADHkbWz-H7pDPOaOBsLE3n_EUYcf498pgjPJCRN",
+      "cursor": "BF4zwhmn3i_aUO8fMntuvbJbVfFA77xjg4HWAbCqZ8s.TcLZaSN-rn8Zij9ZZWUQgs3n6YG4t0yuwODBikGsWGnL3td0c3YCwQt99Dml_IfofoAbMsPQTVoiu1gWjQ3cm4xA5Pm019RFK3kSzgV3TUHM7EjIkmTbnmjYlTsGT-xYHt8V5QmM",
       "node": {
         "admin": 0,
         "created_at": 1604543417,
@@ -1418,7 +1364,7 @@ exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of fi
   },
   Symbol(edgesWithRawCursor): [
     {
-      "cursor": "i-LdTZZAxan9T1wX75VRqqUxReT3-5CyiF6oh0tEekY.VxGPw46ar3DEXXDlxQeSAAXC98aYXQCPtczK-nM-Snld80n5x2GGge9NScwpix_pyDgzq5AM22nAnYUAmUxZYAc58Zlv8jkjVj26bi31QdMjz9-UAaCQjihZXpabelIxS8EaVypjonbwuVIsPP2uSw3e5IFF2t7DseRwyQ_Ylq-_ajCQRoFwz4y4_e6q3Q973gHhacu6vdkrOTY",
+      "cursor": "Vl8ajMnWgEXNNlI9TZNEzkzZT5fPgD7qdP_dIQBcjlM.nGHtSUghlMl64TM8BjfzsV4r2v-SL_TlQyYbwTz0nSbnzpetCeSw81VKEzJhkakKw3yRUHxi6ijfpwZEvyprnzBJzZ1gh070hs4CqayTv-g_KwpwjHGWUxUBkKA5S40-_oaeVS8",
       "node": {
         "admin": 0,
         "created_at": 1662538189,
@@ -1429,25 +1375,16 @@ exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of fi
         "last_name": "Duncan",
       },
       "rawCursor": {
-        "fields": [
-          {
-            "field": "first_name",
-            "value": "Anika",
-          },
-          {
-            "field": "last_name",
-            "value": "Duncan",
-          },
-          {
-            "field": "id",
-            "value": 1,
-          },
-        ],
+        "fields": {
+          "first_name": "Anika",
+          "id": 1,
+          "last_name": "Duncan",
+        },
         "queryName": "TestQuery",
       },
     },
     {
-      "cursor": "SuWlzjWxdtSVDzgPp_mVdQH7S4pbbIpNqmJJFWwXOws.9732ntsWW_36ePfEiU1_85i4VHGpnlt60LcekRaV6hZiIfLaDEJyTxv4_mT0gVYjC05he25PbktssRXIQMdfnwfl2PkS47CW75s-XwbfYuhuaZJZfUpZLW5O7xVWf5R2YD7FEdd53lDlXJDbEE5TvRvM8TNkhCSh8LTnJEFNqADHkbWz-H7pDPOaOBsLE3n_EUYcf498pgjPJCRN",
+      "cursor": "BF4zwhmn3i_aUO8fMntuvbJbVfFA77xjg4HWAbCqZ8s.TcLZaSN-rn8Zij9ZZWUQgs3n6YG4t0yuwODBikGsWGnL3td0c3YCwQt99Dml_IfofoAbMsPQTVoiu1gWjQ3cm4xA5Pm019RFK3kSzgV3TUHM7EjIkmTbnmjYlTsGT-xYHt8V5QmM",
       "node": {
         "admin": 0,
         "created_at": 1604543417,
@@ -1458,20 +1395,11 @@ exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of fi
         "last_name": "Molina",
       },
       "rawCursor": {
-        "fields": [
-          {
-            "field": "first_name",
-            "value": "Cooper",
-          },
-          {
-            "field": "last_name",
-            "value": "Molina",
-          },
-          {
-            "field": "id",
-            "value": 4,
-          },
-        ],
+        "fields": {
+          "first_name": "Cooper",
+          "id": 4,
+          "last_name": "Molina",
+        },
         "queryName": "TestQuery",
       },
     },
@@ -1599,7 +1527,7 @@ exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of fi
 {
   "edges": [
     {
-      "cursor": "J37o3_oaPLyLsQB3RvZ6vH8ufoMit4kCwwo6n4RXp4o.sTsONeFB-6qIIK-1jCt7xcecDh7C1aMG8TceOsfXYAwRtsz8vtPBtBqemP6P-33B1Vf2W91pu1Kp31k05liFhPqkUlx7mUIJ35LebB2-HwyfbXWEgEQY91jSf8gCesc4G8xni0Y-70WgSLJM_iOZL2xTLMQg_BT9wt8Sb9gq7GYDStEAGpRvQaTLt80ti0Vb1a3ZVc865V-htWQh1pHbHQ",
+      "cursor": "l1X624m67Z5aYShVOLrThEcP7c-ezmCc4C48Dvxtt98.x7zYjxX9VEWDA1KAnJii8zyw5DP_OdIRnSkXATGhwTy6Wf0SSkjdjq6pTl9qxhp87EI-85pUJW9Thz_A6F_8BzlgccgDV-hXWjEj3CsGl96tSaA-X0_qNWBu425Mt6t5j3wNSdk8sSArBQ",
       "node": {
         "admin": 0,
         "created_at": 1679712324,
@@ -1611,7 +1539,7 @@ exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of fi
       },
     },
     {
-      "cursor": "gumKG7SDrooLXO_GjBeq9Ir_9P4A7AxYyYOrBJxk4-Y.Tr2FOX4hvWO6gznjYcT4sVzNX6OZl1JeWTfVwF3T9JFWW1Xx4dxX7CC6TwRU_wvccieO8hQLj3nfogSnZl9aGGBE4yM6LuE4E_imTfEhVohDNvv5YJQXAhYPAq1pWzkBWoutqQMaxa7eBWHZX-UDToEixb_9HlXmphd-8F196hlB6naDZidzF7eje5AVqwUTPtqxVlZ8vTV9n8FS",
+      "cursor": "hxq6aLoYC69MhcHj_7nAHEAOYBgQgK-lilrZZK8PlUQ.UMAa_PpPVW-1oDBX3oeT2v8hWra5lGac55zuXzuQPAXXrGcc4PnbIIZJWTcqzXAOOCzqPER9aVjPNQGXtFgCBw1vyZNIcFTVMsMnQyCuvr71p4VYGlQF7qgFIwtCUU7xF1tQA8zK",
       "node": {
         "admin": 1,
         "created_at": 1647959350,
@@ -1629,7 +1557,7 @@ exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of fi
   },
   Symbol(edgesWithRawCursor): [
     {
-      "cursor": "J37o3_oaPLyLsQB3RvZ6vH8ufoMit4kCwwo6n4RXp4o.sTsONeFB-6qIIK-1jCt7xcecDh7C1aMG8TceOsfXYAwRtsz8vtPBtBqemP6P-33B1Vf2W91pu1Kp31k05liFhPqkUlx7mUIJ35LebB2-HwyfbXWEgEQY91jSf8gCesc4G8xni0Y-70WgSLJM_iOZL2xTLMQg_BT9wt8Sb9gq7GYDStEAGpRvQaTLt80ti0Vb1a3ZVc865V-htWQh1pHbHQ",
+      "cursor": "l1X624m67Z5aYShVOLrThEcP7c-ezmCc4C48Dvxtt98.x7zYjxX9VEWDA1KAnJii8zyw5DP_OdIRnSkXATGhwTy6Wf0SSkjdjq6pTl9qxhp87EI-85pUJW9Thz_A6F_8BzlgccgDV-hXWjEj3CsGl96tSaA-X0_qNWBu425Mt6t5j3wNSdk8sSArBQ",
       "node": {
         "admin": 0,
         "created_at": 1679712324,
@@ -1640,25 +1568,16 @@ exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of fi
         "last_name": "O'connor",
       },
       "rawCursor": {
-        "fields": [
-          {
-            "field": "first_name",
-            "value": "Jermaine",
-          },
-          {
-            "field": "last_name",
-            "value": "O'connor",
-          },
-          {
-            "field": "id",
-            "value": 2,
-          },
-        ],
+        "fields": {
+          "first_name": "Jermaine",
+          "id": 2,
+          "last_name": "O'connor",
+        },
         "queryName": "TestQuery",
       },
     },
     {
-      "cursor": "gumKG7SDrooLXO_GjBeq9Ir_9P4A7AxYyYOrBJxk4-Y.Tr2FOX4hvWO6gznjYcT4sVzNX6OZl1JeWTfVwF3T9JFWW1Xx4dxX7CC6TwRU_wvccieO8hQLj3nfogSnZl9aGGBE4yM6LuE4E_imTfEhVohDNvv5YJQXAhYPAq1pWzkBWoutqQMaxa7eBWHZX-UDToEixb_9HlXmphd-8F196hlB6naDZidzF7eje5AVqwUTPtqxVlZ8vTV9n8FS",
+      "cursor": "hxq6aLoYC69MhcHj_7nAHEAOYBgQgK-lilrZZK8PlUQ.UMAa_PpPVW-1oDBX3oeT2v8hWra5lGac55zuXzuQPAXXrGcc4PnbIIZJWTcqzXAOOCzqPER9aVjPNQGXtFgCBw1vyZNIcFTVMsMnQyCuvr71p4VYGlQF7qgFIwtCUU7xF1tQA8zK",
       "node": {
         "admin": 1,
         "created_at": 1647959350,
@@ -1669,20 +1588,11 @@ exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of fi
         "last_name": "Rhodes",
       },
       "rawCursor": {
-        "fields": [
-          {
-            "field": "first_name",
-            "value": "Joseph",
-          },
-          {
-            "field": "last_name",
-            "value": "Rhodes",
-          },
-          {
-            "field": "id",
-            "value": 3,
-          },
-        ],
+        "fields": {
+          "first_name": "Joseph",
+          "id": 3,
+          "last_name": "Rhodes",
+        },
         "queryName": "TestQuery",
       },
     },
@@ -1752,7 +1662,7 @@ exports[`SqlCursorPagination > selects the first 3 items 10`] = `
 {
   "edges": [
     {
-      "cursor": "mZ9UC-zRVUUh-cHMzDFaDfN7Si364wwn2IkfCx61gQY.6iN8jsmKGNNf57EbOYHwMbKXWfvirHoQY1oUQOoVrIjYhPrNRGZBo0swhHKvgoasOfQUQCKFxcCZhizmGoNKEw72Tj6tJHlZk_CPOREdsR_7XdMf3DZfSWSieDtk6bEWyhkeDuVPl0D8PryB-U0c-WcNxlAFokHol_DD2UQacjA003gW1JevGtewQ3wMoWDlxmgc3bau7PCvoEI",
+      "cursor": "gmWf5PUciGkaS3yuWvnYlCXra1kqrlsaGbbNJfxaF7I.IR52jEVV-zw_W7sRw5HtYQfTQhWbA4dLQw_stenfwgBDIAMZvc78sR5MEvBaLasXRLLv-Z0hxSu0HzZIczNC0zm-ltJ7NRLnQD09498KNFpdBeQBGnEJuskupvdR5TyG0l4Mjbg",
       "node": {
         "admin": 1,
         "created_at": 1631332719,
@@ -1764,7 +1674,7 @@ exports[`SqlCursorPagination > selects the first 3 items 10`] = `
       },
     },
     {
-      "cursor": "i-LdTZZAxan9T1wX75VRqqUxReT3-5CyiF6oh0tEekY.VxGPw46ar3DEXXDlxQeSAAXC98aYXQCPtczK-nM-Snld80n5x2GGge9NScwpix_pyDgzq5AM22nAnYUAmUxZYAc58Zlv8jkjVj26bi31QdMjz9-UAaCQjihZXpabelIxS8EaVypjonbwuVIsPP2uSw3e5IFF2t7DseRwyQ_Ylq-_ajCQRoFwz4y4_e6q3Q973gHhacu6vdkrOTY",
+      "cursor": "Vl8ajMnWgEXNNlI9TZNEzkzZT5fPgD7qdP_dIQBcjlM.nGHtSUghlMl64TM8BjfzsV4r2v-SL_TlQyYbwTz0nSbnzpetCeSw81VKEzJhkakKw3yRUHxi6ijfpwZEvyprnzBJzZ1gh070hs4CqayTv-g_KwpwjHGWUxUBkKA5S40-_oaeVS8",
       "node": {
         "admin": 0,
         "created_at": 1662538189,
@@ -1776,7 +1686,7 @@ exports[`SqlCursorPagination > selects the first 3 items 10`] = `
       },
     },
     {
-      "cursor": "SuWlzjWxdtSVDzgPp_mVdQH7S4pbbIpNqmJJFWwXOws.9732ntsWW_36ePfEiU1_85i4VHGpnlt60LcekRaV6hZiIfLaDEJyTxv4_mT0gVYjC05he25PbktssRXIQMdfnwfl2PkS47CW75s-XwbfYuhuaZJZfUpZLW5O7xVWf5R2YD7FEdd53lDlXJDbEE5TvRvM8TNkhCSh8LTnJEFNqADHkbWz-H7pDPOaOBsLE3n_EUYcf498pgjPJCRN",
+      "cursor": "BF4zwhmn3i_aUO8fMntuvbJbVfFA77xjg4HWAbCqZ8s.TcLZaSN-rn8Zij9ZZWUQgs3n6YG4t0yuwODBikGsWGnL3td0c3YCwQt99Dml_IfofoAbMsPQTVoiu1gWjQ3cm4xA5Pm019RFK3kSzgV3TUHM7EjIkmTbnmjYlTsGT-xYHt8V5QmM",
       "node": {
         "admin": 0,
         "created_at": 1604543417,
@@ -1794,7 +1704,7 @@ exports[`SqlCursorPagination > selects the first 3 items 10`] = `
   },
   Symbol(edgesWithRawCursor): [
     {
-      "cursor": "mZ9UC-zRVUUh-cHMzDFaDfN7Si364wwn2IkfCx61gQY.6iN8jsmKGNNf57EbOYHwMbKXWfvirHoQY1oUQOoVrIjYhPrNRGZBo0swhHKvgoasOfQUQCKFxcCZhizmGoNKEw72Tj6tJHlZk_CPOREdsR_7XdMf3DZfSWSieDtk6bEWyhkeDuVPl0D8PryB-U0c-WcNxlAFokHol_DD2UQacjA003gW1JevGtewQ3wMoWDlxmgc3bau7PCvoEI",
+      "cursor": "gmWf5PUciGkaS3yuWvnYlCXra1kqrlsaGbbNJfxaF7I.IR52jEVV-zw_W7sRw5HtYQfTQhWbA4dLQw_stenfwgBDIAMZvc78sR5MEvBaLasXRLLv-Z0hxSu0HzZIczNC0zm-ltJ7NRLnQD09498KNFpdBeQBGnEJuskupvdR5TyG0l4Mjbg",
       "node": {
         "admin": 1,
         "created_at": 1631332719,
@@ -1805,25 +1715,16 @@ exports[`SqlCursorPagination > selects the first 3 items 10`] = `
         "last_name": "Molina",
       },
       "rawCursor": {
-        "fields": [
-          {
-            "field": "first_name",
-            "value": "Anika",
-          },
-          {
-            "field": "last_name",
-            "value": "Molina",
-          },
-          {
-            "field": "id",
-            "value": 5,
-          },
-        ],
+        "fields": {
+          "first_name": "Anika",
+          "id": 5,
+          "last_name": "Molina",
+        },
         "queryName": "TestQuery",
       },
     },
     {
-      "cursor": "i-LdTZZAxan9T1wX75VRqqUxReT3-5CyiF6oh0tEekY.VxGPw46ar3DEXXDlxQeSAAXC98aYXQCPtczK-nM-Snld80n5x2GGge9NScwpix_pyDgzq5AM22nAnYUAmUxZYAc58Zlv8jkjVj26bi31QdMjz9-UAaCQjihZXpabelIxS8EaVypjonbwuVIsPP2uSw3e5IFF2t7DseRwyQ_Ylq-_ajCQRoFwz4y4_e6q3Q973gHhacu6vdkrOTY",
+      "cursor": "Vl8ajMnWgEXNNlI9TZNEzkzZT5fPgD7qdP_dIQBcjlM.nGHtSUghlMl64TM8BjfzsV4r2v-SL_TlQyYbwTz0nSbnzpetCeSw81VKEzJhkakKw3yRUHxi6ijfpwZEvyprnzBJzZ1gh070hs4CqayTv-g_KwpwjHGWUxUBkKA5S40-_oaeVS8",
       "node": {
         "admin": 0,
         "created_at": 1662538189,
@@ -1834,25 +1735,16 @@ exports[`SqlCursorPagination > selects the first 3 items 10`] = `
         "last_name": "Duncan",
       },
       "rawCursor": {
-        "fields": [
-          {
-            "field": "first_name",
-            "value": "Anika",
-          },
-          {
-            "field": "last_name",
-            "value": "Duncan",
-          },
-          {
-            "field": "id",
-            "value": 1,
-          },
-        ],
+        "fields": {
+          "first_name": "Anika",
+          "id": 1,
+          "last_name": "Duncan",
+        },
         "queryName": "TestQuery",
       },
     },
     {
-      "cursor": "SuWlzjWxdtSVDzgPp_mVdQH7S4pbbIpNqmJJFWwXOws.9732ntsWW_36ePfEiU1_85i4VHGpnlt60LcekRaV6hZiIfLaDEJyTxv4_mT0gVYjC05he25PbktssRXIQMdfnwfl2PkS47CW75s-XwbfYuhuaZJZfUpZLW5O7xVWf5R2YD7FEdd53lDlXJDbEE5TvRvM8TNkhCSh8LTnJEFNqADHkbWz-H7pDPOaOBsLE3n_EUYcf498pgjPJCRN",
+      "cursor": "BF4zwhmn3i_aUO8fMntuvbJbVfFA77xjg4HWAbCqZ8s.TcLZaSN-rn8Zij9ZZWUQgs3n6YG4t0yuwODBikGsWGnL3td0c3YCwQt99Dml_IfofoAbMsPQTVoiu1gWjQ3cm4xA5Pm019RFK3kSzgV3TUHM7EjIkmTbnmjYlTsGT-xYHt8V5QmM",
       "node": {
         "admin": 0,
         "created_at": 1604543417,
@@ -1863,20 +1755,11 @@ exports[`SqlCursorPagination > selects the first 3 items 10`] = `
         "last_name": "Molina",
       },
       "rawCursor": {
-        "fields": [
-          {
-            "field": "first_name",
-            "value": "Cooper",
-          },
-          {
-            "field": "last_name",
-            "value": "Molina",
-          },
-          {
-            "field": "id",
-            "value": 4,
-          },
-        ],
+        "fields": {
+          "first_name": "Cooper",
+          "id": 4,
+          "last_name": "Molina",
+        },
         "queryName": "TestQuery",
       },
     },
@@ -1946,7 +1829,7 @@ exports[`SqlCursorPagination > selects the first infinity (all) items 10`] = `
 {
   "edges": [
     {
-      "cursor": "mZ9UC-zRVUUh-cHMzDFaDfN7Si364wwn2IkfCx61gQY.6iN8jsmKGNNf57EbOYHwMbKXWfvirHoQY1oUQOoVrIjYhPrNRGZBo0swhHKvgoasOfQUQCKFxcCZhizmGoNKEw72Tj6tJHlZk_CPOREdsR_7XdMf3DZfSWSieDtk6bEWyhkeDuVPl0D8PryB-U0c-WcNxlAFokHol_DD2UQacjA003gW1JevGtewQ3wMoWDlxmgc3bau7PCvoEI",
+      "cursor": "gmWf5PUciGkaS3yuWvnYlCXra1kqrlsaGbbNJfxaF7I.IR52jEVV-zw_W7sRw5HtYQfTQhWbA4dLQw_stenfwgBDIAMZvc78sR5MEvBaLasXRLLv-Z0hxSu0HzZIczNC0zm-ltJ7NRLnQD09498KNFpdBeQBGnEJuskupvdR5TyG0l4Mjbg",
       "node": {
         "admin": 1,
         "created_at": 1631332719,
@@ -1958,7 +1841,7 @@ exports[`SqlCursorPagination > selects the first infinity (all) items 10`] = `
       },
     },
     {
-      "cursor": "i-LdTZZAxan9T1wX75VRqqUxReT3-5CyiF6oh0tEekY.VxGPw46ar3DEXXDlxQeSAAXC98aYXQCPtczK-nM-Snld80n5x2GGge9NScwpix_pyDgzq5AM22nAnYUAmUxZYAc58Zlv8jkjVj26bi31QdMjz9-UAaCQjihZXpabelIxS8EaVypjonbwuVIsPP2uSw3e5IFF2t7DseRwyQ_Ylq-_ajCQRoFwz4y4_e6q3Q973gHhacu6vdkrOTY",
+      "cursor": "Vl8ajMnWgEXNNlI9TZNEzkzZT5fPgD7qdP_dIQBcjlM.nGHtSUghlMl64TM8BjfzsV4r2v-SL_TlQyYbwTz0nSbnzpetCeSw81VKEzJhkakKw3yRUHxi6ijfpwZEvyprnzBJzZ1gh070hs4CqayTv-g_KwpwjHGWUxUBkKA5S40-_oaeVS8",
       "node": {
         "admin": 0,
         "created_at": 1662538189,
@@ -1970,7 +1853,7 @@ exports[`SqlCursorPagination > selects the first infinity (all) items 10`] = `
       },
     },
     {
-      "cursor": "SuWlzjWxdtSVDzgPp_mVdQH7S4pbbIpNqmJJFWwXOws.9732ntsWW_36ePfEiU1_85i4VHGpnlt60LcekRaV6hZiIfLaDEJyTxv4_mT0gVYjC05he25PbktssRXIQMdfnwfl2PkS47CW75s-XwbfYuhuaZJZfUpZLW5O7xVWf5R2YD7FEdd53lDlXJDbEE5TvRvM8TNkhCSh8LTnJEFNqADHkbWz-H7pDPOaOBsLE3n_EUYcf498pgjPJCRN",
+      "cursor": "BF4zwhmn3i_aUO8fMntuvbJbVfFA77xjg4HWAbCqZ8s.TcLZaSN-rn8Zij9ZZWUQgs3n6YG4t0yuwODBikGsWGnL3td0c3YCwQt99Dml_IfofoAbMsPQTVoiu1gWjQ3cm4xA5Pm019RFK3kSzgV3TUHM7EjIkmTbnmjYlTsGT-xYHt8V5QmM",
       "node": {
         "admin": 0,
         "created_at": 1604543417,
@@ -1982,7 +1865,7 @@ exports[`SqlCursorPagination > selects the first infinity (all) items 10`] = `
       },
     },
     {
-      "cursor": "J37o3_oaPLyLsQB3RvZ6vH8ufoMit4kCwwo6n4RXp4o.sTsONeFB-6qIIK-1jCt7xcecDh7C1aMG8TceOsfXYAwRtsz8vtPBtBqemP6P-33B1Vf2W91pu1Kp31k05liFhPqkUlx7mUIJ35LebB2-HwyfbXWEgEQY91jSf8gCesc4G8xni0Y-70WgSLJM_iOZL2xTLMQg_BT9wt8Sb9gq7GYDStEAGpRvQaTLt80ti0Vb1a3ZVc865V-htWQh1pHbHQ",
+      "cursor": "l1X624m67Z5aYShVOLrThEcP7c-ezmCc4C48Dvxtt98.x7zYjxX9VEWDA1KAnJii8zyw5DP_OdIRnSkXATGhwTy6Wf0SSkjdjq6pTl9qxhp87EI-85pUJW9Thz_A6F_8BzlgccgDV-hXWjEj3CsGl96tSaA-X0_qNWBu425Mt6t5j3wNSdk8sSArBQ",
       "node": {
         "admin": 0,
         "created_at": 1679712324,
@@ -1994,7 +1877,7 @@ exports[`SqlCursorPagination > selects the first infinity (all) items 10`] = `
       },
     },
     {
-      "cursor": "gumKG7SDrooLXO_GjBeq9Ir_9P4A7AxYyYOrBJxk4-Y.Tr2FOX4hvWO6gznjYcT4sVzNX6OZl1JeWTfVwF3T9JFWW1Xx4dxX7CC6TwRU_wvccieO8hQLj3nfogSnZl9aGGBE4yM6LuE4E_imTfEhVohDNvv5YJQXAhYPAq1pWzkBWoutqQMaxa7eBWHZX-UDToEixb_9HlXmphd-8F196hlB6naDZidzF7eje5AVqwUTPtqxVlZ8vTV9n8FS",
+      "cursor": "hxq6aLoYC69MhcHj_7nAHEAOYBgQgK-lilrZZK8PlUQ.UMAa_PpPVW-1oDBX3oeT2v8hWra5lGac55zuXzuQPAXXrGcc4PnbIIZJWTcqzXAOOCzqPER9aVjPNQGXtFgCBw1vyZNIcFTVMsMnQyCuvr71p4VYGlQF7qgFIwtCUU7xF1tQA8zK",
       "node": {
         "admin": 1,
         "created_at": 1647959350,
@@ -2012,7 +1895,7 @@ exports[`SqlCursorPagination > selects the first infinity (all) items 10`] = `
   },
   Symbol(edgesWithRawCursor): [
     {
-      "cursor": "mZ9UC-zRVUUh-cHMzDFaDfN7Si364wwn2IkfCx61gQY.6iN8jsmKGNNf57EbOYHwMbKXWfvirHoQY1oUQOoVrIjYhPrNRGZBo0swhHKvgoasOfQUQCKFxcCZhizmGoNKEw72Tj6tJHlZk_CPOREdsR_7XdMf3DZfSWSieDtk6bEWyhkeDuVPl0D8PryB-U0c-WcNxlAFokHol_DD2UQacjA003gW1JevGtewQ3wMoWDlxmgc3bau7PCvoEI",
+      "cursor": "gmWf5PUciGkaS3yuWvnYlCXra1kqrlsaGbbNJfxaF7I.IR52jEVV-zw_W7sRw5HtYQfTQhWbA4dLQw_stenfwgBDIAMZvc78sR5MEvBaLasXRLLv-Z0hxSu0HzZIczNC0zm-ltJ7NRLnQD09498KNFpdBeQBGnEJuskupvdR5TyG0l4Mjbg",
       "node": {
         "admin": 1,
         "created_at": 1631332719,
@@ -2023,25 +1906,16 @@ exports[`SqlCursorPagination > selects the first infinity (all) items 10`] = `
         "last_name": "Molina",
       },
       "rawCursor": {
-        "fields": [
-          {
-            "field": "first_name",
-            "value": "Anika",
-          },
-          {
-            "field": "last_name",
-            "value": "Molina",
-          },
-          {
-            "field": "id",
-            "value": 5,
-          },
-        ],
+        "fields": {
+          "first_name": "Anika",
+          "id": 5,
+          "last_name": "Molina",
+        },
         "queryName": "TestQuery",
       },
     },
     {
-      "cursor": "i-LdTZZAxan9T1wX75VRqqUxReT3-5CyiF6oh0tEekY.VxGPw46ar3DEXXDlxQeSAAXC98aYXQCPtczK-nM-Snld80n5x2GGge9NScwpix_pyDgzq5AM22nAnYUAmUxZYAc58Zlv8jkjVj26bi31QdMjz9-UAaCQjihZXpabelIxS8EaVypjonbwuVIsPP2uSw3e5IFF2t7DseRwyQ_Ylq-_ajCQRoFwz4y4_e6q3Q973gHhacu6vdkrOTY",
+      "cursor": "Vl8ajMnWgEXNNlI9TZNEzkzZT5fPgD7qdP_dIQBcjlM.nGHtSUghlMl64TM8BjfzsV4r2v-SL_TlQyYbwTz0nSbnzpetCeSw81VKEzJhkakKw3yRUHxi6ijfpwZEvyprnzBJzZ1gh070hs4CqayTv-g_KwpwjHGWUxUBkKA5S40-_oaeVS8",
       "node": {
         "admin": 0,
         "created_at": 1662538189,
@@ -2052,25 +1926,16 @@ exports[`SqlCursorPagination > selects the first infinity (all) items 10`] = `
         "last_name": "Duncan",
       },
       "rawCursor": {
-        "fields": [
-          {
-            "field": "first_name",
-            "value": "Anika",
-          },
-          {
-            "field": "last_name",
-            "value": "Duncan",
-          },
-          {
-            "field": "id",
-            "value": 1,
-          },
-        ],
+        "fields": {
+          "first_name": "Anika",
+          "id": 1,
+          "last_name": "Duncan",
+        },
         "queryName": "TestQuery",
       },
     },
     {
-      "cursor": "SuWlzjWxdtSVDzgPp_mVdQH7S4pbbIpNqmJJFWwXOws.9732ntsWW_36ePfEiU1_85i4VHGpnlt60LcekRaV6hZiIfLaDEJyTxv4_mT0gVYjC05he25PbktssRXIQMdfnwfl2PkS47CW75s-XwbfYuhuaZJZfUpZLW5O7xVWf5R2YD7FEdd53lDlXJDbEE5TvRvM8TNkhCSh8LTnJEFNqADHkbWz-H7pDPOaOBsLE3n_EUYcf498pgjPJCRN",
+      "cursor": "BF4zwhmn3i_aUO8fMntuvbJbVfFA77xjg4HWAbCqZ8s.TcLZaSN-rn8Zij9ZZWUQgs3n6YG4t0yuwODBikGsWGnL3td0c3YCwQt99Dml_IfofoAbMsPQTVoiu1gWjQ3cm4xA5Pm019RFK3kSzgV3TUHM7EjIkmTbnmjYlTsGT-xYHt8V5QmM",
       "node": {
         "admin": 0,
         "created_at": 1604543417,
@@ -2081,25 +1946,16 @@ exports[`SqlCursorPagination > selects the first infinity (all) items 10`] = `
         "last_name": "Molina",
       },
       "rawCursor": {
-        "fields": [
-          {
-            "field": "first_name",
-            "value": "Cooper",
-          },
-          {
-            "field": "last_name",
-            "value": "Molina",
-          },
-          {
-            "field": "id",
-            "value": 4,
-          },
-        ],
+        "fields": {
+          "first_name": "Cooper",
+          "id": 4,
+          "last_name": "Molina",
+        },
         "queryName": "TestQuery",
       },
     },
     {
-      "cursor": "J37o3_oaPLyLsQB3RvZ6vH8ufoMit4kCwwo6n4RXp4o.sTsONeFB-6qIIK-1jCt7xcecDh7C1aMG8TceOsfXYAwRtsz8vtPBtBqemP6P-33B1Vf2W91pu1Kp31k05liFhPqkUlx7mUIJ35LebB2-HwyfbXWEgEQY91jSf8gCesc4G8xni0Y-70WgSLJM_iOZL2xTLMQg_BT9wt8Sb9gq7GYDStEAGpRvQaTLt80ti0Vb1a3ZVc865V-htWQh1pHbHQ",
+      "cursor": "l1X624m67Z5aYShVOLrThEcP7c-ezmCc4C48Dvxtt98.x7zYjxX9VEWDA1KAnJii8zyw5DP_OdIRnSkXATGhwTy6Wf0SSkjdjq6pTl9qxhp87EI-85pUJW9Thz_A6F_8BzlgccgDV-hXWjEj3CsGl96tSaA-X0_qNWBu425Mt6t5j3wNSdk8sSArBQ",
       "node": {
         "admin": 0,
         "created_at": 1679712324,
@@ -2110,25 +1966,16 @@ exports[`SqlCursorPagination > selects the first infinity (all) items 10`] = `
         "last_name": "O'connor",
       },
       "rawCursor": {
-        "fields": [
-          {
-            "field": "first_name",
-            "value": "Jermaine",
-          },
-          {
-            "field": "last_name",
-            "value": "O'connor",
-          },
-          {
-            "field": "id",
-            "value": 2,
-          },
-        ],
+        "fields": {
+          "first_name": "Jermaine",
+          "id": 2,
+          "last_name": "O'connor",
+        },
         "queryName": "TestQuery",
       },
     },
     {
-      "cursor": "gumKG7SDrooLXO_GjBeq9Ir_9P4A7AxYyYOrBJxk4-Y.Tr2FOX4hvWO6gznjYcT4sVzNX6OZl1JeWTfVwF3T9JFWW1Xx4dxX7CC6TwRU_wvccieO8hQLj3nfogSnZl9aGGBE4yM6LuE4E_imTfEhVohDNvv5YJQXAhYPAq1pWzkBWoutqQMaxa7eBWHZX-UDToEixb_9HlXmphd-8F196hlB6naDZidzF7eje5AVqwUTPtqxVlZ8vTV9n8FS",
+      "cursor": "hxq6aLoYC69MhcHj_7nAHEAOYBgQgK-lilrZZK8PlUQ.UMAa_PpPVW-1oDBX3oeT2v8hWra5lGac55zuXzuQPAXXrGcc4PnbIIZJWTcqzXAOOCzqPER9aVjPNQGXtFgCBw1vyZNIcFTVMsMnQyCuvr71p4VYGlQF7qgFIwtCUU7xF1tQA8zK",
       "node": {
         "admin": 1,
         "created_at": 1647959350,
@@ -2139,20 +1986,11 @@ exports[`SqlCursorPagination > selects the first infinity (all) items 10`] = `
         "last_name": "Rhodes",
       },
       "rawCursor": {
-        "fields": [
-          {
-            "field": "first_name",
-            "value": "Joseph",
-          },
-          {
-            "field": "last_name",
-            "value": "Rhodes",
-          },
-          {
-            "field": "id",
-            "value": 3,
-          },
-        ],
+        "fields": {
+          "first_name": "Joseph",
+          "id": 3,
+          "last_name": "Rhodes",
+        },
         "queryName": "TestQuery",
       },
     },
@@ -2222,7 +2060,7 @@ exports[`SqlCursorPagination > selects the last 3 items 10`] = `
 {
   "edges": [
     {
-      "cursor": "SuWlzjWxdtSVDzgPp_mVdQH7S4pbbIpNqmJJFWwXOws.9732ntsWW_36ePfEiU1_85i4VHGpnlt60LcekRaV6hZiIfLaDEJyTxv4_mT0gVYjC05he25PbktssRXIQMdfnwfl2PkS47CW75s-XwbfYuhuaZJZfUpZLW5O7xVWf5R2YD7FEdd53lDlXJDbEE5TvRvM8TNkhCSh8LTnJEFNqADHkbWz-H7pDPOaOBsLE3n_EUYcf498pgjPJCRN",
+      "cursor": "BF4zwhmn3i_aUO8fMntuvbJbVfFA77xjg4HWAbCqZ8s.TcLZaSN-rn8Zij9ZZWUQgs3n6YG4t0yuwODBikGsWGnL3td0c3YCwQt99Dml_IfofoAbMsPQTVoiu1gWjQ3cm4xA5Pm019RFK3kSzgV3TUHM7EjIkmTbnmjYlTsGT-xYHt8V5QmM",
       "node": {
         "admin": 0,
         "created_at": 1604543417,
@@ -2234,7 +2072,7 @@ exports[`SqlCursorPagination > selects the last 3 items 10`] = `
       },
     },
     {
-      "cursor": "J37o3_oaPLyLsQB3RvZ6vH8ufoMit4kCwwo6n4RXp4o.sTsONeFB-6qIIK-1jCt7xcecDh7C1aMG8TceOsfXYAwRtsz8vtPBtBqemP6P-33B1Vf2W91pu1Kp31k05liFhPqkUlx7mUIJ35LebB2-HwyfbXWEgEQY91jSf8gCesc4G8xni0Y-70WgSLJM_iOZL2xTLMQg_BT9wt8Sb9gq7GYDStEAGpRvQaTLt80ti0Vb1a3ZVc865V-htWQh1pHbHQ",
+      "cursor": "l1X624m67Z5aYShVOLrThEcP7c-ezmCc4C48Dvxtt98.x7zYjxX9VEWDA1KAnJii8zyw5DP_OdIRnSkXATGhwTy6Wf0SSkjdjq6pTl9qxhp87EI-85pUJW9Thz_A6F_8BzlgccgDV-hXWjEj3CsGl96tSaA-X0_qNWBu425Mt6t5j3wNSdk8sSArBQ",
       "node": {
         "admin": 0,
         "created_at": 1679712324,
@@ -2246,7 +2084,7 @@ exports[`SqlCursorPagination > selects the last 3 items 10`] = `
       },
     },
     {
-      "cursor": "gumKG7SDrooLXO_GjBeq9Ir_9P4A7AxYyYOrBJxk4-Y.Tr2FOX4hvWO6gznjYcT4sVzNX6OZl1JeWTfVwF3T9JFWW1Xx4dxX7CC6TwRU_wvccieO8hQLj3nfogSnZl9aGGBE4yM6LuE4E_imTfEhVohDNvv5YJQXAhYPAq1pWzkBWoutqQMaxa7eBWHZX-UDToEixb_9HlXmphd-8F196hlB6naDZidzF7eje5AVqwUTPtqxVlZ8vTV9n8FS",
+      "cursor": "hxq6aLoYC69MhcHj_7nAHEAOYBgQgK-lilrZZK8PlUQ.UMAa_PpPVW-1oDBX3oeT2v8hWra5lGac55zuXzuQPAXXrGcc4PnbIIZJWTcqzXAOOCzqPER9aVjPNQGXtFgCBw1vyZNIcFTVMsMnQyCuvr71p4VYGlQF7qgFIwtCUU7xF1tQA8zK",
       "node": {
         "admin": 1,
         "created_at": 1647959350,
@@ -2264,7 +2102,7 @@ exports[`SqlCursorPagination > selects the last 3 items 10`] = `
   },
   Symbol(edgesWithRawCursor): [
     {
-      "cursor": "SuWlzjWxdtSVDzgPp_mVdQH7S4pbbIpNqmJJFWwXOws.9732ntsWW_36ePfEiU1_85i4VHGpnlt60LcekRaV6hZiIfLaDEJyTxv4_mT0gVYjC05he25PbktssRXIQMdfnwfl2PkS47CW75s-XwbfYuhuaZJZfUpZLW5O7xVWf5R2YD7FEdd53lDlXJDbEE5TvRvM8TNkhCSh8LTnJEFNqADHkbWz-H7pDPOaOBsLE3n_EUYcf498pgjPJCRN",
+      "cursor": "BF4zwhmn3i_aUO8fMntuvbJbVfFA77xjg4HWAbCqZ8s.TcLZaSN-rn8Zij9ZZWUQgs3n6YG4t0yuwODBikGsWGnL3td0c3YCwQt99Dml_IfofoAbMsPQTVoiu1gWjQ3cm4xA5Pm019RFK3kSzgV3TUHM7EjIkmTbnmjYlTsGT-xYHt8V5QmM",
       "node": {
         "admin": 0,
         "created_at": 1604543417,
@@ -2275,25 +2113,16 @@ exports[`SqlCursorPagination > selects the last 3 items 10`] = `
         "last_name": "Molina",
       },
       "rawCursor": {
-        "fields": [
-          {
-            "field": "first_name",
-            "value": "Cooper",
-          },
-          {
-            "field": "last_name",
-            "value": "Molina",
-          },
-          {
-            "field": "id",
-            "value": 4,
-          },
-        ],
+        "fields": {
+          "first_name": "Cooper",
+          "id": 4,
+          "last_name": "Molina",
+        },
         "queryName": "TestQuery",
       },
     },
     {
-      "cursor": "J37o3_oaPLyLsQB3RvZ6vH8ufoMit4kCwwo6n4RXp4o.sTsONeFB-6qIIK-1jCt7xcecDh7C1aMG8TceOsfXYAwRtsz8vtPBtBqemP6P-33B1Vf2W91pu1Kp31k05liFhPqkUlx7mUIJ35LebB2-HwyfbXWEgEQY91jSf8gCesc4G8xni0Y-70WgSLJM_iOZL2xTLMQg_BT9wt8Sb9gq7GYDStEAGpRvQaTLt80ti0Vb1a3ZVc865V-htWQh1pHbHQ",
+      "cursor": "l1X624m67Z5aYShVOLrThEcP7c-ezmCc4C48Dvxtt98.x7zYjxX9VEWDA1KAnJii8zyw5DP_OdIRnSkXATGhwTy6Wf0SSkjdjq6pTl9qxhp87EI-85pUJW9Thz_A6F_8BzlgccgDV-hXWjEj3CsGl96tSaA-X0_qNWBu425Mt6t5j3wNSdk8sSArBQ",
       "node": {
         "admin": 0,
         "created_at": 1679712324,
@@ -2304,25 +2133,16 @@ exports[`SqlCursorPagination > selects the last 3 items 10`] = `
         "last_name": "O'connor",
       },
       "rawCursor": {
-        "fields": [
-          {
-            "field": "first_name",
-            "value": "Jermaine",
-          },
-          {
-            "field": "last_name",
-            "value": "O'connor",
-          },
-          {
-            "field": "id",
-            "value": 2,
-          },
-        ],
+        "fields": {
+          "first_name": "Jermaine",
+          "id": 2,
+          "last_name": "O'connor",
+        },
         "queryName": "TestQuery",
       },
     },
     {
-      "cursor": "gumKG7SDrooLXO_GjBeq9Ir_9P4A7AxYyYOrBJxk4-Y.Tr2FOX4hvWO6gznjYcT4sVzNX6OZl1JeWTfVwF3T9JFWW1Xx4dxX7CC6TwRU_wvccieO8hQLj3nfogSnZl9aGGBE4yM6LuE4E_imTfEhVohDNvv5YJQXAhYPAq1pWzkBWoutqQMaxa7eBWHZX-UDToEixb_9HlXmphd-8F196hlB6naDZidzF7eje5AVqwUTPtqxVlZ8vTV9n8FS",
+      "cursor": "hxq6aLoYC69MhcHj_7nAHEAOYBgQgK-lilrZZK8PlUQ.UMAa_PpPVW-1oDBX3oeT2v8hWra5lGac55zuXzuQPAXXrGcc4PnbIIZJWTcqzXAOOCzqPER9aVjPNQGXtFgCBw1vyZNIcFTVMsMnQyCuvr71p4VYGlQF7qgFIwtCUU7xF1tQA8zK",
       "node": {
         "admin": 1,
         "created_at": 1647959350,
@@ -2333,20 +2153,11 @@ exports[`SqlCursorPagination > selects the last 3 items 10`] = `
         "last_name": "Rhodes",
       },
       "rawCursor": {
-        "fields": [
-          {
-            "field": "first_name",
-            "value": "Joseph",
-          },
-          {
-            "field": "last_name",
-            "value": "Rhodes",
-          },
-          {
-            "field": "id",
-            "value": 3,
-          },
-        ],
+        "fields": {
+          "first_name": "Joseph",
+          "id": 3,
+          "last_name": "Rhodes",
+        },
         "queryName": "TestQuery",
       },
     },
@@ -2416,7 +2227,7 @@ exports[`SqlCursorPagination > selects the last infinity (all) items 10`] = `
 {
   "edges": [
     {
-      "cursor": "mZ9UC-zRVUUh-cHMzDFaDfN7Si364wwn2IkfCx61gQY.6iN8jsmKGNNf57EbOYHwMbKXWfvirHoQY1oUQOoVrIjYhPrNRGZBo0swhHKvgoasOfQUQCKFxcCZhizmGoNKEw72Tj6tJHlZk_CPOREdsR_7XdMf3DZfSWSieDtk6bEWyhkeDuVPl0D8PryB-U0c-WcNxlAFokHol_DD2UQacjA003gW1JevGtewQ3wMoWDlxmgc3bau7PCvoEI",
+      "cursor": "gmWf5PUciGkaS3yuWvnYlCXra1kqrlsaGbbNJfxaF7I.IR52jEVV-zw_W7sRw5HtYQfTQhWbA4dLQw_stenfwgBDIAMZvc78sR5MEvBaLasXRLLv-Z0hxSu0HzZIczNC0zm-ltJ7NRLnQD09498KNFpdBeQBGnEJuskupvdR5TyG0l4Mjbg",
       "node": {
         "admin": 1,
         "created_at": 1631332719,
@@ -2428,7 +2239,7 @@ exports[`SqlCursorPagination > selects the last infinity (all) items 10`] = `
       },
     },
     {
-      "cursor": "i-LdTZZAxan9T1wX75VRqqUxReT3-5CyiF6oh0tEekY.VxGPw46ar3DEXXDlxQeSAAXC98aYXQCPtczK-nM-Snld80n5x2GGge9NScwpix_pyDgzq5AM22nAnYUAmUxZYAc58Zlv8jkjVj26bi31QdMjz9-UAaCQjihZXpabelIxS8EaVypjonbwuVIsPP2uSw3e5IFF2t7DseRwyQ_Ylq-_ajCQRoFwz4y4_e6q3Q973gHhacu6vdkrOTY",
+      "cursor": "Vl8ajMnWgEXNNlI9TZNEzkzZT5fPgD7qdP_dIQBcjlM.nGHtSUghlMl64TM8BjfzsV4r2v-SL_TlQyYbwTz0nSbnzpetCeSw81VKEzJhkakKw3yRUHxi6ijfpwZEvyprnzBJzZ1gh070hs4CqayTv-g_KwpwjHGWUxUBkKA5S40-_oaeVS8",
       "node": {
         "admin": 0,
         "created_at": 1662538189,
@@ -2440,7 +2251,7 @@ exports[`SqlCursorPagination > selects the last infinity (all) items 10`] = `
       },
     },
     {
-      "cursor": "SuWlzjWxdtSVDzgPp_mVdQH7S4pbbIpNqmJJFWwXOws.9732ntsWW_36ePfEiU1_85i4VHGpnlt60LcekRaV6hZiIfLaDEJyTxv4_mT0gVYjC05he25PbktssRXIQMdfnwfl2PkS47CW75s-XwbfYuhuaZJZfUpZLW5O7xVWf5R2YD7FEdd53lDlXJDbEE5TvRvM8TNkhCSh8LTnJEFNqADHkbWz-H7pDPOaOBsLE3n_EUYcf498pgjPJCRN",
+      "cursor": "BF4zwhmn3i_aUO8fMntuvbJbVfFA77xjg4HWAbCqZ8s.TcLZaSN-rn8Zij9ZZWUQgs3n6YG4t0yuwODBikGsWGnL3td0c3YCwQt99Dml_IfofoAbMsPQTVoiu1gWjQ3cm4xA5Pm019RFK3kSzgV3TUHM7EjIkmTbnmjYlTsGT-xYHt8V5QmM",
       "node": {
         "admin": 0,
         "created_at": 1604543417,
@@ -2452,7 +2263,7 @@ exports[`SqlCursorPagination > selects the last infinity (all) items 10`] = `
       },
     },
     {
-      "cursor": "J37o3_oaPLyLsQB3RvZ6vH8ufoMit4kCwwo6n4RXp4o.sTsONeFB-6qIIK-1jCt7xcecDh7C1aMG8TceOsfXYAwRtsz8vtPBtBqemP6P-33B1Vf2W91pu1Kp31k05liFhPqkUlx7mUIJ35LebB2-HwyfbXWEgEQY91jSf8gCesc4G8xni0Y-70WgSLJM_iOZL2xTLMQg_BT9wt8Sb9gq7GYDStEAGpRvQaTLt80ti0Vb1a3ZVc865V-htWQh1pHbHQ",
+      "cursor": "l1X624m67Z5aYShVOLrThEcP7c-ezmCc4C48Dvxtt98.x7zYjxX9VEWDA1KAnJii8zyw5DP_OdIRnSkXATGhwTy6Wf0SSkjdjq6pTl9qxhp87EI-85pUJW9Thz_A6F_8BzlgccgDV-hXWjEj3CsGl96tSaA-X0_qNWBu425Mt6t5j3wNSdk8sSArBQ",
       "node": {
         "admin": 0,
         "created_at": 1679712324,
@@ -2464,7 +2275,7 @@ exports[`SqlCursorPagination > selects the last infinity (all) items 10`] = `
       },
     },
     {
-      "cursor": "gumKG7SDrooLXO_GjBeq9Ir_9P4A7AxYyYOrBJxk4-Y.Tr2FOX4hvWO6gznjYcT4sVzNX6OZl1JeWTfVwF3T9JFWW1Xx4dxX7CC6TwRU_wvccieO8hQLj3nfogSnZl9aGGBE4yM6LuE4E_imTfEhVohDNvv5YJQXAhYPAq1pWzkBWoutqQMaxa7eBWHZX-UDToEixb_9HlXmphd-8F196hlB6naDZidzF7eje5AVqwUTPtqxVlZ8vTV9n8FS",
+      "cursor": "hxq6aLoYC69MhcHj_7nAHEAOYBgQgK-lilrZZK8PlUQ.UMAa_PpPVW-1oDBX3oeT2v8hWra5lGac55zuXzuQPAXXrGcc4PnbIIZJWTcqzXAOOCzqPER9aVjPNQGXtFgCBw1vyZNIcFTVMsMnQyCuvr71p4VYGlQF7qgFIwtCUU7xF1tQA8zK",
       "node": {
         "admin": 1,
         "created_at": 1647959350,
@@ -2482,7 +2293,7 @@ exports[`SqlCursorPagination > selects the last infinity (all) items 10`] = `
   },
   Symbol(edgesWithRawCursor): [
     {
-      "cursor": "mZ9UC-zRVUUh-cHMzDFaDfN7Si364wwn2IkfCx61gQY.6iN8jsmKGNNf57EbOYHwMbKXWfvirHoQY1oUQOoVrIjYhPrNRGZBo0swhHKvgoasOfQUQCKFxcCZhizmGoNKEw72Tj6tJHlZk_CPOREdsR_7XdMf3DZfSWSieDtk6bEWyhkeDuVPl0D8PryB-U0c-WcNxlAFokHol_DD2UQacjA003gW1JevGtewQ3wMoWDlxmgc3bau7PCvoEI",
+      "cursor": "gmWf5PUciGkaS3yuWvnYlCXra1kqrlsaGbbNJfxaF7I.IR52jEVV-zw_W7sRw5HtYQfTQhWbA4dLQw_stenfwgBDIAMZvc78sR5MEvBaLasXRLLv-Z0hxSu0HzZIczNC0zm-ltJ7NRLnQD09498KNFpdBeQBGnEJuskupvdR5TyG0l4Mjbg",
       "node": {
         "admin": 1,
         "created_at": 1631332719,
@@ -2493,25 +2304,16 @@ exports[`SqlCursorPagination > selects the last infinity (all) items 10`] = `
         "last_name": "Molina",
       },
       "rawCursor": {
-        "fields": [
-          {
-            "field": "first_name",
-            "value": "Anika",
-          },
-          {
-            "field": "last_name",
-            "value": "Molina",
-          },
-          {
-            "field": "id",
-            "value": 5,
-          },
-        ],
+        "fields": {
+          "first_name": "Anika",
+          "id": 5,
+          "last_name": "Molina",
+        },
         "queryName": "TestQuery",
       },
     },
     {
-      "cursor": "i-LdTZZAxan9T1wX75VRqqUxReT3-5CyiF6oh0tEekY.VxGPw46ar3DEXXDlxQeSAAXC98aYXQCPtczK-nM-Snld80n5x2GGge9NScwpix_pyDgzq5AM22nAnYUAmUxZYAc58Zlv8jkjVj26bi31QdMjz9-UAaCQjihZXpabelIxS8EaVypjonbwuVIsPP2uSw3e5IFF2t7DseRwyQ_Ylq-_ajCQRoFwz4y4_e6q3Q973gHhacu6vdkrOTY",
+      "cursor": "Vl8ajMnWgEXNNlI9TZNEzkzZT5fPgD7qdP_dIQBcjlM.nGHtSUghlMl64TM8BjfzsV4r2v-SL_TlQyYbwTz0nSbnzpetCeSw81VKEzJhkakKw3yRUHxi6ijfpwZEvyprnzBJzZ1gh070hs4CqayTv-g_KwpwjHGWUxUBkKA5S40-_oaeVS8",
       "node": {
         "admin": 0,
         "created_at": 1662538189,
@@ -2522,25 +2324,16 @@ exports[`SqlCursorPagination > selects the last infinity (all) items 10`] = `
         "last_name": "Duncan",
       },
       "rawCursor": {
-        "fields": [
-          {
-            "field": "first_name",
-            "value": "Anika",
-          },
-          {
-            "field": "last_name",
-            "value": "Duncan",
-          },
-          {
-            "field": "id",
-            "value": 1,
-          },
-        ],
+        "fields": {
+          "first_name": "Anika",
+          "id": 1,
+          "last_name": "Duncan",
+        },
         "queryName": "TestQuery",
       },
     },
     {
-      "cursor": "SuWlzjWxdtSVDzgPp_mVdQH7S4pbbIpNqmJJFWwXOws.9732ntsWW_36ePfEiU1_85i4VHGpnlt60LcekRaV6hZiIfLaDEJyTxv4_mT0gVYjC05he25PbktssRXIQMdfnwfl2PkS47CW75s-XwbfYuhuaZJZfUpZLW5O7xVWf5R2YD7FEdd53lDlXJDbEE5TvRvM8TNkhCSh8LTnJEFNqADHkbWz-H7pDPOaOBsLE3n_EUYcf498pgjPJCRN",
+      "cursor": "BF4zwhmn3i_aUO8fMntuvbJbVfFA77xjg4HWAbCqZ8s.TcLZaSN-rn8Zij9ZZWUQgs3n6YG4t0yuwODBikGsWGnL3td0c3YCwQt99Dml_IfofoAbMsPQTVoiu1gWjQ3cm4xA5Pm019RFK3kSzgV3TUHM7EjIkmTbnmjYlTsGT-xYHt8V5QmM",
       "node": {
         "admin": 0,
         "created_at": 1604543417,
@@ -2551,25 +2344,16 @@ exports[`SqlCursorPagination > selects the last infinity (all) items 10`] = `
         "last_name": "Molina",
       },
       "rawCursor": {
-        "fields": [
-          {
-            "field": "first_name",
-            "value": "Cooper",
-          },
-          {
-            "field": "last_name",
-            "value": "Molina",
-          },
-          {
-            "field": "id",
-            "value": 4,
-          },
-        ],
+        "fields": {
+          "first_name": "Cooper",
+          "id": 4,
+          "last_name": "Molina",
+        },
         "queryName": "TestQuery",
       },
     },
     {
-      "cursor": "J37o3_oaPLyLsQB3RvZ6vH8ufoMit4kCwwo6n4RXp4o.sTsONeFB-6qIIK-1jCt7xcecDh7C1aMG8TceOsfXYAwRtsz8vtPBtBqemP6P-33B1Vf2W91pu1Kp31k05liFhPqkUlx7mUIJ35LebB2-HwyfbXWEgEQY91jSf8gCesc4G8xni0Y-70WgSLJM_iOZL2xTLMQg_BT9wt8Sb9gq7GYDStEAGpRvQaTLt80ti0Vb1a3ZVc865V-htWQh1pHbHQ",
+      "cursor": "l1X624m67Z5aYShVOLrThEcP7c-ezmCc4C48Dvxtt98.x7zYjxX9VEWDA1KAnJii8zyw5DP_OdIRnSkXATGhwTy6Wf0SSkjdjq6pTl9qxhp87EI-85pUJW9Thz_A6F_8BzlgccgDV-hXWjEj3CsGl96tSaA-X0_qNWBu425Mt6t5j3wNSdk8sSArBQ",
       "node": {
         "admin": 0,
         "created_at": 1679712324,
@@ -2580,25 +2364,16 @@ exports[`SqlCursorPagination > selects the last infinity (all) items 10`] = `
         "last_name": "O'connor",
       },
       "rawCursor": {
-        "fields": [
-          {
-            "field": "first_name",
-            "value": "Jermaine",
-          },
-          {
-            "field": "last_name",
-            "value": "O'connor",
-          },
-          {
-            "field": "id",
-            "value": 2,
-          },
-        ],
+        "fields": {
+          "first_name": "Jermaine",
+          "id": 2,
+          "last_name": "O'connor",
+        },
         "queryName": "TestQuery",
       },
     },
     {
-      "cursor": "gumKG7SDrooLXO_GjBeq9Ir_9P4A7AxYyYOrBJxk4-Y.Tr2FOX4hvWO6gznjYcT4sVzNX6OZl1JeWTfVwF3T9JFWW1Xx4dxX7CC6TwRU_wvccieO8hQLj3nfogSnZl9aGGBE4yM6LuE4E_imTfEhVohDNvv5YJQXAhYPAq1pWzkBWoutqQMaxa7eBWHZX-UDToEixb_9HlXmphd-8F196hlB6naDZidzF7eje5AVqwUTPtqxVlZ8vTV9n8FS",
+      "cursor": "hxq6aLoYC69MhcHj_7nAHEAOYBgQgK-lilrZZK8PlUQ.UMAa_PpPVW-1oDBX3oeT2v8hWra5lGac55zuXzuQPAXXrGcc4PnbIIZJWTcqzXAOOCzqPER9aVjPNQGXtFgCBw1vyZNIcFTVMsMnQyCuvr71p4VYGlQF7qgFIwtCUU7xF1tQA8zK",
       "node": {
         "admin": 1,
         "created_at": 1647959350,
@@ -2609,20 +2384,11 @@ exports[`SqlCursorPagination > selects the last infinity (all) items 10`] = `
         "last_name": "Rhodes",
       },
       "rawCursor": {
-        "fields": [
-          {
-            "field": "first_name",
-            "value": "Joseph",
-          },
-          {
-            "field": "last_name",
-            "value": "Rhodes",
-          },
-          {
-            "field": "id",
-            "value": 3,
-          },
-        ],
+        "fields": {
+          "first_name": "Joseph",
+          "id": 3,
+          "last_name": "Rhodes",
+        },
         "queryName": "TestQuery",
       },
     },
@@ -2796,7 +2562,7 @@ exports[`SqlCursorPagination > selects the second and third row when selecting a
 {
   "edges": [
     {
-      "cursor": "i-LdTZZAxan9T1wX75VRqqUxReT3-5CyiF6oh0tEekY.VxGPw46ar3DEXXDlxQeSAAXC98aYXQCPtczK-nM-Snld80n5x2GGge9NScwpix_pyDgzq5AM22nAnYUAmUxZYAc58Zlv8jkjVj26bi31QdMjz9-UAaCQjihZXpabelIxS8EaVypjonbwuVIsPP2uSw3e5IFF2t7DseRwyQ_Ylq-_ajCQRoFwz4y4_e6q3Q973gHhacu6vdkrOTY",
+      "cursor": "Vl8ajMnWgEXNNlI9TZNEzkzZT5fPgD7qdP_dIQBcjlM.nGHtSUghlMl64TM8BjfzsV4r2v-SL_TlQyYbwTz0nSbnzpetCeSw81VKEzJhkakKw3yRUHxi6ijfpwZEvyprnzBJzZ1gh070hs4CqayTv-g_KwpwjHGWUxUBkKA5S40-_oaeVS8",
       "node": {
         "admin": 0,
         "created_at": 1662538189,
@@ -2808,7 +2574,7 @@ exports[`SqlCursorPagination > selects the second and third row when selecting a
       },
     },
     {
-      "cursor": "SuWlzjWxdtSVDzgPp_mVdQH7S4pbbIpNqmJJFWwXOws.9732ntsWW_36ePfEiU1_85i4VHGpnlt60LcekRaV6hZiIfLaDEJyTxv4_mT0gVYjC05he25PbktssRXIQMdfnwfl2PkS47CW75s-XwbfYuhuaZJZfUpZLW5O7xVWf5R2YD7FEdd53lDlXJDbEE5TvRvM8TNkhCSh8LTnJEFNqADHkbWz-H7pDPOaOBsLE3n_EUYcf498pgjPJCRN",
+      "cursor": "BF4zwhmn3i_aUO8fMntuvbJbVfFA77xjg4HWAbCqZ8s.TcLZaSN-rn8Zij9ZZWUQgs3n6YG4t0yuwODBikGsWGnL3td0c3YCwQt99Dml_IfofoAbMsPQTVoiu1gWjQ3cm4xA5Pm019RFK3kSzgV3TUHM7EjIkmTbnmjYlTsGT-xYHt8V5QmM",
       "node": {
         "admin": 0,
         "created_at": 1604543417,
@@ -2826,7 +2592,7 @@ exports[`SqlCursorPagination > selects the second and third row when selecting a
   },
   Symbol(edgesWithRawCursor): [
     {
-      "cursor": "i-LdTZZAxan9T1wX75VRqqUxReT3-5CyiF6oh0tEekY.VxGPw46ar3DEXXDlxQeSAAXC98aYXQCPtczK-nM-Snld80n5x2GGge9NScwpix_pyDgzq5AM22nAnYUAmUxZYAc58Zlv8jkjVj26bi31QdMjz9-UAaCQjihZXpabelIxS8EaVypjonbwuVIsPP2uSw3e5IFF2t7DseRwyQ_Ylq-_ajCQRoFwz4y4_e6q3Q973gHhacu6vdkrOTY",
+      "cursor": "Vl8ajMnWgEXNNlI9TZNEzkzZT5fPgD7qdP_dIQBcjlM.nGHtSUghlMl64TM8BjfzsV4r2v-SL_TlQyYbwTz0nSbnzpetCeSw81VKEzJhkakKw3yRUHxi6ijfpwZEvyprnzBJzZ1gh070hs4CqayTv-g_KwpwjHGWUxUBkKA5S40-_oaeVS8",
       "node": {
         "admin": 0,
         "created_at": 1662538189,
@@ -2837,25 +2603,16 @@ exports[`SqlCursorPagination > selects the second and third row when selecting a
         "last_name": "Duncan",
       },
       "rawCursor": {
-        "fields": [
-          {
-            "field": "first_name",
-            "value": "Anika",
-          },
-          {
-            "field": "last_name",
-            "value": "Duncan",
-          },
-          {
-            "field": "id",
-            "value": 1,
-          },
-        ],
+        "fields": {
+          "first_name": "Anika",
+          "id": 1,
+          "last_name": "Duncan",
+        },
         "queryName": "TestQuery",
       },
     },
     {
-      "cursor": "SuWlzjWxdtSVDzgPp_mVdQH7S4pbbIpNqmJJFWwXOws.9732ntsWW_36ePfEiU1_85i4VHGpnlt60LcekRaV6hZiIfLaDEJyTxv4_mT0gVYjC05he25PbktssRXIQMdfnwfl2PkS47CW75s-XwbfYuhuaZJZfUpZLW5O7xVWf5R2YD7FEdd53lDlXJDbEE5TvRvM8TNkhCSh8LTnJEFNqADHkbWz-H7pDPOaOBsLE3n_EUYcf498pgjPJCRN",
+      "cursor": "BF4zwhmn3i_aUO8fMntuvbJbVfFA77xjg4HWAbCqZ8s.TcLZaSN-rn8Zij9ZZWUQgs3n6YG4t0yuwODBikGsWGnL3td0c3YCwQt99Dml_IfofoAbMsPQTVoiu1gWjQ3cm4xA5Pm019RFK3kSzgV3TUHM7EjIkmTbnmjYlTsGT-xYHt8V5QmM",
       "node": {
         "admin": 0,
         "created_at": 1604543417,
@@ -2866,20 +2623,11 @@ exports[`SqlCursorPagination > selects the second and third row when selecting a
         "last_name": "Molina",
       },
       "rawCursor": {
-        "fields": [
-          {
-            "field": "first_name",
-            "value": "Cooper",
-          },
-          {
-            "field": "last_name",
-            "value": "Molina",
-          },
-          {
-            "field": "id",
-            "value": 4,
-          },
-        ],
+        "fields": {
+          "first_name": "Cooper",
+          "id": 4,
+          "last_name": "Molina",
+        },
         "queryName": "TestQuery",
       },
     },
@@ -3052,7 +2800,7 @@ exports[`SqlCursorPagination > selects the second row when selecting after the f
 {
   "edges": [
     {
-      "cursor": "i-LdTZZAxan9T1wX75VRqqUxReT3-5CyiF6oh0tEekY.VxGPw46ar3DEXXDlxQeSAAXC98aYXQCPtczK-nM-Snld80n5x2GGge9NScwpix_pyDgzq5AM22nAnYUAmUxZYAc58Zlv8jkjVj26bi31QdMjz9-UAaCQjihZXpabelIxS8EaVypjonbwuVIsPP2uSw3e5IFF2t7DseRwyQ_Ylq-_ajCQRoFwz4y4_e6q3Q973gHhacu6vdkrOTY",
+      "cursor": "Vl8ajMnWgEXNNlI9TZNEzkzZT5fPgD7qdP_dIQBcjlM.nGHtSUghlMl64TM8BjfzsV4r2v-SL_TlQyYbwTz0nSbnzpetCeSw81VKEzJhkakKw3yRUHxi6ijfpwZEvyprnzBJzZ1gh070hs4CqayTv-g_KwpwjHGWUxUBkKA5S40-_oaeVS8",
       "node": {
         "admin": 0,
         "created_at": 1662538189,
@@ -3070,7 +2818,7 @@ exports[`SqlCursorPagination > selects the second row when selecting after the f
   },
   Symbol(edgesWithRawCursor): [
     {
-      "cursor": "i-LdTZZAxan9T1wX75VRqqUxReT3-5CyiF6oh0tEekY.VxGPw46ar3DEXXDlxQeSAAXC98aYXQCPtczK-nM-Snld80n5x2GGge9NScwpix_pyDgzq5AM22nAnYUAmUxZYAc58Zlv8jkjVj26bi31QdMjz9-UAaCQjihZXpabelIxS8EaVypjonbwuVIsPP2uSw3e5IFF2t7DseRwyQ_Ylq-_ajCQRoFwz4y4_e6q3Q973gHhacu6vdkrOTY",
+      "cursor": "Vl8ajMnWgEXNNlI9TZNEzkzZT5fPgD7qdP_dIQBcjlM.nGHtSUghlMl64TM8BjfzsV4r2v-SL_TlQyYbwTz0nSbnzpetCeSw81VKEzJhkakKw3yRUHxi6ijfpwZEvyprnzBJzZ1gh070hs4CqayTv-g_KwpwjHGWUxUBkKA5S40-_oaeVS8",
       "node": {
         "admin": 0,
         "created_at": 1662538189,
@@ -3081,20 +2829,11 @@ exports[`SqlCursorPagination > selects the second row when selecting after the f
         "last_name": "Duncan",
       },
       "rawCursor": {
-        "fields": [
-          {
-            "field": "first_name",
-            "value": "Anika",
-          },
-          {
-            "field": "last_name",
-            "value": "Duncan",
-          },
-          {
-            "field": "id",
-            "value": 1,
-          },
-        ],
+        "fields": {
+          "first_name": "Anika",
+          "id": 1,
+          "last_name": "Duncan",
+        },
         "queryName": "TestQuery",
       },
     },
@@ -3247,7 +2986,7 @@ exports[`SqlCursorPagination > selects the second row when selecting one before 
 {
   "edges": [
     {
-      "cursor": "i-LdTZZAxan9T1wX75VRqqUxReT3-5CyiF6oh0tEekY.VxGPw46ar3DEXXDlxQeSAAXC98aYXQCPtczK-nM-Snld80n5x2GGge9NScwpix_pyDgzq5AM22nAnYUAmUxZYAc58Zlv8jkjVj26bi31QdMjz9-UAaCQjihZXpabelIxS8EaVypjonbwuVIsPP2uSw3e5IFF2t7DseRwyQ_Ylq-_ajCQRoFwz4y4_e6q3Q973gHhacu6vdkrOTY",
+      "cursor": "Vl8ajMnWgEXNNlI9TZNEzkzZT5fPgD7qdP_dIQBcjlM.nGHtSUghlMl64TM8BjfzsV4r2v-SL_TlQyYbwTz0nSbnzpetCeSw81VKEzJhkakKw3yRUHxi6ijfpwZEvyprnzBJzZ1gh070hs4CqayTv-g_KwpwjHGWUxUBkKA5S40-_oaeVS8",
       "node": {
         "admin": 0,
         "created_at": 1662538189,
@@ -3265,7 +3004,7 @@ exports[`SqlCursorPagination > selects the second row when selecting one before 
   },
   Symbol(edgesWithRawCursor): [
     {
-      "cursor": "i-LdTZZAxan9T1wX75VRqqUxReT3-5CyiF6oh0tEekY.VxGPw46ar3DEXXDlxQeSAAXC98aYXQCPtczK-nM-Snld80n5x2GGge9NScwpix_pyDgzq5AM22nAnYUAmUxZYAc58Zlv8jkjVj26bi31QdMjz9-UAaCQjihZXpabelIxS8EaVypjonbwuVIsPP2uSw3e5IFF2t7DseRwyQ_Ylq-_ajCQRoFwz4y4_e6q3Q973gHhacu6vdkrOTY",
+      "cursor": "Vl8ajMnWgEXNNlI9TZNEzkzZT5fPgD7qdP_dIQBcjlM.nGHtSUghlMl64TM8BjfzsV4r2v-SL_TlQyYbwTz0nSbnzpetCeSw81VKEzJhkakKw3yRUHxi6ijfpwZEvyprnzBJzZ1gh070hs4CqayTv-g_KwpwjHGWUxUBkKA5S40-_oaeVS8",
       "node": {
         "admin": 0,
         "created_at": 1662538189,
@@ -3276,20 +3015,11 @@ exports[`SqlCursorPagination > selects the second row when selecting one before 
         "last_name": "Duncan",
       },
       "rawCursor": {
-        "fields": [
-          {
-            "field": "first_name",
-            "value": "Anika",
-          },
-          {
-            "field": "last_name",
-            "value": "Duncan",
-          },
-          {
-            "field": "id",
-            "value": 1,
-          },
-        ],
+        "fields": {
+          "first_name": "Anika",
+          "id": 1,
+          "last_name": "Duncan",
+        },
         "queryName": "TestQuery",
       },
     },
@@ -3442,7 +3172,7 @@ exports[`SqlCursorPagination > selects the second row when selecting one before 
 {
   "edges": [
     {
-      "cursor": "i-LdTZZAxan9T1wX75VRqqUxReT3-5CyiF6oh0tEekY.VxGPw46ar3DEXXDlxQeSAAXC98aYXQCPtczK-nM-Snld80n5x2GGge9NScwpix_pyDgzq5AM22nAnYUAmUxZYAc58Zlv8jkjVj26bi31QdMjz9-UAaCQjihZXpabelIxS8EaVypjonbwuVIsPP2uSw3e5IFF2t7DseRwyQ_Ylq-_ajCQRoFwz4y4_e6q3Q973gHhacu6vdkrOTY",
+      "cursor": "Vl8ajMnWgEXNNlI9TZNEzkzZT5fPgD7qdP_dIQBcjlM.nGHtSUghlMl64TM8BjfzsV4r2v-SL_TlQyYbwTz0nSbnzpetCeSw81VKEzJhkakKw3yRUHxi6ijfpwZEvyprnzBJzZ1gh070hs4CqayTv-g_KwpwjHGWUxUBkKA5S40-_oaeVS8",
       "node": {
         "admin": 0,
         "created_at": 1662538189,
@@ -3460,7 +3190,7 @@ exports[`SqlCursorPagination > selects the second row when selecting one before 
   },
   Symbol(edgesWithRawCursor): [
     {
-      "cursor": "i-LdTZZAxan9T1wX75VRqqUxReT3-5CyiF6oh0tEekY.VxGPw46ar3DEXXDlxQeSAAXC98aYXQCPtczK-nM-Snld80n5x2GGge9NScwpix_pyDgzq5AM22nAnYUAmUxZYAc58Zlv8jkjVj26bi31QdMjz9-UAaCQjihZXpabelIxS8EaVypjonbwuVIsPP2uSw3e5IFF2t7DseRwyQ_Ylq-_ajCQRoFwz4y4_e6q3Q973gHhacu6vdkrOTY",
+      "cursor": "Vl8ajMnWgEXNNlI9TZNEzkzZT5fPgD7qdP_dIQBcjlM.nGHtSUghlMl64TM8BjfzsV4r2v-SL_TlQyYbwTz0nSbnzpetCeSw81VKEzJhkakKw3yRUHxi6ijfpwZEvyprnzBJzZ1gh070hs4CqayTv-g_KwpwjHGWUxUBkKA5S40-_oaeVS8",
       "node": {
         "admin": 0,
         "created_at": 1662538189,
@@ -3471,20 +3201,11 @@ exports[`SqlCursorPagination > selects the second row when selecting one before 
         "last_name": "Duncan",
       },
       "rawCursor": {
-        "fields": [
-          {
-            "field": "first_name",
-            "value": "Anika",
-          },
-          {
-            "field": "last_name",
-            "value": "Duncan",
-          },
-          {
-            "field": "id",
-            "value": 1,
-          },
-        ],
+        "fields": {
+          "first_name": "Anika",
+          "id": 1,
+          "last_name": "Duncan",
+        },
         "queryName": "TestQuery",
       },
     },
@@ -3658,7 +3379,7 @@ exports[`SqlCursorPagination > selects the second row when selecting the first o
 {
   "edges": [
     {
-      "cursor": "i-LdTZZAxan9T1wX75VRqqUxReT3-5CyiF6oh0tEekY.VxGPw46ar3DEXXDlxQeSAAXC98aYXQCPtczK-nM-Snld80n5x2GGge9NScwpix_pyDgzq5AM22nAnYUAmUxZYAc58Zlv8jkjVj26bi31QdMjz9-UAaCQjihZXpabelIxS8EaVypjonbwuVIsPP2uSw3e5IFF2t7DseRwyQ_Ylq-_ajCQRoFwz4y4_e6q3Q973gHhacu6vdkrOTY",
+      "cursor": "Vl8ajMnWgEXNNlI9TZNEzkzZT5fPgD7qdP_dIQBcjlM.nGHtSUghlMl64TM8BjfzsV4r2v-SL_TlQyYbwTz0nSbnzpetCeSw81VKEzJhkakKw3yRUHxi6ijfpwZEvyprnzBJzZ1gh070hs4CqayTv-g_KwpwjHGWUxUBkKA5S40-_oaeVS8",
       "node": {
         "admin": 0,
         "created_at": 1662538189,
@@ -3676,7 +3397,7 @@ exports[`SqlCursorPagination > selects the second row when selecting the first o
   },
   Symbol(edgesWithRawCursor): [
     {
-      "cursor": "i-LdTZZAxan9T1wX75VRqqUxReT3-5CyiF6oh0tEekY.VxGPw46ar3DEXXDlxQeSAAXC98aYXQCPtczK-nM-Snld80n5x2GGge9NScwpix_pyDgzq5AM22nAnYUAmUxZYAc58Zlv8jkjVj26bi31QdMjz9-UAaCQjihZXpabelIxS8EaVypjonbwuVIsPP2uSw3e5IFF2t7DseRwyQ_Ylq-_ajCQRoFwz4y4_e6q3Q973gHhacu6vdkrOTY",
+      "cursor": "Vl8ajMnWgEXNNlI9TZNEzkzZT5fPgD7qdP_dIQBcjlM.nGHtSUghlMl64TM8BjfzsV4r2v-SL_TlQyYbwTz0nSbnzpetCeSw81VKEzJhkakKw3yRUHxi6ijfpwZEvyprnzBJzZ1gh070hs4CqayTv-g_KwpwjHGWUxUBkKA5S40-_oaeVS8",
       "node": {
         "admin": 0,
         "created_at": 1662538189,
@@ -3687,20 +3408,11 @@ exports[`SqlCursorPagination > selects the second row when selecting the first o
         "last_name": "Duncan",
       },
       "rawCursor": {
-        "fields": [
-          {
-            "field": "first_name",
-            "value": "Anika",
-          },
-          {
-            "field": "last_name",
-            "value": "Duncan",
-          },
-          {
-            "field": "id",
-            "value": 1,
-          },
-        ],
+        "fields": {
+          "first_name": "Anika",
+          "id": 1,
+          "last_name": "Duncan",
+        },
         "queryName": "TestQuery",
       },
     },
@@ -3853,7 +3565,7 @@ exports[`SqlCursorPagination > selects the third row when selecting one after th
 {
   "edges": [
     {
-      "cursor": "SuWlzjWxdtSVDzgPp_mVdQH7S4pbbIpNqmJJFWwXOws.9732ntsWW_36ePfEiU1_85i4VHGpnlt60LcekRaV6hZiIfLaDEJyTxv4_mT0gVYjC05he25PbktssRXIQMdfnwfl2PkS47CW75s-XwbfYuhuaZJZfUpZLW5O7xVWf5R2YD7FEdd53lDlXJDbEE5TvRvM8TNkhCSh8LTnJEFNqADHkbWz-H7pDPOaOBsLE3n_EUYcf498pgjPJCRN",
+      "cursor": "BF4zwhmn3i_aUO8fMntuvbJbVfFA77xjg4HWAbCqZ8s.TcLZaSN-rn8Zij9ZZWUQgs3n6YG4t0yuwODBikGsWGnL3td0c3YCwQt99Dml_IfofoAbMsPQTVoiu1gWjQ3cm4xA5Pm019RFK3kSzgV3TUHM7EjIkmTbnmjYlTsGT-xYHt8V5QmM",
       "node": {
         "admin": 0,
         "created_at": 1604543417,
@@ -3871,7 +3583,7 @@ exports[`SqlCursorPagination > selects the third row when selecting one after th
   },
   Symbol(edgesWithRawCursor): [
     {
-      "cursor": "SuWlzjWxdtSVDzgPp_mVdQH7S4pbbIpNqmJJFWwXOws.9732ntsWW_36ePfEiU1_85i4VHGpnlt60LcekRaV6hZiIfLaDEJyTxv4_mT0gVYjC05he25PbktssRXIQMdfnwfl2PkS47CW75s-XwbfYuhuaZJZfUpZLW5O7xVWf5R2YD7FEdd53lDlXJDbEE5TvRvM8TNkhCSh8LTnJEFNqADHkbWz-H7pDPOaOBsLE3n_EUYcf498pgjPJCRN",
+      "cursor": "BF4zwhmn3i_aUO8fMntuvbJbVfFA77xjg4HWAbCqZ8s.TcLZaSN-rn8Zij9ZZWUQgs3n6YG4t0yuwODBikGsWGnL3td0c3YCwQt99Dml_IfofoAbMsPQTVoiu1gWjQ3cm4xA5Pm019RFK3kSzgV3TUHM7EjIkmTbnmjYlTsGT-xYHt8V5QmM",
       "node": {
         "admin": 0,
         "created_at": 1604543417,
@@ -3882,20 +3594,11 @@ exports[`SqlCursorPagination > selects the third row when selecting one after th
         "last_name": "Molina",
       },
       "rawCursor": {
-        "fields": [
-          {
-            "field": "first_name",
-            "value": "Cooper",
-          },
-          {
-            "field": "last_name",
-            "value": "Molina",
-          },
-          {
-            "field": "id",
-            "value": 4,
-          },
-        ],
+        "fields": {
+          "first_name": "Cooper",
+          "id": 4,
+          "last_name": "Molina",
+        },
         "queryName": "TestQuery",
       },
     },
@@ -4069,7 +3772,7 @@ exports[`SqlCursorPagination > selects the third row when selecting the last one
 {
   "edges": [
     {
-      "cursor": "SuWlzjWxdtSVDzgPp_mVdQH7S4pbbIpNqmJJFWwXOws.9732ntsWW_36ePfEiU1_85i4VHGpnlt60LcekRaV6hZiIfLaDEJyTxv4_mT0gVYjC05he25PbktssRXIQMdfnwfl2PkS47CW75s-XwbfYuhuaZJZfUpZLW5O7xVWf5R2YD7FEdd53lDlXJDbEE5TvRvM8TNkhCSh8LTnJEFNqADHkbWz-H7pDPOaOBsLE3n_EUYcf498pgjPJCRN",
+      "cursor": "BF4zwhmn3i_aUO8fMntuvbJbVfFA77xjg4HWAbCqZ8s.TcLZaSN-rn8Zij9ZZWUQgs3n6YG4t0yuwODBikGsWGnL3td0c3YCwQt99Dml_IfofoAbMsPQTVoiu1gWjQ3cm4xA5Pm019RFK3kSzgV3TUHM7EjIkmTbnmjYlTsGT-xYHt8V5QmM",
       "node": {
         "admin": 0,
         "created_at": 1604543417,
@@ -4087,7 +3790,7 @@ exports[`SqlCursorPagination > selects the third row when selecting the last one
   },
   Symbol(edgesWithRawCursor): [
     {
-      "cursor": "SuWlzjWxdtSVDzgPp_mVdQH7S4pbbIpNqmJJFWwXOws.9732ntsWW_36ePfEiU1_85i4VHGpnlt60LcekRaV6hZiIfLaDEJyTxv4_mT0gVYjC05he25PbktssRXIQMdfnwfl2PkS47CW75s-XwbfYuhuaZJZfUpZLW5O7xVWf5R2YD7FEdd53lDlXJDbEE5TvRvM8TNkhCSh8LTnJEFNqADHkbWz-H7pDPOaOBsLE3n_EUYcf498pgjPJCRN",
+      "cursor": "BF4zwhmn3i_aUO8fMntuvbJbVfFA77xjg4HWAbCqZ8s.TcLZaSN-rn8Zij9ZZWUQgs3n6YG4t0yuwODBikGsWGnL3td0c3YCwQt99Dml_IfofoAbMsPQTVoiu1gWjQ3cm4xA5Pm019RFK3kSzgV3TUHM7EjIkmTbnmjYlTsGT-xYHt8V5QmM",
       "node": {
         "admin": 0,
         "created_at": 1604543417,
@@ -4098,20 +3801,11 @@ exports[`SqlCursorPagination > selects the third row when selecting the last one
         "last_name": "Molina",
       },
       "rawCursor": {
-        "fields": [
-          {
-            "field": "first_name",
-            "value": "Cooper",
-          },
-          {
-            "field": "last_name",
-            "value": "Molina",
-          },
-          {
-            "field": "id",
-            "value": 4,
-          },
-        ],
+        "fields": {
+          "first_name": "Cooper",
+          "id": 4,
+          "last_name": "Molina",
+        },
         "queryName": "TestQuery",
       },
     },
@@ -4181,7 +3875,7 @@ exports[`SqlCursorPagination > supports field aliases 10`] = `
 {
   "edges": [
     {
-      "cursor": "3RpNpcSiXTy_ScEwnnlpe3LTX690UrnAQZSWWE4HNgU.6MjHvd-dag1VTHqfp8rnrG2TxyLXbO-8VV0qrJBggWWeLuvpjQIGcyAQPSKLvcoYo-f3b6S3MYUA14jyns1YS01gj-QkC7UN5pfZM0AuMS8PILwOpGPdXF_15-J9Vl3UnvkE-qyGIxUY_t0",
+      "cursor": "eTi5IVXuus3g1sablUWFGWkZBbE8pKn1NpODYFyekPk.6pGQw7mGK7nGKpaVhAjxa5hfy_yJlJReRXPrGHHITChuwCzaKubo2hHL6LSHAr2y0SwB2lWFNN5nNOPzQrDYKiI7FwFSRtJhZT_698sW8J3n52yGVehDWOA",
       "node": {
         "admin": 1,
         "created_at": 1631332719,
@@ -4199,7 +3893,7 @@ exports[`SqlCursorPagination > supports field aliases 10`] = `
   },
   Symbol(edgesWithRawCursor): [
     {
-      "cursor": "3RpNpcSiXTy_ScEwnnlpe3LTX690UrnAQZSWWE4HNgU.6MjHvd-dag1VTHqfp8rnrG2TxyLXbO-8VV0qrJBggWWeLuvpjQIGcyAQPSKLvcoYo-f3b6S3MYUA14jyns1YS01gj-QkC7UN5pfZM0AuMS8PILwOpGPdXF_15-J9Vl3UnvkE-qyGIxUY_t0",
+      "cursor": "eTi5IVXuus3g1sablUWFGWkZBbE8pKn1NpODYFyekPk.6pGQw7mGK7nGKpaVhAjxa5hfy_yJlJReRXPrGHHITChuwCzaKubo2hHL6LSHAr2y0SwB2lWFNN5nNOPzQrDYKiI7FwFSRtJhZT_698sW8J3n52yGVehDWOA",
       "node": {
         "admin": 1,
         "created_at": 1631332719,
@@ -4210,12 +3904,9 @@ exports[`SqlCursorPagination > supports field aliases 10`] = `
         "last_name": "Molina",
       },
       "rawCursor": {
-        "fields": [
-          {
-            "field": "email_alias",
-            "value": "diam.vel@outlook.edu",
-          },
-        ],
+        "fields": {
+          "email_alias": "diam.vel@outlook.edu",
+        },
         "queryName": "TestQuery",
       },
     },
@@ -4285,7 +3976,7 @@ exports[`SqlCursorPagination > supports fully qualified column names 10`] = `
 {
   "edges": [
     {
-      "cursor": "hatzxLvlLXifwatlUUpK8OmsW3CKKugbGj3vwQhezS8.ocXV_p9QrX-5JPUfuPasCEE97suVQauJ8Mf6dq00x45zGnkRb5eNY3LlJ2dLtXlqNQpp3dIsiV7KqDJm2WQn8z3gynqLD-zR8qSoETk",
+      "cursor": "6ivs-1J-XTxms7CXt1QscsdUQ9LOZ2_k1WKxcNCh4uA.dZuwTEQegp2jJQAGcUOOYX04RyrK8r11IMU6Mwol870lhImHOcGc3BAExnrn51cTb8lzGmvZlXQQHlg",
       "node": {
         "admin": 0,
         "created_at": 1662538189,
@@ -4303,7 +3994,7 @@ exports[`SqlCursorPagination > supports fully qualified column names 10`] = `
   },
   Symbol(edgesWithRawCursor): [
     {
-      "cursor": "hatzxLvlLXifwatlUUpK8OmsW3CKKugbGj3vwQhezS8.ocXV_p9QrX-5JPUfuPasCEE97suVQauJ8Mf6dq00x45zGnkRb5eNY3LlJ2dLtXlqNQpp3dIsiV7KqDJm2WQn8z3gynqLD-zR8qSoETk",
+      "cursor": "6ivs-1J-XTxms7CXt1QscsdUQ9LOZ2_k1WKxcNCh4uA.dZuwTEQegp2jJQAGcUOOYX04RyrK8r11IMU6Mwol870lhImHOcGc3BAExnrn51cTb8lzGmvZlXQQHlg",
       "node": {
         "admin": 0,
         "created_at": 1662538189,
@@ -4314,12 +4005,9 @@ exports[`SqlCursorPagination > supports fully qualified column names 10`] = `
         "last_name": "Duncan",
       },
       "rawCursor": {
-        "fields": [
-          {
-            "field": "id",
-            "value": 1,
-          },
-        ],
+        "fields": {
+          "id": 1,
+        },
         "queryName": "TestQuery",
       },
     },

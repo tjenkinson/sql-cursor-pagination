@@ -6,7 +6,6 @@ import { MaybePromise } from './maybe-promise';
 import { Cursor } from './zod-models/cursor';
 import { FieldValue } from './zod-models/field-value';
 import { FieldWithOrder } from './zod-models/field-with-order';
-import { FieldWithValue } from './zod-models/field-with-value';
 
 const ivCipherTextRegex = /^([^.]+)\.([^.]+)$/;
 
@@ -149,14 +148,14 @@ export function buildCursor<TNode extends Record<string, unknown>>({
   node: TNode;
   sortFields: readonly FieldWithOrder[];
 }): Cursor {
-  const fields: FieldWithValue[] = [];
+  const fields: Cursor['fields'] = {};
 
   for (const { field } of sortFields) {
     const { alias } = parseFieldName(field);
     if (!(alias in node)) {
       throw new ErrUnexpected(`"${alias}" field is missing`);
     }
-    fields.push({ field: alias, value: FieldValue.parse(node[alias]) });
+    fields[alias] = FieldValue.parse(node[alias]);
   }
 
   return { fields, queryName };
