@@ -177,6 +177,6 @@ const edgesWithRawCursor = res[edgesWithRawCursorSymbol];
 console.log(edgesWithRawCursor[0].rawCursor);
 ```
 
-This can then be procided to `beforeCursor`/`afterCursor` by wrapping the object with `rawCursor(object)`.
+This can then be provided to `beforeCursor`/`afterCursor` by wrapping the object with `rawCursor(object)`.
 
 You can also omit the `cursorSecret` and `cursor` will not be generated.
