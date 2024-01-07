@@ -1,0 +1,41 @@
+name: Publish
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Reconfigure git to use HTTP authentication
+        run: >
+          git config --global url."https://github.com/".insteadOf
+          ssh://git@github.com/
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: '.node-version'
+      - name: set version
+        run: |
+          npm version --no-git-tag-version "$TAG"
+        env:
+          TAG: ${{ github.event.release.tag_name }}
+      - name: npm install and build
+        run: |
+          npm ci
+          npm run build
+      - name: publish
+        run: |
+          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> .npmrc
+          npm publish --provenance
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
