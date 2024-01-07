@@ -11,7 +11,7 @@ Are you running a service, using an SQL database, and want to support cursor sty
 ## What is cursor pagination?
 
 Cursor pagination was made popular by GraphQL, and this library conforms to the [GraphQL Cursor Connections Specification
-](https://relay.dev/graphql/connections.htm) meaning it's compatible wtih [Relay](https://relay.dev/). However it is also useful outside of GraphQL.
+](https://relay.dev/graphql/connections.htm) meaning it's compatible with [Relay](https://relay.dev/). However it is also useful outside of GraphQL.
 
 - First you specify the sort config. This contains a list of field names with their orders. It must contain a unique key.
 - Then you request how many items you would like to fetch with `first`.
@@ -24,7 +24,7 @@ The use of cursors means if items are added/removed between requests, the user w
 
 ## Usage
 
-The following shows how you could use this library with [knex](https://github.com/knex/knex) as an example, but it should be possible with any query builder, or even raw SQL providing you are using prepared statements.
+The following shows how you could use this library with [knex](https://github.com/knex/knex) as an example, but it should be possible with any query builder, or even raw SQL provided you are using prepared statements.
 
 ```ts
 import knex from 'knex';
