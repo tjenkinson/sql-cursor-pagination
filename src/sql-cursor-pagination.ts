@@ -119,7 +119,7 @@ export type WithPaginationInputSetup<
        *
        * Must be at least 30 characters.
        *
-       * Generate one with `npx --package-name=sql-cursor-pagination generate-secret`.
+       * Generate one with `npx -p sql-cursor-pagination generate-secret`.
        */
       cursorSecret: MaybePromise<CursorSecret>;
     }

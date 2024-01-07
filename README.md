@@ -77,7 +77,7 @@ async function fetchUsers(userInput: {
       afterCursor: userInput.afterCursor,
     },
     setup: {
-      // generate one with `npx --package-name=sql-cursor-pagination generate-secret`
+      // generate one with `npx -p sql-cursor-pagination generate-secret`
       cursorSecret: buildCursorSecret('somethingSecret'),
       queryName: 'users',
       runQuery: async ({ limit, whereFragment, orderByFragment }) => {
@@ -147,7 +147,7 @@ E.g.
 | ----------------------------- | -------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `runQuery`                    | `function`     | Yes      | This function is responsible for running the database query, and returning the array of rows. It is provided with a `QueryContent` object which contains a `WHERE` fragment, `ORDER BY` fragment and `limit`, which must be included in the query. |
 | `queryName`                   | `string`       | Yes      | A name for this query. It should be unique to the query, and is used to bind the cursors to it. This prevents a cursor that was created for another query being used for this one.                                                                 |
-| `cursorSecret`                | `CursorSecret` | Yes      | The secret that is used to encrypt the cursor, created from `buildCursorSecret(secret: string)`. Must be at least 30 characters. Generate one with `npx --package-name=sql-cursor-pagination generate-secret`.                                     |
+| `cursorSecret`                | `CursorSecret` | Yes      | The secret that is used to encrypt the cursor, created from `buildCursorSecret(secret: string)`. Must be at least 30 characters. Generate one with `npx -p sql-cursor-pagination generate-secret`.                                                 |
 | `maxNodes`                    | `number`       | No       | The maximum number of allowed rows in the response before the `ErrTooManyNodes` error is thrown. _Default: 100_                                                                                                                                    |
 | `cursorGenerationConcurrency` | `number`       | No       | The maximum number of cursors to generate in parallel. _Default: 10_                                                                                                                                                                               |
 
