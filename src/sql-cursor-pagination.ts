@@ -1,5 +1,4 @@
 import pMap from 'p-map';
-import { areArraysEqual } from './arrays';
 import { notNull } from './assert';
 import { RawCursor, buildCursor, encryptCursor, resolveCursor } from './cursor';
 import { CursorSecret } from './cursor-secret';
@@ -22,6 +21,7 @@ import {
 import { parseFieldName } from './field-name';
 import { MaybePromise } from './maybe-promise';
 import { FragmentBuilder, QueryBuilder } from './query-builder';
+import { areSetsEqual } from './set';
 import { Cursor } from './zod-models/cursor';
 import { FieldWithOrder } from './zod-models/field-with-order';
 import { GenericQueryResult } from './zod-models/generic-query-result';
@@ -309,9 +309,9 @@ export async function withPagination<
 
     // fields in the cursor must match the ones being requested
     if (
-      !areArraysEqual(
-        sortFields.map(({ field }) => parseFieldName(field).name),
-        cursor.fields.map(({ field }) => field),
+      !areSetsEqual(
+        new Set(sortFields.map(({ field }) => parseFieldName(field).name)),
+        new Set(Object.keys(cursor.fields)),
       )
     ) {
       if (type === 'before') {
@@ -331,7 +331,8 @@ export async function withPagination<
         whereQuery.appendText(`(`);
         for (let j = 0; j <= i; j++) {
           const { field, order } = sortFields[j];
-          const { value } = c.fields[j];
+          const fieldName = parseFieldName(field).name;
+          const value = c.fields[fieldName];
           const sign =
             i === j
               ? maybeFlip(order, type === 'before') === Asc
@@ -341,7 +342,7 @@ export async function withPagination<
 
           if (j > 0) whereQuery.appendText(` AND `);
           whereQuery
-            .appendText(`${quoteField(parseFieldName(field).name)}${sign}`)
+            .appendText(`${quoteField(fieldName)}${sign}`)
             .appendValue(value);
         }
         whereQuery.appendText(`)`);
