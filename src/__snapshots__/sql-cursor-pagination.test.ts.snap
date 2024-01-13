@@ -1,94 +1,94 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 1`] = `Infinity`;
+exports[`SqlCursorPagination > accepts a raw \`after\` 1`] = `Infinity`;
 
-exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 2`] = `
+exports[`SqlCursorPagination > accepts a raw \`after\` 2`] = `
 {
   "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 3`] = `
+exports[`SqlCursorPagination > accepts a raw \`after\` 3`] = `
 {
   "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 4`] = `
+exports[`SqlCursorPagination > accepts a raw \`after\` 4`] = `
 {
   "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 5`] = `
+exports[`SqlCursorPagination > accepts a raw \`after\` 5`] = `
 {
   "bindings": {},
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 6`] = `
+exports[`SqlCursorPagination > accepts a raw \`after\` 6`] = `
 {
   "bindings": [],
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 7`] = `
+exports[`SqlCursorPagination > accepts a raw \`after\` 7`] = `
 {
   "bindings": [],
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 8`] = `
+exports[`SqlCursorPagination > accepts a raw \`after\` 8`] = `
 {
   "bindings": [],
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 9`] = `
+exports[`SqlCursorPagination > accepts a raw \`after\` 9`] = `
 {
   "bindings": {},
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 10`] = `2`;
+exports[`SqlCursorPagination > accepts a raw \`after\` 10`] = `2`;
 
-exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 11`] = `
+exports[`SqlCursorPagination > accepts a raw \`after\` 11`] = `
 {
   "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 12`] = `
+exports[`SqlCursorPagination > accepts a raw \`after\` 12`] = `
 {
   "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 13`] = `
+exports[`SqlCursorPagination > accepts a raw \`after\` 13`] = `
 {
   "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 14`] = `
+exports[`SqlCursorPagination > accepts a raw \`after\` 14`] = `
 {
   "bindings": {},
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 15`] = `
+exports[`SqlCursorPagination > accepts a raw \`after\` 15`] = `
 {
   "bindings": [
     "Cooper",
@@ -102,7 +102,7 @@ exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 15`] = `
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 16`] = `
+exports[`SqlCursorPagination > accepts a raw \`after\` 16`] = `
 {
   "bindings": [
     "Cooper",
@@ -116,7 +116,7 @@ exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 16`] = `
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 17`] = `
+exports[`SqlCursorPagination > accepts a raw \`after\` 17`] = `
 {
   "bindings": [
     "Cooper",
@@ -130,7 +130,7 @@ exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 17`] = `
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 18`] = `
+exports[`SqlCursorPagination > accepts a raw \`after\` 18`] = `
 {
   "bindings": {
     ":0": "Cooper",
@@ -141,7 +141,7 @@ exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 18`] = `
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 19`] = `
+exports[`SqlCursorPagination > accepts a raw \`after\` 19`] = `
 {
   "edges": [
     {
@@ -188,95 +188,95 @@ exports[`SqlCursorPagination > accepts a raw \`afterCursor\` 19`] = `
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 1`] = `Infinity`;
+exports[`SqlCursorPagination > accepts a raw \`before\` 1`] = `Infinity`;
 
-exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 2`] = `
+exports[`SqlCursorPagination > accepts a raw \`before\` 2`] = `
 {
   "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 3`] = `
+exports[`SqlCursorPagination > accepts a raw \`before\` 3`] = `
 {
   "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 4`] = `
+exports[`SqlCursorPagination > accepts a raw \`before\` 4`] = `
 {
   "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 5`] = `
+exports[`SqlCursorPagination > accepts a raw \`before\` 5`] = `
 {
   "bindings": {},
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 6`] = `
+exports[`SqlCursorPagination > accepts a raw \`before\` 6`] = `
 {
   "bindings": [],
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 7`] = `
+exports[`SqlCursorPagination > accepts a raw \`before\` 7`] = `
 {
   "bindings": [],
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 8`] = `
+exports[`SqlCursorPagination > accepts a raw \`before\` 8`] = `
 {
   "bindings": [],
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 9`] = `
+exports[`SqlCursorPagination > accepts a raw \`before\` 9`] = `
 {
   "bindings": {},
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 10`] = `2`;
+exports[`SqlCursorPagination > accepts a raw \`before\` 10`] = `2`;
 
-exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 11`] = `
+exports[`SqlCursorPagination > accepts a raw \`before\` 11`] = `
 {
   "bindings": [],
   "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 12`] = `
+exports[`SqlCursorPagination > accepts a raw \`before\` 12`] = `
 {
   "bindings": [],
   "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 13`] = `
+exports[`SqlCursorPagination > accepts a raw \`before\` 13`] = `
 {
   "bindings": [],
   "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 14`] = `
+exports[`SqlCursorPagination > accepts a raw \`before\` 14`] = `
 {
   "bindings": {},
   "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 15`] = `
+exports[`SqlCursorPagination > accepts a raw \`before\` 15`] = `
 {
   "bindings": [
     "Jermaine",
@@ -290,7 +290,7 @@ exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 15`] = `
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 16`] = `
+exports[`SqlCursorPagination > accepts a raw \`before\` 16`] = `
 {
   "bindings": [
     "Jermaine",
@@ -304,7 +304,7 @@ exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 16`] = `
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 17`] = `
+exports[`SqlCursorPagination > accepts a raw \`before\` 17`] = `
 {
   "bindings": [
     "Jermaine",
@@ -318,7 +318,7 @@ exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 17`] = `
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 18`] = `
+exports[`SqlCursorPagination > accepts a raw \`before\` 18`] = `
 {
   "bindings": {
     ":0": "Jermaine",
@@ -329,7 +329,7 @@ exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 18`] = `
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`beforeCursor\` 19`] = `
+exports[`SqlCursorPagination > accepts a raw \`before\` 19`] = `
 {
   "edges": [
     {
@@ -434,232 +434,232 @@ exports[`SqlCursorPagination > allows the \`cursorSecret\` to be omitted 9`] = `
 }
 `;
 
-exports[`SqlCursorPagination > errors > throws an error if \`afterCursor\` is for wrong query 1`] = `Infinity`;
+exports[`SqlCursorPagination > errors > throws an error if \`after\` is for wrong query 1`] = `Infinity`;
 
-exports[`SqlCursorPagination > errors > throws an error if \`afterCursor\` is for wrong query 2`] = `
+exports[`SqlCursorPagination > errors > throws an error if \`after\` is for wrong query 2`] = `
 {
   "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
-exports[`SqlCursorPagination > errors > throws an error if \`afterCursor\` is for wrong query 3`] = `
+exports[`SqlCursorPagination > errors > throws an error if \`after\` is for wrong query 3`] = `
 {
   "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
-exports[`SqlCursorPagination > errors > throws an error if \`afterCursor\` is for wrong query 4`] = `
+exports[`SqlCursorPagination > errors > throws an error if \`after\` is for wrong query 4`] = `
 {
   "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
-exports[`SqlCursorPagination > errors > throws an error if \`afterCursor\` is for wrong query 5`] = `
+exports[`SqlCursorPagination > errors > throws an error if \`after\` is for wrong query 5`] = `
 {
   "bindings": {},
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
-exports[`SqlCursorPagination > errors > throws an error if \`afterCursor\` is for wrong query 6`] = `
+exports[`SqlCursorPagination > errors > throws an error if \`after\` is for wrong query 6`] = `
 {
   "bindings": [],
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > errors > throws an error if \`afterCursor\` is for wrong query 7`] = `
+exports[`SqlCursorPagination > errors > throws an error if \`after\` is for wrong query 7`] = `
 {
   "bindings": [],
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > errors > throws an error if \`afterCursor\` is for wrong query 8`] = `
+exports[`SqlCursorPagination > errors > throws an error if \`after\` is for wrong query 8`] = `
 {
   "bindings": [],
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > errors > throws an error if \`afterCursor\` is for wrong query 9`] = `
+exports[`SqlCursorPagination > errors > throws an error if \`after\` is for wrong query 9`] = `
 {
   "bindings": {},
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > errors > throws an error if \`afterCursor\` was for a different sort config 1`] = `Infinity`;
+exports[`SqlCursorPagination > errors > throws an error if \`after\` was for a different sort config 1`] = `Infinity`;
 
-exports[`SqlCursorPagination > errors > throws an error if \`afterCursor\` was for a different sort config 2`] = `
+exports[`SqlCursorPagination > errors > throws an error if \`after\` was for a different sort config 2`] = `
 {
   "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
-exports[`SqlCursorPagination > errors > throws an error if \`afterCursor\` was for a different sort config 3`] = `
+exports[`SqlCursorPagination > errors > throws an error if \`after\` was for a different sort config 3`] = `
 {
   "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
-exports[`SqlCursorPagination > errors > throws an error if \`afterCursor\` was for a different sort config 4`] = `
+exports[`SqlCursorPagination > errors > throws an error if \`after\` was for a different sort config 4`] = `
 {
   "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
-exports[`SqlCursorPagination > errors > throws an error if \`afterCursor\` was for a different sort config 5`] = `
+exports[`SqlCursorPagination > errors > throws an error if \`after\` was for a different sort config 5`] = `
 {
   "bindings": {},
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
-exports[`SqlCursorPagination > errors > throws an error if \`afterCursor\` was for a different sort config 6`] = `
+exports[`SqlCursorPagination > errors > throws an error if \`after\` was for a different sort config 6`] = `
 {
   "bindings": [],
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > errors > throws an error if \`afterCursor\` was for a different sort config 7`] = `
+exports[`SqlCursorPagination > errors > throws an error if \`after\` was for a different sort config 7`] = `
 {
   "bindings": [],
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > errors > throws an error if \`afterCursor\` was for a different sort config 8`] = `
+exports[`SqlCursorPagination > errors > throws an error if \`after\` was for a different sort config 8`] = `
 {
   "bindings": [],
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > errors > throws an error if \`afterCursor\` was for a different sort config 9`] = `
+exports[`SqlCursorPagination > errors > throws an error if \`after\` was for a different sort config 9`] = `
 {
   "bindings": {},
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > errors > throws an error if \`beforeCursor\` is for wrong query 1`] = `Infinity`;
+exports[`SqlCursorPagination > errors > throws an error if \`before\` is for wrong query 1`] = `Infinity`;
 
-exports[`SqlCursorPagination > errors > throws an error if \`beforeCursor\` is for wrong query 2`] = `
+exports[`SqlCursorPagination > errors > throws an error if \`before\` is for wrong query 2`] = `
 {
   "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
-exports[`SqlCursorPagination > errors > throws an error if \`beforeCursor\` is for wrong query 3`] = `
+exports[`SqlCursorPagination > errors > throws an error if \`before\` is for wrong query 3`] = `
 {
   "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
-exports[`SqlCursorPagination > errors > throws an error if \`beforeCursor\` is for wrong query 4`] = `
+exports[`SqlCursorPagination > errors > throws an error if \`before\` is for wrong query 4`] = `
 {
   "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
-exports[`SqlCursorPagination > errors > throws an error if \`beforeCursor\` is for wrong query 5`] = `
+exports[`SqlCursorPagination > errors > throws an error if \`before\` is for wrong query 5`] = `
 {
   "bindings": {},
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
-exports[`SqlCursorPagination > errors > throws an error if \`beforeCursor\` is for wrong query 6`] = `
+exports[`SqlCursorPagination > errors > throws an error if \`before\` is for wrong query 6`] = `
 {
   "bindings": [],
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > errors > throws an error if \`beforeCursor\` is for wrong query 7`] = `
+exports[`SqlCursorPagination > errors > throws an error if \`before\` is for wrong query 7`] = `
 {
   "bindings": [],
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > errors > throws an error if \`beforeCursor\` is for wrong query 8`] = `
+exports[`SqlCursorPagination > errors > throws an error if \`before\` is for wrong query 8`] = `
 {
   "bindings": [],
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > errors > throws an error if \`beforeCursor\` is for wrong query 9`] = `
+exports[`SqlCursorPagination > errors > throws an error if \`before\` is for wrong query 9`] = `
 {
   "bindings": {},
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > errors > throws an error if \`beforeCursor\` was for a different sort config 1`] = `Infinity`;
+exports[`SqlCursorPagination > errors > throws an error if \`before\` was for a different sort config 1`] = `Infinity`;
 
-exports[`SqlCursorPagination > errors > throws an error if \`beforeCursor\` was for a different sort config 2`] = `
+exports[`SqlCursorPagination > errors > throws an error if \`before\` was for a different sort config 2`] = `
 {
   "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
-exports[`SqlCursorPagination > errors > throws an error if \`beforeCursor\` was for a different sort config 3`] = `
+exports[`SqlCursorPagination > errors > throws an error if \`before\` was for a different sort config 3`] = `
 {
   "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
-exports[`SqlCursorPagination > errors > throws an error if \`beforeCursor\` was for a different sort config 4`] = `
+exports[`SqlCursorPagination > errors > throws an error if \`before\` was for a different sort config 4`] = `
 {
   "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
-exports[`SqlCursorPagination > errors > throws an error if \`beforeCursor\` was for a different sort config 5`] = `
+exports[`SqlCursorPagination > errors > throws an error if \`before\` was for a different sort config 5`] = `
 {
   "bindings": {},
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
-exports[`SqlCursorPagination > errors > throws an error if \`beforeCursor\` was for a different sort config 6`] = `
+exports[`SqlCursorPagination > errors > throws an error if \`before\` was for a different sort config 6`] = `
 {
   "bindings": [],
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > errors > throws an error if \`beforeCursor\` was for a different sort config 7`] = `
+exports[`SqlCursorPagination > errors > throws an error if \`before\` was for a different sort config 7`] = `
 {
   "bindings": [],
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > errors > throws an error if \`beforeCursor\` was for a different sort config 8`] = `
+exports[`SqlCursorPagination > errors > throws an error if \`before\` was for a different sort config 8`] = `
 {
   "bindings": [],
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > errors > throws an error if \`beforeCursor\` was for a different sort config 9`] = `
+exports[`SqlCursorPagination > errors > throws an error if \`before\` was for a different sort config 9`] = `
 {
   "bindings": {},
   "sql": "1",

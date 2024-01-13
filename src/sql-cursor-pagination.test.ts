@@ -250,7 +250,7 @@ describe('SqlCursorPagination', () => {
 
     const res = await go({
       query: {
-        afterCursor: all.edges[1].cursor,
+        after: all.edges[1].cursor,
         first: 1,
       },
     });
@@ -271,7 +271,7 @@ describe('SqlCursorPagination', () => {
 
     const res = await go({
       query: {
-        beforeCursor: all.edges[2].cursor,
+        before: all.edges[2].cursor,
         last: 1,
       },
     });
@@ -292,7 +292,7 @@ describe('SqlCursorPagination', () => {
 
     const res = await go({
       query: {
-        beforeCursor: all.edges[2].cursor,
+        before: all.edges[2].cursor,
         last: 2,
       },
     });
@@ -327,7 +327,7 @@ describe('SqlCursorPagination', () => {
 
     const res = await go({
       query: {
-        beforeCursor: all.edges[2].cursor,
+        before: all.edges[2].cursor,
         last: 1,
       },
     });
@@ -348,7 +348,7 @@ describe('SqlCursorPagination', () => {
 
     const res = await go({
       query: {
-        afterCursor: all.edges[all.edges.length - 1].cursor,
+        after: all.edges[all.edges.length - 1].cursor,
         first: 1,
       },
     });
@@ -370,7 +370,7 @@ describe('SqlCursorPagination', () => {
 
     const res = await go({
       query: {
-        afterCursor: all.edges[2].cursor,
+        after: all.edges[2].cursor,
         first: 2,
       },
     });
@@ -435,8 +435,8 @@ describe('SqlCursorPagination', () => {
 
     const res = await go({
       query: {
-        afterCursor: all.edges[0].cursor,
-        beforeCursor: all.edges[2].cursor,
+        after: all.edges[0].cursor,
+        before: all.edges[2].cursor,
         first: Infinity,
       },
     });
@@ -457,8 +457,8 @@ describe('SqlCursorPagination', () => {
 
     const res = await go({
       query: {
-        afterCursor: all.edges[0].cursor,
-        beforeCursor: all.edges[3].cursor,
+        after: all.edges[0].cursor,
+        before: all.edges[3].cursor,
         first: Infinity,
       },
     });
@@ -480,8 +480,8 @@ describe('SqlCursorPagination', () => {
 
     const res = await go({
       query: {
-        afterCursor: all.edges[0].cursor,
-        beforeCursor: all.edges[3].cursor,
+        after: all.edges[0].cursor,
+        before: all.edges[3].cursor,
         first: 1,
       },
     });
@@ -502,8 +502,8 @@ describe('SqlCursorPagination', () => {
 
     const res = await go({
       query: {
-        afterCursor: all.edges[0].cursor,
-        beforeCursor: all.edges[3].cursor,
+        after: all.edges[0].cursor,
+        before: all.edges[3].cursor,
         last: 1,
       },
     });
@@ -515,7 +515,7 @@ describe('SqlCursorPagination', () => {
     expect(res).toMatchSnapshot();
   });
 
-  it('accepts a raw `beforeCursor`', async () => {
+  it('accepts a raw `before`', async () => {
     const all = await go({
       query: {
         first: Infinity,
@@ -524,7 +524,7 @@ describe('SqlCursorPagination', () => {
 
     const res = await go({
       query: {
-        beforeCursor: rawCursor(all[edgesWithRawCursorSymbol][3].rawCursor),
+        before: rawCursor(all[edgesWithRawCursorSymbol][3].rawCursor),
         last: 1,
       },
     });
@@ -536,7 +536,7 @@ describe('SqlCursorPagination', () => {
     expect(res).toMatchSnapshot();
   });
 
-  it('accepts a raw `afterCursor`', async () => {
+  it('accepts a raw `after`', async () => {
     const all = await go({
       query: {
         first: Infinity,
@@ -545,7 +545,7 @@ describe('SqlCursorPagination', () => {
 
     const res = await go({
       query: {
-        afterCursor: rawCursor(all[edgesWithRawCursorSymbol][2].rawCursor),
+        after: rawCursor(all[edgesWithRawCursorSymbol][2].rawCursor),
         first: 1,
       },
     });
@@ -576,7 +576,7 @@ describe('SqlCursorPagination', () => {
         await go<false>({
           query: {
             // @ts-expect-error: cursor cannot be string when no secret
-            beforeCursor: '',
+            before: '',
             first: Infinity,
           },
           setup: {
@@ -617,7 +617,7 @@ describe('SqlCursorPagination', () => {
   });
 
   describe('errors', () => {
-    it('throws an error if `afterCursor` was for a different sort config', async () => {
+    it('throws an error if `after` was for a different sort config', async () => {
       const all = await go({
         query: {
           first: Infinity,
@@ -628,7 +628,7 @@ describe('SqlCursorPagination', () => {
         async () =>
           await go({
             query: {
-              afterCursor: all.edges[0].cursor,
+              after: all.edges[0].cursor,
               first: 1,
               sortFields: [{ field: 'email', order: Asc }],
             },
@@ -636,7 +636,7 @@ describe('SqlCursorPagination', () => {
       ).rejects.toThrowError(ErrAfterCursorWrongSortConfig);
     });
 
-    it('throws an error if `beforeCursor` was for a different sort config', async () => {
+    it('throws an error if `before` was for a different sort config', async () => {
       const all = await go({
         query: {
           first: Infinity,
@@ -647,7 +647,7 @@ describe('SqlCursorPagination', () => {
         async () =>
           await go({
             query: {
-              beforeCursor: all.edges[0].cursor,
+              before: all.edges[0].cursor,
               last: 1,
               sortFields: [
                 { field: 'email', order: Asc },
@@ -724,24 +724,24 @@ describe('SqlCursorPagination', () => {
       ).rejects.toThrowError(ErrFirstNotGreaterThanLast);
     });
 
-    it('throws an error if `beforeCursor` is invalid', async () => {
+    it('throws an error if `before` is invalid', async () => {
       await expect(
         async () =>
           await go({
             query: {
-              beforeCursor: 'invalid',
+              before: 'invalid',
               last: 1,
             },
           }),
       ).rejects.toThrowError(ErrBeforeCursorInvalid);
     });
 
-    it('throws an error if `afterCursor` is invalid', async () => {
+    it('throws an error if `after` is invalid', async () => {
       await expect(
         async () =>
           await go({
             query: {
-              afterCursor: 'invalid',
+              after: 'invalid',
               first: 1,
             },
           }),
@@ -760,7 +760,7 @@ describe('SqlCursorPagination', () => {
           await go({
             query: {
               // @ts-expect-error raw cursor not wrapped
-              afterCursor: all[edgesWithRawCursorSymbol][0].rawCursor,
+              after: all[edgesWithRawCursorSymbol][0].rawCursor,
               first: 1,
             },
           }),
@@ -773,7 +773,7 @@ describe('SqlCursorPagination', () => {
           await go({
             query: {
               // @ts-expect-error raw cursor not wrapped
-              beforeCursor: all[edgesWithRawCursorSymbol][0].rawCursor,
+              before: all[edgesWithRawCursorSymbol][0].rawCursor,
               last: 1,
             },
           }),
@@ -782,7 +782,7 @@ describe('SqlCursorPagination', () => {
       );
     });
 
-    it('throws an error if `beforeCursor` is for wrong query', async () => {
+    it('throws an error if `before` is for wrong query', async () => {
       const all = await go({
         query: {
           first: Infinity,
@@ -793,7 +793,7 @@ describe('SqlCursorPagination', () => {
         async () =>
           await go({
             query: {
-              beforeCursor: all.edges[0].cursor,
+              before: all.edges[0].cursor,
               last: 1,
             },
             setup: {
@@ -803,7 +803,7 @@ describe('SqlCursorPagination', () => {
       ).rejects.toThrowError(ErrBeforeCursorWrongQuery);
     });
 
-    it('throws an error if `afterCursor` is for wrong query', async () => {
+    it('throws an error if `after` is for wrong query', async () => {
       const all = await go({
         query: {
           first: Infinity,
@@ -814,7 +814,7 @@ describe('SqlCursorPagination', () => {
         async () =>
           await go({
             query: {
-              afterCursor: all.edges[0].cursor,
+              after: all.edges[0].cursor,
               first: 1,
             },
             setup: {
