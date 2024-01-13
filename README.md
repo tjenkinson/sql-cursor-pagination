@@ -4,7 +4,7 @@ Are you running a service, using an SQL database, and want to support cursor sty
 
 ## How it works
 
-1. When a request comes in you call the library with a `query` object containing how many items to fetch (`first`/`last`), where to fetch from (`beforeCursor`/`afterCursor`) and the sort config (`sortFields`), along with a `setup` object.
+1. When a request comes in you call the library with a `query` object containing how many items to fetch (`first`/`last`), where to fetch from (`before`/`after`) and the sort config (`sortFields`), along with a `setup` object.
 2. The `runQuery` function you provided in `setup` is invoked, and provided with a `limit`, `whereFragmentBuilder` and `orderByFragmentBuilder`. You integrate these into your query, run it, and then return the results.
 3. The library takes the results, and for each one it generates a unique `cursor`, which it then returns alongside each row. It also returns `hasNextPage`/`hasPreviousPage`/`startCursor`/`endCursor` properties.
 
@@ -16,9 +16,9 @@ Cursor pagination was made popular by GraphQL, and this library conforms to the 
 - First you specify the sort config. This contains a list of field names with their orders. It must contain a unique key.
 - Then you request how many items you would like to fetch with `first`.
 - Each item you get back also contains an opaque string cursor. The cursor is an encrypted string that contains the names of the fields in the sort config, alongside their values.
-- To fetch the next set of items you make a new request with `first` and `afterCursor` being the cursor of the last item you received.
+- To fetch the next set of items you make a new request with `first` and `after` being the cursor of the last item you received.
 
-If you want to fetch items in reverse order you can use `last` and `beforeCursor` instead.
+If you want to fetch items in reverse order you can use `last` and `before` instead.
 
 The use of cursors means if items are added/removed between requests, the user will never see the same item twice.
 
@@ -59,8 +59,8 @@ async function fetchUsers(userInput: {
   admins: boolean;
   first?: number;
   last?: number;
-  beforeCursor?: string;
-  afterCursor?: string;
+  before?: string;
+  after?: string;
 }) {
   const query = db('users').where('admin', userInput.admins);
 
@@ -73,8 +73,8 @@ async function fetchUsers(userInput: {
       ],
       first: userInput.first,
       last: userInput.last,
-      beforeCursor: userInput.beforeCursor,
-      afterCursor: userInput.afterCursor,
+      before: userInput.before,
+      after: userInput.after,
     },
     setup: {
       // generate one with `npx -p sql-cursor-pagination generate-secret`
@@ -139,13 +139,13 @@ E.g.
 
 ### Query
 
-| Property       | Type                                          | Required                  | Description                                                                                                                                                                                                                                                       |
-| -------------- | --------------------------------------------- | ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `first`        | `number`                                      | If `last` isn't present.  | The number of rows to fetch from the start of the window.                                                                                                                                                                                                         |
-| `last`         | `number`                                      | If `first` isn't present. | The number of rows to fetch from the end of the window.                                                                                                                                                                                                           |
-| `sortFields`   | `{ field: string, order: 'asc' \| 'desc' }[]` | Yes                       | This takes an array of objects which have `field` and `order` properties. There must be at least one entry and you must include an entry that maps to a unique key, otherwise it's possible for there to be cursor collisions, which will result in an exception. |
-| `afterCursor`  | `string`                                      | No                        | The window will cover the row after the provided cursor, and later rows. This takes the string `cursor` from a previous result`.                                                                                                                                  |
-| `beforeCursor` | `string`                                      | No                        | The window will cover the row before the provided cursor, and earlier rows. This takes the string `cursor` from a previous result.                                                                                                                                |
+| Property     | Type                                          | Required                  | Description                                                                                                                                                                                                                                                       |
+| ------------ | --------------------------------------------- | ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `first`      | `number`                                      | If `last` isn't present.  | The number of rows to fetch from the start of the window.                                                                                                                                                                                                         |
+| `last`       | `number`                                      | If `first` isn't present. | The number of rows to fetch from the end of the window.                                                                                                                                                                                                           |
+| `sortFields` | `{ field: string, order: 'asc' \| 'desc' }[]` | Yes                       | This takes an array of objects which have `field` and `order` properties. There must be at least one entry and you must include an entry that maps to a unique key, otherwise it's possible for there to be cursor collisions, which will result in an exception. |
+| `after`      | `string`                                      | No                        | The window will cover the row after the provided cursor, and later rows. This takes the string `cursor` from a previous result`.                                                                                                                                  |
+| `before`     | `string`                                      | No                        | The window will cover the row before the provided cursor, and earlier rows. This takes the string `cursor` from a previous result.                                                                                                                                |
 
 ### Setup
 
@@ -166,9 +166,9 @@ The `whereFragmentBuilder`/`orderByFragmentBuilder` objects provide the followin
 
 ## Errors
 
-This library exports various error objects. `SqlCursorPaginationQueryError` will be thrown if the `first`/`last`/`beforeCursor`/`afterCursor` properties are the correct javascript type, but the contents is not valid.
+This library exports various error objects. `SqlCursorPaginationQueryError` will be thrown if the `first`/`last`/`before`/`after` properties are the correct javascript type, but the contents is not valid.
 
-E.g. `ErrFirstNotInteger` is thrown if `first` was a `number`, but not an integer. `ErrBeforeCursorWrongQuery` is thrown if the provided `beforeCursor` was a valid cursor, but for a different query. You may want to map these errors to HTTP 400 responses.
+E.g. `ErrFirstNotInteger` is thrown if `first` was a `number`, but not an integer. `ErrBeforeCursorWrongQuery` is thrown if the provided `before` was a valid cursor, but for a different query. You may want to map these errors to HTTP 400 responses.
 
 ## I want the raw cursor
 
@@ -179,6 +179,6 @@ const edgesWithRawCursor = res[edgesWithRawCursorSymbol];
 console.log(edgesWithRawCursor[0].rawCursor);
 ```
 
-This can then be provided to `beforeCursor`/`afterCursor` by wrapping the object with `rawCursor(object)`.
+This can then be provided to `before`/`after` by wrapping the object with `rawCursor(object)`.
 
 You can also omit the `cursorSecret` and `cursor` will not be generated.

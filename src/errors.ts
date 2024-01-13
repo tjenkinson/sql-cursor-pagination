@@ -51,13 +51,13 @@ export class ErrFirstNotGreaterThanLast extends SqlCursorPaginationQueryError {
 
 export class ErrBeforeCursorInvalid extends SqlCursorPaginationQueryError {
   constructor() {
-    super('ErrBeforeCursorInvalid', '`beforeCursor` invalid');
+    super('ErrBeforeCursorInvalid', '`before` invalid');
   }
 }
 
 export class ErrAfterCursorInvalid extends SqlCursorPaginationQueryError {
   constructor() {
-    super('ErrAfterCursorInvalid', '`afterCursor` invalid');
+    super('ErrAfterCursorInvalid', '`after` invalid');
   }
 }
 
@@ -72,19 +72,13 @@ export class ErrTooManyNodes extends SqlCursorPaginationQueryError {
 
 export class ErrBeforeCursorWrongQuery extends SqlCursorPaginationQueryError {
   constructor() {
-    super(
-      'ErrBeforeCursorWrongQuery',
-      '`beforeCursor` created for different query',
-    );
+    super('ErrBeforeCursorWrongQuery', '`before` created for different query');
   }
 }
 
 export class ErrAfterCursorWrongQuery extends SqlCursorPaginationQueryError {
   constructor() {
-    super(
-      'ErrAfterCursorWrongQuery',
-      '`afterCursor` created for different query',
-    );
+    super('ErrAfterCursorWrongQuery', '`after` created for different query');
   }
 }
 
@@ -92,7 +86,7 @@ export class ErrBeforeCursorWrongSortConfig extends SqlCursorPaginationQueryErro
   constructor() {
     super(
       'ErrBeforeCursorWrongSortConfig',
-      '`beforeCursor` cursor created for different sort configuration',
+      '`before` cursor created for different sort configuration',
     );
   }
 }
@@ -101,7 +95,7 @@ export class ErrAfterCursorWrongSortConfig extends SqlCursorPaginationQueryError
   constructor() {
     super(
       'ErrAfterCursorWrongSortConfig',
-      '`afterCursor` cursor created for different sort configuration',
+      '`after` cursor created for different sort configuration',
     );
   }
 }

@@ -65,20 +65,14 @@ export type WithPaginationInputQuery<TGenerateCursor extends boolean = true> = {
    * This takes the string `cursor` from a previous result, or you can provide a raw cursor
    * object by wrapping the object with `rawCursor(object)`.
    */
-  afterCursor?:
-    | (TGenerateCursor extends true ? string : never)
-    | RawCursor
-    | null;
+  after?: (TGenerateCursor extends true ? string : never) | RawCursor | null;
   /**
    * The window will cover the row before the provided cursor, and earlier rows.
    *
    * This takes the string `cursor` from a previous result, or you can provide a raw cursor
    * object by wrapping the object with `rawCursor(object)`.
    */
-  beforeCursor?:
-    | (TGenerateCursor extends true ? string : never)
-    | RawCursor
-    | null;
+  before?: (TGenerateCursor extends true ? string : never) | RawCursor | null;
 };
 
 export type WithPaginationInputSetup<
@@ -207,8 +201,8 @@ export async function withPagination<
   query: {
     first = null,
     last = null,
-    beforeCursor: beforeCursorInput = null,
-    afterCursor: afterCursorInput = null,
+    before: beforeInput = null,
+    after: afterInput = null,
     sortFields: _sortFields,
   },
   setup: {
@@ -256,22 +250,22 @@ export async function withPagination<
   }
 
   const resolvedBeforeCursor = await resolveCursor({
-    cursor: beforeCursorInput,
+    cursor: beforeInput,
     cursorSecret,
   });
   if (!resolvedBeforeCursor.success) {
     throw new ErrBeforeCursorInvalid();
   }
-  const beforeCursor = resolvedBeforeCursor.cursor;
+  const before = resolvedBeforeCursor.cursor;
 
   const resolvedAfterCursor = await resolveCursor({
-    cursor: afterCursorInput,
+    cursor: afterInput,
     cursorSecret,
   });
   if (!resolvedAfterCursor.success) {
     throw new ErrAfterCursorInvalid();
   }
-  const afterCursor = resolvedAfterCursor.cursor;
+  const after = resolvedAfterCursor.cursor;
 
   const requestedCount = first !== null ? first : notNull(last);
   if (requestedCount > maxNodes) {
@@ -296,8 +290,8 @@ export async function withPagination<
 
   const whereQuery = new QueryBuilder();
   for (const [type, cursor] of [
-    ['before', beforeCursor],
-    ['after', afterCursor],
+    ['before', before],
+    ['after', after],
   ] as const) {
     if (!cursor) continue;
 
@@ -324,7 +318,7 @@ export async function withPagination<
     }
   }
 
-  if (beforeCursor || afterCursor) {
+  if (before || after) {
     whereQuery.appendText(`(`);
 
     const build = (type: 'after' | 'before', c: Cursor): void => {
@@ -351,15 +345,15 @@ export async function withPagination<
       }
     };
 
-    if (afterCursor) {
+    if (after) {
       whereQuery.appendText(`(`);
-      build('after', afterCursor);
+      build('after', after);
       whereQuery.appendText(`)`);
     }
-    if (beforeCursor) {
-      if (afterCursor) whereQuery.appendText(` AND `);
+    if (before) {
+      if (after) whereQuery.appendText(` AND `);
       whereQuery.appendText(`(`);
-      build('before', beforeCursor);
+      build('before', before);
       whereQuery.appendText(`)`);
     }
     whereQuery.appendText(`)`);
