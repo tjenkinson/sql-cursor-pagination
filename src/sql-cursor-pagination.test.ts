@@ -207,6 +207,8 @@ describe('SqlCursorPagination', () => {
     expect(res.edges[0].node.first_name).toBe('Anika');
     expect(res.pageInfo.hasPreviousPage).toBe(false);
     expect(res.pageInfo.hasNextPage).toBe(false);
+    expect(res.pageInfo.startCursor).toBe(res.edges[0].cursor);
+    expect(res.pageInfo.endCursor).toBe(res.edges[res.edges.length - 1].cursor);
     expect(res).toMatchSnapshot();
   });
 
@@ -334,6 +336,28 @@ describe('SqlCursorPagination', () => {
     expect(res.edges[0]).toEqual(all.edges[1]);
     expect(res.pageInfo.hasPreviousPage).toBe(true);
     expect(res.pageInfo.hasNextPage).toBe(false);
+    expect(res).toMatchSnapshot();
+  });
+
+  it('returns nothing when selecting after the last row', async () => {
+    const all = await go({
+      query: {
+        first: Infinity,
+      },
+    });
+
+    const res = await go({
+      query: {
+        afterCursor: all.edges[all.edges.length - 1].cursor,
+        first: 1,
+      },
+    });
+
+    expect(res.edges).toHaveLength(0);
+    expect(res.pageInfo.hasPreviousPage).toBe(false);
+    expect(res.pageInfo.hasNextPage).toBe(false);
+    expect(res.pageInfo.startCursor).toBe(null);
+    expect(res.pageInfo.endCursor).toBe(null);
     expect(res).toMatchSnapshot();
   });
 
@@ -544,6 +568,8 @@ describe('SqlCursorPagination', () => {
     });
 
     expect('cursor' in all.edges[0]).toBe(false);
+    expect('startCursor' in all.pageInfo).toBe(false);
+    expect('endCursor' in all.pageInfo).toBe(false);
 
     await expect(
       async () =>
