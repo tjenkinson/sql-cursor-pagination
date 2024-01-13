@@ -146,7 +146,7 @@ export type WithPaginationResultEdge<
     ? { rawCursor: Cursor }
     : { rawCursor?: undefined });
 
-export type WithPaginationResultPageInfo = {
+export type WithPaginationResultPageInfo<TIncludeCursor extends boolean> = {
   /**
    * `true` if there are more items following the last one and the request was for `first`.
    *
@@ -154,18 +154,20 @@ export type WithPaginationResultPageInfo = {
    */
   hasNextPage: boolean;
   /**
-   * `true` if there are more items before the first oneand the request was for `last`.
+   * `true` if there are more items before the first one and the request was for `last`.
    *
    * Otherwise this will be `false`.
    */
   hasPreviousPage: boolean;
-};
+} & (TIncludeCursor extends true
+  ? { startCursor: string | null; endCursor: string | null }
+  : { startCursor?: undefined; endCursor?: undefined });
 
 export type WithPaginationResult<TNode, TGenerateCursor extends boolean> = {
   /**
    * Contains `hasNextPage`/`hasPreviousPage`.
    */
-  pageInfo: WithPaginationResultPageInfo;
+  pageInfo: WithPaginationResultPageInfo<TGenerateCursor>;
   /**
    * An entry for each row in the result, that contains the row and cursor.
    */
@@ -461,12 +463,19 @@ export async function withPagination<
       return { ...(cursor !== undefined ? { cursor } : {}), node };
     });
 
+  const pageInfo: WithPaginationResultPageInfo<boolean> = {
+    hasNextPage,
+    hasPreviousPage,
+    ...(cursorSecret !== null && {
+      endCursor:
+        edges.length > 0 ? notNull(edges[edges.length - 1].cursor) : null,
+      startCursor: edges.length > 0 ? notNull(edges[0].cursor) : null,
+    }),
+  } as WithPaginationResultPageInfo<boolean>;
+
   return {
     edges,
     [edgesWithRawCursorSymbol]: edgesWithRawCursor,
-    pageInfo: {
-      hasNextPage,
-      hasPreviousPage,
-    },
+    pageInfo,
   };
 }

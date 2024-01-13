@@ -6,7 +6,7 @@ Are you running a service, using an SQL database, and want to support cursor sty
 
 1. When a request comes in you call the library with a `query` object containing how many items to fetch (`first`/`last`), where to fetch from (`beforeCursor`/`afterCursor`) and the sort config (`sortFields`), along with a `setup` object.
 2. The `runQuery` function you provided in `setup` is invoked, and provided with a `limit`, `whereFragmentBuilder` and `orderByFragmentBuilder`. You integrate these into your query, run it, and then return the results.
-3. The library takes the results, and for each one it generates a unique `cursor`, which it then returns alongside each row. It also returns `hasNextPage`/`hasPreviousPage` properties.
+3. The library takes the results, and for each one it generates a unique `cursor`, which it then returns alongside each row. It also returns `hasNextPage`/`hasPreviousPage`/`startCursor`/`endCursor` properties.
 
 ## What is cursor pagination?
 
@@ -109,7 +109,7 @@ The result is a promise that resolves with an object containing `edges` and `pag
 
 `edges` is an array of objects containing `cursor` and `node` properties, where `cursor` is the generated cursor for the `node`, and `node` is the object you returned for the row from `runQuery`.
 
-`pageInfo` contains `hasNextPage` and `hasPreviousPage` properties.
+`pageInfo` contains `hasNextPage`/`hasPreviousPage`/`startCursor`/`endCursor` properties.
 
 E.g.
 
@@ -128,7 +128,9 @@ E.g.
   ],
   "pageInfo": {
     "hasNextPage": true,
-    "hasPreviousPage": false
+    "hasPreviousPage": false,
+    "startCursor": "l1X624m67Z5aYShVOLrThEcP7c-ezmCc4C48Dvxtt98.x7zYjxX9VEWDA1KAnJii8zyw5DP_OdIRnSkXATGhwTy6Wf0SSkjdjq6pTl9qxhp87EI-85pUJW9Thz_A6F_8BzlgccgDV-hXWjEj3CsGl96tSaA-X0_qNWBu425Mt6t5j3wNSdk8sSArBQ",
+    "endCursor": "l1X624m67Z5aYShVOLrThEcP7c-ezmCc4C48Dvxtt98.x7zYjxX9VEWDA1KAnJii8zyw5DP_OdIRnSkXATGhwTy6Wf0SSkjdjq6pTl9qxhp87EI-85pUJW9Thz_A6F_8BzlgccgDV-hXWjEj3CsGl96tSaA-X0_qNWBu425Mt6t5j3wNSdk8sSArBQ"
   }
 }
 ```
