@@ -4,7 +4,7 @@ Are you running a service, using an SQL database, and want to support cursor sty
 
 ## How it works
 
-1. When a request comes in you call the library with a `query` object containing how many items to fetch (`first`/`last`), where to fetch from (`before`/`after`) and the sort config (`sortFields`), along with a `setup` object.
+1. When a request comes in you call the library with a `query` object containing how many items to fetch (`first`/`last`), where to fetch from (`before`/`after`), along with a `setup` object which contains the sort config.
 2. The `runQuery` function you provided in `setup` is invoked, and provided with a `limit`, `whereFragmentBuilder` and `orderByFragmentBuilder`. You integrate these into your query, run it, and then return the results.
 3. The library takes the results, and for each one it generates a unique `cursor`, which it then returns alongside each row. It also returns `hasNextPage`/`hasPreviousPage`/`startCursor`/`endCursor` properties.
 
@@ -66,17 +66,17 @@ async function fetchUsers(userInput: {
 
   const { edges, pageInfo } = await withPagination({
     query: {
-      sortFields: [
-        { field: 'first_name', order: userInput.order },
-        { field: 'last_name', order: userInput.order },
-        { field: 'id', order: userInput.order },
-      ],
       first: userInput.first,
       last: userInput.last,
       before: userInput.before,
       after: userInput.after,
     },
     setup: {
+      sortFields: [
+        { field: 'first_name', order: userInput.order },
+        { field: 'last_name', order: userInput.order },
+        { field: 'id', order: userInput.order },
+      ],
       // generate one with `npx -p sql-cursor-pagination generate-secret`
       cursorSecret: buildCursorSecret('somethingSecret'),
       queryName: 'users',
@@ -139,23 +139,23 @@ E.g.
 
 ### Query
 
-| Property     | Type                                          | Required                  | Description                                                                                                                                                                                                                                                       |
-| ------------ | --------------------------------------------- | ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `first`      | `number`                                      | If `last` isn't present.  | The number of rows to fetch from the start of the window.                                                                                                                                                                                                         |
-| `last`       | `number`                                      | If `first` isn't present. | The number of rows to fetch from the end of the window.                                                                                                                                                                                                           |
-| `sortFields` | `{ field: string, order: 'asc' \| 'desc' }[]` | Yes                       | This takes an array of objects which have `field` and `order` properties. There must be at least one entry and you must include an entry that maps to a unique key, otherwise it's possible for there to be cursor collisions, which will result in an exception. |
-| `after`      | `string`                                      | No                        | The window will cover the row after the provided cursor, and later rows. This takes the string `cursor` from a previous result`.                                                                                                                                  |
-| `before`     | `string`                                      | No                        | The window will cover the row before the provided cursor, and earlier rows. This takes the string `cursor` from a previous result.                                                                                                                                |
+| Property | Type     | Required                  | Description                                                                                                                        |
+| -------- | -------- | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| `first`  | `number` | If `last` isn't present.  | The number of rows to fetch from the start of the window.                                                                          |
+| `last`   | `number` | If `first` isn't present. | The number of rows to fetch from the end of the window.                                                                            |
+| `after`  | `string` | No                        | The window will cover the row after the provided cursor, and later rows. This takes the string `cursor` from a previous result`.   |
+| `before` | `string` | No                        | The window will cover the row before the provided cursor, and earlier rows. This takes the string `cursor` from a previous result. |
 
 ### Setup
 
-| Property                      | Type           | Required | Description                                                                                                                                                                                                                                        |
-| ----------------------------- | -------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `runQuery`                    | `function`     | Yes      | This function is responsible for running the database query, and returning the array of rows. It is provided with a `QueryContent` object which contains a `WHERE` fragment, `ORDER BY` fragment and `limit`, which must be included in the query. |
-| `queryName`                   | `string`       | Yes      | A name for this query. It should be unique to the query, and is used to bind the cursors to it. This prevents a cursor that was created for another query being used for this one.                                                                 |
-| `cursorSecret`                | `CursorSecret` | Yes      | The secret that is used to encrypt the cursor, created from `buildCursorSecret(secret: string)`. Must be at least 30 characters. Generate one with `npx -p sql-cursor-pagination generate-secret`.                                                 |
-| `maxNodes`                    | `number`       | No       | The maximum number of allowed rows in the response before the `ErrTooManyNodes` error is thrown. _Default: 100_                                                                                                                                    |
-| `cursorGenerationConcurrency` | `number`       | No       | The maximum number of cursors to generate in parallel. _Default: 10_                                                                                                                                                                               |
+| Property                      | Type                                          | Required | Description                                                                                                                                                                                                                                                       |
+| ----------------------------- | --------------------------------------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `runQuery`                    | `function`                                    | Yes      | This function is responsible for running the database query, and returning the array of rows. It is provided with a `QueryContent` object which contains a `WHERE` fragment, `ORDER BY` fragment and `limit`, which must be included in the query.                |
+| `queryName`                   | `string`                                      | Yes      | A name for this query. It should be unique to the query, and is used to bind the cursors to it. This prevents a cursor that was created for another query being used for this one.                                                                                |
+| `sortFields`                  | `{ field: string, order: 'asc' \| 'desc' }[]` | Yes      | This takes an array of objects which have `field` and `order` properties. There must be at least one entry and you must include an entry that maps to a unique key, otherwise it's possible for there to be cursor collisions, which will result in an exception. |
+| `cursorSecret`                | `CursorSecret`                                | Yes      | The secret that is used to encrypt the cursor, created from `buildCursorSecret(secret: string)`. Must be at least 30 characters. Generate one with `npx -p sql-cursor-pagination generate-secret`.                                                                |
+| `maxNodes`                    | `number`                                      | No       | The maximum number of allowed rows in the response before the `ErrTooManyNodes` error is thrown. _Default: 100_                                                                                                                                                   |
+| `cursorGenerationConcurrency` | `number`                                      | No       | The maximum number of cursors to generate in parallel. _Default: 10_                                                                                                                                                                                              |
 
 ## Query Fragments
 
