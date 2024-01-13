@@ -51,15 +51,6 @@ export type WithPaginationInputQuery<TGenerateCursor extends boolean = true> = {
   /* The number of rows to fetch from the end of the window. */
   last?: number | null;
   /**
-   * This takes an array of objects which have `field` and `order` properties.
-   *
-   * The order can be `asc` or `desc`.
-   *
-   * There must be at least one entry and you must include an entry that maps to a unique key,
-   * otherwise it's possible for there to be cursor collisions, which will result  in an exception.
-   */
-  sortFields: readonly FieldWithOrder[];
-  /**
    * The window will cover the row after the provided cursor, and later rows.
    *
    * This takes the string `cursor` from a previous result, or you can provide a raw cursor
@@ -92,6 +83,15 @@ export type WithPaginationInputSetup<
    * which must be included in the query.
    */
   runQuery: (queryContent: QueryContent) => Promise<readonly TNode[]>;
+  /**
+   * This takes an array of objects which have `field` and `order` properties.
+   *
+   * The order can be `asc` or `desc`.
+   *
+   * There must be at least one entry and you must include an entry that maps to a unique key,
+   * otherwise it's possible for there to be cursor collisions, which will result  in an exception.
+   */
+  sortFields: readonly FieldWithOrder[];
   /**
    * A name for this query.
    *
@@ -203,13 +203,13 @@ export async function withPagination<
     last = null,
     before: beforeInput = null,
     after: afterInput = null,
-    sortFields: _sortFields,
   },
   setup: {
     cursorGenerationConcurrency: _cursorGenerationConcurrency = 10,
     cursorSecret = null,
     maxNodes = 100,
     runQuery,
+    sortFields: _sortFields,
     queryName: _queryName,
   },
 }: WithPaginationInput<TNode, boolean>): Promise<

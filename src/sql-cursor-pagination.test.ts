@@ -175,19 +175,17 @@ describe('SqlCursorPagination', () => {
     setup?: Partial<WithPaginationInputSetup<Row, TGenerateCursor>>;
   }): Promise<WithPaginationResult<Row, TGenerateCursor>> {
     const input: WithPaginationInput<Row, boolean> = {
-      query: {
-        sortFields: [
-          { field: 'first_name', order: Asc },
-          { field: 'last_name', order: Desc },
-          { field: 'id', order: Asc },
-        ],
-        ...query,
-      },
+      query,
       setup: {
         cursorSecret: mockCursorSecret,
         maxNodes: Infinity,
         queryName: mockQueryName,
         runQuery: buildRunQuery(),
+        sortFields: [
+          { field: 'first_name', order: Asc },
+          { field: 'last_name', order: Desc },
+          { field: 'id', order: Asc },
+        ],
         ...setup,
       },
     };
@@ -592,6 +590,8 @@ describe('SqlCursorPagination', () => {
     const res = await go({
       query: {
         first: 1,
+      },
+      setup: {
         sortFields: [{ field: 'users.id', order: Asc }],
       },
     });
@@ -605,6 +605,8 @@ describe('SqlCursorPagination', () => {
     const res = await go({
       query: {
         first: 1,
+      },
+      setup: {
         sortFields: [
           { field: { alias: 'email_alias', name: 'email' }, order: Asc },
         ],
@@ -630,6 +632,8 @@ describe('SqlCursorPagination', () => {
             query: {
               after: all.edges[0].cursor,
               first: 1,
+            },
+            setup: {
               sortFields: [{ field: 'email', order: Asc }],
             },
           }),
@@ -649,6 +653,8 @@ describe('SqlCursorPagination', () => {
             query: {
               before: all.edges[0].cursor,
               last: 1,
+            },
+            setup: {
               sortFields: [
                 { field: 'email', order: Asc },
                 { field: 'last_name', order: Asc },
@@ -845,6 +851,8 @@ describe('SqlCursorPagination', () => {
           await go({
             query: {
               first: 1,
+            },
+            setup: {
               sortFields: [],
             },
           }),
@@ -855,6 +863,8 @@ describe('SqlCursorPagination', () => {
           await go({
             query: {
               first: 1,
+            },
+            setup: {
               sortFields: [{ field: '!', order: Asc }],
             },
           }),
@@ -865,6 +875,8 @@ describe('SqlCursorPagination', () => {
           await go({
             query: {
               first: 1,
+            },
+            setup: {
               // @ts-expect-error invalid order
               sortFields: [{ field: 'a', order: 'oops' }],
             },
@@ -878,6 +890,8 @@ describe('SqlCursorPagination', () => {
           await go({
             query: {
               first: 1,
+            },
+            setup: {
               sortFields: [
                 { field: 'first_name', order: 'asc' },
                 { field: 'first_name', order: 'asc' },
@@ -893,6 +907,8 @@ describe('SqlCursorPagination', () => {
           await go({
             query: {
               first: Infinity,
+            },
+            setup: {
               sortFields: [{ field: 'first_name', order: Asc }],
             },
           }),
