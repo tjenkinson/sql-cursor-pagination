@@ -5,7 +5,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'prettier',
   ],
-  plugins: ['import'],
+  plugins: ['import', 'redos-detector'],
   parser: 'espree',
   parserOptions: {
     ecmaVersion: 2019,
@@ -35,6 +35,7 @@ module.exports = {
     'no-var': ['error'],
     'no-use-before-define': ['error'],
     'no-warning-comments': ['error'],
+    'redos-detector/no-unsafe-regex': ['error'],
   },
   overrides: [
     {
