@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-restricted-globals
 export class SqlCursorPaginationError extends Error {
   constructor(name: string, message: string) {
     super(message);

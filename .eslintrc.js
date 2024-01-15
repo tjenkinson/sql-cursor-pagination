@@ -19,6 +19,10 @@ module.exports = {
         name: 'crypto',
         message: 'Import from crypto.ts',
       },
+      {
+        name: 'Error',
+        message: 'Use `ErrUnexpected`',
+      },
     ],
     'import/order': [
       'error',
