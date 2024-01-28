@@ -4,4 +4,5 @@ export { decryptCursor, rawCursor, RawCursor } from './cursor';
 export { buildCursorSecret } from './cursor-secret';
 export type { Order } from './zod-models/order';
 export { Asc, Desc } from './zod-models/order';
+export type * from './query-builder';
 export * from './errors';
