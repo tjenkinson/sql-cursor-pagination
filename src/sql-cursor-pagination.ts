@@ -45,7 +45,7 @@ export type QueryContent = {
   limit: number;
 };
 
-export type WithPaginationInputQuery<TGenerateCursor extends boolean = true> = {
+type _WithPaginationInputQuery<TGenerateCursor extends boolean = true> = {
   /* The number of rows to fetch from the start of the window. */
   first?: number | null;
   /* The number of rows to fetch from the end of the window. */
@@ -65,10 +65,12 @@ export type WithPaginationInputQuery<TGenerateCursor extends boolean = true> = {
    */
   before?: (TGenerateCursor extends true ? string : never) | RawCursor | null;
 };
+export type WithPaginationInputQuery = _WithPaginationInputQuery<true>;
+export type WithPaginationNoCursorInputQuery = _WithPaginationInputQuery<false>;
 
-export type WithPaginationInputSetup<
-  TNode extends Record<string, unknown> = Record<string, unknown>,
-  TGenerateCursor extends boolean = true,
+type _WithPaginationInputSetup<
+  TNode extends Record<string, unknown>,
+  TGenerateCursor extends boolean,
 > = {
   /**
    * The maximum number of allowed rows in the response before the `ErrTooManyNodes` error is returned.
@@ -117,17 +119,32 @@ export type WithPaginationInputSetup<
        */
       cursorSecret: MaybePromise<CursorSecret>;
     }
-  : { cursorGenerationConcurrency?: undefined; cursorSecret?: null });
+  : { cursorGenerationConcurrency?: undefined; cursorSecret?: undefined });
+export type WithPaginationInputSetup<TNode extends Record<string, unknown>> =
+  _WithPaginationInputSetup<TNode, true>;
+export type WithPaginationNoCursorInputSetup<
+  TNode extends Record<string, unknown>,
+> = _WithPaginationInputSetup<TNode, false>;
 
+type _WithPaginationInput<
+  TNode extends Record<string, unknown>,
+  TGenerateCursor extends boolean,
+> = {
+  query: TGenerateCursor extends true
+    ? WithPaginationInputQuery
+    : WithPaginationNoCursorInputQuery;
+  setup: TGenerateCursor extends true
+    ? WithPaginationInputSetup<TNode>
+    : WithPaginationNoCursorInputSetup<TNode>;
+};
 export type WithPaginationInput<
   TNode extends Record<string, unknown> = Record<string, unknown>,
-  TGenerateCursor extends boolean = true,
-> = {
-  query: WithPaginationInputQuery<TGenerateCursor>;
-  setup: WithPaginationInputSetup<TNode, TGenerateCursor>;
-};
+> = _WithPaginationInput<TNode, true>;
+export type WithPaginationNoCursorInput<
+  TNode extends Record<string, unknown> = Record<string, unknown>,
+> = _WithPaginationInput<TNode, false>;
 
-export type WithPaginationResultEdge<
+type _WithPaginationResultEdge<
   TNode,
   TIncludeCursor extends boolean,
   TIncludeRawCursor extends boolean,
@@ -140,7 +157,19 @@ export type WithPaginationResultEdge<
     ? { rawCursor: Cursor }
     : { rawCursor?: undefined });
 
-export type WithPaginationResultPageInfo<TIncludeCursor extends boolean> = {
+export type WithPaginationResultEdge<TNode extends Record<string, unknown>> =
+  _WithPaginationResultEdge<TNode, true, false>;
+export type WithPaginationResultEdgeWithRawCursor<
+  TNode extends Record<string, unknown>,
+> = _WithPaginationResultEdge<TNode, true, true>;
+export type WithPaginationNoCursorResultEdge<
+  TNode extends Record<string, unknown>,
+> = _WithPaginationResultEdge<TNode, false, false>;
+export type WithPaginationNoCursorResultEdgeWithRawCursor<
+  TNode extends Record<string, unknown>,
+> = _WithPaginationResultEdge<TNode, false, true>;
+
+type _WithPaginationResultPageInfo<TIncludeCursor extends boolean> = {
   /**
    * `true` if there are more items following the last one and the request was for `first`.
    *
@@ -155,23 +184,40 @@ export type WithPaginationResultPageInfo<TIncludeCursor extends boolean> = {
   hasPreviousPage: boolean;
 } & (TIncludeCursor extends true
   ? { startCursor: string | null; endCursor: string | null }
-  : { startCursor?: undefined; endCursor?: undefined });
+  : {
+      startCursor?: undefined;
+      endCursor?: undefined;
+    });
 
-export type WithPaginationResult<TNode, TGenerateCursor extends boolean> = {
+export type WithPaginationResultPageInfo = _WithPaginationResultPageInfo<true>;
+export type WithPaginationNoCursorResultPageInfo =
+  _WithPaginationResultPageInfo<false>;
+
+type _WithPaginationResult<
+  TNode extends Record<string, unknown>,
+  TGenerateCursor extends boolean,
+> = {
   /**
    * Contains `hasNextPage`/`hasPreviousPage`.
    */
-  pageInfo: WithPaginationResultPageInfo<TGenerateCursor>;
+  pageInfo: TGenerateCursor extends true
+    ? WithPaginationResultPageInfo
+    : WithPaginationNoCursorResultPageInfo;
   /**
    * An entry for each row in the result, that contains the row and cursor.
    */
-  edges: WithPaginationResultEdge<TNode, TGenerateCursor, false>[];
-  [edgesWithRawCursorSymbol]: WithPaginationResultEdge<
-    TNode,
-    TGenerateCursor,
-    true
-  >[];
+  edges: TGenerateCursor extends true
+    ? WithPaginationResultEdge<TNode>[]
+    : WithPaginationNoCursorResultEdge<TNode>[];
+  [edgesWithRawCursorSymbol]: TGenerateCursor extends true
+    ? WithPaginationResultEdgeWithRawCursor<TNode>[]
+    : WithPaginationNoCursorResultEdgeWithRawCursor<TNode>[];
 };
+export type WithPaginationResult<TNode extends Record<string, unknown>> =
+  _WithPaginationResult<TNode, true>;
+export type WithPaginationNoCursorResult<
+  TNode extends Record<string, unknown>,
+> = _WithPaginationResult<TNode, false>;
 
 function maybeFlip(order: Order, flipDirection: boolean): Order {
   if (!flipDirection) return order;
@@ -185,41 +231,35 @@ function quoteField(field: string): string {
     .join('.');
 }
 
-export async function withPagination<
-  TNode extends Record<string, unknown> = Record<string, unknown>,
+async function _withPagination<
+  TNode extends Record<string, unknown>,
+  TGenerateCursor extends boolean,
 >(
-  input: WithPaginationInput<TNode, true>,
-): Promise<WithPaginationResult<TNode, true>>;
-export async function withPagination<
-  TNode extends Record<string, unknown> = Record<string, unknown>,
->(
-  input: WithPaginationInput<TNode, false>,
-): Promise<WithPaginationResult<TNode, false>>;
-export async function withPagination<
-  TNode extends Record<string, unknown> = Record<string, unknown>,
->({
-  query: {
-    first = null,
-    last = null,
-    before: beforeInput = null,
-    after: afterInput = null,
-  },
-  setup: {
-    cursorGenerationConcurrency: _cursorGenerationConcurrency = 10,
-    cursorSecret = null,
-    maxNodes = 100,
-    runQuery,
-    sortFields: _sortFields,
-    queryName: _queryName,
-  },
-}: WithPaginationInput<TNode, boolean>): Promise<
-  WithPaginationResult<TNode, boolean>
-> {
+  generateCursor: TGenerateCursor,
+  {
+    query: {
+      first = null,
+      last = null,
+      before: beforeInput = null,
+      after: afterInput = null,
+    },
+    setup: {
+      cursorGenerationConcurrency: _cursorGenerationConcurrency = 10,
+      cursorSecret: _cursorSecret,
+      maxNodes = 100,
+      runQuery,
+      sortFields: _sortFields,
+      queryName: _queryName,
+    },
+  }: _WithPaginationInput<TNode, TGenerateCursor>,
+): Promise<_WithPaginationResult<TNode, TGenerateCursor>> {
   const sortFields = SortFields.parse(_sortFields);
   const queryName = QueryName.parse(_queryName);
   const cursorGenerationConcurrency = PositiveInt.parse(
     _cursorGenerationConcurrency,
   );
+  /* c8 ignore next 1 */
+  const cursorSecret = generateCursor ? _cursorSecret ?? null : null;
 
   if (first === null && last === null) {
     throw new ErrFirstOrLastRequired();
@@ -422,7 +462,7 @@ export async function withPagination<
       : false;
 
   const seenCursors: Set<string> = new Set();
-  const edgesWithRawCursor: WithPaginationResultEdge<TNode, boolean, true>[] =
+  const edgesWithRawCursor: _WithPaginationResultEdge<TNode, boolean, true>[] =
     await pMap(
       lastNodes,
       async (node) => {
@@ -452,12 +492,12 @@ export async function withPagination<
       { concurrency: cursorGenerationConcurrency },
     );
 
-  const edges: WithPaginationResultEdge<TNode, boolean, false>[] =
+  const edges: _WithPaginationResultEdge<TNode, boolean, false>[] =
     edgesWithRawCursor.map(({ cursor, node }) => {
       return { ...(cursor !== undefined ? { cursor } : {}), node };
     });
 
-  const pageInfo: WithPaginationResultPageInfo<boolean> = {
+  const pageInfo: _WithPaginationResultPageInfo<boolean> = {
     hasNextPage,
     hasPreviousPage,
     ...(cursorSecret !== null && {
@@ -465,11 +505,25 @@ export async function withPagination<
         edges.length > 0 ? notNull(edges[edges.length - 1].cursor) : null,
       startCursor: edges.length > 0 ? notNull(edges[0].cursor) : null,
     }),
-  } as WithPaginationResultPageInfo<boolean>;
+  } as _WithPaginationResultPageInfo<boolean>;
 
   return {
     edges,
     [edgesWithRawCursorSymbol]: edgesWithRawCursor,
     pageInfo,
-  };
+  } as _WithPaginationResult<TNode, TGenerateCursor>;
+}
+
+export async function withPagination<
+  TNode extends Record<string, unknown> = Record<string, unknown>,
+>(input: WithPaginationInput<TNode>): Promise<WithPaginationResult<TNode>> {
+  return _withPagination<TNode, true>(true, input);
+}
+
+export async function withPaginationNoCursor<
+  TNode extends Record<string, unknown> = Record<string, unknown>,
+>(
+  input: WithPaginationNoCursorInput<TNode>,
+): Promise<WithPaginationNoCursorResult<TNode>> {
+  return _withPagination<TNode, false>(false, input);
 }

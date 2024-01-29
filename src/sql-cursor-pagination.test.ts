@@ -23,10 +23,15 @@ import {
   QueryContent,
   WithPaginationInput,
   WithPaginationInputQuery,
-  WithPaginationInputSetup,
   WithPaginationResult,
   edgesWithRawCursorSymbol,
   withPagination,
+  withPaginationNoCursor,
+  WithPaginationInputSetup,
+  WithPaginationNoCursorInput,
+  WithPaginationNoCursorInputQuery,
+  WithPaginationNoCursorInputSetup,
+  WithPaginationNoCursorResult,
 } from './sql-cursor-pagination';
 import { Asc, Desc } from './zod-models/order';
 
@@ -167,14 +172,14 @@ describe('SqlCursorPagination', () => {
     await db('users').insert(mockRows);
   });
 
-  async function go<TGenerateCursor extends boolean = true>({
+  async function runWithPagination({
     query = {},
     setup = {},
   }: {
-    query?: Partial<WithPaginationInputQuery<TGenerateCursor>>;
-    setup?: Partial<WithPaginationInputSetup<Row, TGenerateCursor>>;
-  }): Promise<WithPaginationResult<Row, TGenerateCursor>> {
-    const input: WithPaginationInput<Row, boolean> = {
+    query?: Partial<WithPaginationInputQuery>;
+    setup?: Partial<WithPaginationInputSetup<Row>>;
+  }): Promise<WithPaginationResult<Row>> {
+    const input: WithPaginationInput<Row> = {
       query,
       setup: {
         cursorSecret: mockCursorSecret,
@@ -189,13 +194,37 @@ describe('SqlCursorPagination', () => {
         ...setup,
       },
     };
-    return withPagination<Row>(input) as Promise<
-      WithPaginationResult<Row, TGenerateCursor>
-    >;
+
+    return withPagination(input);
+  }
+
+  async function runWithPaginationNoCursor({
+    query = {},
+    setup = {},
+  }: {
+    query?: Partial<WithPaginationNoCursorInputQuery>;
+    setup?: Partial<WithPaginationNoCursorInputSetup<Row>>;
+  }): Promise<WithPaginationNoCursorResult<Row>> {
+    const input: WithPaginationNoCursorInput<Row> = {
+      query,
+      setup: {
+        maxNodes: Infinity,
+        queryName: mockQueryName,
+        runQuery: buildRunQuery(),
+        sortFields: [
+          { field: 'first_name', order: Asc },
+          { field: 'last_name', order: Desc },
+          { field: 'id', order: Asc },
+        ],
+        ...setup,
+      },
+    };
+
+    return withPaginationNoCursor(input);
   }
 
   it('selects the first infinity (all) items', async () => {
-    const res = await go({
+    const res = await runWithPagination({
       query: {
         first: Infinity,
       },
@@ -211,7 +240,7 @@ describe('SqlCursorPagination', () => {
   });
 
   it('selects the last infinity (all) items', async () => {
-    const res = await go({
+    const res = await runWithPagination({
       query: {
         last: Infinity,
       },
@@ -225,7 +254,7 @@ describe('SqlCursorPagination', () => {
   });
 
   it('selects the first 3 items', async () => {
-    const res = await go({
+    const res = await runWithPagination({
       query: {
         first: 3,
       },
@@ -240,13 +269,13 @@ describe('SqlCursorPagination', () => {
   });
 
   it('selects the third row when selecting one after the second row', async () => {
-    const all = await go({
+    const all = await runWithPagination({
       query: {
         first: Infinity,
       },
     });
 
-    const res = await go({
+    const res = await runWithPagination({
       query: {
         after: all.edges[1].cursor,
         first: 1,
@@ -261,13 +290,13 @@ describe('SqlCursorPagination', () => {
   });
 
   it('selects the second row when selecting one before the third row', async () => {
-    const all = await go({
+    const all = await runWithPagination({
       query: {
         first: Infinity,
       },
     });
 
-    const res = await go({
+    const res = await runWithPagination({
       query: {
         before: all.edges[2].cursor,
         last: 1,
@@ -282,13 +311,13 @@ describe('SqlCursorPagination', () => {
   });
 
   it('selects first 2 rows when selecting 2 before the third row', async () => {
-    const all = await go({
+    const all = await runWithPagination({
       query: {
         first: Infinity,
       },
     });
 
-    const res = await go({
+    const res = await runWithPagination({
       query: {
         before: all.edges[2].cursor,
         last: 2,
@@ -303,7 +332,7 @@ describe('SqlCursorPagination', () => {
   });
 
   it('selects the last 3 items', async () => {
-    const res = await go({
+    const res = await runWithPagination({
       query: {
         last: 3,
       },
@@ -317,13 +346,13 @@ describe('SqlCursorPagination', () => {
   });
 
   it('selects the second row when selecting one before the third row', async () => {
-    const all = await go({
+    const all = await runWithPagination({
       query: {
         first: Infinity,
       },
     });
 
-    const res = await go({
+    const res = await runWithPagination({
       query: {
         before: all.edges[2].cursor,
         last: 1,
@@ -338,13 +367,13 @@ describe('SqlCursorPagination', () => {
   });
 
   it('returns nothing when selecting after the last row', async () => {
-    const all = await go({
+    const all = await runWithPagination({
       query: {
         first: Infinity,
       },
     });
 
-    const res = await go({
+    const res = await runWithPagination({
       query: {
         after: all.edges[all.edges.length - 1].cursor,
         first: 1,
@@ -360,13 +389,13 @@ describe('SqlCursorPagination', () => {
   });
 
   it('selects last 2 rows when selecting 2 after the third row', async () => {
-    const all = await go({
+    const all = await runWithPagination({
       query: {
         first: Infinity,
       },
     });
 
-    const res = await go({
+    const res = await runWithPagination({
       query: {
         after: all.edges[2].cursor,
         first: 2,
@@ -381,13 +410,13 @@ describe('SqlCursorPagination', () => {
   });
 
   it('selects rows 2-3 when requesting the last 2 of first 3', async () => {
-    const all = await go({
+    const all = await runWithPagination({
       query: {
         first: Infinity,
       },
     });
 
-    const res = await go({
+    const res = await runWithPagination({
       query: {
         first: 3,
         last: 2,
@@ -403,13 +432,13 @@ describe('SqlCursorPagination', () => {
   });
 
   it('selects rows 4-5 when requesting the last 2 of first 5', async () => {
-    const all = await go({
+    const all = await runWithPagination({
       query: {
         first: Infinity,
       },
     });
 
-    const res = await go({
+    const res = await runWithPagination({
       query: {
         first: 5,
         last: 2,
@@ -425,13 +454,13 @@ describe('SqlCursorPagination', () => {
   });
 
   it('selects the second row when selecting after the first row but before the third row', async () => {
-    const all = await go({
+    const all = await runWithPagination({
       query: {
         first: Infinity,
       },
     });
 
-    const res = await go({
+    const res = await runWithPagination({
       query: {
         after: all.edges[0].cursor,
         before: all.edges[2].cursor,
@@ -447,13 +476,13 @@ describe('SqlCursorPagination', () => {
   });
 
   it('selects the second and third row when selecting after the first row but before the fourth row', async () => {
-    const all = await go({
+    const all = await runWithPagination({
       query: {
         first: Infinity,
       },
     });
 
-    const res = await go({
+    const res = await runWithPagination({
       query: {
         after: all.edges[0].cursor,
         before: all.edges[3].cursor,
@@ -470,13 +499,13 @@ describe('SqlCursorPagination', () => {
   });
 
   it('selects the second row when selecting the first one after the first row but before the fourth row', async () => {
-    const all = await go({
+    const all = await runWithPagination({
       query: {
         first: Infinity,
       },
     });
 
-    const res = await go({
+    const res = await runWithPagination({
       query: {
         after: all.edges[0].cursor,
         before: all.edges[3].cursor,
@@ -492,13 +521,13 @@ describe('SqlCursorPagination', () => {
   });
 
   it('selects the third row when selecting the last one after the first row but before the fourth row', async () => {
-    const all = await go({
+    const all = await runWithPagination({
       query: {
         first: Infinity,
       },
     });
 
-    const res = await go({
+    const res = await runWithPagination({
       query: {
         after: all.edges[0].cursor,
         before: all.edges[3].cursor,
@@ -514,13 +543,13 @@ describe('SqlCursorPagination', () => {
   });
 
   it('accepts a raw `before`', async () => {
-    const all = await go({
+    const all = await runWithPagination({
       query: {
         first: Infinity,
       },
     });
 
-    const res = await go({
+    const res = await runWithPagination({
       query: {
         before: rawCursor(all[edgesWithRawCursorSymbol][3].rawCursor),
         last: 1,
@@ -535,13 +564,13 @@ describe('SqlCursorPagination', () => {
   });
 
   it('accepts a raw `after`', async () => {
-    const all = await go({
+    const all = await runWithPagination({
       query: {
         first: Infinity,
       },
     });
 
-    const res = await go({
+    const res = await runWithPagination({
       query: {
         after: rawCursor(all[edgesWithRawCursorSymbol][2].rawCursor),
         first: 1,
@@ -556,12 +585,9 @@ describe('SqlCursorPagination', () => {
   });
 
   it('allows the `cursorSecret` to be omitted', async () => {
-    const all = await go<false>({
+    const all = await runWithPaginationNoCursor({
       query: {
         first: Infinity,
-      },
-      setup: {
-        cursorSecret: null,
       },
     });
 
@@ -571,23 +597,20 @@ describe('SqlCursorPagination', () => {
 
     await expect(
       async () =>
-        await go<false>({
+        await runWithPaginationNoCursor({
           query: {
             // @ts-expect-error: cursor cannot be string when no secret
             before: '',
             first: Infinity,
           },
-          setup: {
-            cursorSecret: null,
-          },
         }),
     ).rejects.toThrowError(
-      'String cursor not supported when no `cursorSecret` is provided',
+      'String cursor not supported with `withPaginationNoCursor`',
     );
   });
 
   it('supports fully qualified column names', async () => {
-    const res = await go({
+    const res = await runWithPagination({
       query: {
         first: 1,
       },
@@ -602,7 +625,7 @@ describe('SqlCursorPagination', () => {
   });
 
   it('supports field aliases', async () => {
-    const res = await go({
+    const res = await runWithPagination({
       query: {
         first: 1,
       },
@@ -620,7 +643,7 @@ describe('SqlCursorPagination', () => {
 
   describe('errors', () => {
     it('throws an error if `after` was for a different sort config', async () => {
-      const all = await go({
+      const all = await runWithPagination({
         query: {
           first: Infinity,
         },
@@ -628,7 +651,7 @@ describe('SqlCursorPagination', () => {
 
       await expect(
         async () =>
-          await go({
+          await runWithPagination({
             query: {
               after: all.edges[0].cursor,
               first: 1,
@@ -641,7 +664,7 @@ describe('SqlCursorPagination', () => {
     });
 
     it('throws an error if `before` was for a different sort config', async () => {
-      const all = await go({
+      const all = await runWithPagination({
         query: {
           first: Infinity,
         },
@@ -649,7 +672,7 @@ describe('SqlCursorPagination', () => {
 
       await expect(
         async () =>
-          await go({
+          await runWithPagination({
             query: {
               before: all.edges[0].cursor,
               last: 1,
@@ -668,7 +691,7 @@ describe('SqlCursorPagination', () => {
     it('throws an error if `first` and `last` missing', async () => {
       await expect(
         async () =>
-          await go({
+          await runWithPagination({
             query: {},
           }),
       ).rejects.toThrowError(ErrFirstOrLastRequired);
@@ -677,7 +700,7 @@ describe('SqlCursorPagination', () => {
     it('throws an error if `first` not an integer', async () => {
       await expect(
         async () =>
-          await go({
+          await runWithPagination({
             query: {
               first: 0.5,
             },
@@ -688,7 +711,7 @@ describe('SqlCursorPagination', () => {
     it('throws an error if `last` not an integer', async () => {
       await expect(
         async () =>
-          await go({
+          await runWithPagination({
             query: {
               last: 0.5,
             },
@@ -699,7 +722,7 @@ describe('SqlCursorPagination', () => {
     it('throws an error if `first` is out of range', async () => {
       await expect(
         async () =>
-          await go({
+          await runWithPagination({
             query: {
               first: 0,
             },
@@ -710,7 +733,7 @@ describe('SqlCursorPagination', () => {
     it('throws an error if `last` is out of range', async () => {
       await expect(
         async () =>
-          await go({
+          await runWithPagination({
             query: {
               last: 0,
             },
@@ -721,7 +744,7 @@ describe('SqlCursorPagination', () => {
     it('throws an error if `first` is not greater than `last`', async () => {
       await expect(
         async () =>
-          await go({
+          await runWithPagination({
             query: {
               first: 2,
               last: 2,
@@ -733,7 +756,7 @@ describe('SqlCursorPagination', () => {
     it('throws an error if `before` is invalid', async () => {
       await expect(
         async () =>
-          await go({
+          await runWithPagination({
             query: {
               before: 'invalid',
               last: 1,
@@ -745,7 +768,7 @@ describe('SqlCursorPagination', () => {
     it('throws an error if `after` is invalid', async () => {
       await expect(
         async () =>
-          await go({
+          await runWithPagination({
             query: {
               after: 'invalid',
               first: 1,
@@ -755,7 +778,7 @@ describe('SqlCursorPagination', () => {
     });
 
     it('throws an error if raw cursor passed directly', async () => {
-      const all = await go({
+      const all = await runWithPagination({
         query: {
           first: Infinity,
         },
@@ -763,7 +786,7 @@ describe('SqlCursorPagination', () => {
 
       await expect(
         async () =>
-          await go({
+          await runWithPagination({
             query: {
               // @ts-expect-error raw cursor not wrapped
               after: all[edgesWithRawCursorSymbol][0].rawCursor,
@@ -776,7 +799,7 @@ describe('SqlCursorPagination', () => {
 
       await expect(
         async () =>
-          await go({
+          await runWithPagination({
             query: {
               // @ts-expect-error raw cursor not wrapped
               before: all[edgesWithRawCursorSymbol][0].rawCursor,
@@ -789,7 +812,7 @@ describe('SqlCursorPagination', () => {
     });
 
     it('throws an error if `before` is for wrong query', async () => {
-      const all = await go({
+      const all = await runWithPagination({
         query: {
           first: Infinity,
         },
@@ -797,7 +820,7 @@ describe('SqlCursorPagination', () => {
 
       await expect(
         async () =>
-          await go({
+          await runWithPagination({
             query: {
               before: all.edges[0].cursor,
               last: 1,
@@ -810,7 +833,7 @@ describe('SqlCursorPagination', () => {
     });
 
     it('throws an error if `after` is for wrong query', async () => {
-      const all = await go({
+      const all = await runWithPagination({
         query: {
           first: Infinity,
         },
@@ -818,7 +841,7 @@ describe('SqlCursorPagination', () => {
 
       await expect(
         async () =>
-          await go({
+          await runWithPagination({
             query: {
               after: all.edges[0].cursor,
               first: 1,
@@ -833,7 +856,7 @@ describe('SqlCursorPagination', () => {
     it('throws an error if too many nodes requested', async () => {
       await expect(
         async () =>
-          await go({
+          await runWithPagination({
             query: {
               first: 3,
               last: 2,
@@ -848,7 +871,7 @@ describe('SqlCursorPagination', () => {
     it('throws an error if `sortFields` is invalid', async () => {
       await expect(
         async () =>
-          await go({
+          await runWithPagination({
             query: {
               first: 1,
             },
@@ -860,7 +883,7 @@ describe('SqlCursorPagination', () => {
 
       await expect(
         async () =>
-          await go({
+          await runWithPagination({
             query: {
               first: 1,
             },
@@ -872,7 +895,7 @@ describe('SqlCursorPagination', () => {
 
       await expect(
         async () =>
-          await go({
+          await runWithPagination({
             query: {
               first: 1,
             },
@@ -887,7 +910,7 @@ describe('SqlCursorPagination', () => {
 
       await expect(
         async () =>
-          await go({
+          await runWithPagination({
             query: {
               first: 1,
             },
@@ -904,7 +927,7 @@ describe('SqlCursorPagination', () => {
     it('throws an error if a duplicate cursor is created', async () => {
       await expect(
         async () =>
-          await go({
+          await runWithPagination({
             query: {
               first: Infinity,
             },
@@ -920,7 +943,7 @@ describe('SqlCursorPagination', () => {
     it('throws an error if field missing', async () => {
       await expect(
         async () =>
-          await go({
+          await runWithPagination({
             query: {
               first: Infinity,
             },
@@ -945,7 +968,7 @@ describe('SqlCursorPagination', () => {
     it('throws an error if too many rows returned', async () => {
       await expect(
         async () =>
-          await go({
+          await runWithPagination({
             query: {
               first: 1,
             },
@@ -972,7 +995,7 @@ describe('SqlCursorPagination', () => {
     it('throws an error if limit is not requested', async () => {
       await expect(
         async () =>
-          await go({
+          await runWithPagination({
             query: {
               first: 1,
             },
@@ -996,7 +1019,7 @@ describe('SqlCursorPagination', () => {
     it('throws an error if the where fragment is not requested', async () => {
       await expect(
         async () =>
-          await go({
+          await runWithPagination({
             query: {
               first: 1,
             },
@@ -1017,7 +1040,7 @@ describe('SqlCursorPagination', () => {
     it('throws an error if the order by fragment is not requested', async () => {
       await expect(
         async () =>
-          await go({
+          await runWithPagination({
             query: {
               first: 1,
             },

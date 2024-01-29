@@ -181,4 +181,4 @@ console.log(edgesWithRawCursor[0].rawCursor);
 
 This can then be provided to `before`/`after` by wrapping the object with `rawCursor(object)`.
 
-You can also omit the `cursorSecret` and `cursor` will not be generated.
+You can also use `withPaginationNoCursor`, which takes the same input as `withPagination` excluding the `cursorSecret`, and `cursor` will not be generated.
