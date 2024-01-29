@@ -120,7 +120,7 @@ export async function resolveCursor({
   if (typeof cursor === 'string') {
     if (cursorSecret === null) {
       throw new ErrUnexpected(
-        'String cursor not supported when no `cursorSecret` is provided',
+        'String cursor not supported with `withPaginationNoCursor`',
       );
     }
     const res = await decryptCursor({
