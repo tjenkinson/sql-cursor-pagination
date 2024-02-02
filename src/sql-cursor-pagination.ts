@@ -93,7 +93,7 @@ type _WithPaginationInputSetup<
    * There must be at least one entry and you must include an entry that maps to a unique key,
    * otherwise it's possible for there to be cursor collisions, which will result  in an exception.
    */
-  sortFields: readonly FieldWithOrder[];
+  sortFields: readonly FieldWithOrder<TNode>[];
   /**
    * A name for this query.
    *

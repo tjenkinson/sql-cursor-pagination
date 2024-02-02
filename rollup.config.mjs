@@ -28,8 +28,8 @@ function replaceCryptoImportWithRequire() {
         return updated;
       }
     },
-    buildEnd() {
-      if (!found) {
+    buildEnd(error) {
+      if (!error && !found) {
         throw new Error('Crypto import not found');
       }
     },
