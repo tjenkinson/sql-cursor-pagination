@@ -146,7 +146,7 @@ export function buildCursor<TNode extends Record<string, unknown>>({
 }: {
   queryName: string;
   node: TNode;
-  sortFields: readonly FieldWithOrder[];
+  sortFields: readonly FieldWithOrder<TNode>[];
 }): Cursor {
   const fields: Cursor['fields'] = {};
 

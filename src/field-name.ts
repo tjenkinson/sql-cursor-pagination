@@ -1,16 +1,16 @@
-import { FieldName as FieldNameZod } from './zod-models/field-name';
-import { FieldNameWithAlias as FieldNameWithAliasZod } from './zod-models/field-name-with-alias';
+import { FieldName as FieldNameType } from './zod-models/field-name';
+import { FieldNameWithAlias as FieldNameWithAliasType } from './zod-models/field-name-with-alias';
 
 const regex = /[^.]*$/;
 
-export type ParsedFieldName = {
-  alias: string;
+export type ParsedFieldName<TNode extends Record<string, unknown>> = {
+  alias: string & keyof TNode;
   name: string;
 };
 
-export function parseFieldName(
-  fieldName: FieldNameZod | FieldNameWithAliasZod,
-): ParsedFieldName {
+export function parseFieldName<TNode extends Record<string, unknown>>(
+  fieldName: FieldNameType<TNode> | FieldNameWithAliasType<TNode>,
+): ParsedFieldName<TNode> {
   const name = typeof fieldName === 'string' ? fieldName : fieldName.name;
   const alias =
     typeof fieldName === 'string'
