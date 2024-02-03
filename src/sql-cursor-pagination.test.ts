@@ -888,7 +888,13 @@ describe('SqlCursorPagination', () => {
               first: 1,
             },
             setup: {
-              sortFields: [{ field: '!', order: Asc }],
+              sortFields: [
+                {
+                  // @ts-expect-error invalid field name
+                  field: '!',
+                  order: Asc,
+                },
+              ],
             },
           }),
       ).rejects.toThrowError('Invalid field name');
@@ -900,8 +906,56 @@ describe('SqlCursorPagination', () => {
               first: 1,
             },
             setup: {
-              // @ts-expect-error invalid order
-              sortFields: [{ field: 'a', order: 'oops' }],
+              sortFields: [
+                {
+                  field: {
+                    // @ts-expect-error invalid field alias
+                    alias: '!',
+                    name: 'id',
+                  },
+                  order: Asc,
+                },
+              ],
+            },
+          }),
+      ).rejects.toThrowError('"!" field is missing');
+
+      await expect(
+        async () =>
+          await runWithPagination({
+            query: {
+              first: 1,
+            },
+            setup: {
+              sortFields: [
+                {
+                  field: {
+                    // @ts-expect-error invalid field alias
+                    alias: 'a.id',
+                    name: 'id',
+                  },
+                  order: Asc,
+                },
+              ],
+            },
+          }),
+      ).rejects.toThrowError('"a.id" field is missing');
+
+      await expect(
+        async () =>
+          await runWithPagination({
+            query: {
+              first: 1,
+            },
+            setup: {
+              sortFields: [
+                {
+                  // @ts-expect-error invalid field name
+                  field: 'a',
+                  // @ts-expect-error invalid order
+                  order: 'oops',
+                },
+              ],
             },
           }),
       ).rejects.toThrowError(
