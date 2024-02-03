@@ -666,6 +666,122 @@ exports[`SqlCursorPagination > errors > throws an error if \`before\` was for a 
 }
 `;
 
+exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is invalid 1`] = `2`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is invalid 2`] = `
+{
+  "bindings": [],
+  "sql": "\`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is invalid 3`] = `
+{
+  "bindings": [],
+  "sql": "\`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is invalid 4`] = `
+{
+  "bindings": [],
+  "sql": "\`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is invalid 5`] = `
+{
+  "bindings": {},
+  "sql": "\`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is invalid 6`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is invalid 7`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is invalid 8`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is invalid 9`] = `
+{
+  "bindings": {},
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is invalid 10`] = `2`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is invalid 11`] = `
+{
+  "bindings": [],
+  "sql": "\`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is invalid 12`] = `
+{
+  "bindings": [],
+  "sql": "\`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is invalid 13`] = `
+{
+  "bindings": [],
+  "sql": "\`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is invalid 14`] = `
+{
+  "bindings": {},
+  "sql": "\`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is invalid 15`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is invalid 16`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is invalid 17`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is invalid 18`] = `
+{
+  "bindings": {},
+  "sql": "1",
+}
+`;
+
 exports[`SqlCursorPagination > errors > throws an error if a duplicate cursor is created 1`] = `Infinity`;
 
 exports[`SqlCursorPagination > errors > throws an error if a duplicate cursor is created 2`] = `
