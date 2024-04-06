@@ -98,6 +98,7 @@ describe('SqlCursorPagination', () => {
     expect(input.limit).toMatchSnapshot();
 
     const snapshotFragment = (builder: FragmentBuilder): void => {
+      expect(builder.toRaw()).toMatchSnapshot();
       expect(builder.withArrayBindings()).toMatchSnapshot();
       expect(builder.withArrayBindings({ placeholder: 'X' })).toMatchSnapshot();
       expect(
@@ -109,6 +110,12 @@ describe('SqlCursorPagination', () => {
         builder.withObjectBindings({
           placeholder: (index) => `:${index}`,
         }),
+      ).toMatchSnapshot();
+      expect(
+        builder.toTaggedTemplate((strings, ...bindings) => ({
+          bindings,
+          strings,
+        })),
       ).toMatchSnapshot();
     };
 

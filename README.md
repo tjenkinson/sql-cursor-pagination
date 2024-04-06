@@ -163,6 +163,7 @@ The `whereFragmentBuilder`/`orderByFragmentBuilder` objects provide the followin
 
 - `withArrayBindings`: This returns `bindings` as an array. The first argument takes a string placeholder (default: `?`), or a function that receives the index and returns a string.
 - `withObjectBindings`: This returns a `bindings` object. You need to provide a function that receives the index and returns a string.
+- `toTaggedTemplate`: This is intended to take a tagged template function. Useful if you have an `sql` tagged template which expects the bindings as expressions.
 
 ## Errors
 

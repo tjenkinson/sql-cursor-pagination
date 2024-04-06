@@ -5,7 +5,9 @@ exports[`SqlCursorPagination > accepts a raw \`after\` 1`] = `Infinity`;
 exports[`SqlCursorPagination > accepts a raw \`after\` 2`] = `
 {
   "bindings": [],
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
 
@@ -25,70 +27,144 @@ exports[`SqlCursorPagination > accepts a raw \`after\` 4`] = `
 
 exports[`SqlCursorPagination > accepts a raw \`after\` 5`] = `
 {
-  "bindings": {},
+  "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > accepts a raw \`after\` 6`] = `
 {
-  "bindings": [],
-  "sql": "1",
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > accepts a raw \`after\` 7`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > accepts a raw \`after\` 8`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "1",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > accepts a raw \`after\` 9`] = `
 {
-  "bindings": {},
+  "bindings": [],
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`after\` 10`] = `2`;
+exports[`SqlCursorPagination > accepts a raw \`after\` 10`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
 
 exports[`SqlCursorPagination > accepts a raw \`after\` 11`] = `
 {
   "bindings": [],
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  "sql": "1",
 }
 `;
 
 exports[`SqlCursorPagination > accepts a raw \`after\` 12`] = `
 {
-  "bindings": [],
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  "bindings": {},
+  "sql": "1",
 }
 `;
 
 exports[`SqlCursorPagination > accepts a raw \`after\` 13`] = `
 {
   "bindings": [],
+  "strings": [
+    "1",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`after\` 14`] = `2`;
+
+exports[`SqlCursorPagination > accepts a raw \`after\` 15`] = `
+{
+  "bindings": [],
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`after\` 16`] = `
+{
+  "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`after\` 14`] = `
+exports[`SqlCursorPagination > accepts a raw \`after\` 17`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`after\` 18`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`after\` 19`] = `
 {
   "bindings": {},
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`after\` 15`] = `
+exports[`SqlCursorPagination > accepts a raw \`after\` 20`] = `
+{
+  "bindings": [],
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`after\` 21`] = `
+{
+  "bindings": [
+    "Cooper",
+    "Cooper",
+    "Molina",
+    "Cooper",
+    "Molina",
+    "4",
+  ],
+  "strings": [
+    "(((\`first_name\`>",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`<",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`=",
+    " AND \`id\`>",
+    ")))",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`after\` 22`] = `
 {
   "bindings": [
     "Cooper",
@@ -102,7 +178,7 @@ exports[`SqlCursorPagination > accepts a raw \`after\` 15`] = `
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`after\` 16`] = `
+exports[`SqlCursorPagination > accepts a raw \`after\` 23`] = `
 {
   "bindings": [
     "Cooper",
@@ -116,7 +192,7 @@ exports[`SqlCursorPagination > accepts a raw \`after\` 16`] = `
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`after\` 17`] = `
+exports[`SqlCursorPagination > accepts a raw \`after\` 24`] = `
 {
   "bindings": [
     "Cooper",
@@ -130,7 +206,7 @@ exports[`SqlCursorPagination > accepts a raw \`after\` 17`] = `
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`after\` 18`] = `
+exports[`SqlCursorPagination > accepts a raw \`after\` 25`] = `
 {
   "bindings": {
     ":0": "Cooper",
@@ -141,7 +217,29 @@ exports[`SqlCursorPagination > accepts a raw \`after\` 18`] = `
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`after\` 19`] = `
+exports[`SqlCursorPagination > accepts a raw \`after\` 26`] = `
+{
+  "bindings": [
+    "Cooper",
+    "Cooper",
+    "Molina",
+    "Cooper",
+    "Molina",
+    "4",
+  ],
+  "strings": [
+    "(((\`first_name\`>",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`<",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`=",
+    " AND \`id\`>",
+    ")))",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`after\` 27`] = `
 {
   "edges": [
     {
@@ -193,7 +291,9 @@ exports[`SqlCursorPagination > accepts a raw \`before\` 1`] = `Infinity`;
 exports[`SqlCursorPagination > accepts a raw \`before\` 2`] = `
 {
   "bindings": [],
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
 
@@ -213,70 +313,144 @@ exports[`SqlCursorPagination > accepts a raw \`before\` 4`] = `
 
 exports[`SqlCursorPagination > accepts a raw \`before\` 5`] = `
 {
-  "bindings": {},
+  "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > accepts a raw \`before\` 6`] = `
 {
-  "bindings": [],
-  "sql": "1",
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > accepts a raw \`before\` 7`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > accepts a raw \`before\` 8`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "1",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > accepts a raw \`before\` 9`] = `
 {
-  "bindings": {},
+  "bindings": [],
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`before\` 10`] = `2`;
+exports[`SqlCursorPagination > accepts a raw \`before\` 10`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
 
 exports[`SqlCursorPagination > accepts a raw \`before\` 11`] = `
 {
   "bindings": [],
-  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+  "sql": "1",
 }
 `;
 
 exports[`SqlCursorPagination > accepts a raw \`before\` 12`] = `
 {
-  "bindings": [],
-  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+  "bindings": {},
+  "sql": "1",
 }
 `;
 
 exports[`SqlCursorPagination > accepts a raw \`before\` 13`] = `
 {
   "bindings": [],
+  "strings": [
+    "1",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`before\` 14`] = `2`;
+
+exports[`SqlCursorPagination > accepts a raw \`before\` 15`] = `
+{
+  "bindings": [],
+  "strings": [
+    "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`before\` 16`] = `
+{
+  "bindings": [],
   "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`before\` 14`] = `
+exports[`SqlCursorPagination > accepts a raw \`before\` 17`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`before\` 18`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`before\` 19`] = `
 {
   "bindings": {},
   "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`before\` 15`] = `
+exports[`SqlCursorPagination > accepts a raw \`before\` 20`] = `
+{
+  "bindings": [],
+  "strings": [
+    "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`before\` 21`] = `
+{
+  "bindings": [
+    "Jermaine",
+    "Jermaine",
+    "O'connor",
+    "Jermaine",
+    "O'connor",
+    "2",
+  ],
+  "strings": [
+    "(((\`first_name\`<",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`>",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`=",
+    " AND \`id\`<",
+    ")))",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`before\` 22`] = `
 {
   "bindings": [
     "Jermaine",
@@ -290,7 +464,7 @@ exports[`SqlCursorPagination > accepts a raw \`before\` 15`] = `
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`before\` 16`] = `
+exports[`SqlCursorPagination > accepts a raw \`before\` 23`] = `
 {
   "bindings": [
     "Jermaine",
@@ -304,7 +478,7 @@ exports[`SqlCursorPagination > accepts a raw \`before\` 16`] = `
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`before\` 17`] = `
+exports[`SqlCursorPagination > accepts a raw \`before\` 24`] = `
 {
   "bindings": [
     "Jermaine",
@@ -318,7 +492,7 @@ exports[`SqlCursorPagination > accepts a raw \`before\` 17`] = `
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`before\` 18`] = `
+exports[`SqlCursorPagination > accepts a raw \`before\` 25`] = `
 {
   "bindings": {
     ":0": "Jermaine",
@@ -329,7 +503,29 @@ exports[`SqlCursorPagination > accepts a raw \`before\` 18`] = `
 }
 `;
 
-exports[`SqlCursorPagination > accepts a raw \`before\` 19`] = `
+exports[`SqlCursorPagination > accepts a raw \`before\` 26`] = `
+{
+  "bindings": [
+    "Jermaine",
+    "Jermaine",
+    "O'connor",
+    "Jermaine",
+    "O'connor",
+    "2",
+  ],
+  "strings": [
+    "(((\`first_name\`<",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`>",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`=",
+    " AND \`id\`<",
+    ")))",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > accepts a raw \`before\` 27`] = `
 {
   "edges": [
     {
@@ -381,7 +577,9 @@ exports[`SqlCursorPagination > allows the \`cursorSecret\` to be omitted 1`] = `
 exports[`SqlCursorPagination > allows the \`cursorSecret\` to be omitted 2`] = `
 {
   "bindings": [],
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
 
@@ -401,36 +599,70 @@ exports[`SqlCursorPagination > allows the \`cursorSecret\` to be omitted 4`] = `
 
 exports[`SqlCursorPagination > allows the \`cursorSecret\` to be omitted 5`] = `
 {
-  "bindings": {},
+  "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > allows the \`cursorSecret\` to be omitted 6`] = `
 {
-  "bindings": [],
-  "sql": "1",
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > allows the \`cursorSecret\` to be omitted 7`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > allows the \`cursorSecret\` to be omitted 8`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "1",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > allows the \`cursorSecret\` to be omitted 9`] = `
 {
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > allows the \`cursorSecret\` to be omitted 10`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > allows the \`cursorSecret\` to be omitted 11`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > allows the \`cursorSecret\` to be omitted 12`] = `
+{
   "bindings": {},
   "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > allows the \`cursorSecret\` to be omitted 13`] = `
+{
+  "bindings": [],
+  "strings": [
+    "1",
+  ],
 }
 `;
 
@@ -439,7 +671,9 @@ exports[`SqlCursorPagination > errors > throws an error if \`after\` is for wron
 exports[`SqlCursorPagination > errors > throws an error if \`after\` is for wrong query 2`] = `
 {
   "bindings": [],
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
 
@@ -459,36 +693,70 @@ exports[`SqlCursorPagination > errors > throws an error if \`after\` is for wron
 
 exports[`SqlCursorPagination > errors > throws an error if \`after\` is for wrong query 5`] = `
 {
-  "bindings": {},
+  "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > errors > throws an error if \`after\` is for wrong query 6`] = `
 {
-  "bindings": [],
-  "sql": "1",
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > errors > throws an error if \`after\` is for wrong query 7`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > errors > throws an error if \`after\` is for wrong query 8`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "1",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > errors > throws an error if \`after\` is for wrong query 9`] = `
 {
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`after\` is for wrong query 10`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`after\` is for wrong query 11`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`after\` is for wrong query 12`] = `
+{
   "bindings": {},
   "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`after\` is for wrong query 13`] = `
+{
+  "bindings": [],
+  "strings": [
+    "1",
+  ],
 }
 `;
 
@@ -497,7 +765,9 @@ exports[`SqlCursorPagination > errors > throws an error if \`after\` was for a d
 exports[`SqlCursorPagination > errors > throws an error if \`after\` was for a different sort config 2`] = `
 {
   "bindings": [],
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
 
@@ -517,36 +787,70 @@ exports[`SqlCursorPagination > errors > throws an error if \`after\` was for a d
 
 exports[`SqlCursorPagination > errors > throws an error if \`after\` was for a different sort config 5`] = `
 {
-  "bindings": {},
+  "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > errors > throws an error if \`after\` was for a different sort config 6`] = `
 {
-  "bindings": [],
-  "sql": "1",
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > errors > throws an error if \`after\` was for a different sort config 7`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > errors > throws an error if \`after\` was for a different sort config 8`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "1",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > errors > throws an error if \`after\` was for a different sort config 9`] = `
 {
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`after\` was for a different sort config 10`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`after\` was for a different sort config 11`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`after\` was for a different sort config 12`] = `
+{
   "bindings": {},
   "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`after\` was for a different sort config 13`] = `
+{
+  "bindings": [],
+  "strings": [
+    "1",
+  ],
 }
 `;
 
@@ -555,7 +859,9 @@ exports[`SqlCursorPagination > errors > throws an error if \`before\` is for wro
 exports[`SqlCursorPagination > errors > throws an error if \`before\` is for wrong query 2`] = `
 {
   "bindings": [],
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
 
@@ -575,36 +881,70 @@ exports[`SqlCursorPagination > errors > throws an error if \`before\` is for wro
 
 exports[`SqlCursorPagination > errors > throws an error if \`before\` is for wrong query 5`] = `
 {
-  "bindings": {},
+  "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > errors > throws an error if \`before\` is for wrong query 6`] = `
 {
-  "bindings": [],
-  "sql": "1",
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > errors > throws an error if \`before\` is for wrong query 7`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > errors > throws an error if \`before\` is for wrong query 8`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "1",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > errors > throws an error if \`before\` is for wrong query 9`] = `
 {
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`before\` is for wrong query 10`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`before\` is for wrong query 11`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`before\` is for wrong query 12`] = `
+{
   "bindings": {},
   "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`before\` is for wrong query 13`] = `
+{
+  "bindings": [],
+  "strings": [
+    "1",
+  ],
 }
 `;
 
@@ -613,7 +953,9 @@ exports[`SqlCursorPagination > errors > throws an error if \`before\` was for a 
 exports[`SqlCursorPagination > errors > throws an error if \`before\` was for a different sort config 2`] = `
 {
   "bindings": [],
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
 
@@ -633,36 +975,70 @@ exports[`SqlCursorPagination > errors > throws an error if \`before\` was for a 
 
 exports[`SqlCursorPagination > errors > throws an error if \`before\` was for a different sort config 5`] = `
 {
-  "bindings": {},
+  "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > errors > throws an error if \`before\` was for a different sort config 6`] = `
 {
-  "bindings": [],
-  "sql": "1",
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > errors > throws an error if \`before\` was for a different sort config 7`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > errors > throws an error if \`before\` was for a different sort config 8`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "1",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > errors > throws an error if \`before\` was for a different sort config 9`] = `
 {
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`before\` was for a different sort config 10`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`before\` was for a different sort config 11`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`before\` was for a different sort config 12`] = `
+{
   "bindings": {},
   "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`before\` was for a different sort config 13`] = `
+{
+  "bindings": [],
+  "strings": [
+    "1",
+  ],
 }
 `;
 
@@ -671,7 +1047,9 @@ exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is inv
 exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is invalid 2`] = `
 {
   "bindings": [],
-  "sql": "\`id\` asc",
+  "strings": [
+    "\`id\` asc",
+  ],
 }
 `;
 
@@ -691,94 +1069,164 @@ exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is inv
 
 exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is invalid 5`] = `
 {
-  "bindings": {},
+  "bindings": [],
   "sql": "\`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is invalid 6`] = `
 {
-  "bindings": [],
-  "sql": "1",
+  "bindings": {},
+  "sql": "\`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is invalid 7`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "\`id\` asc",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is invalid 8`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "1",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is invalid 9`] = `
 {
-  "bindings": {},
+  "bindings": [],
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is invalid 10`] = `2`;
+exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is invalid 10`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
 
 exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is invalid 11`] = `
 {
   "bindings": [],
-  "sql": "\`id\` asc",
+  "sql": "1",
 }
 `;
 
 exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is invalid 12`] = `
 {
-  "bindings": [],
-  "sql": "\`id\` asc",
+  "bindings": {},
+  "sql": "1",
 }
 `;
 
 exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is invalid 13`] = `
 {
   "bindings": [],
-  "sql": "\`id\` asc",
+  "strings": [
+    "1",
+  ],
 }
 `;
 
-exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is invalid 14`] = `
-{
-  "bindings": {},
-  "sql": "\`id\` asc",
-}
-`;
+exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is invalid 14`] = `2`;
 
 exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is invalid 15`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "\`id\` asc",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is invalid 16`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "sql": "\`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is invalid 17`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "sql": "\`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is invalid 18`] = `
 {
+  "bindings": [],
+  "sql": "\`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is invalid 19`] = `
+{
+  "bindings": {},
+  "sql": "\`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is invalid 20`] = `
+{
+  "bindings": [],
+  "strings": [
+    "\`id\` asc",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is invalid 21`] = `
+{
+  "bindings": [],
+  "strings": [
+    "1",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is invalid 22`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is invalid 23`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is invalid 24`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is invalid 25`] = `
+{
   "bindings": {},
   "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if \`sortFields\` is invalid 26`] = `
+{
+  "bindings": [],
+  "strings": [
+    "1",
+  ],
 }
 `;
 
@@ -787,7 +1235,9 @@ exports[`SqlCursorPagination > errors > throws an error if a duplicate cursor is
 exports[`SqlCursorPagination > errors > throws an error if a duplicate cursor is created 2`] = `
 {
   "bindings": [],
-  "sql": "\`first_name\` asc",
+  "strings": [
+    "\`first_name\` asc",
+  ],
 }
 `;
 
@@ -807,36 +1257,70 @@ exports[`SqlCursorPagination > errors > throws an error if a duplicate cursor is
 
 exports[`SqlCursorPagination > errors > throws an error if a duplicate cursor is created 5`] = `
 {
-  "bindings": {},
+  "bindings": [],
   "sql": "\`first_name\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > errors > throws an error if a duplicate cursor is created 6`] = `
 {
-  "bindings": [],
-  "sql": "1",
+  "bindings": {},
+  "sql": "\`first_name\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > errors > throws an error if a duplicate cursor is created 7`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "\`first_name\` asc",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > errors > throws an error if a duplicate cursor is created 8`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "1",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > errors > throws an error if a duplicate cursor is created 9`] = `
 {
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if a duplicate cursor is created 10`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if a duplicate cursor is created 11`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if a duplicate cursor is created 12`] = `
+{
   "bindings": {},
   "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if a duplicate cursor is created 13`] = `
+{
+  "bindings": [],
+  "strings": [
+    "1",
+  ],
 }
 `;
 
@@ -845,7 +1329,9 @@ exports[`SqlCursorPagination > errors > throws an error if raw cursor passed dir
 exports[`SqlCursorPagination > errors > throws an error if raw cursor passed directly 2`] = `
 {
   "bindings": [],
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
 
@@ -865,36 +1351,70 @@ exports[`SqlCursorPagination > errors > throws an error if raw cursor passed dir
 
 exports[`SqlCursorPagination > errors > throws an error if raw cursor passed directly 5`] = `
 {
-  "bindings": {},
+  "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > errors > throws an error if raw cursor passed directly 6`] = `
 {
-  "bindings": [],
-  "sql": "1",
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > errors > throws an error if raw cursor passed directly 7`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > errors > throws an error if raw cursor passed directly 8`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "1",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > errors > throws an error if raw cursor passed directly 9`] = `
 {
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if raw cursor passed directly 10`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if raw cursor passed directly 11`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if raw cursor passed directly 12`] = `
+{
   "bindings": {},
   "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > errors > throws an error if raw cursor passed directly 13`] = `
+{
+  "bindings": [],
+  "strings": [
+    "1",
+  ],
 }
 `;
 
@@ -903,7 +1423,9 @@ exports[`SqlCursorPagination > returns nothing when selecting after the last row
 exports[`SqlCursorPagination > returns nothing when selecting after the last row 2`] = `
 {
   "bindings": [],
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
 
@@ -923,70 +1445,144 @@ exports[`SqlCursorPagination > returns nothing when selecting after the last row
 
 exports[`SqlCursorPagination > returns nothing when selecting after the last row 5`] = `
 {
-  "bindings": {},
+  "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > returns nothing when selecting after the last row 6`] = `
 {
-  "bindings": [],
-  "sql": "1",
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > returns nothing when selecting after the last row 7`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > returns nothing when selecting after the last row 8`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "1",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > returns nothing when selecting after the last row 9`] = `
 {
-  "bindings": {},
+  "bindings": [],
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > returns nothing when selecting after the last row 10`] = `2`;
+exports[`SqlCursorPagination > returns nothing when selecting after the last row 10`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
 
 exports[`SqlCursorPagination > returns nothing when selecting after the last row 11`] = `
 {
   "bindings": [],
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  "sql": "1",
 }
 `;
 
 exports[`SqlCursorPagination > returns nothing when selecting after the last row 12`] = `
 {
-  "bindings": [],
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  "bindings": {},
+  "sql": "1",
 }
 `;
 
 exports[`SqlCursorPagination > returns nothing when selecting after the last row 13`] = `
 {
   "bindings": [],
+  "strings": [
+    "1",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > returns nothing when selecting after the last row 14`] = `2`;
+
+exports[`SqlCursorPagination > returns nothing when selecting after the last row 15`] = `
+{
+  "bindings": [],
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > returns nothing when selecting after the last row 16`] = `
+{
+  "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
-exports[`SqlCursorPagination > returns nothing when selecting after the last row 14`] = `
+exports[`SqlCursorPagination > returns nothing when selecting after the last row 17`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > returns nothing when selecting after the last row 18`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > returns nothing when selecting after the last row 19`] = `
 {
   "bindings": {},
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
-exports[`SqlCursorPagination > returns nothing when selecting after the last row 15`] = `
+exports[`SqlCursorPagination > returns nothing when selecting after the last row 20`] = `
+{
+  "bindings": [],
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > returns nothing when selecting after the last row 21`] = `
+{
+  "bindings": [
+    "Joseph",
+    "Joseph",
+    "Rhodes",
+    "Joseph",
+    "Rhodes",
+    "3",
+  ],
+  "strings": [
+    "(((\`first_name\`>",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`<",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`=",
+    " AND \`id\`>",
+    ")))",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > returns nothing when selecting after the last row 22`] = `
 {
   "bindings": [
     "Joseph",
@@ -1000,7 +1596,7 @@ exports[`SqlCursorPagination > returns nothing when selecting after the last row
 }
 `;
 
-exports[`SqlCursorPagination > returns nothing when selecting after the last row 16`] = `
+exports[`SqlCursorPagination > returns nothing when selecting after the last row 23`] = `
 {
   "bindings": [
     "Joseph",
@@ -1014,7 +1610,7 @@ exports[`SqlCursorPagination > returns nothing when selecting after the last row
 }
 `;
 
-exports[`SqlCursorPagination > returns nothing when selecting after the last row 17`] = `
+exports[`SqlCursorPagination > returns nothing when selecting after the last row 24`] = `
 {
   "bindings": [
     "Joseph",
@@ -1028,7 +1624,7 @@ exports[`SqlCursorPagination > returns nothing when selecting after the last row
 }
 `;
 
-exports[`SqlCursorPagination > returns nothing when selecting after the last row 18`] = `
+exports[`SqlCursorPagination > returns nothing when selecting after the last row 25`] = `
 {
   "bindings": {
     ":0": "Joseph",
@@ -1039,7 +1635,29 @@ exports[`SqlCursorPagination > returns nothing when selecting after the last row
 }
 `;
 
-exports[`SqlCursorPagination > returns nothing when selecting after the last row 19`] = `
+exports[`SqlCursorPagination > returns nothing when selecting after the last row 26`] = `
+{
+  "bindings": [
+    "Joseph",
+    "Joseph",
+    "Rhodes",
+    "Joseph",
+    "Rhodes",
+    "3",
+  ],
+  "strings": [
+    "(((\`first_name\`>",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`<",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`=",
+    " AND \`id\`>",
+    ")))",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > returns nothing when selecting after the last row 27`] = `
 {
   "edges": [],
   "pageInfo": {
@@ -1057,7 +1675,9 @@ exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the 
 exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 2`] = `
 {
   "bindings": [],
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
 
@@ -1077,70 +1697,144 @@ exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the 
 
 exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 5`] = `
 {
-  "bindings": {},
+  "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 6`] = `
 {
-  "bindings": [],
-  "sql": "1",
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 7`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 8`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "1",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 9`] = `
 {
-  "bindings": {},
+  "bindings": [],
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 10`] = `3`;
+exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 10`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
 
 exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 11`] = `
 {
   "bindings": [],
-  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+  "sql": "1",
 }
 `;
 
 exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 12`] = `
 {
-  "bindings": [],
-  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+  "bindings": {},
+  "sql": "1",
 }
 `;
 
 exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 13`] = `
 {
   "bindings": [],
+  "strings": [
+    "1",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 14`] = `3`;
+
+exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 15`] = `
+{
+  "bindings": [],
+  "strings": [
+    "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 16`] = `
+{
+  "bindings": [],
   "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
 }
 `;
 
-exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 14`] = `
+exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 17`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+}
+`;
+
+exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 18`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+}
+`;
+
+exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 19`] = `
 {
   "bindings": {},
   "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
 }
 `;
 
-exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 15`] = `
+exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 20`] = `
+{
+  "bindings": [],
+  "strings": [
+    "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 21`] = `
+{
+  "bindings": [
+    "Cooper",
+    "Cooper",
+    "Molina",
+    "Cooper",
+    "Molina",
+    "4",
+  ],
+  "strings": [
+    "(((\`first_name\`<",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`>",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`=",
+    " AND \`id\`<",
+    ")))",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 22`] = `
 {
   "bindings": [
     "Cooper",
@@ -1154,7 +1848,7 @@ exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the 
 }
 `;
 
-exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 16`] = `
+exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 23`] = `
 {
   "bindings": [
     "Cooper",
@@ -1168,7 +1862,7 @@ exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the 
 }
 `;
 
-exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 17`] = `
+exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 24`] = `
 {
   "bindings": [
     "Cooper",
@@ -1182,7 +1876,7 @@ exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the 
 }
 `;
 
-exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 18`] = `
+exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 25`] = `
 {
   "bindings": {
     ":0": "Cooper",
@@ -1193,7 +1887,29 @@ exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the 
 }
 `;
 
-exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 19`] = `
+exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 26`] = `
+{
+  "bindings": [
+    "Cooper",
+    "Cooper",
+    "Molina",
+    "Cooper",
+    "Molina",
+    "4",
+  ],
+  "strings": [
+    "(((\`first_name\`<",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`>",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`=",
+    " AND \`id\`<",
+    ")))",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the third row 27`] = `
 {
   "edges": [
     {
@@ -1277,7 +1993,9 @@ exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the th
 exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 2`] = `
 {
   "bindings": [],
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
 
@@ -1297,70 +2015,144 @@ exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the th
 
 exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 5`] = `
 {
-  "bindings": {},
+  "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 6`] = `
 {
-  "bindings": [],
-  "sql": "1",
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 7`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 8`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "1",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 9`] = `
 {
-  "bindings": {},
+  "bindings": [],
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 10`] = `3`;
+exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 10`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
 
 exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 11`] = `
 {
   "bindings": [],
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  "sql": "1",
 }
 `;
 
 exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 12`] = `
 {
-  "bindings": [],
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  "bindings": {},
+  "sql": "1",
 }
 `;
 
 exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 13`] = `
 {
   "bindings": [],
+  "strings": [
+    "1",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 14`] = `3`;
+
+exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 15`] = `
+{
+  "bindings": [],
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 16`] = `
+{
+  "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
-exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 14`] = `
+exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 17`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 18`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 19`] = `
 {
   "bindings": {},
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
-exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 15`] = `
+exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 20`] = `
+{
+  "bindings": [],
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 21`] = `
+{
+  "bindings": [
+    "Cooper",
+    "Cooper",
+    "Molina",
+    "Cooper",
+    "Molina",
+    "4",
+  ],
+  "strings": [
+    "(((\`first_name\`>",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`<",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`=",
+    " AND \`id\`>",
+    ")))",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 22`] = `
 {
   "bindings": [
     "Cooper",
@@ -1374,7 +2166,7 @@ exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the th
 }
 `;
 
-exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 16`] = `
+exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 23`] = `
 {
   "bindings": [
     "Cooper",
@@ -1388,7 +2180,7 @@ exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the th
 }
 `;
 
-exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 17`] = `
+exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 24`] = `
 {
   "bindings": [
     "Cooper",
@@ -1402,7 +2194,7 @@ exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the th
 }
 `;
 
-exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 18`] = `
+exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 25`] = `
 {
   "bindings": {
     ":0": "Cooper",
@@ -1413,7 +2205,29 @@ exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the th
 }
 `;
 
-exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 19`] = `
+exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 26`] = `
+{
+  "bindings": [
+    "Cooper",
+    "Cooper",
+    "Molina",
+    "Cooper",
+    "Molina",
+    "4",
+  ],
+  "strings": [
+    "(((\`first_name\`>",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`<",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`=",
+    " AND \`id\`>",
+    ")))",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the third row 27`] = `
 {
   "edges": [
     {
@@ -1497,7 +2311,9 @@ exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of fi
 exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 2`] = `
 {
   "bindings": [],
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
 
@@ -1517,98 +2333,168 @@ exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of fi
 
 exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 5`] = `
 {
-  "bindings": {},
+  "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 6`] = `
 {
-  "bindings": [],
-  "sql": "1",
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 7`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 8`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "1",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 9`] = `
 {
-  "bindings": {},
+  "bindings": [],
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 10`] = `4`;
+exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 10`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
 
 exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 11`] = `
 {
   "bindings": [],
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  "sql": "1",
 }
 `;
 
 exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 12`] = `
 {
-  "bindings": [],
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  "bindings": {},
+  "sql": "1",
 }
 `;
 
 exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 13`] = `
 {
   "bindings": [],
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  "strings": [
+    "1",
+  ],
 }
 `;
 
-exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 14`] = `
-{
-  "bindings": {},
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
-}
-`;
+exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 14`] = `4`;
 
 exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 15`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 16`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 17`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 18`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 19`] = `
+{
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 20`] = `
+{
+  "bindings": [],
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 21`] = `
+{
+  "bindings": [],
+  "strings": [
+    "1",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 22`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 23`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 24`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 25`] = `
 {
   "bindings": {},
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 19`] = `
+exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 26`] = `
+{
+  "bindings": [],
+  "strings": [
+    "1",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of first 3 27`] = `
 {
   "edges": [
     {
@@ -1692,7 +2578,9 @@ exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of fi
 exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 2`] = `
 {
   "bindings": [],
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
 
@@ -1712,98 +2600,168 @@ exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of fi
 
 exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 5`] = `
 {
-  "bindings": {},
+  "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 6`] = `
 {
-  "bindings": [],
-  "sql": "1",
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 7`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 8`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "1",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 9`] = `
 {
-  "bindings": {},
+  "bindings": [],
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 10`] = `6`;
+exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 10`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
 
 exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 11`] = `
 {
   "bindings": [],
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  "sql": "1",
 }
 `;
 
 exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 12`] = `
 {
-  "bindings": [],
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  "bindings": {},
+  "sql": "1",
 }
 `;
 
 exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 13`] = `
 {
   "bindings": [],
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  "strings": [
+    "1",
+  ],
 }
 `;
 
-exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 14`] = `
-{
-  "bindings": {},
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
-}
-`;
+exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 14`] = `6`;
 
 exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 15`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 16`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 17`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 18`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 19`] = `
+{
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 20`] = `
+{
+  "bindings": [],
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 21`] = `
+{
+  "bindings": [],
+  "strings": [
+    "1",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 22`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 23`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 24`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 25`] = `
 {
   "bindings": {},
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 19`] = `
+exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 26`] = `
+{
+  "bindings": [],
+  "strings": [
+    "1",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of first 5 27`] = `
 {
   "edges": [
     {
@@ -1887,7 +2845,9 @@ exports[`SqlCursorPagination > selects the first 3 items 1`] = `4`;
 exports[`SqlCursorPagination > selects the first 3 items 2`] = `
 {
   "bindings": [],
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
 
@@ -1907,40 +2867,74 @@ exports[`SqlCursorPagination > selects the first 3 items 4`] = `
 
 exports[`SqlCursorPagination > selects the first 3 items 5`] = `
 {
-  "bindings": {},
+  "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > selects the first 3 items 6`] = `
 {
-  "bindings": [],
-  "sql": "1",
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > selects the first 3 items 7`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > selects the first 3 items 8`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "1",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > selects the first 3 items 9`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the first 3 items 10`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the first 3 items 11`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the first 3 items 12`] = `
 {
   "bindings": {},
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > selects the first 3 items 10`] = `
+exports[`SqlCursorPagination > selects the first 3 items 13`] = `
+{
+  "bindings": [],
+  "strings": [
+    "1",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the first 3 items 14`] = `
 {
   "edges": [
     {
@@ -2056,7 +3050,9 @@ exports[`SqlCursorPagination > selects the first infinity (all) items 1`] = `Inf
 exports[`SqlCursorPagination > selects the first infinity (all) items 2`] = `
 {
   "bindings": [],
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
 
@@ -2076,40 +3072,74 @@ exports[`SqlCursorPagination > selects the first infinity (all) items 4`] = `
 
 exports[`SqlCursorPagination > selects the first infinity (all) items 5`] = `
 {
-  "bindings": {},
+  "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > selects the first infinity (all) items 6`] = `
 {
-  "bindings": [],
-  "sql": "1",
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > selects the first infinity (all) items 7`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > selects the first infinity (all) items 8`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "1",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > selects the first infinity (all) items 9`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the first infinity (all) items 10`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the first infinity (all) items 11`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the first infinity (all) items 12`] = `
 {
   "bindings": {},
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > selects the first infinity (all) items 10`] = `
+exports[`SqlCursorPagination > selects the first infinity (all) items 13`] = `
+{
+  "bindings": [],
+  "strings": [
+    "1",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the first infinity (all) items 14`] = `
 {
   "edges": [
     {
@@ -2289,7 +3319,9 @@ exports[`SqlCursorPagination > selects the last 3 items 1`] = `4`;
 exports[`SqlCursorPagination > selects the last 3 items 2`] = `
 {
   "bindings": [],
-  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+  "strings": [
+    "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+  ],
 }
 `;
 
@@ -2309,40 +3341,74 @@ exports[`SqlCursorPagination > selects the last 3 items 4`] = `
 
 exports[`SqlCursorPagination > selects the last 3 items 5`] = `
 {
-  "bindings": {},
+  "bindings": [],
   "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
 }
 `;
 
 exports[`SqlCursorPagination > selects the last 3 items 6`] = `
 {
-  "bindings": [],
-  "sql": "1",
+  "bindings": {},
+  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
 }
 `;
 
 exports[`SqlCursorPagination > selects the last 3 items 7`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > selects the last 3 items 8`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "1",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > selects the last 3 items 9`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the last 3 items 10`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the last 3 items 11`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the last 3 items 12`] = `
 {
   "bindings": {},
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > selects the last 3 items 10`] = `
+exports[`SqlCursorPagination > selects the last 3 items 13`] = `
+{
+  "bindings": [],
+  "strings": [
+    "1",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the last 3 items 14`] = `
 {
   "edges": [
     {
@@ -2458,7 +3524,9 @@ exports[`SqlCursorPagination > selects the last infinity (all) items 1`] = `Infi
 exports[`SqlCursorPagination > selects the last infinity (all) items 2`] = `
 {
   "bindings": [],
-  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+  "strings": [
+    "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+  ],
 }
 `;
 
@@ -2478,40 +3546,74 @@ exports[`SqlCursorPagination > selects the last infinity (all) items 4`] = `
 
 exports[`SqlCursorPagination > selects the last infinity (all) items 5`] = `
 {
-  "bindings": {},
+  "bindings": [],
   "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
 }
 `;
 
 exports[`SqlCursorPagination > selects the last infinity (all) items 6`] = `
 {
-  "bindings": [],
-  "sql": "1",
+  "bindings": {},
+  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
 }
 `;
 
 exports[`SqlCursorPagination > selects the last infinity (all) items 7`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > selects the last infinity (all) items 8`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "1",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > selects the last infinity (all) items 9`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the last infinity (all) items 10`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the last infinity (all) items 11`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the last infinity (all) items 12`] = `
 {
   "bindings": {},
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > selects the last infinity (all) items 10`] = `
+exports[`SqlCursorPagination > selects the last infinity (all) items 13`] = `
+{
+  "bindings": [],
+  "strings": [
+    "1",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the last infinity (all) items 14`] = `
 {
   "edges": [
     {
@@ -2691,7 +3793,9 @@ exports[`SqlCursorPagination > selects the second and third row when selecting a
 exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 2`] = `
 {
   "bindings": [],
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
 
@@ -2711,70 +3815,156 @@ exports[`SqlCursorPagination > selects the second and third row when selecting a
 
 exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 5`] = `
 {
-  "bindings": {},
+  "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 6`] = `
 {
-  "bindings": [],
-  "sql": "1",
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 7`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 8`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "1",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 9`] = `
 {
-  "bindings": {},
+  "bindings": [],
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 10`] = `Infinity`;
+exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 10`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
 
 exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 11`] = `
 {
   "bindings": [],
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  "sql": "1",
 }
 `;
 
 exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 12`] = `
 {
-  "bindings": [],
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  "bindings": {},
+  "sql": "1",
 }
 `;
 
 exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 13`] = `
 {
   "bindings": [],
+  "strings": [
+    "1",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 14`] = `Infinity`;
+
+exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 15`] = `
+{
+  "bindings": [],
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 16`] = `
+{
+  "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
-exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 14`] = `
+exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 17`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 18`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 19`] = `
 {
   "bindings": {},
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
-exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 15`] = `
+exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 20`] = `
+{
+  "bindings": [],
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 21`] = `
+{
+  "bindings": [
+    "Anika",
+    "Anika",
+    "Molina",
+    "Anika",
+    "Molina",
+    "5",
+    "Jermaine",
+    "Jermaine",
+    "O'connor",
+    "Jermaine",
+    "O'connor",
+    "2",
+  ],
+  "strings": [
+    "(((\`first_name\`>",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`<",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`=",
+    " AND \`id\`>",
+    ")) AND ((\`first_name\`<",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`>",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`=",
+    " AND \`id\`<",
+    ")))",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 22`] = `
 {
   "bindings": [
     "Anika",
@@ -2794,7 +3984,7 @@ exports[`SqlCursorPagination > selects the second and third row when selecting a
 }
 `;
 
-exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 16`] = `
+exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 23`] = `
 {
   "bindings": [
     "Anika",
@@ -2814,7 +4004,7 @@ exports[`SqlCursorPagination > selects the second and third row when selecting a
 }
 `;
 
-exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 17`] = `
+exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 24`] = `
 {
   "bindings": [
     "Anika",
@@ -2834,7 +4024,7 @@ exports[`SqlCursorPagination > selects the second and third row when selecting a
 }
 `;
 
-exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 18`] = `
+exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 25`] = `
 {
   "bindings": {
     ":0": "Anika",
@@ -2848,7 +4038,41 @@ exports[`SqlCursorPagination > selects the second and third row when selecting a
 }
 `;
 
-exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 19`] = `
+exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 26`] = `
+{
+  "bindings": [
+    "Anika",
+    "Anika",
+    "Molina",
+    "Anika",
+    "Molina",
+    "5",
+    "Jermaine",
+    "Jermaine",
+    "O'connor",
+    "Jermaine",
+    "O'connor",
+    "2",
+  ],
+  "strings": [
+    "(((\`first_name\`>",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`<",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`=",
+    " AND \`id\`>",
+    ")) AND ((\`first_name\`<",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`>",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`=",
+    " AND \`id\`<",
+    ")))",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the second and third row when selecting after the first row but before the fourth row 27`] = `
 {
   "edges": [
     {
@@ -2932,7 +4156,9 @@ exports[`SqlCursorPagination > selects the second row when selecting after the f
 exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 2`] = `
 {
   "bindings": [],
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
 
@@ -2952,70 +4178,156 @@ exports[`SqlCursorPagination > selects the second row when selecting after the f
 
 exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 5`] = `
 {
-  "bindings": {},
+  "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 6`] = `
 {
-  "bindings": [],
-  "sql": "1",
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 7`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 8`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "1",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 9`] = `
 {
-  "bindings": {},
+  "bindings": [],
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 10`] = `Infinity`;
+exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 10`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
 
 exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 11`] = `
 {
   "bindings": [],
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  "sql": "1",
 }
 `;
 
 exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 12`] = `
 {
-  "bindings": [],
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  "bindings": {},
+  "sql": "1",
 }
 `;
 
 exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 13`] = `
 {
   "bindings": [],
+  "strings": [
+    "1",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 14`] = `Infinity`;
+
+exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 15`] = `
+{
+  "bindings": [],
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 16`] = `
+{
+  "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
-exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 14`] = `
+exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 17`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 18`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 19`] = `
 {
   "bindings": {},
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
-exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 15`] = `
+exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 20`] = `
+{
+  "bindings": [],
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 21`] = `
+{
+  "bindings": [
+    "Anika",
+    "Anika",
+    "Molina",
+    "Anika",
+    "Molina",
+    "5",
+    "Cooper",
+    "Cooper",
+    "Molina",
+    "Cooper",
+    "Molina",
+    "4",
+  ],
+  "strings": [
+    "(((\`first_name\`>",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`<",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`=",
+    " AND \`id\`>",
+    ")) AND ((\`first_name\`<",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`>",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`=",
+    " AND \`id\`<",
+    ")))",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 22`] = `
 {
   "bindings": [
     "Anika",
@@ -3035,7 +4347,7 @@ exports[`SqlCursorPagination > selects the second row when selecting after the f
 }
 `;
 
-exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 16`] = `
+exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 23`] = `
 {
   "bindings": [
     "Anika",
@@ -3055,7 +4367,7 @@ exports[`SqlCursorPagination > selects the second row when selecting after the f
 }
 `;
 
-exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 17`] = `
+exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 24`] = `
 {
   "bindings": [
     "Anika",
@@ -3075,7 +4387,7 @@ exports[`SqlCursorPagination > selects the second row when selecting after the f
 }
 `;
 
-exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 18`] = `
+exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 25`] = `
 {
   "bindings": {
     ":0": "Anika",
@@ -3088,7 +4400,41 @@ exports[`SqlCursorPagination > selects the second row when selecting after the f
 }
 `;
 
-exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 19`] = `
+exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 26`] = `
+{
+  "bindings": [
+    "Anika",
+    "Anika",
+    "Molina",
+    "Anika",
+    "Molina",
+    "5",
+    "Cooper",
+    "Cooper",
+    "Molina",
+    "Cooper",
+    "Molina",
+    "4",
+  ],
+  "strings": [
+    "(((\`first_name\`>",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`<",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`=",
+    " AND \`id\`>",
+    ")) AND ((\`first_name\`<",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`>",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`=",
+    " AND \`id\`<",
+    ")))",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting after the first row but before the third row 27`] = `
 {
   "edges": [
     {
@@ -3140,7 +4486,9 @@ exports[`SqlCursorPagination > selects the second row when selecting one before 
 exports[`SqlCursorPagination > selects the second row when selecting one before the third row 2`] = `
 {
   "bindings": [],
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
 
@@ -3160,70 +4508,144 @@ exports[`SqlCursorPagination > selects the second row when selecting one before 
 
 exports[`SqlCursorPagination > selects the second row when selecting one before the third row 5`] = `
 {
-  "bindings": {},
+  "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > selects the second row when selecting one before the third row 6`] = `
 {
-  "bindings": [],
-  "sql": "1",
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > selects the second row when selecting one before the third row 7`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > selects the second row when selecting one before the third row 8`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "1",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > selects the second row when selecting one before the third row 9`] = `
 {
-  "bindings": {},
+  "bindings": [],
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > selects the second row when selecting one before the third row 10`] = `2`;
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 10`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
 
 exports[`SqlCursorPagination > selects the second row when selecting one before the third row 11`] = `
 {
   "bindings": [],
-  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+  "sql": "1",
 }
 `;
 
 exports[`SqlCursorPagination > selects the second row when selecting one before the third row 12`] = `
 {
-  "bindings": [],
-  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+  "bindings": {},
+  "sql": "1",
 }
 `;
 
 exports[`SqlCursorPagination > selects the second row when selecting one before the third row 13`] = `
 {
   "bindings": [],
+  "strings": [
+    "1",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 14`] = `2`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 15`] = `
+{
+  "bindings": [],
+  "strings": [
+    "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 16`] = `
+{
+  "bindings": [],
   "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
 }
 `;
 
-exports[`SqlCursorPagination > selects the second row when selecting one before the third row 14`] = `
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 17`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 18`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 19`] = `
 {
   "bindings": {},
   "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
 }
 `;
 
-exports[`SqlCursorPagination > selects the second row when selecting one before the third row 15`] = `
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 20`] = `
+{
+  "bindings": [],
+  "strings": [
+    "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 21`] = `
+{
+  "bindings": [
+    "Cooper",
+    "Cooper",
+    "Molina",
+    "Cooper",
+    "Molina",
+    "4",
+  ],
+  "strings": [
+    "(((\`first_name\`<",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`>",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`=",
+    " AND \`id\`<",
+    ")))",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 22`] = `
 {
   "bindings": [
     "Cooper",
@@ -3237,7 +4659,7 @@ exports[`SqlCursorPagination > selects the second row when selecting one before 
 }
 `;
 
-exports[`SqlCursorPagination > selects the second row when selecting one before the third row 16`] = `
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 23`] = `
 {
   "bindings": [
     "Cooper",
@@ -3251,7 +4673,7 @@ exports[`SqlCursorPagination > selects the second row when selecting one before 
 }
 `;
 
-exports[`SqlCursorPagination > selects the second row when selecting one before the third row 17`] = `
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 24`] = `
 {
   "bindings": [
     "Cooper",
@@ -3265,7 +4687,7 @@ exports[`SqlCursorPagination > selects the second row when selecting one before 
 }
 `;
 
-exports[`SqlCursorPagination > selects the second row when selecting one before the third row 18`] = `
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 25`] = `
 {
   "bindings": {
     ":0": "Cooper",
@@ -3276,7 +4698,29 @@ exports[`SqlCursorPagination > selects the second row when selecting one before 
 }
 `;
 
-exports[`SqlCursorPagination > selects the second row when selecting one before the third row 19`] = `
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 26`] = `
+{
+  "bindings": [
+    "Cooper",
+    "Cooper",
+    "Molina",
+    "Cooper",
+    "Molina",
+    "4",
+  ],
+  "strings": [
+    "(((\`first_name\`<",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`>",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`=",
+    " AND \`id\`<",
+    ")))",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 27`] = `
 {
   "edges": [
     {
@@ -3323,95 +4767,171 @@ exports[`SqlCursorPagination > selects the second row when selecting one before 
 }
 `;
 
-exports[`SqlCursorPagination > selects the second row when selecting one before the third row 20`] = `Infinity`;
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 28`] = `Infinity`;
 
-exports[`SqlCursorPagination > selects the second row when selecting one before the third row 21`] = `
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 29`] = `
 {
   "bindings": [],
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
-
-exports[`SqlCursorPagination > selects the second row when selecting one before the third row 22`] = `
-{
-  "bindings": [],
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
-}
-`;
-
-exports[`SqlCursorPagination > selects the second row when selecting one before the third row 23`] = `
-{
-  "bindings": [],
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
-}
-`;
-
-exports[`SqlCursorPagination > selects the second row when selecting one before the third row 24`] = `
-{
-  "bindings": {},
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
-}
-`;
-
-exports[`SqlCursorPagination > selects the second row when selecting one before the third row 25`] = `
-{
-  "bindings": [],
-  "sql": "1",
-}
-`;
-
-exports[`SqlCursorPagination > selects the second row when selecting one before the third row 26`] = `
-{
-  "bindings": [],
-  "sql": "1",
-}
-`;
-
-exports[`SqlCursorPagination > selects the second row when selecting one before the third row 27`] = `
-{
-  "bindings": [],
-  "sql": "1",
-}
-`;
-
-exports[`SqlCursorPagination > selects the second row when selecting one before the third row 28`] = `
-{
-  "bindings": {},
-  "sql": "1",
-}
-`;
-
-exports[`SqlCursorPagination > selects the second row when selecting one before the third row 29`] = `2`;
 
 exports[`SqlCursorPagination > selects the second row when selecting one before the third row 30`] = `
 {
   "bindings": [],
-  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > selects the second row when selecting one before the third row 31`] = `
 {
   "bindings": [],
-  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > selects the second row when selecting one before the third row 32`] = `
 {
   "bindings": [],
-  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > selects the second row when selecting one before the third row 33`] = `
 {
   "bindings": {},
-  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > selects the second row when selecting one before the third row 34`] = `
+{
+  "bindings": [],
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 35`] = `
+{
+  "bindings": [],
+  "strings": [
+    "1",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 36`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 37`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 38`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 39`] = `
+{
+  "bindings": {},
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 40`] = `
+{
+  "bindings": [],
+  "strings": [
+    "1",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 41`] = `2`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 42`] = `
+{
+  "bindings": [],
+  "strings": [
+    "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 43`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 44`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 45`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 46`] = `
+{
+  "bindings": {},
+  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 47`] = `
+{
+  "bindings": [],
+  "strings": [
+    "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 48`] = `
+{
+  "bindings": [
+    "Cooper",
+    "Cooper",
+    "Molina",
+    "Cooper",
+    "Molina",
+    "4",
+  ],
+  "strings": [
+    "(((\`first_name\`<",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`>",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`=",
+    " AND \`id\`<",
+    ")))",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 49`] = `
 {
   "bindings": [
     "Cooper",
@@ -3425,7 +4945,7 @@ exports[`SqlCursorPagination > selects the second row when selecting one before 
 }
 `;
 
-exports[`SqlCursorPagination > selects the second row when selecting one before the third row 35`] = `
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 50`] = `
 {
   "bindings": [
     "Cooper",
@@ -3439,7 +4959,7 @@ exports[`SqlCursorPagination > selects the second row when selecting one before 
 }
 `;
 
-exports[`SqlCursorPagination > selects the second row when selecting one before the third row 36`] = `
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 51`] = `
 {
   "bindings": [
     "Cooper",
@@ -3453,7 +4973,7 @@ exports[`SqlCursorPagination > selects the second row when selecting one before 
 }
 `;
 
-exports[`SqlCursorPagination > selects the second row when selecting one before the third row 37`] = `
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 52`] = `
 {
   "bindings": {
     ":0": "Cooper",
@@ -3464,7 +4984,29 @@ exports[`SqlCursorPagination > selects the second row when selecting one before 
 }
 `;
 
-exports[`SqlCursorPagination > selects the second row when selecting one before the third row 38`] = `
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 53`] = `
+{
+  "bindings": [
+    "Cooper",
+    "Cooper",
+    "Molina",
+    "Cooper",
+    "Molina",
+    "4",
+  ],
+  "strings": [
+    "(((\`first_name\`<",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`>",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`=",
+    " AND \`id\`<",
+    ")))",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting one before the third row 54`] = `
 {
   "edges": [
     {
@@ -3516,7 +5058,9 @@ exports[`SqlCursorPagination > selects the second row when selecting the first o
 exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 2`] = `
 {
   "bindings": [],
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
 
@@ -3536,70 +5080,156 @@ exports[`SqlCursorPagination > selects the second row when selecting the first o
 
 exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 5`] = `
 {
-  "bindings": {},
+  "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 6`] = `
 {
-  "bindings": [],
-  "sql": "1",
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 7`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 8`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "1",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 9`] = `
 {
-  "bindings": {},
+  "bindings": [],
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 10`] = `2`;
+exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 10`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
 
 exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 11`] = `
 {
   "bindings": [],
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  "sql": "1",
 }
 `;
 
 exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 12`] = `
 {
-  "bindings": [],
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  "bindings": {},
+  "sql": "1",
 }
 `;
 
 exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 13`] = `
 {
   "bindings": [],
+  "strings": [
+    "1",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 14`] = `2`;
+
+exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 15`] = `
+{
+  "bindings": [],
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 16`] = `
+{
+  "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
-exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 14`] = `
+exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 17`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 18`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 19`] = `
 {
   "bindings": {},
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
-exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 15`] = `
+exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 20`] = `
+{
+  "bindings": [],
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 21`] = `
+{
+  "bindings": [
+    "Anika",
+    "Anika",
+    "Molina",
+    "Anika",
+    "Molina",
+    "5",
+    "Jermaine",
+    "Jermaine",
+    "O'connor",
+    "Jermaine",
+    "O'connor",
+    "2",
+  ],
+  "strings": [
+    "(((\`first_name\`>",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`<",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`=",
+    " AND \`id\`>",
+    ")) AND ((\`first_name\`<",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`>",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`=",
+    " AND \`id\`<",
+    ")))",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 22`] = `
 {
   "bindings": [
     "Anika",
@@ -3619,7 +5249,7 @@ exports[`SqlCursorPagination > selects the second row when selecting the first o
 }
 `;
 
-exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 16`] = `
+exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 23`] = `
 {
   "bindings": [
     "Anika",
@@ -3639,7 +5269,7 @@ exports[`SqlCursorPagination > selects the second row when selecting the first o
 }
 `;
 
-exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 17`] = `
+exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 24`] = `
 {
   "bindings": [
     "Anika",
@@ -3659,7 +5289,7 @@ exports[`SqlCursorPagination > selects the second row when selecting the first o
 }
 `;
 
-exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 18`] = `
+exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 25`] = `
 {
   "bindings": {
     ":0": "Anika",
@@ -3673,7 +5303,41 @@ exports[`SqlCursorPagination > selects the second row when selecting the first o
 }
 `;
 
-exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 19`] = `
+exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 26`] = `
+{
+  "bindings": [
+    "Anika",
+    "Anika",
+    "Molina",
+    "Anika",
+    "Molina",
+    "5",
+    "Jermaine",
+    "Jermaine",
+    "O'connor",
+    "Jermaine",
+    "O'connor",
+    "2",
+  ],
+  "strings": [
+    "(((\`first_name\`>",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`<",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`=",
+    " AND \`id\`>",
+    ")) AND ((\`first_name\`<",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`>",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`=",
+    " AND \`id\`<",
+    ")))",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the second row when selecting the first one after the first row but before the fourth row 27`] = `
 {
   "edges": [
     {
@@ -3725,7 +5389,9 @@ exports[`SqlCursorPagination > selects the third row when selecting one after th
 exports[`SqlCursorPagination > selects the third row when selecting one after the second row 2`] = `
 {
   "bindings": [],
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
 
@@ -3745,70 +5411,144 @@ exports[`SqlCursorPagination > selects the third row when selecting one after th
 
 exports[`SqlCursorPagination > selects the third row when selecting one after the second row 5`] = `
 {
-  "bindings": {},
+  "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > selects the third row when selecting one after the second row 6`] = `
 {
-  "bindings": [],
-  "sql": "1",
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > selects the third row when selecting one after the second row 7`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > selects the third row when selecting one after the second row 8`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "1",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > selects the third row when selecting one after the second row 9`] = `
 {
-  "bindings": {},
+  "bindings": [],
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > selects the third row when selecting one after the second row 10`] = `2`;
+exports[`SqlCursorPagination > selects the third row when selecting one after the second row 10`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
 
 exports[`SqlCursorPagination > selects the third row when selecting one after the second row 11`] = `
 {
   "bindings": [],
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  "sql": "1",
 }
 `;
 
 exports[`SqlCursorPagination > selects the third row when selecting one after the second row 12`] = `
 {
-  "bindings": [],
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  "bindings": {},
+  "sql": "1",
 }
 `;
 
 exports[`SqlCursorPagination > selects the third row when selecting one after the second row 13`] = `
 {
   "bindings": [],
+  "strings": [
+    "1",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting one after the second row 14`] = `2`;
+
+exports[`SqlCursorPagination > selects the third row when selecting one after the second row 15`] = `
+{
+  "bindings": [],
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting one after the second row 16`] = `
+{
+  "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
-exports[`SqlCursorPagination > selects the third row when selecting one after the second row 14`] = `
+exports[`SqlCursorPagination > selects the third row when selecting one after the second row 17`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting one after the second row 18`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting one after the second row 19`] = `
 {
   "bindings": {},
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
-exports[`SqlCursorPagination > selects the third row when selecting one after the second row 15`] = `
+exports[`SqlCursorPagination > selects the third row when selecting one after the second row 20`] = `
+{
+  "bindings": [],
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting one after the second row 21`] = `
+{
+  "bindings": [
+    "Anika",
+    "Anika",
+    "Duncan",
+    "Anika",
+    "Duncan",
+    "1",
+  ],
+  "strings": [
+    "(((\`first_name\`>",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`<",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`=",
+    " AND \`id\`>",
+    ")))",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting one after the second row 22`] = `
 {
   "bindings": [
     "Anika",
@@ -3822,7 +5562,7 @@ exports[`SqlCursorPagination > selects the third row when selecting one after th
 }
 `;
 
-exports[`SqlCursorPagination > selects the third row when selecting one after the second row 16`] = `
+exports[`SqlCursorPagination > selects the third row when selecting one after the second row 23`] = `
 {
   "bindings": [
     "Anika",
@@ -3836,7 +5576,7 @@ exports[`SqlCursorPagination > selects the third row when selecting one after th
 }
 `;
 
-exports[`SqlCursorPagination > selects the third row when selecting one after the second row 17`] = `
+exports[`SqlCursorPagination > selects the third row when selecting one after the second row 24`] = `
 {
   "bindings": [
     "Anika",
@@ -3850,7 +5590,7 @@ exports[`SqlCursorPagination > selects the third row when selecting one after th
 }
 `;
 
-exports[`SqlCursorPagination > selects the third row when selecting one after the second row 18`] = `
+exports[`SqlCursorPagination > selects the third row when selecting one after the second row 25`] = `
 {
   "bindings": {
     ":0": "Anika",
@@ -3861,7 +5601,29 @@ exports[`SqlCursorPagination > selects the third row when selecting one after th
 }
 `;
 
-exports[`SqlCursorPagination > selects the third row when selecting one after the second row 19`] = `
+exports[`SqlCursorPagination > selects the third row when selecting one after the second row 26`] = `
+{
+  "bindings": [
+    "Anika",
+    "Anika",
+    "Duncan",
+    "Anika",
+    "Duncan",
+    "1",
+  ],
+  "strings": [
+    "(((\`first_name\`>",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`<",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`=",
+    " AND \`id\`>",
+    ")))",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting one after the second row 27`] = `
 {
   "edges": [
     {
@@ -3913,7 +5675,9 @@ exports[`SqlCursorPagination > selects the third row when selecting the last one
 exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 2`] = `
 {
   "bindings": [],
-  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
 
@@ -3933,70 +5697,156 @@ exports[`SqlCursorPagination > selects the third row when selecting the last one
 
 exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 5`] = `
 {
-  "bindings": {},
+  "bindings": [],
   "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 6`] = `
 {
-  "bindings": [],
-  "sql": "1",
+  "bindings": {},
+  "sql": "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 7`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "\`first_name\` asc, \`last_name\` desc, \`id\` asc",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 8`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "1",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 9`] = `
 {
-  "bindings": {},
+  "bindings": [],
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 10`] = `2`;
+exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 10`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
 
 exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 11`] = `
 {
   "bindings": [],
-  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+  "sql": "1",
 }
 `;
 
 exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 12`] = `
 {
-  "bindings": [],
-  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+  "bindings": {},
+  "sql": "1",
 }
 `;
 
 exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 13`] = `
 {
   "bindings": [],
+  "strings": [
+    "1",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 14`] = `2`;
+
+exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 15`] = `
+{
+  "bindings": [],
+  "strings": [
+    "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 16`] = `
+{
+  "bindings": [],
   "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
 }
 `;
 
-exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 14`] = `
+exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 17`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 18`] = `
+{
+  "bindings": [],
+  "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 19`] = `
 {
   "bindings": {},
   "sql": "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
 }
 `;
 
-exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 15`] = `
+exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 20`] = `
+{
+  "bindings": [],
+  "strings": [
+    "\`first_name\` desc, \`last_name\` asc, \`id\` desc",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 21`] = `
+{
+  "bindings": [
+    "Anika",
+    "Anika",
+    "Molina",
+    "Anika",
+    "Molina",
+    "5",
+    "Jermaine",
+    "Jermaine",
+    "O'connor",
+    "Jermaine",
+    "O'connor",
+    "2",
+  ],
+  "strings": [
+    "(((\`first_name\`>",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`<",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`=",
+    " AND \`id\`>",
+    ")) AND ((\`first_name\`<",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`>",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`=",
+    " AND \`id\`<",
+    ")))",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 22`] = `
 {
   "bindings": [
     "Anika",
@@ -4016,7 +5866,7 @@ exports[`SqlCursorPagination > selects the third row when selecting the last one
 }
 `;
 
-exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 16`] = `
+exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 23`] = `
 {
   "bindings": [
     "Anika",
@@ -4036,7 +5886,7 @@ exports[`SqlCursorPagination > selects the third row when selecting the last one
 }
 `;
 
-exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 17`] = `
+exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 24`] = `
 {
   "bindings": [
     "Anika",
@@ -4056,7 +5906,7 @@ exports[`SqlCursorPagination > selects the third row when selecting the last one
 }
 `;
 
-exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 18`] = `
+exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 25`] = `
 {
   "bindings": {
     ":0": "Anika",
@@ -4070,7 +5920,41 @@ exports[`SqlCursorPagination > selects the third row when selecting the last one
 }
 `;
 
-exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 19`] = `
+exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 26`] = `
+{
+  "bindings": [
+    "Anika",
+    "Anika",
+    "Molina",
+    "Anika",
+    "Molina",
+    "5",
+    "Jermaine",
+    "Jermaine",
+    "O'connor",
+    "Jermaine",
+    "O'connor",
+    "2",
+  ],
+  "strings": [
+    "(((\`first_name\`>",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`<",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`=",
+    " AND \`id\`>",
+    ")) AND ((\`first_name\`<",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`>",
+    ") OR (\`first_name\`=",
+    " AND \`last_name\`=",
+    " AND \`id\`<",
+    ")))",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > selects the third row when selecting the last one after the first row but before the fourth row 27`] = `
 {
   "edges": [
     {
@@ -4122,7 +6006,9 @@ exports[`SqlCursorPagination > supports field aliases 1`] = `2`;
 exports[`SqlCursorPagination > supports field aliases 2`] = `
 {
   "bindings": [],
-  "sql": "\`email\` asc",
+  "strings": [
+    "\`email\` asc",
+  ],
 }
 `;
 
@@ -4142,40 +6028,74 @@ exports[`SqlCursorPagination > supports field aliases 4`] = `
 
 exports[`SqlCursorPagination > supports field aliases 5`] = `
 {
-  "bindings": {},
+  "bindings": [],
   "sql": "\`email\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > supports field aliases 6`] = `
 {
-  "bindings": [],
-  "sql": "1",
+  "bindings": {},
+  "sql": "\`email\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > supports field aliases 7`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "\`email\` asc",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > supports field aliases 8`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "1",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > supports field aliases 9`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > supports field aliases 10`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > supports field aliases 11`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > supports field aliases 12`] = `
 {
   "bindings": {},
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > supports field aliases 10`] = `
+exports[`SqlCursorPagination > supports field aliases 13`] = `
+{
+  "bindings": [],
+  "strings": [
+    "1",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > supports field aliases 14`] = `
 {
   "edges": [
     {
@@ -4225,7 +6145,9 @@ exports[`SqlCursorPagination > supports fully qualified column names 1`] = `2`;
 exports[`SqlCursorPagination > supports fully qualified column names 2`] = `
 {
   "bindings": [],
-  "sql": "\`users\`.\`id\` asc",
+  "strings": [
+    "\`users\`.\`id\` asc",
+  ],
 }
 `;
 
@@ -4245,40 +6167,74 @@ exports[`SqlCursorPagination > supports fully qualified column names 4`] = `
 
 exports[`SqlCursorPagination > supports fully qualified column names 5`] = `
 {
-  "bindings": {},
+  "bindings": [],
   "sql": "\`users\`.\`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > supports fully qualified column names 6`] = `
 {
-  "bindings": [],
-  "sql": "1",
+  "bindings": {},
+  "sql": "\`users\`.\`id\` asc",
 }
 `;
 
 exports[`SqlCursorPagination > supports fully qualified column names 7`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "\`users\`.\`id\` asc",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > supports fully qualified column names 8`] = `
 {
   "bindings": [],
-  "sql": "1",
+  "strings": [
+    "1",
+  ],
 }
 `;
 
 exports[`SqlCursorPagination > supports fully qualified column names 9`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > supports fully qualified column names 10`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > supports fully qualified column names 11`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > supports fully qualified column names 12`] = `
 {
   "bindings": {},
   "sql": "1",
 }
 `;
 
-exports[`SqlCursorPagination > supports fully qualified column names 10`] = `
+exports[`SqlCursorPagination > supports fully qualified column names 13`] = `
+{
+  "bindings": [],
+  "strings": [
+    "1",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > supports fully qualified column names 14`] = `
 {
   "edges": [
     {
