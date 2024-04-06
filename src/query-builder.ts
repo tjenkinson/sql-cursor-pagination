@@ -8,6 +8,11 @@ export type Fragment<TValues> = {
   bindings: TValues;
 };
 
+export type RawFragment = {
+  strings: string[];
+  bindings: string[];
+};
+
 export type FragmentBuilderPlaceholderFn = (index: number) => Placeholder;
 
 export type FragmentBuilderArrayInput = {
@@ -40,6 +45,13 @@ export type FragmentBuilder = {
   withObjectBindings: (
     input: FragmentBuilderObjectInput,
   ) => Fragment<Record<string, string>>;
+  /**
+   * This is intended to take a tagged template tag function.
+   */
+  toTaggedTemplate: <T>(
+    tag: (strings: string[], ...bindings: string[]) => T,
+  ) => T;
+  toRaw: () => RawFragment;
 };
 
 function valueToString(value: FieldValue): string {
@@ -69,7 +81,45 @@ export class QueryBuilder {
   public getFragmentBuilder(onUsage: () => void): FragmentBuilder {
     const { parts, bindings } = this;
 
+    const buildStrings = () => {
+      const strings: string[] = [];
+      let current: string[] = [];
+
+      const push = () => {
+        /* c8 ignore next */
+        if (current.length === 0) return;
+
+        strings.push(current.join(''));
+        current = [];
+      };
+
+      for (const part of parts) {
+        if (part === placeholder) {
+          push();
+        } else {
+          current.push(part);
+        }
+      }
+      push();
+      return strings;
+    };
+
     return {
+      toRaw: () => {
+        onUsage();
+
+        return {
+          bindings: [...bindings],
+          strings: buildStrings(),
+        };
+      },
+      toTaggedTemplate: <T>(
+        tag: (strings: string[], ..._bindings: string[]) => T,
+      ) => {
+        onUsage();
+
+        return tag(buildStrings(), ...bindings);
+      },
       withArrayBindings: ({ placeholder: userPlaceholder = '?' } = {}) => {
         if (typeof userPlaceholder !== 'function') {
           Placeholder.parse(userPlaceholder);
@@ -89,7 +139,9 @@ export class QueryBuilder {
             sql += part;
           }
         }
+
         onUsage();
+
         return {
           bindings: [...bindings],
           sql,
@@ -117,7 +169,9 @@ export class QueryBuilder {
             sql += part;
           }
         }
+
         onUsage();
+
         return { bindings: bindingsObject, sql };
       },
     };
