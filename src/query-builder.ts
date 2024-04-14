@@ -49,7 +49,7 @@ export type FragmentBuilder = {
    * This is intended to take a tagged template tag function.
    */
   toTaggedTemplate: <T>(
-    tag: (strings: string[], ...bindings: string[]) => T,
+    tag: (strings: TemplateStringsArray, ...bindings: string[]) => T,
   ) => T;
   toRaw: () => RawFragment;
 };
@@ -114,11 +114,14 @@ export class QueryBuilder {
         };
       },
       toTaggedTemplate: <T>(
-        tag: (strings: string[], ..._bindings: string[]) => T,
+        tag: (strings: TemplateStringsArray, ..._bindings: string[]) => T,
       ) => {
         onUsage();
 
-        return tag(buildStrings(), ...bindings);
+        const raw = buildStrings();
+        const strings = [...raw] as string[] & { raw: string[] };
+        strings.raw = raw;
+        return tag(strings, ...bindings);
       },
       withArrayBindings: ({ placeholder: userPlaceholder = '?' } = {}) => {
         if (typeof userPlaceholder !== 'function') {

@@ -112,10 +112,14 @@ describe('SqlCursorPagination', () => {
         }),
       ).toMatchSnapshot();
       expect(
-        builder.toTaggedTemplate((strings, ...bindings) => ({
-          bindings,
-          strings,
-        })),
+        builder.toTaggedTemplate((strings, ...bindings) => {
+          expect(Array.isArray(strings)).toBe(true);
+          expect(strings.raw).toStrictEqual([...strings]);
+          return {
+            bindings,
+            strings,
+          };
+        }),
       ).toMatchSnapshot();
     };
 
