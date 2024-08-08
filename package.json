@@ -55,7 +55,7 @@
     "@types/node": "20.12.5",
     "@typescript-eslint/eslint-plugin": "7.18.0",
     "@typescript-eslint/parser": "7.18.0",
-    "@vitest/coverage-v8": "1.6.0",
+    "@vitest/coverage-v8": "2.0.5",
     "eslint": "8.57.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-import": "2.29.1",
@@ -70,6 +70,6 @@
     "sqlite3": "5.1.7",
     "tslib": "2.6.3",
     "typescript": "5.5.4",
-    "vitest": "1.6.0"
+    "vitest": "2.0.5"
   }
 }
