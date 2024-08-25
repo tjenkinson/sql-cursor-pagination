@@ -66,7 +66,7 @@
     "lint-staged": "15.2.9",
     "micromatch": "4.0.7",
     "prettier": "3.3.2",
-    "rollup": "4.20.0",
+    "rollup": "4.21.0",
     "sqlite3": "5.1.7",
     "tslib": "2.6.3",
     "typescript": "5.5.4",
