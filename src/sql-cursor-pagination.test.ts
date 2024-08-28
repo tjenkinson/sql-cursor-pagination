@@ -38,7 +38,7 @@ import { Asc, Desc } from './zod-models/order';
 describe('SqlCursorPagination', () => {
   type Row = {
     admin: boolean;
-    created_at: number;
+    created_at: number | Date;
     email: string;
     email_alias: string;
     first_name: string;
@@ -127,7 +127,7 @@ describe('SqlCursorPagination', () => {
     snapshotFragment(input.whereFragmentBuilder);
   }
 
-  function buildRunQuery() {
+  function buildRunQuery({ useDateObjects }: { useDateObjects: boolean }) {
     return async (input: QueryContent): Promise<Row[]> => {
       snapshotQueryContent(input);
 
@@ -158,6 +158,12 @@ describe('SqlCursorPagination', () => {
       }
 
       const rows = (await query) as Row[];
+
+      if (useDateObjects) {
+        for (const row of rows) {
+          row.created_at = new Date(row.created_at);
+        }
+      }
       return rows;
     };
   }
@@ -186,9 +192,11 @@ describe('SqlCursorPagination', () => {
   async function runWithPagination({
     query = {},
     setup = {},
+    useDateObjects = false,
   }: {
     query?: Partial<WithPaginationInputQuery>;
     setup?: Partial<WithPaginationInputSetup<Row>>;
+    useDateObjects?: boolean;
   }): Promise<WithPaginationResult<Row>> {
     const input: WithPaginationInput<Row> = {
       query,
@@ -196,7 +204,7 @@ describe('SqlCursorPagination', () => {
         cursorSecret: mockCursorSecret,
         maxNodes: Infinity,
         queryName: mockQueryName,
-        runQuery: buildRunQuery(),
+        runQuery: buildRunQuery({ useDateObjects }),
         sortFields: [
           { field: 'first_name', order: Asc },
           { field: 'last_name', order: Desc },
@@ -212,16 +220,18 @@ describe('SqlCursorPagination', () => {
   async function runWithPaginationNoCursor({
     query = {},
     setup = {},
+    useDateObjects = false,
   }: {
     query?: Partial<WithPaginationNoCursorInputQuery>;
     setup?: Partial<WithPaginationNoCursorInputSetup<Row>>;
+    useDateObjects?: boolean;
   }): Promise<WithPaginationNoCursorResult<Row>> {
     const input: WithPaginationNoCursorInput<Row> = {
       query,
       setup: {
         maxNodes: Infinity,
         queryName: mockQueryName,
-        runQuery: buildRunQuery(),
+        runQuery: buildRunQuery({ useDateObjects }),
         sortFields: [
           { field: 'first_name', order: Asc },
           { field: 'last_name', order: Desc },
@@ -652,6 +662,26 @@ describe('SqlCursorPagination', () => {
     expect(res).toMatchSnapshot();
   });
 
+  it('supports `Date` objects', async () => {
+    const res = await runWithPagination({
+      query: {
+        first: Infinity,
+      },
+      setup: {
+        sortFields: [{ field: 'created_at', order: Asc }],
+      },
+      useDateObjects: true,
+    });
+
+    expect(res.edges).toHaveLength(5);
+    expect(res.edges[0].node.first_name).toBe('Cooper');
+    expect(res.pageInfo.hasPreviousPage).toBe(false);
+    expect(res.pageInfo.hasNextPage).toBe(false);
+    expect(res.pageInfo.startCursor).toBe(res.edges[0].cursor);
+    expect(res.pageInfo.endCursor).toBe(res.edges[res.edges.length - 1].cursor);
+    expect(res).toMatchSnapshot();
+  });
+
   describe('errors', () => {
     it('throws an error if `after` was for a different sort config', async () => {
       const all = await runWithPagination({
@@ -1055,6 +1085,32 @@ describe('SqlCursorPagination', () => {
       ).rejects.toThrowError(
         'Query returned too many rows. Did you forget to add the `LIMIT`?',
       );
+    });
+
+    it('throws an error if an invalid date is returned', async () => {
+      await expect(
+        async () =>
+          await runWithPagination({
+            query: {
+              first: 1,
+            },
+            setup: {
+              runQuery: async ({
+                limit,
+                whereFragmentBuilder,
+                orderByFragmentBuilder,
+              }) => {
+                void limit;
+                whereFragmentBuilder.withArrayBindings();
+                orderByFragmentBuilder.withArrayBindings();
+                await Promise.resolve();
+                // eslint-disable-next-line @typescript-eslint/no-unsafe-return, @typescript-eslint/no-explicit-any
+                return [{ created_at: new Date(NaN) }] as any;
+              },
+              sortFields: [{ field: 'created_at', order: Asc }],
+            },
+          }),
+      ).rejects.toThrowError('Invalid date in "created_at" field');
     });
 
     it('throws an error if limit is not requested', async () => {
