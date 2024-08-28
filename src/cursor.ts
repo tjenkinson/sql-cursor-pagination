@@ -157,12 +157,11 @@ export function buildCursor<TNode extends Record<string, unknown>>({
     }
     const value = node[alias];
     if (value instanceof Date) {
-      try {
-        const resolved = value.toISOString();
-        fields[alias] = resolved;
-      } catch (e) {
+      const resolved = value.getTime();
+      if (!Number.isFinite(resolved)) {
         throw new ErrUnexpected(`Invalid date in "${alias}" field`);
       }
+      fields[alias] = resolved;
     } else {
       fields[alias] = FieldValue.parse(value);
     }

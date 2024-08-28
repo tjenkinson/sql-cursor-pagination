@@ -6099,7 +6099,7 @@ exports[`SqlCursorPagination > supports \`Date\` objects 14`] = `
 {
   "edges": [
     {
-      "cursor": "qWIDywo8Rl5JFVR8PbE4avrrnn3nzUfyAoDe1bmnz_A.peApzMGipEv7qdRPeraULkDntlGs3jzzSXfTO0844SbARw55FvI9DVExhkzZQqjFXqcZingVwDtjbLqIMAb9imrX2g-TfU5uZMKycOMWyaxoe0_td6xYAxwqgqE",
+      "cursor": "HZTLrCVKXHMzAYEdWfgURQ7un1QyVeEPL6lAUVQ33ks.qQxXeujE6leOMjlBqlDpl83sYRqLghCcshcw785yfQunE0diEK-YldGzlgK4-Ni9E-pgrdAouIQPZXVFpeA3mjKaaRGDpjsfh-0MgQ",
       "node": {
         "admin": 0,
         "created_at": 1970-01-19T13:42:23.417Z,
@@ -6111,7 +6111,7 @@ exports[`SqlCursorPagination > supports \`Date\` objects 14`] = `
       },
     },
     {
-      "cursor": "cHd5PKookDvc0P9q8oi0BSxJxjJkY6FRTwsqWafjLZ8.YAXWYP7H8IsYyMv3dZx4TW_o4h2Fn8HwaXlIPQKcyPVef9PKxWABJZVbjF0Y8hd600AmKPdPKVkl7B8P9K2QekYzFK_B47C1uU6ZWDaE0QmLpdEFrEyMdV9AYEc",
+      "cursor": "9kuaH_geuEx9b7pqVk8UCfIgWu3F2E-EOtIO2mUrv54.wqA2-aCh9bJddA_EzjFahbpYTxgM8JXoFYl8Dr-iSQPw6O3TqbeoPq9_47xEON4wu3toImr3Q7Y4an7KDqmwPyaPu_ON4tmal5p5Sw",
       "node": {
         "admin": 1,
         "created_at": 1970-01-19T21:08:52.719Z,
@@ -6123,7 +6123,7 @@ exports[`SqlCursorPagination > supports \`Date\` objects 14`] = `
       },
     },
     {
-      "cursor": "gy1A_fKEUWvU0VS0tFndV9XLHcdIA5pgHxXlO74ArBU.l1apu5fAVtgM1M7cMboOxpnfJLvnYcxU3Blc0uE5KK1BxA4wQuByOlCnfNgSNz9d9rAkMNSNaotEdSkgSaQ41jsQ7546X5zmDK5SECHdJJmXK0DScDAUZHYzZzE",
+      "cursor": "-K9Y5xUBWrTdFz-dmNahvxztq1dwhM-isNGMB7NlOc4.6j7YrRISP6jDmoP_W4uEHzZ_nrwnBtiditLA6H7u4RpLVpXvKxyQ0k-X_pQdf-qeGSM3-BggrmunVnhy2ZFETGzuP9BDPNqhGELqTg",
       "node": {
         "admin": 1,
         "created_at": 1970-01-20T01:45:59.350Z,
@@ -6135,7 +6135,7 @@ exports[`SqlCursorPagination > supports \`Date\` objects 14`] = `
       },
     },
     {
-      "cursor": "gHfYIMbXWcV96xDGzfF2UZt7MlGcVH9C5UoBW6WLMLA.NJELaBjwP6gyYY9PI5VzRnMTcd_x-wrfz6bpT_WylUbOK9WA2DSrQCkplgCrfG8f8LWB7X1OVhLVbG3qPS7XcFNNmNxawaBSio-GwanlWDhf1cwH4aAYhzr9VRo",
+      "cursor": "6BLaEvR9FVRWrumkh9xu0Nl8kRThMiMs44dvLrzUfus.855Bup9aVIk40RtajQ72DHw1WmCto1QeUx9Rp5llU22HJzmhdmU93BwD1WHpZV3Dusq3Eef6GNhmKwEgwPFK840HRAnaYYy9bLHvXg",
       "node": {
         "admin": 0,
         "created_at": 1970-01-20T05:48:58.189Z,
@@ -6147,7 +6147,7 @@ exports[`SqlCursorPagination > supports \`Date\` objects 14`] = `
       },
     },
     {
-      "cursor": "3hmzBHhp3sfAyr-SP3O2te1916dubaKGvqrhkyyeYIU.GzliO7qp_3sFJaGndjb85HrZIuBsAFgRm-S-XGISNsZxRDAGca84BaSK-VbZQQMZPb2kMKoP0bvzQtoet2Rmvq0-MoskwTbbghnCq_IjcKuREsuZ0LSUbWNDRvw",
+      "cursor": "M7g1i1GiVPuiWGJvpXCnTOMBroEDAx6euOCo3-lVAr0.ltHPRQBF8AwVGmY7KojXc-mFSNvGCod9KQddayPzrYSYBO4MPCPqEsosakieakfA7iiaqvsRELYWdKUV1j0wAAjPD89iKsiieBy2Dg",
       "node": {
         "admin": 0,
         "created_at": 1970-01-20T10:35:12.324Z,
@@ -6160,14 +6160,14 @@ exports[`SqlCursorPagination > supports \`Date\` objects 14`] = `
     },
   ],
   "pageInfo": {
-    "endCursor": "3hmzBHhp3sfAyr-SP3O2te1916dubaKGvqrhkyyeYIU.GzliO7qp_3sFJaGndjb85HrZIuBsAFgRm-S-XGISNsZxRDAGca84BaSK-VbZQQMZPb2kMKoP0bvzQtoet2Rmvq0-MoskwTbbghnCq_IjcKuREsuZ0LSUbWNDRvw",
+    "endCursor": "M7g1i1GiVPuiWGJvpXCnTOMBroEDAx6euOCo3-lVAr0.ltHPRQBF8AwVGmY7KojXc-mFSNvGCod9KQddayPzrYSYBO4MPCPqEsosakieakfA7iiaqvsRELYWdKUV1j0wAAjPD89iKsiieBy2Dg",
     "hasNextPage": false,
     "hasPreviousPage": false,
-    "startCursor": "qWIDywo8Rl5JFVR8PbE4avrrnn3nzUfyAoDe1bmnz_A.peApzMGipEv7qdRPeraULkDntlGs3jzzSXfTO0844SbARw55FvI9DVExhkzZQqjFXqcZingVwDtjbLqIMAb9imrX2g-TfU5uZMKycOMWyaxoe0_td6xYAxwqgqE",
+    "startCursor": "HZTLrCVKXHMzAYEdWfgURQ7un1QyVeEPL6lAUVQ33ks.qQxXeujE6leOMjlBqlDpl83sYRqLghCcshcw785yfQunE0diEK-YldGzlgK4-Ni9E-pgrdAouIQPZXVFpeA3mjKaaRGDpjsfh-0MgQ",
   },
   Symbol(edgesWithRawCursor): [
     {
-      "cursor": "qWIDywo8Rl5JFVR8PbE4avrrnn3nzUfyAoDe1bmnz_A.peApzMGipEv7qdRPeraULkDntlGs3jzzSXfTO0844SbARw55FvI9DVExhkzZQqjFXqcZingVwDtjbLqIMAb9imrX2g-TfU5uZMKycOMWyaxoe0_td6xYAxwqgqE",
+      "cursor": "HZTLrCVKXHMzAYEdWfgURQ7un1QyVeEPL6lAUVQ33ks.qQxXeujE6leOMjlBqlDpl83sYRqLghCcshcw785yfQunE0diEK-YldGzlgK4-Ni9E-pgrdAouIQPZXVFpeA3mjKaaRGDpjsfh-0MgQ",
       "node": {
         "admin": 0,
         "created_at": 1970-01-19T13:42:23.417Z,
@@ -6179,13 +6179,13 @@ exports[`SqlCursorPagination > supports \`Date\` objects 14`] = `
       },
       "rawCursor": {
         "fields": {
-          "created_at": "1970-01-19T13:42:23.417Z",
+          "created_at": 1604543417,
         },
         "queryName": "TestQuery",
       },
     },
     {
-      "cursor": "cHd5PKookDvc0P9q8oi0BSxJxjJkY6FRTwsqWafjLZ8.YAXWYP7H8IsYyMv3dZx4TW_o4h2Fn8HwaXlIPQKcyPVef9PKxWABJZVbjF0Y8hd600AmKPdPKVkl7B8P9K2QekYzFK_B47C1uU6ZWDaE0QmLpdEFrEyMdV9AYEc",
+      "cursor": "9kuaH_geuEx9b7pqVk8UCfIgWu3F2E-EOtIO2mUrv54.wqA2-aCh9bJddA_EzjFahbpYTxgM8JXoFYl8Dr-iSQPw6O3TqbeoPq9_47xEON4wu3toImr3Q7Y4an7KDqmwPyaPu_ON4tmal5p5Sw",
       "node": {
         "admin": 1,
         "created_at": 1970-01-19T21:08:52.719Z,
@@ -6197,13 +6197,13 @@ exports[`SqlCursorPagination > supports \`Date\` objects 14`] = `
       },
       "rawCursor": {
         "fields": {
-          "created_at": "1970-01-19T21:08:52.719Z",
+          "created_at": 1631332719,
         },
         "queryName": "TestQuery",
       },
     },
     {
-      "cursor": "gy1A_fKEUWvU0VS0tFndV9XLHcdIA5pgHxXlO74ArBU.l1apu5fAVtgM1M7cMboOxpnfJLvnYcxU3Blc0uE5KK1BxA4wQuByOlCnfNgSNz9d9rAkMNSNaotEdSkgSaQ41jsQ7546X5zmDK5SECHdJJmXK0DScDAUZHYzZzE",
+      "cursor": "-K9Y5xUBWrTdFz-dmNahvxztq1dwhM-isNGMB7NlOc4.6j7YrRISP6jDmoP_W4uEHzZ_nrwnBtiditLA6H7u4RpLVpXvKxyQ0k-X_pQdf-qeGSM3-BggrmunVnhy2ZFETGzuP9BDPNqhGELqTg",
       "node": {
         "admin": 1,
         "created_at": 1970-01-20T01:45:59.350Z,
@@ -6215,13 +6215,13 @@ exports[`SqlCursorPagination > supports \`Date\` objects 14`] = `
       },
       "rawCursor": {
         "fields": {
-          "created_at": "1970-01-20T01:45:59.350Z",
+          "created_at": 1647959350,
         },
         "queryName": "TestQuery",
       },
     },
     {
-      "cursor": "gHfYIMbXWcV96xDGzfF2UZt7MlGcVH9C5UoBW6WLMLA.NJELaBjwP6gyYY9PI5VzRnMTcd_x-wrfz6bpT_WylUbOK9WA2DSrQCkplgCrfG8f8LWB7X1OVhLVbG3qPS7XcFNNmNxawaBSio-GwanlWDhf1cwH4aAYhzr9VRo",
+      "cursor": "6BLaEvR9FVRWrumkh9xu0Nl8kRThMiMs44dvLrzUfus.855Bup9aVIk40RtajQ72DHw1WmCto1QeUx9Rp5llU22HJzmhdmU93BwD1WHpZV3Dusq3Eef6GNhmKwEgwPFK840HRAnaYYy9bLHvXg",
       "node": {
         "admin": 0,
         "created_at": 1970-01-20T05:48:58.189Z,
@@ -6233,13 +6233,13 @@ exports[`SqlCursorPagination > supports \`Date\` objects 14`] = `
       },
       "rawCursor": {
         "fields": {
-          "created_at": "1970-01-20T05:48:58.189Z",
+          "created_at": 1662538189,
         },
         "queryName": "TestQuery",
       },
     },
     {
-      "cursor": "3hmzBHhp3sfAyr-SP3O2te1916dubaKGvqrhkyyeYIU.GzliO7qp_3sFJaGndjb85HrZIuBsAFgRm-S-XGISNsZxRDAGca84BaSK-VbZQQMZPb2kMKoP0bvzQtoet2Rmvq0-MoskwTbbghnCq_IjcKuREsuZ0LSUbWNDRvw",
+      "cursor": "M7g1i1GiVPuiWGJvpXCnTOMBroEDAx6euOCo3-lVAr0.ltHPRQBF8AwVGmY7KojXc-mFSNvGCod9KQddayPzrYSYBO4MPCPqEsosakieakfA7iiaqvsRELYWdKUV1j0wAAjPD89iKsiieBy2Dg",
       "node": {
         "admin": 0,
         "created_at": 1970-01-20T10:35:12.324Z,
@@ -6251,7 +6251,7 @@ exports[`SqlCursorPagination > supports \`Date\` objects 14`] = `
       },
       "rawCursor": {
         "fields": {
-          "created_at": "1970-01-20T10:35:12.324Z",
+          "created_at": 1679712324,
         },
         "queryName": "TestQuery",
       },
