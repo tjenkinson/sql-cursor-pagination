@@ -6001,6 +6001,265 @@ exports[`SqlCursorPagination > selects the third row when selecting the last one
 }
 `;
 
+exports[`SqlCursorPagination > supports \`Date\` objects 1`] = `Infinity`;
+
+exports[`SqlCursorPagination > supports \`Date\` objects 2`] = `
+{
+  "bindings": [],
+  "strings": [
+    "\`created_at\` asc",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > supports \`Date\` objects 3`] = `
+{
+  "bindings": [],
+  "sql": "\`created_at\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > supports \`Date\` objects 4`] = `
+{
+  "bindings": [],
+  "sql": "\`created_at\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > supports \`Date\` objects 5`] = `
+{
+  "bindings": [],
+  "sql": "\`created_at\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > supports \`Date\` objects 6`] = `
+{
+  "bindings": {},
+  "sql": "\`created_at\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > supports \`Date\` objects 7`] = `
+{
+  "bindings": [],
+  "strings": [
+    "\`created_at\` asc",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > supports \`Date\` objects 8`] = `
+{
+  "bindings": [],
+  "strings": [
+    "1",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > supports \`Date\` objects 9`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > supports \`Date\` objects 10`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > supports \`Date\` objects 11`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > supports \`Date\` objects 12`] = `
+{
+  "bindings": {},
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > supports \`Date\` objects 13`] = `
+{
+  "bindings": [],
+  "strings": [
+    "1",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > supports \`Date\` objects 14`] = `
+{
+  "edges": [
+    {
+      "cursor": "qWIDywo8Rl5JFVR8PbE4avrrnn3nzUfyAoDe1bmnz_A.peApzMGipEv7qdRPeraULkDntlGs3jzzSXfTO0844SbARw55FvI9DVExhkzZQqjFXqcZingVwDtjbLqIMAb9imrX2g-TfU5uZMKycOMWyaxoe0_td6xYAxwqgqE",
+      "node": {
+        "admin": 0,
+        "created_at": 1970-01-19T13:42:23.417Z,
+        "email": "purus.accumsan@icloud.com",
+        "email_alias": "purus.accumsan@icloud.com",
+        "first_name": "Cooper",
+        "id": 4,
+        "last_name": "Molina",
+      },
+    },
+    {
+      "cursor": "cHd5PKookDvc0P9q8oi0BSxJxjJkY6FRTwsqWafjLZ8.YAXWYP7H8IsYyMv3dZx4TW_o4h2Fn8HwaXlIPQKcyPVef9PKxWABJZVbjF0Y8hd600AmKPdPKVkl7B8P9K2QekYzFK_B47C1uU6ZWDaE0QmLpdEFrEyMdV9AYEc",
+      "node": {
+        "admin": 1,
+        "created_at": 1970-01-19T21:08:52.719Z,
+        "email": "diam.vel@outlook.edu",
+        "email_alias": "diam.vel@outlook.edu",
+        "first_name": "Anika",
+        "id": 5,
+        "last_name": "Molina",
+      },
+    },
+    {
+      "cursor": "gy1A_fKEUWvU0VS0tFndV9XLHcdIA5pgHxXlO74ArBU.l1apu5fAVtgM1M7cMboOxpnfJLvnYcxU3Blc0uE5KK1BxA4wQuByOlCnfNgSNz9d9rAkMNSNaotEdSkgSaQ41jsQ7546X5zmDK5SECHdJJmXK0DScDAUZHYzZzE",
+      "node": {
+        "admin": 1,
+        "created_at": 1970-01-20T01:45:59.350Z,
+        "email": "eu@hotmail.ca",
+        "email_alias": "eu@hotmail.ca",
+        "first_name": "Joseph",
+        "id": 3,
+        "last_name": "Rhodes",
+      },
+    },
+    {
+      "cursor": "gHfYIMbXWcV96xDGzfF2UZt7MlGcVH9C5UoBW6WLMLA.NJELaBjwP6gyYY9PI5VzRnMTcd_x-wrfz6bpT_WylUbOK9WA2DSrQCkplgCrfG8f8LWB7X1OVhLVbG3qPS7XcFNNmNxawaBSio-GwanlWDhf1cwH4aAYhzr9VRo",
+      "node": {
+        "admin": 0,
+        "created_at": 1970-01-20T05:48:58.189Z,
+        "email": "rhoncus.donec@aol.edu",
+        "email_alias": "rhoncus.donec@aol.edu",
+        "first_name": "Anika",
+        "id": 1,
+        "last_name": "Duncan",
+      },
+    },
+    {
+      "cursor": "3hmzBHhp3sfAyr-SP3O2te1916dubaKGvqrhkyyeYIU.GzliO7qp_3sFJaGndjb85HrZIuBsAFgRm-S-XGISNsZxRDAGca84BaSK-VbZQQMZPb2kMKoP0bvzQtoet2Rmvq0-MoskwTbbghnCq_IjcKuREsuZ0LSUbWNDRvw",
+      "node": {
+        "admin": 0,
+        "created_at": 1970-01-20T10:35:12.324Z,
+        "email": "ut.nisi@yahoo.org",
+        "email_alias": "ut.nisi@yahoo.org",
+        "first_name": "Jermaine",
+        "id": 2,
+        "last_name": "O'connor",
+      },
+    },
+  ],
+  "pageInfo": {
+    "endCursor": "3hmzBHhp3sfAyr-SP3O2te1916dubaKGvqrhkyyeYIU.GzliO7qp_3sFJaGndjb85HrZIuBsAFgRm-S-XGISNsZxRDAGca84BaSK-VbZQQMZPb2kMKoP0bvzQtoet2Rmvq0-MoskwTbbghnCq_IjcKuREsuZ0LSUbWNDRvw",
+    "hasNextPage": false,
+    "hasPreviousPage": false,
+    "startCursor": "qWIDywo8Rl5JFVR8PbE4avrrnn3nzUfyAoDe1bmnz_A.peApzMGipEv7qdRPeraULkDntlGs3jzzSXfTO0844SbARw55FvI9DVExhkzZQqjFXqcZingVwDtjbLqIMAb9imrX2g-TfU5uZMKycOMWyaxoe0_td6xYAxwqgqE",
+  },
+  Symbol(edgesWithRawCursor): [
+    {
+      "cursor": "qWIDywo8Rl5JFVR8PbE4avrrnn3nzUfyAoDe1bmnz_A.peApzMGipEv7qdRPeraULkDntlGs3jzzSXfTO0844SbARw55FvI9DVExhkzZQqjFXqcZingVwDtjbLqIMAb9imrX2g-TfU5uZMKycOMWyaxoe0_td6xYAxwqgqE",
+      "node": {
+        "admin": 0,
+        "created_at": 1970-01-19T13:42:23.417Z,
+        "email": "purus.accumsan@icloud.com",
+        "email_alias": "purus.accumsan@icloud.com",
+        "first_name": "Cooper",
+        "id": 4,
+        "last_name": "Molina",
+      },
+      "rawCursor": {
+        "fields": {
+          "created_at": "1970-01-19T13:42:23.417Z",
+        },
+        "queryName": "TestQuery",
+      },
+    },
+    {
+      "cursor": "cHd5PKookDvc0P9q8oi0BSxJxjJkY6FRTwsqWafjLZ8.YAXWYP7H8IsYyMv3dZx4TW_o4h2Fn8HwaXlIPQKcyPVef9PKxWABJZVbjF0Y8hd600AmKPdPKVkl7B8P9K2QekYzFK_B47C1uU6ZWDaE0QmLpdEFrEyMdV9AYEc",
+      "node": {
+        "admin": 1,
+        "created_at": 1970-01-19T21:08:52.719Z,
+        "email": "diam.vel@outlook.edu",
+        "email_alias": "diam.vel@outlook.edu",
+        "first_name": "Anika",
+        "id": 5,
+        "last_name": "Molina",
+      },
+      "rawCursor": {
+        "fields": {
+          "created_at": "1970-01-19T21:08:52.719Z",
+        },
+        "queryName": "TestQuery",
+      },
+    },
+    {
+      "cursor": "gy1A_fKEUWvU0VS0tFndV9XLHcdIA5pgHxXlO74ArBU.l1apu5fAVtgM1M7cMboOxpnfJLvnYcxU3Blc0uE5KK1BxA4wQuByOlCnfNgSNz9d9rAkMNSNaotEdSkgSaQ41jsQ7546X5zmDK5SECHdJJmXK0DScDAUZHYzZzE",
+      "node": {
+        "admin": 1,
+        "created_at": 1970-01-20T01:45:59.350Z,
+        "email": "eu@hotmail.ca",
+        "email_alias": "eu@hotmail.ca",
+        "first_name": "Joseph",
+        "id": 3,
+        "last_name": "Rhodes",
+      },
+      "rawCursor": {
+        "fields": {
+          "created_at": "1970-01-20T01:45:59.350Z",
+        },
+        "queryName": "TestQuery",
+      },
+    },
+    {
+      "cursor": "gHfYIMbXWcV96xDGzfF2UZt7MlGcVH9C5UoBW6WLMLA.NJELaBjwP6gyYY9PI5VzRnMTcd_x-wrfz6bpT_WylUbOK9WA2DSrQCkplgCrfG8f8LWB7X1OVhLVbG3qPS7XcFNNmNxawaBSio-GwanlWDhf1cwH4aAYhzr9VRo",
+      "node": {
+        "admin": 0,
+        "created_at": 1970-01-20T05:48:58.189Z,
+        "email": "rhoncus.donec@aol.edu",
+        "email_alias": "rhoncus.donec@aol.edu",
+        "first_name": "Anika",
+        "id": 1,
+        "last_name": "Duncan",
+      },
+      "rawCursor": {
+        "fields": {
+          "created_at": "1970-01-20T05:48:58.189Z",
+        },
+        "queryName": "TestQuery",
+      },
+    },
+    {
+      "cursor": "3hmzBHhp3sfAyr-SP3O2te1916dubaKGvqrhkyyeYIU.GzliO7qp_3sFJaGndjb85HrZIuBsAFgRm-S-XGISNsZxRDAGca84BaSK-VbZQQMZPb2kMKoP0bvzQtoet2Rmvq0-MoskwTbbghnCq_IjcKuREsuZ0LSUbWNDRvw",
+      "node": {
+        "admin": 0,
+        "created_at": 1970-01-20T10:35:12.324Z,
+        "email": "ut.nisi@yahoo.org",
+        "email_alias": "ut.nisi@yahoo.org",
+        "first_name": "Jermaine",
+        "id": 2,
+        "last_name": "O'connor",
+      },
+      "rawCursor": {
+        "fields": {
+          "created_at": "1970-01-20T10:35:12.324Z",
+        },
+        "queryName": "TestQuery",
+      },
+    },
+  ],
+}
+`;
+
 exports[`SqlCursorPagination > supports field aliases 1`] = `2`;
 
 exports[`SqlCursorPagination > supports field aliases 2`] = `

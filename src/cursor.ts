@@ -155,7 +155,17 @@ export function buildCursor<TNode extends Record<string, unknown>>({
     if (!(alias in node)) {
       throw new ErrUnexpected(`"${alias}" field is missing`);
     }
-    fields[alias] = FieldValue.parse(node[alias]);
+    const value = node[alias];
+    if (value instanceof Date) {
+      try {
+        const resolved = value.toISOString();
+        fields[alias] = resolved;
+      } catch (e) {
+        throw new ErrUnexpected(`Invalid date in "${alias}" field`);
+      }
+    } else {
+      fields[alias] = FieldValue.parse(value);
+    }
   }
 
   return { fields, queryName };
