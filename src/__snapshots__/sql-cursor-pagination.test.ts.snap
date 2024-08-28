@@ -252,6 +252,7 @@ exports[`SqlCursorPagination > accepts a raw \`after\` 27`] = `
         "first_name": "Jermaine",
         "id": 2,
         "last_name": "O'connor",
+        "middle_name": null,
       },
     },
   ],
@@ -272,6 +273,7 @@ exports[`SqlCursorPagination > accepts a raw \`after\` 27`] = `
         "first_name": "Jermaine",
         "id": 2,
         "last_name": "O'connor",
+        "middle_name": null,
       },
       "rawCursor": {
         "fields": {
@@ -538,6 +540,7 @@ exports[`SqlCursorPagination > accepts a raw \`before\` 27`] = `
         "first_name": "Cooper",
         "id": 4,
         "last_name": "Molina",
+        "middle_name": "Mid",
       },
     },
   ],
@@ -558,6 +561,7 @@ exports[`SqlCursorPagination > accepts a raw \`before\` 27`] = `
         "first_name": "Cooper",
         "id": 4,
         "last_name": "Molina",
+        "middle_name": "Mid",
       },
       "rawCursor": {
         "fields": {
@@ -1922,6 +1926,7 @@ exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the 
         "first_name": "Anika",
         "id": 5,
         "last_name": "Molina",
+        "middle_name": "Trust",
       },
     },
     {
@@ -1934,6 +1939,7 @@ exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the 
         "first_name": "Anika",
         "id": 1,
         "last_name": "Duncan",
+        "middle_name": null,
       },
     },
   ],
@@ -1954,6 +1960,7 @@ exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the 
         "first_name": "Anika",
         "id": 5,
         "last_name": "Molina",
+        "middle_name": "Trust",
       },
       "rawCursor": {
         "fields": {
@@ -1974,6 +1981,7 @@ exports[`SqlCursorPagination > selects first 2 rows when selecting 2 before the 
         "first_name": "Anika",
         "id": 1,
         "last_name": "Duncan",
+        "middle_name": null,
       },
       "rawCursor": {
         "fields": {
@@ -2240,6 +2248,7 @@ exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the th
         "first_name": "Jermaine",
         "id": 2,
         "last_name": "O'connor",
+        "middle_name": null,
       },
     },
     {
@@ -2252,6 +2261,7 @@ exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the th
         "first_name": "Joseph",
         "id": 3,
         "last_name": "Rhodes",
+        "middle_name": "Jim",
       },
     },
   ],
@@ -2272,6 +2282,7 @@ exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the th
         "first_name": "Jermaine",
         "id": 2,
         "last_name": "O'connor",
+        "middle_name": null,
       },
       "rawCursor": {
         "fields": {
@@ -2292,6 +2303,7 @@ exports[`SqlCursorPagination > selects last 2 rows when selecting 2 after the th
         "first_name": "Joseph",
         "id": 3,
         "last_name": "Rhodes",
+        "middle_name": "Jim",
       },
       "rawCursor": {
         "fields": {
@@ -2507,6 +2519,7 @@ exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of fi
         "first_name": "Anika",
         "id": 1,
         "last_name": "Duncan",
+        "middle_name": null,
       },
     },
     {
@@ -2519,6 +2532,7 @@ exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of fi
         "first_name": "Cooper",
         "id": 4,
         "last_name": "Molina",
+        "middle_name": "Mid",
       },
     },
   ],
@@ -2539,6 +2553,7 @@ exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of fi
         "first_name": "Anika",
         "id": 1,
         "last_name": "Duncan",
+        "middle_name": null,
       },
       "rawCursor": {
         "fields": {
@@ -2559,6 +2574,7 @@ exports[`SqlCursorPagination > selects rows 2-3 when requesting the last 2 of fi
         "first_name": "Cooper",
         "id": 4,
         "last_name": "Molina",
+        "middle_name": "Mid",
       },
       "rawCursor": {
         "fields": {
@@ -2774,6 +2790,7 @@ exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of fi
         "first_name": "Jermaine",
         "id": 2,
         "last_name": "O'connor",
+        "middle_name": null,
       },
     },
     {
@@ -2786,6 +2803,7 @@ exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of fi
         "first_name": "Joseph",
         "id": 3,
         "last_name": "Rhodes",
+        "middle_name": "Jim",
       },
     },
   ],
@@ -2806,6 +2824,7 @@ exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of fi
         "first_name": "Jermaine",
         "id": 2,
         "last_name": "O'connor",
+        "middle_name": null,
       },
       "rawCursor": {
         "fields": {
@@ -2826,6 +2845,7 @@ exports[`SqlCursorPagination > selects rows 4-5 when requesting the last 2 of fi
         "first_name": "Joseph",
         "id": 3,
         "last_name": "Rhodes",
+        "middle_name": "Jim",
       },
       "rawCursor": {
         "fields": {
@@ -2947,6 +2967,7 @@ exports[`SqlCursorPagination > selects the first 3 items 14`] = `
         "first_name": "Anika",
         "id": 5,
         "last_name": "Molina",
+        "middle_name": "Trust",
       },
     },
     {
@@ -2959,6 +2980,7 @@ exports[`SqlCursorPagination > selects the first 3 items 14`] = `
         "first_name": "Anika",
         "id": 1,
         "last_name": "Duncan",
+        "middle_name": null,
       },
     },
     {
@@ -2971,6 +2993,7 @@ exports[`SqlCursorPagination > selects the first 3 items 14`] = `
         "first_name": "Cooper",
         "id": 4,
         "last_name": "Molina",
+        "middle_name": "Mid",
       },
     },
   ],
@@ -2991,6 +3014,7 @@ exports[`SqlCursorPagination > selects the first 3 items 14`] = `
         "first_name": "Anika",
         "id": 5,
         "last_name": "Molina",
+        "middle_name": "Trust",
       },
       "rawCursor": {
         "fields": {
@@ -3011,6 +3035,7 @@ exports[`SqlCursorPagination > selects the first 3 items 14`] = `
         "first_name": "Anika",
         "id": 1,
         "last_name": "Duncan",
+        "middle_name": null,
       },
       "rawCursor": {
         "fields": {
@@ -3031,6 +3056,7 @@ exports[`SqlCursorPagination > selects the first 3 items 14`] = `
         "first_name": "Cooper",
         "id": 4,
         "last_name": "Molina",
+        "middle_name": "Mid",
       },
       "rawCursor": {
         "fields": {
@@ -3152,6 +3178,7 @@ exports[`SqlCursorPagination > selects the first infinity (all) items 14`] = `
         "first_name": "Anika",
         "id": 5,
         "last_name": "Molina",
+        "middle_name": "Trust",
       },
     },
     {
@@ -3164,6 +3191,7 @@ exports[`SqlCursorPagination > selects the first infinity (all) items 14`] = `
         "first_name": "Anika",
         "id": 1,
         "last_name": "Duncan",
+        "middle_name": null,
       },
     },
     {
@@ -3176,6 +3204,7 @@ exports[`SqlCursorPagination > selects the first infinity (all) items 14`] = `
         "first_name": "Cooper",
         "id": 4,
         "last_name": "Molina",
+        "middle_name": "Mid",
       },
     },
     {
@@ -3188,6 +3217,7 @@ exports[`SqlCursorPagination > selects the first infinity (all) items 14`] = `
         "first_name": "Jermaine",
         "id": 2,
         "last_name": "O'connor",
+        "middle_name": null,
       },
     },
     {
@@ -3200,6 +3230,7 @@ exports[`SqlCursorPagination > selects the first infinity (all) items 14`] = `
         "first_name": "Joseph",
         "id": 3,
         "last_name": "Rhodes",
+        "middle_name": "Jim",
       },
     },
   ],
@@ -3220,6 +3251,7 @@ exports[`SqlCursorPagination > selects the first infinity (all) items 14`] = `
         "first_name": "Anika",
         "id": 5,
         "last_name": "Molina",
+        "middle_name": "Trust",
       },
       "rawCursor": {
         "fields": {
@@ -3240,6 +3272,7 @@ exports[`SqlCursorPagination > selects the first infinity (all) items 14`] = `
         "first_name": "Anika",
         "id": 1,
         "last_name": "Duncan",
+        "middle_name": null,
       },
       "rawCursor": {
         "fields": {
@@ -3260,6 +3293,7 @@ exports[`SqlCursorPagination > selects the first infinity (all) items 14`] = `
         "first_name": "Cooper",
         "id": 4,
         "last_name": "Molina",
+        "middle_name": "Mid",
       },
       "rawCursor": {
         "fields": {
@@ -3280,6 +3314,7 @@ exports[`SqlCursorPagination > selects the first infinity (all) items 14`] = `
         "first_name": "Jermaine",
         "id": 2,
         "last_name": "O'connor",
+        "middle_name": null,
       },
       "rawCursor": {
         "fields": {
@@ -3300,6 +3335,7 @@ exports[`SqlCursorPagination > selects the first infinity (all) items 14`] = `
         "first_name": "Joseph",
         "id": 3,
         "last_name": "Rhodes",
+        "middle_name": "Jim",
       },
       "rawCursor": {
         "fields": {
@@ -3421,6 +3457,7 @@ exports[`SqlCursorPagination > selects the last 3 items 14`] = `
         "first_name": "Cooper",
         "id": 4,
         "last_name": "Molina",
+        "middle_name": "Mid",
       },
     },
     {
@@ -3433,6 +3470,7 @@ exports[`SqlCursorPagination > selects the last 3 items 14`] = `
         "first_name": "Jermaine",
         "id": 2,
         "last_name": "O'connor",
+        "middle_name": null,
       },
     },
     {
@@ -3445,6 +3483,7 @@ exports[`SqlCursorPagination > selects the last 3 items 14`] = `
         "first_name": "Joseph",
         "id": 3,
         "last_name": "Rhodes",
+        "middle_name": "Jim",
       },
     },
   ],
@@ -3465,6 +3504,7 @@ exports[`SqlCursorPagination > selects the last 3 items 14`] = `
         "first_name": "Cooper",
         "id": 4,
         "last_name": "Molina",
+        "middle_name": "Mid",
       },
       "rawCursor": {
         "fields": {
@@ -3485,6 +3525,7 @@ exports[`SqlCursorPagination > selects the last 3 items 14`] = `
         "first_name": "Jermaine",
         "id": 2,
         "last_name": "O'connor",
+        "middle_name": null,
       },
       "rawCursor": {
         "fields": {
@@ -3505,6 +3546,7 @@ exports[`SqlCursorPagination > selects the last 3 items 14`] = `
         "first_name": "Joseph",
         "id": 3,
         "last_name": "Rhodes",
+        "middle_name": "Jim",
       },
       "rawCursor": {
         "fields": {
@@ -3626,6 +3668,7 @@ exports[`SqlCursorPagination > selects the last infinity (all) items 14`] = `
         "first_name": "Anika",
         "id": 5,
         "last_name": "Molina",
+        "middle_name": "Trust",
       },
     },
     {
@@ -3638,6 +3681,7 @@ exports[`SqlCursorPagination > selects the last infinity (all) items 14`] = `
         "first_name": "Anika",
         "id": 1,
         "last_name": "Duncan",
+        "middle_name": null,
       },
     },
     {
@@ -3650,6 +3694,7 @@ exports[`SqlCursorPagination > selects the last infinity (all) items 14`] = `
         "first_name": "Cooper",
         "id": 4,
         "last_name": "Molina",
+        "middle_name": "Mid",
       },
     },
     {
@@ -3662,6 +3707,7 @@ exports[`SqlCursorPagination > selects the last infinity (all) items 14`] = `
         "first_name": "Jermaine",
         "id": 2,
         "last_name": "O'connor",
+        "middle_name": null,
       },
     },
     {
@@ -3674,6 +3720,7 @@ exports[`SqlCursorPagination > selects the last infinity (all) items 14`] = `
         "first_name": "Joseph",
         "id": 3,
         "last_name": "Rhodes",
+        "middle_name": "Jim",
       },
     },
   ],
@@ -3694,6 +3741,7 @@ exports[`SqlCursorPagination > selects the last infinity (all) items 14`] = `
         "first_name": "Anika",
         "id": 5,
         "last_name": "Molina",
+        "middle_name": "Trust",
       },
       "rawCursor": {
         "fields": {
@@ -3714,6 +3762,7 @@ exports[`SqlCursorPagination > selects the last infinity (all) items 14`] = `
         "first_name": "Anika",
         "id": 1,
         "last_name": "Duncan",
+        "middle_name": null,
       },
       "rawCursor": {
         "fields": {
@@ -3734,6 +3783,7 @@ exports[`SqlCursorPagination > selects the last infinity (all) items 14`] = `
         "first_name": "Cooper",
         "id": 4,
         "last_name": "Molina",
+        "middle_name": "Mid",
       },
       "rawCursor": {
         "fields": {
@@ -3754,6 +3804,7 @@ exports[`SqlCursorPagination > selects the last infinity (all) items 14`] = `
         "first_name": "Jermaine",
         "id": 2,
         "last_name": "O'connor",
+        "middle_name": null,
       },
       "rawCursor": {
         "fields": {
@@ -3774,6 +3825,7 @@ exports[`SqlCursorPagination > selects the last infinity (all) items 14`] = `
         "first_name": "Joseph",
         "id": 3,
         "last_name": "Rhodes",
+        "middle_name": "Jim",
       },
       "rawCursor": {
         "fields": {
@@ -4085,6 +4137,7 @@ exports[`SqlCursorPagination > selects the second and third row when selecting a
         "first_name": "Anika",
         "id": 1,
         "last_name": "Duncan",
+        "middle_name": null,
       },
     },
     {
@@ -4097,6 +4150,7 @@ exports[`SqlCursorPagination > selects the second and third row when selecting a
         "first_name": "Cooper",
         "id": 4,
         "last_name": "Molina",
+        "middle_name": "Mid",
       },
     },
   ],
@@ -4117,6 +4171,7 @@ exports[`SqlCursorPagination > selects the second and third row when selecting a
         "first_name": "Anika",
         "id": 1,
         "last_name": "Duncan",
+        "middle_name": null,
       },
       "rawCursor": {
         "fields": {
@@ -4137,6 +4192,7 @@ exports[`SqlCursorPagination > selects the second and third row when selecting a
         "first_name": "Cooper",
         "id": 4,
         "last_name": "Molina",
+        "middle_name": "Mid",
       },
       "rawCursor": {
         "fields": {
@@ -4447,6 +4503,7 @@ exports[`SqlCursorPagination > selects the second row when selecting after the f
         "first_name": "Anika",
         "id": 1,
         "last_name": "Duncan",
+        "middle_name": null,
       },
     },
   ],
@@ -4467,6 +4524,7 @@ exports[`SqlCursorPagination > selects the second row when selecting after the f
         "first_name": "Anika",
         "id": 1,
         "last_name": "Duncan",
+        "middle_name": null,
       },
       "rawCursor": {
         "fields": {
@@ -4733,6 +4791,7 @@ exports[`SqlCursorPagination > selects the second row when selecting one before 
         "first_name": "Anika",
         "id": 1,
         "last_name": "Duncan",
+        "middle_name": null,
       },
     },
   ],
@@ -4753,6 +4812,7 @@ exports[`SqlCursorPagination > selects the second row when selecting one before 
         "first_name": "Anika",
         "id": 1,
         "last_name": "Duncan",
+        "middle_name": null,
       },
       "rawCursor": {
         "fields": {
@@ -5019,6 +5079,7 @@ exports[`SqlCursorPagination > selects the second row when selecting one before 
         "first_name": "Anika",
         "id": 1,
         "last_name": "Duncan",
+        "middle_name": null,
       },
     },
   ],
@@ -5039,6 +5100,7 @@ exports[`SqlCursorPagination > selects the second row when selecting one before 
         "first_name": "Anika",
         "id": 1,
         "last_name": "Duncan",
+        "middle_name": null,
       },
       "rawCursor": {
         "fields": {
@@ -5350,6 +5412,7 @@ exports[`SqlCursorPagination > selects the second row when selecting the first o
         "first_name": "Anika",
         "id": 1,
         "last_name": "Duncan",
+        "middle_name": null,
       },
     },
   ],
@@ -5370,6 +5433,7 @@ exports[`SqlCursorPagination > selects the second row when selecting the first o
         "first_name": "Anika",
         "id": 1,
         "last_name": "Duncan",
+        "middle_name": null,
       },
       "rawCursor": {
         "fields": {
@@ -5636,6 +5700,7 @@ exports[`SqlCursorPagination > selects the third row when selecting one after th
         "first_name": "Cooper",
         "id": 4,
         "last_name": "Molina",
+        "middle_name": "Mid",
       },
     },
   ],
@@ -5656,6 +5721,7 @@ exports[`SqlCursorPagination > selects the third row when selecting one after th
         "first_name": "Cooper",
         "id": 4,
         "last_name": "Molina",
+        "middle_name": "Mid",
       },
       "rawCursor": {
         "fields": {
@@ -5967,6 +6033,7 @@ exports[`SqlCursorPagination > selects the third row when selecting the last one
         "first_name": "Cooper",
         "id": 4,
         "last_name": "Molina",
+        "middle_name": "Mid",
       },
     },
   ],
@@ -5987,6 +6054,7 @@ exports[`SqlCursorPagination > selects the third row when selecting the last one
         "first_name": "Cooper",
         "id": 4,
         "last_name": "Molina",
+        "middle_name": "Mid",
       },
       "rawCursor": {
         "fields": {
@@ -6108,6 +6176,7 @@ exports[`SqlCursorPagination > supports field aliases 14`] = `
         "first_name": "Anika",
         "id": 5,
         "last_name": "Molina",
+        "middle_name": "Trust",
       },
     },
   ],
@@ -6128,6 +6197,7 @@ exports[`SqlCursorPagination > supports field aliases 14`] = `
         "first_name": "Anika",
         "id": 5,
         "last_name": "Molina",
+        "middle_name": "Trust",
       },
       "rawCursor": {
         "fields": {
@@ -6136,6 +6206,100 @@ exports[`SqlCursorPagination > supports field aliases 14`] = `
         "queryName": "TestQuery",
       },
     },
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > supports field with null values 1`] = `2`;
+
+exports[`SqlCursorPagination > supports field with null values 2`] = `
+{
+  "bindings": [],
+  "strings": [
+    "\`middle_name\` asc",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > supports field with null values 3`] = `
+{
+  "bindings": [],
+  "sql": "\`middle_name\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > supports field with null values 4`] = `
+{
+  "bindings": [],
+  "sql": "\`middle_name\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > supports field with null values 5`] = `
+{
+  "bindings": [],
+  "sql": "\`middle_name\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > supports field with null values 6`] = `
+{
+  "bindings": {},
+  "sql": "\`middle_name\` asc",
+}
+`;
+
+exports[`SqlCursorPagination > supports field with null values 7`] = `
+{
+  "bindings": [],
+  "strings": [
+    "\`middle_name\` asc",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > supports field with null values 8`] = `
+{
+  "bindings": [],
+  "strings": [
+    "1",
+  ],
+}
+`;
+
+exports[`SqlCursorPagination > supports field with null values 9`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > supports field with null values 10`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > supports field with null values 11`] = `
+{
+  "bindings": [],
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > supports field with null values 12`] = `
+{
+  "bindings": {},
+  "sql": "1",
+}
+`;
+
+exports[`SqlCursorPagination > supports field with null values 13`] = `
+{
+  "bindings": [],
+  "strings": [
+    "1",
   ],
 }
 `;
@@ -6247,6 +6411,7 @@ exports[`SqlCursorPagination > supports fully qualified column names 14`] = `
         "first_name": "Anika",
         "id": 1,
         "last_name": "Duncan",
+        "middle_name": null,
       },
     },
   ],
@@ -6267,6 +6432,7 @@ exports[`SqlCursorPagination > supports fully qualified column names 14`] = `
         "first_name": "Anika",
         "id": 1,
         "last_name": "Duncan",
+        "middle_name": null,
       },
       "rawCursor": {
         "fields": {

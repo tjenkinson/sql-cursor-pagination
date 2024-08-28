@@ -44,6 +44,7 @@ describe('SqlCursorPagination', () => {
     first_name: string;
     id: number;
     last_name: string;
+    middle_name: string | null;
   };
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -59,6 +60,7 @@ describe('SqlCursorPagination', () => {
       first_name: 'Anika',
       id: 1,
       last_name: 'Duncan',
+      middle_name: null,
     },
     {
       admin: false,
@@ -67,6 +69,7 @@ describe('SqlCursorPagination', () => {
       first_name: 'Jermaine',
       id: 2,
       last_name: "O'connor",
+      middle_name: null,
     },
     {
       admin: true,
@@ -75,6 +78,7 @@ describe('SqlCursorPagination', () => {
       first_name: 'Joseph',
       id: 3,
       last_name: 'Rhodes',
+      middle_name: 'Jim',
     },
     {
       admin: false,
@@ -83,6 +87,7 @@ describe('SqlCursorPagination', () => {
       first_name: 'Cooper',
       id: 4,
       last_name: 'Molina',
+      middle_name: 'Mid',
     },
     {
       admin: true,
@@ -91,6 +96,7 @@ describe('SqlCursorPagination', () => {
       first_name: 'Anika',
       id: 5,
       last_name: 'Molina',
+      middle_name: 'Trust',
     },
   ] satisfies Omit<Row, 'email_alias'>[];
 
@@ -144,6 +150,7 @@ describe('SqlCursorPagination', () => {
           'created_at',
           'first_name',
           'last_name',
+          'middle_name',
           'email',
           'email as email_alias',
         )
@@ -176,6 +183,7 @@ describe('SqlCursorPagination', () => {
       table.integer('created_at').notNullable();
       table.string('first_name').notNullable();
       table.string('last_name').notNullable();
+      table.string('middle_name').nullable();
       table.string('email').notNullable();
       table.boolean('admin').notNullable();
     });
@@ -649,6 +657,19 @@ describe('SqlCursorPagination', () => {
 
     expect(res.edges).toHaveLength(1);
     expect(res.edges[0].node.email_alias).toBe('diam.vel@outlook.edu');
+    expect(res).toMatchSnapshot();
+  });
+
+  it('supports field with null values', async () => {
+    const res = await runWithPagination({
+      query: {
+        first: 1,
+      },
+      setup: {
+        sortFields: [{ field: 'middle_name', order: Asc }],
+      },
+    });
+
     expect(res).toMatchSnapshot();
   });
 
