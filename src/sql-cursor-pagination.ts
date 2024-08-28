@@ -1,4 +1,3 @@
-import pMap from 'p-map';
 import { notNull } from './assert';
 import { RawCursor, buildCursor, encryptCursor, resolveCursor } from './cursor';
 import { CursorSecret } from './cursor-secret';
@@ -462,6 +461,7 @@ async function _withPagination<
       : false;
 
   const seenCursors: Set<string> = new Set();
+  const { default: pMap } = await import('p-map');
   const edgesWithRawCursor: _WithPaginationResultEdge<TNode, boolean, true>[] =
     await pMap(
       lastNodes,
