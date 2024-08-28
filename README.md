@@ -10,8 +10,7 @@ Are you running a service, using an SQL database, and want to support cursor sty
 
 ## What is cursor pagination?
 
-Cursor pagination was made popular by GraphQL, and this library conforms to the [GraphQL Cursor Connections Specification
-](https://relay.dev/graphql/connections.htm) meaning it's compatible with [Relay](https://relay.dev/). However it is also useful outside of GraphQL.
+Cursor pagination was made popular by GraphQL, and this library conforms to the [GraphQL Cursor Connections Specification](https://relay.dev/graphql/connections.htm) meaning it's compatible with [Relay](https://relay.dev/). However it is also useful outside of GraphQL.
 
 - First you specify the sort config. This contains a list of field names with their orders. It must contain a unique key.
 - Then you request how many items you would like to fetch with `first`.
