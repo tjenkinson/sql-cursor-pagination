@@ -64,7 +64,7 @@
     "husky": "9.1.5",
     "knex": "3.1.0",
     "lint-staged": "15.2.9",
-    "micromatch": "4.0.7",
+    "micromatch": "4.0.8",
     "prettier": "3.3.2",
     "rollup": "4.21.0",
     "sqlite3": "5.1.7",
