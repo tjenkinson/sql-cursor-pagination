@@ -63,7 +63,7 @@
     "espree": "10.3.0",
     "husky": "9.1.7",
     "knex": "3.1.0",
-    "lint-staged": "15.3.0",
+    "lint-staged": "15.4.0",
     "micromatch": "4.0.8",
     "prettier": "3.3.2",
     "rollup": "4.30.1",
